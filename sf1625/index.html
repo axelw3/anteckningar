@@ -1,0 +1,1245 @@
+
+<!doctype html>
+<html lang="sv" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../dd1351/">
+      
+      
+        <link rel="next" href="../sf1626/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>SF1625 Envariabelanalys 7,5 hp - Anteckningar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sf1625-envariabelanalys-75-hp" class="md-skip">
+          Gå till innehållet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidhuvud">
+    <a href=".." title="Anteckningar" class="md-header__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anteckningar
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SF1625 Envariabelanalys 7,5 hp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Sök" placeholder="Sök" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Sök">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Rensa" aria-label="Rensa" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialiserar sök
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Anteckningar" class="md-nav__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Anteckningar
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd1351/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DD1351 Logik för dataloger 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SF1625 Envariabelanalys 7,5 hp
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SF1625 Envariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivata
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kedjeregeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kedjeregeln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hogre-ordningens-derivator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Högre ordningens derivator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medelvardessatsen-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Medelvärdessatsen mm.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medelvärdessatsen mm.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lokala-extrempunkter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lokala extrempunkter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bevis-av-medelvardessatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bevis av medelvärdessatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implicit-derivering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit derivering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linjara-approximationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linjära approximationer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primitiva-funktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitiva funktioner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverterbara-funktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverterbara funktioner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverterbara funktioner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inversens-graf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inversens graf
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inversens-derivata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inversens derivata
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arcusfunktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcusfunktioner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arcusfunktionernas-derivator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcusfunktionernas derivator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forsta-ordningens-linjara-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      Första ordningens linjära DE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Första ordningens linjära DE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homogena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homogena
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andra-ordningens-linjara-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      Andra ordningens linjära DE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Andra ordningens linjära DE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homogen-h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homogen (H)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inhomogen-ih" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inhomogen (IH)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1626/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1626 Flervariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1671/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1671 Matematik, baskurs, med diskret matematik 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1935/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1935 Sannolikhetsteori och statistik med tillämpning inom maskininlärning 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivata
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kedjeregeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kedjeregeln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hogre-ordningens-derivator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Högre ordningens derivator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medelvardessatsen-mm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Medelvärdessatsen mm.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medelvärdessatsen mm.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lokala-extrempunkter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lokala extrempunkter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bevis-av-medelvardessatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bevis av medelvärdessatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implicit-derivering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit derivering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linjara-approximationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linjära approximationer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primitiva-funktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitiva funktioner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverterbara-funktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverterbara funktioner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverterbara funktioner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inversens-graf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inversens graf
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inversens-derivata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inversens derivata
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arcusfunktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcusfunktioner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arcusfunktionernas-derivator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arcusfunktionernas derivator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forsta-ordningens-linjara-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      Första ordningens linjära DE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Första ordningens linjära DE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homogena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homogena
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andra-ordningens-linjara-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      Andra ordningens linjära DE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Andra ordningens linjära DE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homogen-h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homogen (H)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inhomogen-ih" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inhomogen (IH)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sf1625-envariabelanalys-75-hp">SF1625 Envariabelanalys 7,5 hp</h1>
+<table>
+<thead>
+<tr>
+<th>Tillfälleskod</th>
+<th>Termin(er)</th>
+<th>Period(er)</th>
+<th>Föreläsare</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>61059</td>
+<td>VT2024</td>
+<td>3</td>
+<td>Hans Thunberg</td>
+</tr>
+</tbody>
+</table>
+<p>Sammanfattning av föreläsningarna VT2024 (period 3) och delar ur kursboken <em>Calculus: A Complete Course</em> (9:e uppl.).</p>
+<p>Blandat:
+- En funktion <span class="arithmatex">\(f\)</span> är kontinuerlig i <span class="arithmatex">\(a\)</span> omm <span class="arithmatex">\(\lim_{x\to a}f(x)=f(a)\)</span>.</p>
+<h2 id="forelasning-1">Föreläsning 1</h2>
+<h2 id="forelasning-2">Föreläsning 2</h2>
+<h2 id="forelasning-3">Föreläsning 3</h2>
+<h2 id="forelasning-4">Föreläsning 4</h2>
+<h3 id="derivata">Derivata</h3>
+<blockquote>
+<p><strong>Definition:</strong>
+Om en funktion <span class="arithmatex">\(f(x)\)</span> är definierad i en omgivning till <span class="arithmatex">\(x=x_0\)</span>, definieras</p>
+<div class="arithmatex">\[f'(x_0)=lim_{h\to0}\frac{f(x_0+h)-f(x_0)}h\]</div>
+<p>förutsatt att gränsvärdet existerar<span class="arithmatex">\(\iff f\)</span> är deriverbar i <span class="arithmatex">\(x_0\)</span></p>
+<p>Sats:
+<span class="arithmatex">\(f\)</span> är deriverbar i <span class="arithmatex">\(x_0\implies f\)</span> är kontinuerlig i <span class="arithmatex">\(x_0\)</span></p>
+<p><span class="arithmatex">\(\lim_{x\to0}\frac{sin(x)}x=1\\\lim_{x\to0}\frac{1-cos(x)}x=0\)</span></p>
+</blockquote>
+<h4 id="kedjeregeln">Kedjeregeln</h4>
+<blockquote>
+<p>Om <span class="arithmatex">\(f(a)\)</span> är deriverbar i <span class="arithmatex">\(a=g(x_0)\)</span> och <span class="arithmatex">\(g(x)\)</span> är deriverbar i <span class="arithmatex">\(x=x_0\)</span>, så är
+<span class="arithmatex">\(\frac d{dx}(f\circ g)(x_0)=f'(g(x_0))g'(x_0)\)</span></p>
+</blockquote>
+<h2 id="forelasning-5">Föreläsning 5</h2>
+<h3 id="hogre-ordningens-derivator">Högre ordningens derivator</h3>
+<p>Beteckningar:
+<span class="arithmatex">\(f''(x)=y''(x)=D^2f(x)=\frac{d^2f}{dx^2}\)</span></p>
+<p>I någon punkt <span class="arithmatex">\(x_0\)</span>:</p>
+<div class="arithmatex">\[f''(x_0)=y''(x_0)=(D^2f)(x_0)=\left.\frac{d^2f}{dx^2}\right|_{x=x_0}=\left.\frac{d^2y}{dx^2}\right|_{x=x_0}\]</div>
+<blockquote>
+<p>Andra- och tredjederivatan betecknas <span class="arithmatex">\(f''\)</span> resp. <span class="arithmatex">\(f'''\)</span>. Fr.o.m. fjärdederivatan används beteckningen <span class="arithmatex">\(f^{(n)}\)</span>.</p>
+</blockquote>
+<h3 id="medelvardessatsen-mm">Medelvärdessatsen mm.</h3>
+<blockquote>
+<p>Om <span class="arithmatex">\(f\)</span> är kontinuerlig på <span class="arithmatex">\([a,b]\)</span> och deriverbar på <span class="arithmatex">\((a,b)\)</span> finns det en punkt <span class="arithmatex">\(c\in(a,b)\)</span> sådan att</p>
+<div class="arithmatex">\[f'(c)=\frac{f(b)-f(a)}{b-a}\]</div>
+</blockquote>
+<h4 id="lokala-extrempunkter">Lokala extrempunkter</h4>
+<ul>
+<li><span class="arithmatex">\(x_0\)</span> är ett <strong>lokalt maximum</strong> om det finns en omgivning till <span class="arithmatex">\(x_0\)</span> på vilken <span class="arithmatex">\(f(x_0)\geq f(x)\)</span></li>
+<li><span class="arithmatex">\(x_0\)</span> är ett <strong>lokalt minimum</strong> om det finns en omgivning till <span class="arithmatex">\(x_0\)</span> på vilken <span class="arithmatex">\(f(x_0)\leq f(x)\)</span></li>
+</ul>
+<p>En funktion <span class="arithmatex">\(f\)</span> är <strong>växande</strong> (<em>nondecreasing</em>) på ett intervall omm <span class="arithmatex">\(x_1\gt x_2\implies f(x_1)\geq f(x_2)\)</span>.</p>
+<p>Funktionen är <strong>strängt växande</strong> (<em>increasing</em>) omm dessutom <span class="arithmatex">\(f(x_1)\gt f(x_2)\)</span>. Alternativt: <span class="arithmatex">\(f'(x)=0\)</span> i ett ändligt antal punkter; i övriga <span class="arithmatex">\(f'(x)\gt0\)</span>.</p>
+<h4 id="bevis-av-medelvardessatsen">Bevis av medelvärdessatsen</h4>
+<blockquote>
+<p><strong>Sats 14 (s. 142):</strong>
+<em>Om</em> <span class="arithmatex">\(f\)</span> <em>är definierad på</em> <span class="arithmatex">\((a,b)\)</span> <em>och har en extrempunkt i</em> <span class="arithmatex">\(c\in(a,b)\)</span>, <em>och</em> <span class="arithmatex">\(f'(c)\)</span> <em>finns, så är</em> <span class="arithmatex">\(f'(c)=0\)</span>.</p>
+</blockquote>
+<p><strong>Bevis:</strong>
+Låt <span class="arithmatex">\(f\)</span> ha en maxpunkt <span class="arithmatex">\(c\implies \frac{f(x)-f(c)}{x-c}\leq0\)</span></p>
+<p>(1) <span class="arithmatex">\(f'(c)=\lim_{x\rarr c^+}{\frac{f(x)-f(c)}{x-c}}\leq0\)</span></p>
+<p>(2) <span class="arithmatex">\(f'(c)=\lim_{x\rarr c^-}{\frac{f(x)-f(c)}{x-c}}\geq0\)</span></p>
+<p><span class="arithmatex">\(\therefore f'(c)=0,\ \text{V.S.V.}\)</span></p>
+<blockquote>
+<p><strong>Rolles sats (s. 142):</strong>
+Om <span class="arithmatex">\(f\)</span> är kontinuerlig på ett ändligt intervall <span class="arithmatex">\([a,b]\)</span> och deriverbar på <span class="arithmatex">\((a,b)\)</span>, och <span class="arithmatex">\(f(a)=f(b)\)</span>, så finns en punkt <span class="arithmatex">\(c\)</span> s.a. <span class="arithmatex">\(f'(c)=0\)</span>.</p>
+</blockquote>
+<p><strong>Bevis:</strong>
+Om <span class="arithmatex">\(f(x)=f(a)\)</span> för alla <span class="arithmatex">\(x\in[a,b]\)</span> så är <span class="arithmatex">\(f\)</span> en konstant funktion<span class="arithmatex">\(\implies f'(c)=0\)</span> för alla <span class="arithmatex">\(c\in(a,b)\)</span>. Anta att det finns <span class="arithmatex">\(x\in(a,b)\)</span> s.a. <span class="arithmatex">\(f(x)\neq f(a)\)</span>.</p>
+<ul>
+<li>Om <span class="arithmatex">\(f(x)\gt f(a)\)</span> måste <span class="arithmatex">\(f\)</span> ha en maxpunkt <span class="arithmatex">\(c\in[a,b]\)</span>. Eftersom <span class="arithmatex">\(f(c)\geq f(x)\gt f(a)\)</span> är <span class="arithmatex">\(c\neq a,b\)</span>. Med sats 14 fås då att <span class="arithmatex">\(f'(c)=0\)</span>.</li>
+<li>Om <span class="arithmatex">\(f(x)\lt f(a)\)</span>: liknande bevis.</li>
+</ul>
+<h3 id="implicit-derivering">Implicit derivering</h3>
+<p>Används för att finna lutningen i någon punkt på en ekvationsgraf.</p>
+<blockquote>
+<p>Exempel: <span class="arithmatex">\(x^3+y^3-3xy=0\)</span><br>
+Punkten <span class="arithmatex">\((3/2,3/2)\)</span> ligger på kurvan.<br>
+Vi söker en funktion för det kringliggande området. Vi deriverar båda led.</p>
+<div class="arithmatex">\[\frac d{dx}\left(x^3+y(x)^3-3xy(x)\right)=\frac d{dx}0\\\iff\frac d{dx}x^3+\frac d{dx}y(x)^3-\frac d{dx}3xy(x)=0\\\iff3x^2+3y(x)^2y'(x)-(3y(x)+3xy'(x))=0\\\iff(3y(x)^2-3x)y'(x)=3y(x)-3x^2\\\iff y'(x)=\frac{3y(x)-3x^2}{3y(x)^2-3x}\]</div>
+</blockquote>
+<p><strong>Tillämpning:</strong> Bevis av <span class="arithmatex">\(\frac d{dx}x^r=rx^{r-1}\)</span> för <span class="arithmatex">\(r\in\mathbb{Q}\)</span>.</p>
+<p>Låt <span class="arithmatex">\(y=x^{m/n}\implies y^n=x^m\)</span></p>
+<p>Implicit derivering av detta m.a.p. <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[\frac d{dx}y^n=\frac d{dx}x^m\implies ny^{n-1}y'=mx^{m-1}\\\iff y'=\frac{mx^{m-1}}{ny^{n-1}}=...=\frac mnx^{m/n-1}=rx^{r-1}\]</div>
+<h3 id="linjara-approximationer">Linjära approximationer</h3>
+<p>Om <span class="arithmatex">\(f(x)\approx f(x_0)+f'(x_0)(x-x_0)\)</span> om <span class="arithmatex">\(x\approx x_0\)</span>.</p>
+<h2 id="forelasning-6">Föreläsning 6</h2>
+<h3 id="primitiva-funktioner">Primitiva funktioner</h3>
+<p><em>Exempel:</em>
+<span class="arithmatex">\(F(x)=x^3+C\)</span> är en primitiv funktion till <span class="arithmatex">\(f(x)=3x^2\)</span> eftersom <span class="arithmatex">\(\frac d{dx}(x^3+C)=3x^2\)</span>.</p>
+<blockquote>
+<p><strong>Sats:</strong>
+<span class="arithmatex">\(F\)</span> och <span class="arithmatex">\(G\)</span> är båda primitiva funktioner till samma funktion på ett intervall <span class="arithmatex">\(\iff F(x)=G(x)+C\)</span> på samma intervall (<span class="arithmatex">\(C\)</span> konstant)</p>
+<p><strong>Definition</strong>:<br>
+Den <strong>obestämda integralen</strong> till <span class="arithmatex">\(f\)</span> på ett intervall:</p>
+<div class="arithmatex">\[\int{f(x)dx}=F(x)+C\]</div>
+<p>Detta betecknar den <em>allmänna primitiva funktionen</em> till <span class="arithmatex">\(f\)</span> på intervallet.</p>
+</blockquote>
+<h3 id="inverterbara-funktioner">Inverterbara funktioner</h3>
+<blockquote>
+<p><strong>Definition:</strong><br>
+En funktion <span class="arithmatex">\(f:\mathcal{D}_f\rarr \mathcal{R}_f\)</span> är <strong>inverterbar</strong> om det finns en funktion <span class="arithmatex">\(f^{-1}:\mathcal{R}_f\rarr \mathcal{D}_f\)</span> sådan att</p>
+<div class="arithmatex">\[g\circ f(x)=x\]</div>
+<p>för alla <span class="arithmatex">\(x\in \mathcal{D}_f\)</span>.</p>
+<p><strong>Definitioner:</strong>
+En funktion <span class="arithmatex">\(f:X\rarr Y\)</span> är</p>
+<ul>
+<li><em>Injektiv (ett-till-ett) omm</em> <span class="arithmatex">\(x_1\neq x_2\iff f(x_1)\neq f(x_2)\)</span></li>
+<li><em>Surjektiv omm</em> <span class="arithmatex">\(Y=\mathcal{R}_f\)</span> (<em>dvs. omm det för alla</em> <span class="arithmatex">\(y\in Y\)</span> <em>finns</em> <span class="arithmatex">\(x\in X\)</span> <em>så att</em> <span class="arithmatex">\(f(x)=y\)</span>)</li>
+</ul>
+</blockquote>
+<p>Generellt villkor för inverterbarhet:</p>
+<blockquote>
+<p>En funktion <span class="arithmatex">\(f:X\rarr Y\)</span> är inverterbar omm den är bijektiv (injektiv och surjektiv).</p>
+</blockquote>
+<p>Exempel:</p>
+<blockquote>
+<p>Låt <span class="arithmatex">\(h:[0,\pi]\rarr \mathbb{R},\ h(x)=cos(x)\)</span><br>
+<span class="arithmatex">\(h\)</span> är injektiv (observera definitionsmängden), men <strong>inte surjektiv</strong> eftersom <span class="arithmatex">\(\mathcal{R}_h=[-1,1]\neq \mathbb{R}\)</span></p>
+<p><strong>Sats:</strong><br>
+En kontinuerlig funktion <span class="arithmatex">\(f\)</span> är inverterbar på ett intervall omm <span class="arithmatex">\(f\)</span> är <em>strängt monoton</em> (strängt växande eller strängt avtagande) på samma intervall.<br>
+<em>(inversen går dock inte alltid att uttrycka med elementära funktioner)</em></p>
+</blockquote>
+<p>Observera att <span class="arithmatex">\(g(x)=\frac 1x\)</span> är inverterbar trots att den inte är monoton på <span class="arithmatex">\(\mathcal{D}_g\)</span>. Satsen ovan går inte att tillämpa på definitionsmängden, eftersom den inte är ett intervall.</p>
+<h4 id="inversens-graf">Inversens graf</h4>
+<p>Punkten <span class="arithmatex">\((a,b)\)</span> ligger på grafen <span class="arithmatex">\(y=f(x)\)</span>
+<span class="arithmatex">\(\iff b=f(a)\\\iff a=f^{-1}(b)\\\iff\)</span> punkten <span class="arithmatex">\((b,a)\)</span> ligger på grafen <span class="arithmatex">\(y=f^{-1}(x)\)</span></p>
+<blockquote>
+<p>Grafen till <span class="arithmatex">\(y=f^{-1}(x)\)</span> fås genom att spegla <span class="arithmatex">\(y=f(x)\)</span> i linjen <span class="arithmatex">\(y=x\)</span>.</p>
+</blockquote>
+<h4 id="inversens-derivata">Inversens derivata</h4>
+<p>Derivering av VL &amp; HL i <span class="arithmatex">\(f(f^{-1}(x))=x\)</span> ger:</p>
+<div class="arithmatex">\[\frac d{dx}f(f^{-1}(x))=f'(f^{-1}(x))\cdot \frac d{dx}f^{-1}(x)=1\\\iff \frac d{dx}f^{-1}(x)=\frac 1{f'(f^{-1}(x))}\]</div>
+<h2 id="forelasning-8">Föreläsning 8</h2>
+<h3 id="arcusfunktioner">Arcusfunktioner</h3>
+<p>Funktionen <span class="arithmatex">\(f(x)=\sin(x)\)</span> är <strong>inte inverterbar</strong> eftersom den inte är injektiv.</p>
+<p>För att definiera en invers begränsar vi definitionsmängen:</p>
+<blockquote>
+<p><strong>Definition:</strong></p>
+<p>Låt <span class="arithmatex">\(\text{Sin}(x)=\sin(x)\)</span> och <span class="arithmatex">\(\mathcal{D_{\text{Sin}}}=[-\pi/2,\pi/2]\)</span>. Denna funktion är bijektiv och således inverterbar.</p>
+<p>Inversen betecknas <span class="arithmatex">\(\arcsin(x),\ x\in[-1,1]\)</span></p>
+</blockquote>
+<h3 id="arcusfunktionernas-derivator">Arcusfunktionernas derivator</h3>
+<div class="arithmatex">\[\frac{d}{dx}\arcsin x=\frac{1}{\sqrt{1-x^2}}\]</div>
+<div class="arithmatex">\[\frac{d}{dx}\arccos x=-\frac{1}{\sqrt{1-x^2}}\]</div>
+<div class="arithmatex">\[\frac{d}{dx}\arctan x=\frac{1}{1+x^2}\]</div>
+<h3 id="forsta-ordningens-linjara-de">Första ordningens linjära DE</h3>
+<h4 id="homogena">Homogena</h4>
+<blockquote>
+<p><strong>Allmän form:</strong></p>
+<div class="arithmatex">\[k\cdot f(x)+\frac{d}{dx}f(x)=0\]</div>
+<p><strong>Lösning:</strong> <span class="arithmatex">\(f(x)=Ce^{-kx}\)</span></p>
+</blockquote>
+<h3 id="andra-ordningens-linjara-de">Andra ordningens linjära DE</h3>
+<h4 id="homogen-h">Homogen (H)</h4>
+<blockquote>
+<p><strong>Allmän form:</strong></p>
+<div class="arithmatex">\[ay''+by'+cy=0\]</div>
+<p><strong>Lösning:</strong></p>
+<p>Ansats: <span class="arithmatex">\(y=e^{rt}\)</span></p>
+<p>Detta ger oss: <span class="arithmatex">\(e^{rt}(ar^2+br+c)=0\)</span> (<strong>karakteristisk ekvation</strong>)</p>
+<p><strong>Tre fall:</strong></p>
+<ol>
+<li>Två olika reella rötter <span class="arithmatex">\(r_1,\ r_2\iff y_h=C_1e^{r_1t}+C_2e^{r_2t}\)</span></li>
+<li>En reell rot <span class="arithmatex">\(r\iff y_h=e^{rt}(C_1+tC_2)\)</span></li>
+<li>Komplexa rötter <span class="arithmatex">\(r=\alpha\pm i\beta\)</span></li>
+</ol>
+<div class="arithmatex">\[y_h=C_1e^{r_1t}+C_2e^{r_2t}
+\\=C_1e^{(\alpha+i\beta)t}+C_2e^{(\alpha-i\beta)t}
+\\=e^{\alpha t}(C_1(\cos(\beta t)+i\sin(\beta t))+C_2(\cos(\beta t)-i\sin(\beta t)))
+\\=e^{\alpha t}((C_1+C_2)\cos(\beta t)+(C_1-C_2)i\sin(\beta t))\]</div>
+<p>Vi låter <span class="arithmatex">\(C_1=\frac{A+Bi}2\)</span> och <span class="arithmatex">\(C_2=-\frac{A-Bi}2\)</span>, vilket ger</p>
+<div class="arithmatex">\[y_h=e^{\alpha t}((\frac{A+Bi}2-\frac{A-Bi}2)\cos(\beta t)+(\frac{A+Bi}2+\frac{A-Bi}2)i\sin(\beta t))\\\ \\=e^{\alpha t}(A\cos(\beta t)+B\sin(\beta t))\]</div>
+<p>där <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är reella konstanter.</p>
+</blockquote>
+<h4 id="inhomogen-ih">Inhomogen (IH)</h4>
+<blockquote>
+<p><strong>Sats 1:</strong></p>
+<p>Om <span class="arithmatex">\(y_1\)</span> är en lösning till (IH) och <span class="arithmatex">\(y_h\)</span> en lösning till (H) är också
+<span class="arithmatex">\(y_2=y_1+y_h\)</span> <em>en lösning</em> till (IH).</p>
+<p><strong>Sats 2:</strong></p>
+<p>Om <span class="arithmatex">\(y_h\)</span> är den allmänna lösningen till (H) och <span class="arithmatex">\(y_p\)</span> är <em>någon lösning</em> till (IH), ges <em>den allmänna lösningen</em> till (IH) av <span class="arithmatex">\(y_a=y_h+y_p\)</span>.</p>
+</blockquote>
+<p>Jämf. linjära ekvationssystem.</p>
+<blockquote>
+<p><strong>Allmän form:</strong></p>
+<div class="arithmatex">\[k\cdot f(x)+\frac{d}{dx}f(x)+\frac{d^2}{dx^2}f(x)=g(x)\]</div>
+<p><strong>Homogen lösning:</strong> Se ovan.</p>
+<p><strong>Partikulärlösning:</strong> Beror på <span class="arithmatex">\(g(x)\)</span>.</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(\bold{g(x)}\)</span></th>
+<th>Partikulärlösning (ansats)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Polynom av grad <span class="arithmatex">\(n\)</span></td>
+<td>Polynom av grad <span class="arithmatex">\(n\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sin(ax)\)</span></td>
+<td><span class="arithmatex">\(A\sin(ax)+B\sin(ax)\)</span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Kopierat till urklipp", "clipboard.copy": "Kopiera till urklipp", "search.result.more.one": "1 till p\u00e5 denna sida", "search.result.more.other": "# till p\u00e5 denna sida", "search.result.none": "Inga s\u00f6kresultat", "search.result.one": "1 s\u00f6kresultat", "search.result.other": "# s\u00f6kresultat", "search.result.placeholder": "Skriv s\u00f6kord", "search.result.term.missing": "Saknas", "select.version": "V\u00e4lj version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

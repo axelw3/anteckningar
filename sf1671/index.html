@@ -1,0 +1,1322 @@
+
+<!doctype html>
+<html lang="sv" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../sf1626/">
+      
+      
+        <link rel="next" href="../sf1935/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>SF1671 Matematik, baskurs, med diskret matematik 7,5 hp - Anteckningar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sf1671-matematik-baskurs-med-diskret-matematik-75-hp" class="md-skip">
+          Gå till innehållet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidhuvud">
+    <a href=".." title="Anteckningar" class="md-header__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anteckningar
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SF1671 Matematik, baskurs, med diskret matematik 7,5 hp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Sök" placeholder="Sök" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Sök">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Rensa" aria-label="Rensa" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialiserar sök
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Anteckningar" class="md-nav__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Anteckningar
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd1351/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DD1351 Logik för dataloger 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1625/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1625 Envariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1626/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1626 Flervariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SF1671 Matematik, baskurs, med diskret matematik 7,5 hp
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SF1671 Matematik, baskurs, med diskret matematik 7,5 hp
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kardinalitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kardinalitet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hilberts-hotell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hilberts hotell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cantors-diagonalargument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cantors diagonalargument
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mer-om-kardinalitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mer om kardinalitet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 15
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#satslogik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Satslogik
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bevis-av-satser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bevis av satser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sannolikhetslara" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sannolikhetslära
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 16
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kombinatorik-med-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kombinatorik (med upprepning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utan-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utan upprepning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomialtal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomialtal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomialsatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomialsatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binomialtal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomialtal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oordnat-utan-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oordnat, utan upprepning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multinomialsatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multinomialsatsen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kompositioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompositioner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 18
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oordnade-val-med-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oordnade val med upprepning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postfacksprincipen-dirichlets-ladprincip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postfacksprincipen (Dirichlets lådprincip)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principen-om-inklusionexklusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principen om inklusion/exklusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1935/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1935 Sannolikhetsteori och statistik med tillämpning inom maskininlärning 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kardinalitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kardinalitet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hilberts-hotell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hilberts hotell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cantors-diagonalargument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cantors diagonalargument
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mer-om-kardinalitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mer om kardinalitet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 15
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#satslogik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Satslogik
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bevis-av-satser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bevis av satser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sannolikhetslara" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sannolikhetslära
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 16
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kombinatorik-med-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kombinatorik (med upprepning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utan-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utan upprepning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomialtal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomialtal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomialsatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomialsatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binomialtal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomialtal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oordnat-utan-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oordnat, utan upprepning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multinomialsatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multinomialsatsen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kompositioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompositioner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 18
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oordnade-val-med-upprepning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oordnade val med upprepning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postfacksprincipen-dirichlets-ladprincip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postfacksprincipen (Dirichlets lådprincip)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principen-om-inklusionexklusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principen om inklusion/exklusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sf1671-matematik-baskurs-med-diskret-matematik-75-hp">SF1671 Matematik, baskurs, med diskret matematik 7,5 hp</h1>
+<table>
+<thead>
+<tr>
+<th>Tillfälleskod</th>
+<th>Termin(er)</th>
+<th>Period(er)</th>
+<th>Föreläsare</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>51354</td>
+<td>HT2023</td>
+<td>1</td>
+<td>Petter Brändén</td>
+</tr>
+</tbody>
+</table>
+<h2 id="forelasning-11">Föreläsning 11</h2>
+<h3 id="kardinalitet">Kardinalitet</h3>
+<p><strong>Definition:</strong> <span class="arithmatex">\(|X|=|Y|\)</span> omm det finns en bijektion <span class="arithmatex">\(f:X\rarr Y\)</span>.</p>
+<p>"Att ha samma kardinalitet" är en <em>ekvivalensrelation</em>, där ekvivalensklasserna kallas för <em>kardinaltal</em>.</p>
+<blockquote>
+<p><strong>Bevis:</strong>
+<span class="arithmatex">\(X\mathrel{R} Y \iff |X| = |Y|\iff\)</span> Finns en bijektion sådan att <span class="arithmatex">\(f:X\rarr Y\)</span>
+<strong>Reflexiv</strong> (<span class="arithmatex">\(X\mathrel{R}X\)</span> för alla <span class="arithmatex">\(X\)</span>): Vi söker en bijektion <span class="arithmatex">\(f:X\rarr X\)</span>. En sådan är <span class="arithmatex">\(f(x)=x\)</span> (identitetsfunktionen).
+<span class="arithmatex">\(\therefore\space\mathrel{R}\)</span> är reflexiv.
+<strong>Symmetrisk</strong> (<span class="arithmatex">\(X\mathrel{R}Y\implies Y\mathrel{R}X\)</span>): Antag VL sant, då finns en bijektion <span class="arithmatex">\(f:X\rarr Y\)</span>. Inversen av denna är <span class="arithmatex">\(f^{-1}:Y\rarr X\)</span>, vilket också är en bijektion, och därmed <span class="arithmatex">\(Y\mathrel{R} X\)</span>.
+<span class="arithmatex">\(\therefore\space\mathrel{R}\)</span> är symmetrisk.
+<strong>Transitiv</strong> (<span class="arithmatex">\(X\mathrel{R}Y\text{ och }Y\mathrel{R}Z\iff X\mathrel{R}Z\)</span>): Visas lättas med en figur. Vi får att HL är sant omm VL.</p>
+</blockquote>
+<p>Med detta kan vi visa att <em>alla öppna intervall av reella tal har samma kardinalitet</em>:
+1. <span class="arithmatex">\(|(0,1)| = |(1,\infin)|\)</span>, eftersom <span class="arithmatex">\(f(x)=\frac{1}x\)</span> är en bijektion
+2. Om <span class="arithmatex">\(a\in\mathbb{R}\)</span> så är <span class="arithmatex">\(|(0,\infin)|=|(a,\infin)|\)</span>, eftersom <span class="arithmatex">\(f(x)=x+a\)</span> är en bijektion.
+3. Om <span class="arithmatex">\(a\lt b\)</span> så är <span class="arithmatex">\(|(0,1)|=|(a,b)|\)</span>, eftersom <span class="arithmatex">\(f(x)=a+(b-a)x\)</span> är en bijektion.
+4. <span class="arithmatex">\(\mathbb{R}=|(0,\infin)|\)</span> eftersom <span class="arithmatex">\(f(x)=e^{x}\)</span> är en bijektion.</p>
+<h3 id="hilberts-hotell">Hilberts hotell</h3>
+<p>Hilberts hotell har oändligt många rum <span class="arithmatex">\(\{0,1,2,3,...\}\)</span>. När du ska checka in meddelar de att alla rum är upptagna. Hur kan det lösas?</p>
+<blockquote>
+<p><strong>Lösning:</strong> Vi flyttar varje gäst ett steg, så att rum 0 blir ledigt: <span class="arithmatex">\(f:\{0,1,2,3,...\}\rarr\{1,2,3,4,...\}\)</span>
+<span class="arithmatex">\(f(x)=x+1\)</span> är en bijektion, vilket ger:
+<span class="arithmatex">\(|\{0,1,2,3,...\}|=|\mathbb{N}|=|\mathbb{Z_+}|=|\{1,2,3,...\}|=\aleph_0\)</span>
+<span class="arithmatex">\(\aleph_0\)</span> ("alef-noll") och är kardinaltalet för alla uppräkneligt oändliga mängder.</p>
+</blockquote>
+<p>Vi visar att <span class="arithmatex">\(|(0,1)|=|[0,1)|\)</span>:</p>
+<blockquote>
+<p><strong>Bevis:</strong> Tag en följd <span class="arithmatex">\(a_0,a_1,a_2,a_3,...\in[0,1)\)</span>
+Antag en funktion <span class="arithmatex">\(f:[0,1)\rarr(0,1)\)</span> och att <span class="arithmatex">\(f(a_i)=a_{i+1}\)</span> om <span class="arithmatex">\(x=a_i\)</span>, i övriga fall <span class="arithmatex">\(f(x)=x\)</span>.
+Inversen blir <span class="arithmatex">\(f^{-1}(a_i)=a_{i-1}\)</span> om <span class="arithmatex">\(x=a_i\)</span>, i övriga fall <span class="arithmatex">\(f^{-1}(x)=x\)</span>.
+Funktionen är alltså en bijektion.</p>
+</blockquote>
+<p>Med samma princip får vi att *alla intervall, förutom <span class="arithmatex">\([a,a]\)</span>, har samma kardinalitet som <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<blockquote>
+<p>En mängd <span class="arithmatex">\(X\)</span> är <em>uppräkneligt oändlig</em> om <span class="arithmatex">\(|X|=|\mathbb{Z_+}|\iff\)</span>finns en bijektion <span class="arithmatex">\(f:X\rarr\mathbb{Z_+}\)</span>.</p>
+</blockquote>
+<h3 id="cantors-diagonalargument">Cantors diagonalargument</h3>
+<blockquote>
+<p><strong>Sats:</strong> Om <span class="arithmatex">\(A_1,A_2,...\)</span> är ändliga eller uppräkneligt oändliga, så är <span class="arithmatex">\(A=A_1\cup A_2\cup ...\)</span> också ändlig eller uppräkneligt oändlig.
+<strong>Bevis:</strong> Vi vill hitta en bijektion <span class="arithmatex">\(f:\mathbb{Z_+}\rarr A\)</span>
+Vi kan rita upp en tabell så att elementen i <span class="arithmatex">\(A_i\)</span> hamnar på rad <span class="arithmatex">\(i\)</span>.
+Det går nu att koppla samman "samtliga" element genom att dra en pil från övre vänstra hörnet till elementet till höger, och därefter diagonalt nedåt och uppåt, om vartannat.
+<strong>Obs!</strong> Vi måste hoppa över tal som redan har räknats --- annars ej bijektion!</p>
+</blockquote>
+<p>Med hjälp av detta kan vi visa att <span class="arithmatex">\(\mathbb{Q}\)</span> är uppräkneligt oändlig, dvs. att <span class="arithmatex">\(|\mathbb{Q}|=\aleph_0\)</span>:</p>
+<blockquote>
+<p><span class="arithmatex">\(A_i=\{\frac{x}{i}|x\in\mathbb{Z}\}=\text{"alla rationella tal med nämnare \it{i}"}\)</span>
+<span class="arithmatex">\(\mathbb{Q}=A_1\cup A_2\cup ...\)</span>
+Enligt Cantors diagonalargument är <span class="arithmatex">\(|\mathbb{Q}|=\aleph_0\)</span>.</p>
+</blockquote>
+<h3 id="mer-om-kardinalitet">Mer om kardinalitet</h3>
+<blockquote>
+<p><strong>Schröder-Bernsteins sats</strong>
+Antag två injektioner <span class="arithmatex">\(f:X\rarr Y\)</span> och <span class="arithmatex">\(g:Y\rarr X\)</span>. Då är <span class="arithmatex">\(|X|=|Y|\)</span>.
+<strong><em>Följdsats A:</em></strong> Om <span class="arithmatex">\(A\subseteq B\subseteq C\)</span> och <span class="arithmatex">\(|A|=|C|\)</span>, så är <span class="arithmatex">\(|A|=|B|=|C|\)</span>.
+<strong><em>Följdsats B:</em></strong> Varje intervall (förutom <span class="arithmatex">\([a,a]\)</span>) har samma kardinalitet som <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+</blockquote>
+<p><strong>Sats:</strong> <span class="arithmatex">\(|\mathcal{P}(\mathbb{Z_+})|=|\mathbb{R}|\)</span></p>
+<blockquote>
+<p><span class="arithmatex">\(|\mathbb{R}|\)</span> kallas för kontinuumet (<em>eng.</em> continuum)</p>
+<p><strong>Bevis:</strong>
+VL ger att <span class="arithmatex">\(\mathcal{P}(\mathbb{Z_+})=\{A|A\subseteq Z_+\}\)</span>
+Vi använder Schröder-Bernsteins sats, dvs. vi vill hitta injektioner:
+<span class="arithmatex">\(f:[0,1)\rarr\mathcal{P}(\mathbb{Z_+})\)</span> och <span class="arithmatex">\(g:\mathcal{P}(\mathbb{Z_+})\rarr[0,1)\)</span>
+Alla <span class="arithmatex">\(x\in[0,1)\)</span> kan skrivas på binär form:
+<span class="arithmatex">\(x=0,a_1a_2a_3a_4...\)</span> där <span class="arithmatex">\(a_i=0\text{ eller }1\)</span>
+<em>T.ex. <span class="arithmatex">\(x=0,0010000111001...\)</span></em>
+<strong>Obs!</strong> För att få unikhet så skippar vi tal som slutar på oändlig följd av 1:or. Jämför: <span class="arithmatex">\(0,999...=1\)</span>
+<strong><em>Steg 1:</em></strong> Vi definierar <span class="arithmatex">\(f(x)=\{i|a_i=1\}\)</span>, vilket ger <span class="arithmatex">\(f(0,11010001000...)=\{1,2,4,8\}\)</span>.
+Detta är en injektion eftersom "olika går på olika".
+<strong><em>Steg 2:</em></strong> Vi definierar <span class="arithmatex">\(g(A)=0,a_1a_2a_3a_4...\)</span> där <span class="arithmatex">\(a_i=\{1\text{ om }i\in A\text{ eller }0\text{ om }i\notin A\}\)</span>
+Detta är också en injektion.
+<strong><em>V.S.B.</em></strong></p>
+</blockquote>
+<h2 id="forelasning-15">Föreläsning 15</h2>
+<h3 id="satslogik">Satslogik</h3>
+<blockquote>
+<p><strong>Definition:</strong> En sats är ett påstående som kan vara sann eller falsk.</p>
+</blockquote>
+<p>Nya satser bildas med operationer:
+- <span class="arithmatex">\(p\lor q\)</span> är sann om <em>minst en</em> av <span class="arithmatex">\(p\)</span> och <span class="arithmatex">\(q\)</span> är sanna.
+- <span class="arithmatex">\(p\land q\)</span> är sann om <em>både</em> <span class="arithmatex">\(p\)</span> och <span class="arithmatex">\(q\)</span> är sanna.
+- <span class="arithmatex">\(p\rarr q\)</span> "om <span class="arithmatex">\(p\)</span> är sann, så måste <span class="arithmatex">\(q\)</span> också vara sann".
+- <span class="arithmatex">\(p\lrarr q\)</span> är sann om <span class="arithmatex">\(p = q\)</span>.
+- <span class="arithmatex">\(\lnot p\)</span> är sann om <span class="arithmatex">\(p\)</span> är falsk.</p>
+<p>En satsoperation kan visas med en sanningstabell:
+|<span class="arithmatex">\(p\)</span>|<span class="arithmatex">\(q\)</span>|<span class="arithmatex">\(p\rarr q\)</span>|
+|-|-|-|
+|0|0|1|
+|0|1|1|
+|1|0|0|
+|1|1|1|</p>
+<p>En sats är <em>sammansatt</em> om den är uppbyggd av andra satser genom <span class="arithmatex">\(\lor\)</span>, <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\rarr\)</span>, <span class="arithmatex">\(\lrarr\)</span>, <span class="arithmatex">\(\lnot\)</span>. Icke-sammansatta satser kallas för <em>atomära satser</em>.</p>
+<p>En sammansatt sats kan ses som en funktion <span class="arithmatex">\(f: \{0,1\}^n\rarr\{0,1\}\)</span>.
+En sammansatt sats <span class="arithmatex">\(S\)</span> kan beskrivas med hjälp av atomära satser <span class="arithmatex">\(p_1,\dots,p_n\)</span>:
+<span class="arithmatex">\(S(p_1,p_2,\dots,p_n)=0\text{ eller }1\)</span></p>
+<blockquote>
+<p><strong>Sats:</strong> Varje funktion <span class="arithmatex">\(f:\{0,1\}^n\rarr \{0,1\}\)</span> kan representeras av en sammansatt sats som endast använder <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\lor\)</span> och <span class="arithmatex">\(\lnot\)</span>.
+<strong>Bevis:</strong>
+Vi har <span class="arithmatex">\(\{0,1\}^n=\{0,1\}\times\dots\times\{0,1\}=\{(p_1,\dots,p_n)|p_i=0,1\text{ för alla }i\}\)</span>
+Detta ger t.ex.
+<span class="arithmatex">\(\{0,1\}^2=\{(0,0),(0,1),(1,0),(1,1)\}\)</span>
+<strong><em>Bevis med induktion</em></strong>
+<em>Basfall:</em> <span class="arithmatex">\(n=1\)</span>, <span class="arithmatex">\(f:\{0,1\}\rarr\{0,1\}\)</span>
+Fyra möjligheter (<span class="arithmatex">\(f_1,f_2,f_3,f_4\)</span>): Alla kan skrivas med operatorerna <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\lor\)</span> och <span class="arithmatex">\(\lnot\)</span>.
+|<span class="arithmatex">\(p_1\)</span>|<span class="arithmatex">\(f_1(p_1)\\=p_1\land(\lnot p_1)\)</span>|<span class="arithmatex">\(f_2(p_1)\\=p_1\lor p_1\)</span>|<span class="arithmatex">\(f_3(p_1)\\=\lnot p_1\)</span>|<span class="arithmatex">\(f_4(p_1)\\=p_1\lor(\lnot p_1)\)</span>
+|-|-|-|-|-|
+|0|0|0|1|1|
+|1|0|1|0|1|
+<em>Induktionsantagande:</em> Antar att påståendet är sant för <span class="arithmatex">\(n\)</span>, det vill säga att det finns en sats <span class="arithmatex">\(S(p_1,\dots,p_n)=f(p_1,\dots,p_n)\)</span>
+<em>Induktionssteg:</em> Visa att påståendet då även är sant för <span class="arithmatex">\(n+1\)</span>.
+Vi tar en godtycklig funktion <span class="arithmatex">\(f:\{0,1\}^{n+1}\rarr\{0,1\}\)</span>.
+Vi bildar sedan två funktioner <span class="arithmatex">\(g\)</span> och <span class="arithmatex">\(h\)</span>:
+<span class="arithmatex">\(g(p_1,\dots,p_n\}=f(p_1,\dots,p_n,1)\)</span> och
+<span class="arithmatex">\(h(p_1,\dots,p_n\}=f(p_1,\dots,p_n,0)\)</span>
+Enligt induktionsantagandet kan <span class="arithmatex">\(g\)</span> och <span class="arithmatex">\(h\)</span> även beskrivas av satser:
+<span class="arithmatex">\(g(p_1,\dots,p_n)=S_1(p_1,\dots,p_n)\)</span>
+<span class="arithmatex">\(h(p_1,\dots,p_n)=S_2(p_1,\dots,p_n)\)</span>
+Då är
+<span class="arithmatex">\(f(p_1,\dots,p_n,p_{n+1})=(p_{n+1}\land S_1(p_1,\dots,p_n))\cup((\lnot p_{n+1})\land S_2(p_1,\dots,p_n))\)</span></p>
+</blockquote>
+<p><strong>Tautologi:</strong> En sammansatt sats som alltid är sann.</p>
+<h3 id="bevis-av-satser">Bevis av satser</h3>
+<ul>
+<li><strong>Implikation:</strong> Vi vill visa <span class="arithmatex">\(p\implies q\)</span>.<ul>
+<li>Direkt: Anta <span class="arithmatex">\(p\)</span> och härled <span class="arithmatex">\(q\)</span></li>
+<li>Kontrapositivt: Anta <span class="arithmatex">\(\lnot q\)</span> och härled <span class="arithmatex">\(\lnot p\)</span></li>
+</ul>
+</li>
+<li><strong>Disjunktioner:</strong> Vi vill visa <span class="arithmatex">\(p\lor q\)</span>.<ul>
+<li>Vi vet <span class="arithmatex">\((p\lor q)\lrarr((\lnot p)\rarr q)\)</span>. Anta att <span class="arithmatex">\(p=0\)</span> och visa att <span class="arithmatex">\(q\)</span> då måste vara sann.</li>
+<li>Motsägelsebevis: Anta <span class="arithmatex">\(\lnot p\land\lnot q\)</span> och härled något absurt.</li>
+</ul>
+</li>
+<li><strong>Ekvivalens:</strong><ul>
+<li>Vi vet <span class="arithmatex">\((p\lrarr q)\iff((p\rarr q)\land(q\rarr p)\)</span>. Visa att båda implikationerna gäller.</li>
+</ul>
+</li>
+</ul>
+<h3 id="sannolikhetslara">Sannolikhetslära</h3>
+<p><span class="arithmatex">\(\Omega\)</span> är <em>utfallsrummet</em>, en ändlig mängd med alla möjliga utfall.
+<strong>Händelse:</strong> En delmängd <span class="arithmatex">\(A\)</span> till <span class="arithmatex">\(\Omega\)</span>.
+<strong>Sannolikhet:</strong> <span class="arithmatex">\(P(A)=\frac{|A|}{|\Omega|}\)</span></p>
+<p><strong>Additionsprincipen:</strong> Om två händelser <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är <em>disjunkta</em> (<span class="arithmatex">\(A\cap B=\empty\)</span>, dvs. <em>inte kan inträffa samtidigt</em>), så är <span class="arithmatex">\(P(A\text{ eller }B)=P(A\cup B)=\frac{|A\cup B|}{|\Omega|}=\frac{|A|+|B|}{|\Omega|}=P(A)+P(B)\)</span>.</p>
+<p><strong>Betingad sannolikhet:</strong> <span class="arithmatex">\(P(A\text{ givet }B)=P(A|B)=\frac{|A\cap B|}{|B|}\)</span></p>
+<blockquote>
+<p><strong>Exempel:</strong> <em>Anta att vi kastar två tärningar och ett orakel informerar att minst en tärning kommer att vara udda (händelse <span class="arithmatex">\(B\)</span>). Vad är sannolikheten att vi får två ettor (händelse <span class="arithmatex">\(A\)</span>)?</em>
+Vi vet att <span class="arithmatex">\(B\)</span> kommer att inträffa.
+<span class="arithmatex">\(|B|=|\{(a,b)|a\text{ och/eller }b\text{ är udda}\}|=6^2-|\{(a,b)|\text{båda är jämna}\}|=36-3^2=27\)</span>
+<span class="arithmatex">\(|A\cap B|=1\)</span> (<em>endast fallet <span class="arithmatex">\((1,1)\)</span></em>)
+<span class="arithmatex">\(P(A\cap B)=\frac{|A\cap B|}{|B|}=\frac{1}{27}\)</span></p>
+</blockquote>
+<p><strong>Oberoende händelser:</strong> <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är oberoende om sannolikheten för att den ena inträffar är <em>oberoende av om den andra inträffar</em>. Dvs. <span class="arithmatex">\(P(A|B)=P(A|B^\complement)\)</span></p>
+<p><strong>Multiplikationsprincipen:</strong> För oberoende händelser är <span class="arithmatex">\(P(A\land B)=P(A)\cdot P(B)\)</span></p>
+<h2 id="forelasning-16">Föreläsning 16</h2>
+<h3 id="kombinatorik-med-upprepning">Kombinatorik (med upprepning)</h3>
+<p>Antag att vi ska utföra två deluppgifter, <span class="arithmatex">\(X\)</span> och <span class="arithmatex">\(Y\)</span>, och att <span class="arithmatex">\(X\)</span> kan göras på <span class="arithmatex">\(x\)</span> sätt, <span class="arithmatex">\(Y\)</span> på <span class="arithmatex">\(y\)</span> sätt. Den sammansatta uppgiften kan göras på <span class="arithmatex">\(|X\times Y|=|X|\times |Y|=x\cdot y\)</span> sätt.</p>
+<blockquote>
+<p><strong>Exempel:</strong> <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är ändliga mängder. Hur många funktioner <span class="arithmatex">\(f:A\rarr B\)</span> finns det?
+För varje <span class="arithmatex">\(a\in A\)</span> finns det <span class="arithmatex">\(|B|\)</span> möjliga värden <span class="arithmatex">\(b\in B\)</span>.
+Olika <span class="arithmatex">\(a\)</span> kan ge samma <span class="arithmatex">\(b\)</span> (dock inte tvärt om).
+<span class="arithmatex">\(\therefore\)</span> Upprepning tillåts.
+<strong>Svar:</strong> Det finns <span class="arithmatex">\(|B|^{|A|}\)</span> funktioner <span class="arithmatex">\(f\)</span>.</p>
+</blockquote>
+<h3 id="utan-upprepning">Utan upprepning</h3>
+<p>En följd <span class="arithmatex">\(a_1,a_2,\dots,a_n\)</span> kallas för en <em>permutation</em> av mängden <span class="arithmatex">\(\{a_1,a_2,\dots,a_n\}\)</span>.</p>
+<blockquote>
+<p><strong>Exempel:</strong> <em>På hur många sätt kan <span class="arithmatex">\(n\)</span> personer bilda en kö?</em>
+Varje kö kan ses som en permutation <span class="arithmatex">\(a_1,\dots,n\)</span> av mängden av alla personer, <span class="arithmatex">\(\{1,2,\dots,n\}\)</span>.
+Vi kan välja <span class="arithmatex">\(a_1\)</span> på <span class="arithmatex">\(n\)</span> olika sätt.
+Vi kan välja <span class="arithmatex">\(a_2\)</span> på <span class="arithmatex">\(n-1\)</span> olika sätt (<span class="arithmatex">\(a_1\)</span> är upptagen)
+<span class="arithmatex">\(\cdots\)</span>
+Vi kan välja <span class="arithmatex">\(a_n\)</span> på <span class="arithmatex">\(1\)</span> sätt (alla andra är upptagna)
+<strong>Svar:</strong> <span class="arithmatex">\(n(n-1)\cdots3\cdot2\cdot1=n!\)</span> (<em><span class="arithmatex">\(n\)</span>-fakultet</em>)</p>
+</blockquote>
+<p>Hur många köer med <span class="arithmatex">\(k\)</span> personer kan vi bilda ur totalt <span class="arithmatex">\(n\)</span> personer?
+<strong>Svar:</strong> Vi kan bilda <span class="arithmatex">\(\frac{n!}{(n-k)!}\)</span></p>
+<p>På motsvarande sätt kan vi skapa injektiva funktioner
+<span class="arithmatex">\(f:\{1,2,3,4,5\}\rarr\{1,2,3,4,5,6,7,8,9\}\)</span>
+på <span class="arithmatex">\(\frac{9!}{(9-5)!}=9\cdot8\cdot7\cdot6\cdot5\)</span> sätt.</p>
+<blockquote>
+<p><strong>Exempel:</strong> <em>Vad är sannolikheten att jag i poker får Imperial Royal Straight Flush på given?</em>
+<span class="arithmatex">\(A=\{\text{"hjärter 10, knekt, dam, kung och ess"}\}\)</span>
+<span class="arithmatex">\(\Omega=\{\text{alla möjliga givar med 5 kort}\}=\{T|T\subseteq\{1,2,\dots,52\}\land|T|=5\}\)</span>
+<span class="arithmatex">\(P=\frac1{|\Omega|}\)</span></p>
+</blockquote>
+<p>För att göra oordnade val utan upprepning använder vi <em>binomialtal</em>.</p>
+<h3 id="binomialtal">Binomialtal</h3>
+<p>Binomialtalet <span class="arithmatex">\(\binom{n}{k}\)</span> definieras som antalet delmängder av <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> av storlek <span class="arithmatex">\(k\)</span>.
+Detta gäller för <span class="arithmatex">\(0\leq k\leq n\)</span>, i andra fall <span class="arithmatex">\(\binom{n}{k}=0\)</span>.
+<span class="arithmatex">\(\binom{n}k=\frac{n!}{k!(n-k)!}\)</span></p>
+<blockquote>
+<p><strong>Bevis:</strong> En kö <span class="arithmatex">\(a_1,a_2,\dots,a_k\)</span> med element ur <span class="arithmatex">\(n\)</span> möjliga kan bildas på <span class="arithmatex">\(\frac{n!}{(n-k)!}\)</span> sätt.
+Vi kan också räkna antalet köer på följande sätt:
+(1) Vi väljer vilka som ska vara med i kön:<span class="arithmatex">\(\binom{n}{k}\)</span>
+(2) Vi bestämmer deras inbördes ordning: <span class="arithmatex">\(k!\)</span>
+<span class="arithmatex">\(\frac{n!}{(n-k)!}=\binom{n}k\cdot k!\)</span>
+<span class="arithmatex">\(\therefore\binom{n}k=\frac{n!}{k!(n-k)!}\)</span></p>
+</blockquote>
+<p><strong>Binomialtalens symmetri:</strong>
+<span class="arithmatex">\(\binom nk=\binom n{n-k}\)</span>, där <span class="arithmatex">\(0\leq k\leq n\)</span></p>
+<blockquote>
+<p><strong>Bevis:</strong>
+<em>Beteckningar:
+<span class="arithmatex">\([n]=\{1,2,3,\dots,n\}\)</span>
+<span class="arithmatex">\(\binom{[n]}k\)</span> är mängden av alla delmängder till <span class="arithmatex">\([n]\)</span> av storlek <span class="arithmatex">\(k\)</span></em>
+<span class="arithmatex">\(\therefore|\binom{[n]}k|=\binom nk\)</span>
+För att visa <span class="arithmatex">\(\binom nk=\binom n{n-k}\)</span> så kan vi hitta en bijektion <span class="arithmatex">\(f:\binom{[n]}k\rarr\binom{[n]}{n-k}\)</span>
+<strong>Svar:</strong> Vi finner <span class="arithmatex">\(f(S)=S^C=[n]\setminus S\)</span></p>
+</blockquote>
+<p><strong>Pascals triangel:</strong>
+|<span class="arithmatex">\(0\)</span>||||<span class="arithmatex">\(\binom00\)</span>||||
+|-|-|-|-|-|-|-|-|
+|<span class="arithmatex">\(1\)</span>|||<span class="arithmatex">\(\binom10\)</span>||<span class="arithmatex">\(\binom11\)</span>|||
+|<span class="arithmatex">\(2\)</span>||<span class="arithmatex">\(\binom20\)</span>||<span class="arithmatex">\(\binom21\)</span>||<span class="arithmatex">\(\binom22\)</span>||
+|<span class="arithmatex">\(3\)</span>|<span class="arithmatex">\(\binom30\)</span>||<span class="arithmatex">\(\binom31\)</span>||<span class="arithmatex">\(\binom32\)</span>||<span class="arithmatex">\(3\choose3\)</span>|</p>
+<p>För heltal <span class="arithmatex">\(0\leq k\leq n&gt;0\)</span> är <span class="arithmatex">\(\binom nk=\binom{n-1}k+\binom{n-1}{k-1}\)</span>.</p>
+<blockquote>
+<p><strong>Bevis:</strong>
+<span class="arithmatex">\(\binom{[n]}k=\binom{[n-1]}k\cup\{S\cup\{n\}|S\in\binom{[n-1]}{k-1}\}\)</span>
+Alla mängder t.h. innehåller <span class="arithmatex">\(n\)</span>, medan inga  t.h. gör det.
+<span class="arithmatex">\(\therefore\)</span> Unionen är disjunkt.
+Vi skriver om detta med kardinaliteter, enligt additionsprincipen:
+<span class="arithmatex">\(|\binom{[n]}k|=\binom{n-1}k+\binom{n-1}{k-1}\)</span></p>
+</blockquote>
+<h3 id="binomialsatsen">Binomialsatsen</h3>
+<p>För alla heltal <span class="arithmatex">\(n\geq 0\)</span> är
+<span class="arithmatex">\(<span class="arithmatex">\((1+x)^n=\sum_{k=0}^n \binom nk x^k\)</span>\)</span></p>
+<blockquote>
+<p><strong>Bevis (induktion):</strong>
+<em>Basfall:</em> <span class="arithmatex">\(n=0\)</span>
+<span class="arithmatex">\(\text{VL}_0=(1+x)^0=1\text{, HL}_0=\binom00 x^0=1\)</span>
+<em>Induktionsantagande:</em> Anta sant för <span class="arithmatex">\(n-1\)</span>.
+<em>Induktionssteg:</em> Bevisa för <span class="arithmatex">\(n\)</span>.
+<span class="arithmatex">\(\text{VL}_n=(1+x)^n=(1+x)(1+x)^{n-1}\\=\{\text{induktionsantagandet}\}\\=(1+x)(\sum_{k=0}^{n-1}\binom{n-1}k x^k)\\=\sum_{k=0}^{n-1}\binom{n-1}k x^k+\sum_{k=0}^{n-1}\binom{n-1}k x^{k+1}\\=\{\text{variabelsubstitution }j=k+1\}\\=\sum_{j=0}^{n-1}\binom{n-1}j x^j+\sum_{j=1}^n\binom{n-1}{j-1} x^j\\=\sum_{j=0}^{n}\binom{n-1}j x^j+\sum_{j=0}^n\binom{n-1}{j-1} x^j\\=\sum_{j=0}^{n}(\binom{n-1}j+\binom{n-1}{j-1}) x^j=\{\text{Pascal}\}\\=\sum_{j=0}^{n}\binom{n}{j} x^j=\sum_{k=0}^{n}\binom{n}{k} x^k\)</span>
+<span class="arithmatex">\(\therefore\)</span> Sant enligt induktionsprincipen.</p>
+</blockquote>
+<h2 id="forelasning-17">Föreläsning 17</h2>
+<h3 id="binomialtal_1">Binomialtal</h3>
+<p>Vi sätter in <span class="arithmatex">\(x=-1\)</span> i binomialsatsen: <span class="arithmatex">\((x+1)^n=((-1)+1)^n=0^n=0\)</span>
+Vi får då <span class="arithmatex">\(0=\sum_{k=0}^n\binom nk (-1)^k=1-\binom n1+\binom n2-\binom n3+\dots=(1+\binom n2+\binom n4+\dots)-(\binom n1+\binom n3+\dots)=\text{"antal delmängder av jämn storlek"}-\text{"antal delmängder av udda storlek"}=0\)</span>
+Vi kan visa detta:
+<span class="arithmatex">\(J_n=\{S|S\subseteq\{1,2,\dots,n\}\land|S|\text{ jämn}\}\)</span>
+<span class="arithmatex">\(U_n=\{S|S\subseteq\{1,2,\dots,n\}\land|S|\text{ udda}\}\)</span>
+Hitta en bijektion <span class="arithmatex">\(f:J_n\rarr U_n\)</span>:
+<span class="arithmatex">\(f(S)=\begin{cases}S\setminus\{1\}\text{, om }1\in S\\S\cup \{1\}\text{, om }1\notin S\end{cases}\)</span>
+En bijektion eftersom <span class="arithmatex">\(f(f(S))=S\)</span> för alla S.</p>
+<h3 id="oordnat-utan-upprepning">Oordnat, utan upprepning</h3>
+<blockquote>
+<p><strong>Exempel:</strong> <em>186 studenter ska ha övningar i 4 olika salar med 36, 42, 45 och 63 platser vardera. På hur många olika sätt kan studenterna fördelas?</em>
+(1) Välj vilka som ska sitta i sal 1: <span class="arithmatex">\(\binom{186}{36}\)</span>
+(2) Välj vilka som ska sitta i sal 2: <span class="arithmatex">\(\binom{186-36}{42}\)</span>
+(3) Välj vilka som ska sitta i sal 3: <span class="arithmatex">\(\binom{186-36-42}{45}\)</span>
+(4) Välj vilka som ska sitta i sal 4: <span class="arithmatex">\(\binom{63}{63}=1\)</span>
+Valen är oberoende, multiplikationsprincipen gäller:
+<strong>Svar:</strong> <span class="arithmatex">\(\binom{186}{36}\binom{186-36}{42}\binom{186-36-42}{45}\binom{63}{63}\)</span>
+Vi kan förenkla detta:
+<span class="arithmatex">\(\frac{186!}{36!(186-36)!}\frac{(186-36)!}{42!(186-36-42)!}\frac{(186-36-42)!}{45!(186-36-42-45)!}=\frac{186!}{36!\cdot42!\cdot45!\cdot63!}\)</span></p>
+</blockquote>
+<p><strong>Multinomialtal:</strong>
+Anta <span class="arithmatex">\(k_1+k_2+\cdots+k_m=n\)</span>.</p>
+<blockquote>
+<p><em>Multinomialtalet</em> <span class="arithmatex">\(\binom{n}{k_1,k_2,\dots,k_m}\)</span> <strong>antalet sätt att fördela talen <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> i <span class="arithmatex">\(m\)</span> stycken lådor så att låda <span class="arithmatex">\(x\)</span> får <span class="arithmatex">\(k_x\)</span> element.
+</strong>Sats:** <span class="arithmatex">\(\binom{n}{k_1,k_2,\dots,k_m}=\frac{n!}{k_1!k_2!\cdots k_m!}\)</span></p>
+<p><strong>Exempel:</strong> <em>Hur många olika ord kan man bilda av bokstäverna <span class="arithmatex">\(\text{MISSISSIPPI}\)</span>?</em>
+Vi antar positionerna <span class="arithmatex">\(\{1,2,\dots,11\}\)</span> och väljer vilka som ska varje bokstav.
+Bokstaven <span class="arithmatex">\(\text I\)</span> finns t.ex. 4 ggr, och "rymmer" därför 4 av positionerna. Osv.
+<strong>Svar:</strong> <span class="arithmatex">\(\binom{11}{4,1,2,4}=\frac{11!}{4!\cdot1!\cdot2!\cdot4!}\)</span></p>
+</blockquote>
+<p><strong>Ordnat val med upprepning:</strong></p>
+<blockquote>
+<p>Antalet sätt att ordna <span class="arithmatex">\(n\)</span> stycken objekt, där man har <span class="arithmatex">\(k_m\)</span> av <span class="arithmatex">\(m\)</span>:e slaget, är:
+<span class="arithmatex">\(<span class="arithmatex">\(\binom n{k_1,k_2,\dots,k_m}=\frac{n!}{k_1!\cdot k_2!\cdots k_m!}\)</span>\)</span></p>
+<p><strong>Exempel:</strong> <em>Hur många ord med 4 bokstäver kan man bilda ur <span class="arithmatex">\(\text{"STOLLE"}\)</span>?</em>
+Två fall:
+(1) Högst ett "L" förekommer. Vi väljer då 4 (utan upprepning): <span class="arithmatex">\(5\cdot4\cdot3\cdot2\)</span>
+(2) Exakt två "L" förekommer.
+(2.1) Välj plats för båda "L": <span class="arithmatex">\(\binom 42\)</span> (ordning ej viktigt här)
+(2.2) Välj 2 av <span class="arithmatex">\(\text{"STOE"}\)</span> (ordning viktigt): <span class="arithmatex">\(4\cdot3\)</span>
+<strong>Svar:</strong> <span class="arithmatex">\(5\cdot4\cdot3\cdot2+\binom 42\cdot4\cdot3\)</span></p>
+<p><strong>Exempel:</strong> <em>Låt <span class="arithmatex">\(\mathcal M\)</span> vara mängden av alla ord som kan bildas ur <span class="arithmatex">\(\text{"RAGGARGRANEN"}\)</span>.</em></p>
+<p><em>(a) Bestäm <span class="arithmatex">\(|\mathcal M|\)</span></em>.
+Vi har 3 st "A", 1 st "E", 3 st "G", 2 st "N" och 3 st "R".
+<strong>Svar:</strong> <span class="arithmatex">\(\binom{12}{3,1,3,2,3}=\frac{12!}{3!\cdot1!\cdot3!\cdot2!\cdot3!}\)</span>
+<em>(b)</em> Hur många ord i <span class="arithmatex">\(\mathcal M\)</span> innehåller <span class="arithmatex">\(\text{"GRENAR"}\)</span>?
+Vi har t.ex. "RAG<strong>GRENAR</strong>GAN".
+Ordet "GRENAR" kan finnas på 7 platser.
+För var och en av dessa alternativ väljer vi bokstav (AAGGNR) åt återstående 6 teckenpositioner: <span class="arithmatex">\(\binom{6}{2,2,1,1}=\frac{6!}{2\cdot2}=\frac{6!}4\)</span>
+<strong>Svar:</strong> <span class="arithmatex">\(7\cdot\frac{6!}4=\frac{7!}4\)</span> ord
+<em>(<span class="arithmatex">\({}\)</span>c) Hur många ord i <span class="arithmatex">\(\mathcal M\)</span></em> innehåller varken <span class="arithmatex">\(\text{GRENAR}\)</span> eller <span class="arithmatex">\(\text{NARRA}\)</span>?
+Vi har t.ex. "<strong>GRENARRA</strong>GGNA".
+<span class="arithmatex">\(S=\{\text{ord som innehåller "GRENAR"}\}\)</span>
+<span class="arithmatex">\(T=\{\text{ord som innehåller "NARRA"}\}\)</span>
+Vi söker:
+<span class="arithmatex">\(|\mathcal M\setminus(S\cup T)|=|\mathcal M|-|S\cup T|=|\mathcal M|-(|S|+|T|-|S\cap T|)=|\mathcal M|-|S|-|T|+|S\cap T|\)</span>
+<span class="arithmatex">\(|T|=8\binom{7}{3,1,1,1,1}=\frac{8\cdot7!}6\)</span>
+<span class="arithmatex">\(|S\cap T|\)</span> stycken innehåller "GRENARRA" (enda sättet för skapa båda orden samtidigt med givna bokstäver)
+<span class="arithmatex">\(|S\cap T|=5\binom{4}{2,1,1}=\frac{5\cdot4!}2\)</span>
+<strong>Svar:</strong> <span class="arithmatex">\(|\mathcal M|-|S|-|T|+|S\cap T|=\frac{12!}{2\cdot6^3}-\frac{7!}4-\frac{8\cdot7!}6+\frac{5\cdot4!}2\)</span> ord</p>
+</blockquote>
+<h3 id="multinomialsatsen">Multinomialsatsen</h3>
+<div class="arithmatex">\[(x_1+\dots+x_m)^n\\=\sum_{k_1+\dots+k_m=n}\binom n{k_1,k_2,\dots,k_m}x_1^{k_1}\cdots x_m^{k_m}$$
+T.ex.
+$$(x_1+x_2+x_3)^3\\=\binom 3{3,0,0}x_1^3+\binom 7{2,1,0}x_1^2x_2+\binom 3{1,1,1}x_1x_2x_3\\=x_1^3+\frac {3!}{2!}\cdot x_1^2x_2+3!\cdot x_1x_2x_3+\dots\\=x_1^3+3x_1^2x_2+6x_1x_2x_3+\dots\]</div>
+<blockquote>
+<p><strong>Exempel:</strong> <em>Vad är koefficienten framför <span class="arithmatex">\(x^3y^5z^{24}\)</span> i <span class="arithmatex">\((x+y+z^2)^{20}\)</span>?</em>
+Vi gör variabelbyte <span class="arithmatex">\(w=z^2\)</span>, vilket ger
+<span class="arithmatex">\((x+y+z^2)^{20}=(x+y+w)^{20}=\sum_{k_1,k_2,k_3}\binom{20}{k_1,k_2,k_3}x^{k_1}y^{k_2}w^{k_3}\)</span>
+Vi söker koefficienten framför <span class="arithmatex">\(x^3y^5z^{24}=x^3y^5w^{12}\)</span>.
+<span class="arithmatex">\(\therefore k_1=3,k_2=5,k_3=12\)</span>
+<strong>Svar:</strong> <span class="arithmatex">\(\binom{20}{3,5,12}=\frac{20!}{3!\cdot5!\cdot12!}\)</span></p>
+</blockquote>
+<h3 id="kompositioner">Kompositioner</h3>
+<blockquote>
+<p><strong>Exempel:</strong> <em>På hur många sätt kan man fördela <span class="arithmatex">\(n\)</span> identiska kulor i lådor <span class="arithmatex">\(1,2,\dots,k\)</span>, så att ingen låda blir tom?</em>
+Vi har <span class="arithmatex">\(n-1\)</span> möjliga "mellanrum": <span class="arithmatex">\(1|_{_1}2|_{_2}\cdots|_{_{n-1}}n\)</span>
+Vi vill ha <span class="arithmatex">\(k\)</span> lådor och väljer därför <span class="arithmatex">\(k-1\)</span> mellanrum:
+T.ex. <span class="arithmatex">\((1,2|_{_1}3,4,5|_{_2}\dots|_{_{k-1}}n)\)</span>
+Detta kallas för en <strong>komposition</strong> av <span class="arithmatex">\(n\)</span> element i <span class="arithmatex">\(k\)</span> delar.
+<strong>Svar:</strong> Vi kan fördela kulorna på <span class="arithmatex">\(\binom{n-1}{k-1}\)</span></p>
+</blockquote>
+<p>Ekvationen <span class="arithmatex">\(x_1+x_2+\cdots+x_k=n, x_i&gt;0\text{ för alla }i\)</span> har <span class="arithmatex">\(\binom{n-1}{k-1}\)</span> lösningar.</p>
+<p><strong>Om lådor får vara tomma?</strong>
+Vi antar <span class="arithmatex">\(y_i=\text{antalet kulor i låda }i\)</span>.
+Det ger ekvationen <span class="arithmatex">\(y_1+\cdots+y_k=n,\ y_i\geq0\)</span>.
+Substitution: <span class="arithmatex">\(x_i = y_i+1\)</span>
+<span class="arithmatex">\(x_1+x_2+\dots+x_k=(y_1+1)+\dots+(y_k+1)\\=y_1+\dots+y_k+k\\=n+k\)</span>
+<strong>Svar:</strong> <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span></p>
+<p><em>Man kan tänka att man räknar som tidigare, men att man tillför <span class="arithmatex">\(k\)</span> "tomma" element (ett för varje låda).</em></p>
+<h2 id="forelasning-18">Föreläsning 18</h2>
+<h3 id="oordnade-val-med-upprepning">Oordnade val med upprepning</h3>
+<p>En <strong>multimängd</strong> är en mängd där <em>upprepade element tillåts</em>.</p>
+<blockquote>
+<p><span class="arithmatex">\(\{2,3,3,2,4,6,4\}\neq\{2,3,4,6\}\)</span>
+<span class="arithmatex">\(\{2,3,3,2,4,6,4\}\)</span> har storleken <span class="arithmatex">\(7\)</span>.
+<em>Ordning har ingen betydelse, endast antalet är viktigt!</em></p>
+</blockquote>
+<p><em>Hur många multimängder av storlek <span class="arithmatex">\(n\)</span> med element från <span class="arithmatex">\(\{1,2,\dots,k\}\)</span> finns det?</em>
+Låt <span class="arithmatex">\(y_i\)</span> vara antalet element <span class="arithmatex">\(i\)</span> i en multimängd.
+<span class="arithmatex">\(y_1+y_2+\dots+y_k=n\)</span>
+Lösningen ges av <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span>.
+<strong>Svar:</strong> Det finns <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span> stycken.</p>
+<blockquote>
+<p><strong>Exempel:</strong> <em>Olga ska köpa lördagsgodis. I butiken finns 7 sorters godis och hon får välja exakt 15 godisar. På hur många sätt kan hon välja innehållet i godispåsen?</em>
+Godispåsen motsvarar en multimängd av storlek 15.
+Vi räknar kompositioner: <span class="arithmatex">\(n=15,\ k=7\)</span>
+<strong>Svar:</strong> På <span class="arithmatex">\(\binom{15+7-1}{7-1}=\binom{21}6\)</span> sätt.</p>
+<p><strong>Exempel:</strong> <em>Hur många heltalslösningar finns det till
+<span class="arithmatex">\(x_1+x_2+x_3+x_4\leq14\)</span>, där <span class="arithmatex">\(\begin{cases}x_1\geq-3\\x_2\geq2\\x_3\geq-5\\x_4\geq3\end{cases}\)</span>?</em>
+Vi vill skriva om ekvationen på en form som vi känner igen. Vi sätter <span class="arithmatex">\(x_5=\text{HL}-\text{VL}\)</span>. Detta ger:
+<span class="arithmatex">\(\iff x_1+x_2+x_3+x_4+x_5=14\)</span>
+Variabelsubstitutionen så att alla termer <span class="arithmatex">\(\geq0\)</span>:
+<span class="arithmatex">\(\begin{cases}y_1=x_1+3\\y_2=x_2-2\\y_3=x_3+5\\y_4=x_4-3\\y_5=x_5\end{cases}\)</span>
+<span class="arithmatex">\(\iff y_1+y_2+y_3+y_4+y_5=(x_1+3)+(x_2-2)+(x_3+5)+(x_4-3)+x_5\\=x_1+x_2+x_3+x_4+x_5+3=14+3=17\)</span>
+<strong>Svar:</strong> Denna kan lösas på <span class="arithmatex">\(\binom{17+5-1}{5-1}=\binom{21}4\)</span> sätt!</p>
+</blockquote>
+<h3 id="postfacksprincipen-dirichlets-ladprincip">Postfacksprincipen (Dirichlets lådprincip)</h3>
+<blockquote>
+<p>Om fler än <span class="arithmatex">\(k\)</span> objekt ska objekt i <span class="arithmatex">\(k\)</span> lådor, så måste minst en låda innehålla <span class="arithmatex">\(\geq2\)</span> element.
+<em>Alt: Om <span class="arithmatex">\(X,Y\)</span> är ändliga mängder och <span class="arithmatex">\(|X|&gt;|Y|\)</span>, så finns det ingen injektion <span class="arithmatex">\(f:X\rarr Y\)</span>
+(Injektioner måste ge unikt <span class="arithmatex">\(y\)</span> för unikt <span class="arithmatex">\(x\)</span>)</em>.</p>
+</blockquote>
+<h3 id="principen-om-inklusionexklusion">Principen om inklusion/exklusion</h3>
+<blockquote>
+<p><em>Om <span class="arithmatex">\(A-1,\dots,A_n\)</span> är ändliga mängder så är</em>
+<span class="arithmatex">\(<span class="arithmatex">\(|A_1\cup A_2\cup\cdots\cup A_n|=|A_1|+|A_2|+\cdots+|A_n|\\-|A_1\cap A_2|-|A_1\cap A_3|-\cdots-|A_{n-1}\cap A_n|\\+|A_1\cap A_2\cap A_3|+\cdots+|A_{n-2}\cap A_{n-1}\cap A_n|\\\ddots\\+(-1)^{n+1}\ddots|A_1\cap A_2\cap A_3\cap\cdot\cap A_n|\)</span>\)</span></p>
+</blockquote>
+<p>Hur uttrycker vi <span class="arithmatex">\(|u\setminus(A_1\cup A_2\cup\cdots\cup A_n)|\)</span>?</p>
+<blockquote>
+<p><span class="arithmatex">\(u\)</span> är universum, dvs. <span class="arithmatex">\(A_i\subseteq u\text{ för alla }i\)</span>.
+<span class="arithmatex">\(|u\setminus(A_1\cup A_2\cup\cdots\cup A_n)|\\=|u|-(A_1\cup A_2\cup\cdots\cup A_n)|\\=|u|-(|A_1|+\cdots+|A_n|)\)</span></p>
+<p><strong>Exempel:</strong> <em>Utav 200 studenter deltog <span class="arithmatex">\(|F|=172\)</span> på föreläsningar, <span class="arithmatex">\(|O|=130\)</span> på övningar och <span class="arithmatex">\(|S|=150\)</span> på seminarier. <span class="arithmatex">\(|F\cap S|=142,\ |F\cap O|=125,\ |S\cap O|=123,\ |F\cap S\cap O|=120\)</span></em>
+Hur många deltog inte i något av momenten?
+Vi söker <span class="arithmatex">\(|u\setminus(F\cup O\cup S)|\)</span>, där <span class="arithmatex">\(u=\text{studenterna}\)</span>.
+<span class="arithmatex">\(|u\setminus(F\cup O\cup S)|\)</span>=<span class="arithmatex">\(|u| - |F|-|O|-|S|+|F\cap S|+|F\cap O|+|S\cap O|-|F\cap S\cap O|=200-172-130-150+142+125+123-120=18\)</span>
+<strong>Svar:</strong> 18 elever.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Kopierat till urklipp", "clipboard.copy": "Kopiera till urklipp", "search.result.more.one": "1 till p\u00e5 denna sida", "search.result.more.other": "# till p\u00e5 denna sida", "search.result.none": "Inga s\u00f6kresultat", "search.result.one": "1 s\u00f6kresultat", "search.result.other": "# s\u00f6kresultat", "search.result.placeholder": "Skriv s\u00f6kord", "search.result.term.missing": "Saknas", "select.version": "V\u00e4lj version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

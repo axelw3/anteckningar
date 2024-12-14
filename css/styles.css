@@ -1,0 +1,11 @@
+span.katex-display{
+    margin: .4rem 0 .3rem 0 !important;
+}
+
+.md-typeset div.arithmatex > *{
+    padding: 0 !important;
+}
+
+.arithmatex{
+    overflow: auto hidden !important;
+}
