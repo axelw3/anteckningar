@@ -1053,6 +1053,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#langd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Längd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#append" class="md-nav__link">
     <span class="md-ellipsis">
       Append
@@ -2247,6 +2256,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#langd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Längd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#append" class="md-nav__link">
     <span class="md-ellipsis">
       Append
@@ -3024,13 +3042,17 @@ Därför införs begreppet <em>omgivning</em> (definition 2.17), vilket är en f
 <div class="arithmatex">\[\phi_1,\phi_2,\dots,\phi_n\vdash\psi\iff\phi_1,\phi_2,\dots,\phi_n\vDash\psi\]</div>
 <p>Att bevisa detta är <em>svårt</em> och ingår ej i kursen.</p>
 <h5 id="foljder-av-sundhet">Följder av sundhet</h5>
-<p>Predikatlogikens sundhet har några intressanta följder:
-* Om <span class="arithmatex">\(\psi\)</span> <em>inte</em> är en logisk konsekvens av <span class="arithmatex">\(\phi_1,\phi_2,\dots,\phi_n\)</span> så <em>finns det heller inget bevis</em> för <span class="arithmatex">\(\psi\)</span> utifrån premisserna <span class="arithmatex">\(\phi_1,\phi_2,\dots,\phi_n\)</span>.
-    * Dvs. om vi kan hitta ett enda sätt att tolka symbolerna i formlerna så att <span class="arithmatex">\(\phi_1,\phi_2,\dots,\phi_n\)</span> blir sanna, men <span class="arithmatex">\(\psi\)</span> falsk, så finns det inget bevis för <span class="arithmatex">\(\psi\)</span> utifrån dessa premisser.
-    * Vi behöver bara hitta en sådan modell för att visa att bevis saknas.
-    * En formel är <em>falsifierbar</em> om det finns någon tolkning där den är falsk.</p>
+<p>Predikatlogikens sundhet har några intressanta följder:</p>
+<ul>
+<li>Om <span class="arithmatex">\(\psi\)</span> <em>inte</em> är en logisk konsekvens av <span class="arithmatex">\(\phi_1,\phi_2,\dots,\phi_n\)</span> så <em>finns det heller inget bevis</em> för <span class="arithmatex">\(\psi\)</span> utifrån premisserna <span class="arithmatex">\(\phi_1,\phi_2,\dots,\phi_n\)</span>.<ul>
+<li>Dvs. om vi kan hitta ett enda sätt att tolka symbolerna i formlerna så att <span class="arithmatex">\(\phi_1,\phi_2,\dots,\phi_n\)</span> blir sanna, men <span class="arithmatex">\(\psi\)</span> falsk, så finns det inget bevis för <span class="arithmatex">\(\psi\)</span> utifrån dessa premisser.</li>
+<li>Vi behöver bara hitta en sådan modell för att visa att bevis saknas.</li>
+<li>En formel är <em>falsifierbar</em> om det finns någon tolkning där den är falsk.</li>
+</ul>
+</li>
+</ul>
 <p><strong>Några samband:</strong>
-<span class="arithmatex">\(\text{Val}(\psi)\iff\vdash\psi\iff\vDash\psi\iff\lnot\text{Fal}(\psi)\iff\lnot\text{Sat}(\lnot\psi)\)</span> Stämmer detta^???</p>
+<span class="arithmatex">\(\text{Val}(\psi)\iff\vdash\psi\iff\vDash\psi\iff\lnot\text{Fal}(\psi)\iff\lnot\text{Sat}(\lnot\psi)\)</span></p>
 <p><span class="arithmatex">\(\vdash\psi\implies\text{Sat}(\psi)\)</span></p>
 <blockquote>
 <p><strong>Exempel:</strong> Är <span class="arithmatex">\(\exists x\exists y(x\neq y\land R(y,f(y)))\)</span> satisfierbar?<br>
@@ -3214,6 +3236,7 @@ Det går till så här: del<sub>1</sub>&lt;del<sub>2</sub>&#x27FA;del<sub>1</sub
 <code>&lt;IntegerList&gt;::=[]|cons(&lt;Integer&gt;&lt;IntegerList&gt;</code>
 <em>I denna definition är <code>[]</code> basfallet</em>.</p>
 <h4 id="funktioner-pa-listor">Funktioner på listor</h4>
+<h5 id="langd">Längd</h5>
 <p>Vi kan definiera <code>len(L) = antalet element i L</code> rekursivt:
 <div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">len</span><span class="p">([])</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">len</span><span class="p">(</span><span class="n">cons</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">L</span><span class="p">))</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
@@ -3337,8 +3360,8 @@ Ur denna syn betyder <span class="arithmatex">\(\square{}\phi\)</span> att <em>"
 <div class="arithmatex">\[\lnot G\phi\equiv F\lnot\phi\\\lnot F\phi\equiv G\lnot\phi\]</div>
 <p><span class="arithmatex">\(F\phi\)</span> och <span class="arithmatex">\(G\phi\)</span> är definierade alla dagar, men kan variera. Exempel: Om <span class="arithmatex">\(\phi\)</span> är sant på, och endast på, första dagen, är <span class="arithmatex">\(F\phi\)</span> sant på denna dag, men inga senare dagar.</p>
 <blockquote>
-<p><strong>Exempel:</strong> Presidentvalet 2020
-Med ett mer icke-deterministisk syn kan man tänka sig två möjliga utvecklingar:</p>
+<p><strong>Exempel:</strong> Presidentvalet 2020</p>
+<p>Med ett mer icke-deterministisk syn kan man tänka sig två möjliga utvecklingar:</p>
 <div class="arithmatex">\[\begin{smallmatrix}&amp;&amp;&amp;&amp;\lnot T&amp;&amp;\lnot T&amp;\\&amp;&amp;&amp;&amp;\bigcirc&amp;\rarr&amp;\bigcirc&amp;\rarr\\\lnot T&amp;&amp;\lnot T&amp;↗&amp;^\text{9 nov}&amp;&amp;^\text{10 nov}&amp;\\\bigcirc&amp;\rarr&amp;\bigcirc\\^\text{7 nov}&amp;&amp;^\text{8 nov}&amp;↘&amp;T&amp;&amp;T\\&amp;&amp;&amp;&amp;\bigcirc&amp;\rarr&amp;\bigcirc&amp;\rarr\\&amp;&amp;&amp;&amp;^\text{9 nov}&amp;&amp;^\text{10 nov}\end{smallmatrix}\]</div>
 <p>där <span class="arithmatex">\(T:\)</span> Trump vald.</p>
 </blockquote>
