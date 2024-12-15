@@ -887,32 +887,33 @@
 <p><strong>Definition:</strong> <span class="arithmatex">\(|X|=|Y|\)</span> omm det finns en bijektion <span class="arithmatex">\(f:X\rarr Y\)</span>.</p>
 <p>"Att ha samma kardinalitet" är en <em>ekvivalensrelation</em>, där ekvivalensklasserna kallas för <em>kardinaltal</em>.</p>
 <blockquote>
-<p><strong>Bevis:</strong>
-<span class="arithmatex">\(X\mathrel{R} Y \iff |X| = |Y|\iff\)</span> Finns en bijektion sådan att <span class="arithmatex">\(f:X\rarr Y\)</span>
-<strong>Reflexiv</strong> (<span class="arithmatex">\(X\mathrel{R}X\)</span> för alla <span class="arithmatex">\(X\)</span>): Vi söker en bijektion <span class="arithmatex">\(f:X\rarr X\)</span>. En sådan är <span class="arithmatex">\(f(x)=x\)</span> (identitetsfunktionen).
-<span class="arithmatex">\(\therefore\space\mathrel{R}\)</span> är reflexiv.
-<strong>Symmetrisk</strong> (<span class="arithmatex">\(X\mathrel{R}Y\implies Y\mathrel{R}X\)</span>): Antag VL sant, då finns en bijektion <span class="arithmatex">\(f:X\rarr Y\)</span>. Inversen av denna är <span class="arithmatex">\(f^{-1}:Y\rarr X\)</span>, vilket också är en bijektion, och därmed <span class="arithmatex">\(Y\mathrel{R} X\)</span>.
+<p><strong>Bevis:</strong> <span class="arithmatex">\(X\mathrel{R} Y \iff |X| = |Y|\iff\)</span> Finns en bijektion sådan att <span class="arithmatex">\(f:X\rarr Y\)</span></p>
+<p><strong>Reflexiv</strong> (<span class="arithmatex">\(X\mathrel{R}X\)</span> för alla <span class="arithmatex">\(X\)</span>): Vi söker en bijektion <span class="arithmatex">\(f:X\rarr X\)</span>. En sådan är <span class="arithmatex">\(f(x)=x\)</span> (identitetsfunktionen).<br>
+<span class="arithmatex">\(\therefore\space\mathrel{R}\)</span> är reflexiv.<br>
+<strong>Symmetrisk</strong> (<span class="arithmatex">\(X\mathrel{R}Y\implies Y\mathrel{R}X\)</span>): Antag VL sant, då finns en bijektion <span class="arithmatex">\(f:X\rarr Y\)</span>. Inversen av denna är <span class="arithmatex">\(f^{-1}:Y\rarr X\)</span>, vilket också är en bijektion, och därmed <span class="arithmatex">\(Y\mathrel{R} X\)</span>.<br>
 <span class="arithmatex">\(\therefore\space\mathrel{R}\)</span> är symmetrisk.
 <strong>Transitiv</strong> (<span class="arithmatex">\(X\mathrel{R}Y\text{ och }Y\mathrel{R}Z\iff X\mathrel{R}Z\)</span>): Visas lättas med en figur. Vi får att HL är sant omm VL.</p>
 </blockquote>
-<p>Med detta kan vi visa att <em>alla öppna intervall av reella tal har samma kardinalitet</em>:
-1. <span class="arithmatex">\(|(0,1)| = |(1,\infin)|\)</span>, eftersom <span class="arithmatex">\(f(x)=\frac{1}x\)</span> är en bijektion
-2. Om <span class="arithmatex">\(a\in\mathbb{R}\)</span> så är <span class="arithmatex">\(|(0,\infin)|=|(a,\infin)|\)</span>, eftersom <span class="arithmatex">\(f(x)=x+a\)</span> är en bijektion.
-3. Om <span class="arithmatex">\(a\lt b\)</span> så är <span class="arithmatex">\(|(0,1)|=|(a,b)|\)</span>, eftersom <span class="arithmatex">\(f(x)=a+(b-a)x\)</span> är en bijektion.
-4. <span class="arithmatex">\(\mathbb{R}=|(0,\infin)|\)</span> eftersom <span class="arithmatex">\(f(x)=e^{x}\)</span> är en bijektion.</p>
+<p>Med detta kan vi visa att <em>alla öppna intervall av reella tal har samma kardinalitet</em>:</p>
+<ol>
+<li><span class="arithmatex">\(|(0,1)| = |(1,\infin)|\)</span>, eftersom <span class="arithmatex">\(f(x)=\frac{1}x\)</span> är en bijektion</li>
+<li>Om <span class="arithmatex">\(a\in\mathbb{R}\)</span> så är <span class="arithmatex">\(|(0,\infin)|=|(a,\infin)|\)</span>, eftersom <span class="arithmatex">\(f(x)=x+a\)</span> är en bijektion.</li>
+<li>Om <span class="arithmatex">\(a\lt b\)</span> så är <span class="arithmatex">\(|(0,1)|=|(a,b)|\)</span>, eftersom <span class="arithmatex">\(f(x)=a+(b-a)x\)</span> är en bijektion.</li>
+<li><span class="arithmatex">\(\mathbb{R}=|(0,\infin)|\)</span> eftersom <span class="arithmatex">\(f(x)=e^{x}\)</span> är en bijektion.</li>
+</ol>
 <h3 id="hilberts-hotell">Hilberts hotell</h3>
 <p>Hilberts hotell har oändligt många rum <span class="arithmatex">\(\{0,1,2,3,...\}\)</span>. När du ska checka in meddelar de att alla rum är upptagna. Hur kan det lösas?</p>
 <blockquote>
-<p><strong>Lösning:</strong> Vi flyttar varje gäst ett steg, så att rum 0 blir ledigt: <span class="arithmatex">\(f:\{0,1,2,3,...\}\rarr\{1,2,3,4,...\}\)</span>
-<span class="arithmatex">\(f(x)=x+1\)</span> är en bijektion, vilket ger:
-<span class="arithmatex">\(|\{0,1,2,3,...\}|=|\mathbb{N}|=|\mathbb{Z_+}|=|\{1,2,3,...\}|=\aleph_0\)</span>
+<p><strong>Lösning:</strong> Vi flyttar varje gäst ett steg, så att rum 0 blir ledigt: <span class="arithmatex">\(f:\{0,1,2,3,...\}\rarr\{1,2,3,4,...\}\)</span><br>
+<span class="arithmatex">\(f(x)=x+1\)</span> är en bijektion, vilket ger:<br>
+<span class="arithmatex">\(|\{0,1,2,3,...\}|=|\mathbb{N}|=|\mathbb{Z_+}|=|\{1,2,3,...\}|=\aleph_0\)</span><br>
 <span class="arithmatex">\(\aleph_0\)</span> ("alef-noll") och är kardinaltalet för alla uppräkneligt oändliga mängder.</p>
 </blockquote>
 <p>Vi visar att <span class="arithmatex">\(|(0,1)|=|[0,1)|\)</span>:</p>
 <blockquote>
-<p><strong>Bevis:</strong> Tag en följd <span class="arithmatex">\(a_0,a_1,a_2,a_3,...\in[0,1)\)</span>
-Antag en funktion <span class="arithmatex">\(f:[0,1)\rarr(0,1)\)</span> och att <span class="arithmatex">\(f(a_i)=a_{i+1}\)</span> om <span class="arithmatex">\(x=a_i\)</span>, i övriga fall <span class="arithmatex">\(f(x)=x\)</span>.
-Inversen blir <span class="arithmatex">\(f^{-1}(a_i)=a_{i-1}\)</span> om <span class="arithmatex">\(x=a_i\)</span>, i övriga fall <span class="arithmatex">\(f^{-1}(x)=x\)</span>.
+<p><strong>Bevis:</strong> Tag en följd <span class="arithmatex">\(a_0,a_1,a_2,a_3,...\in[0,1)\)</span><br>
+Antag en funktion <span class="arithmatex">\(f:[0,1)\rarr(0,1)\)</span> och att <span class="arithmatex">\(f(a_i)=a_{i+1}\)</span> om <span class="arithmatex">\(x=a_i\)</span>, i övriga fall <span class="arithmatex">\(f(x)=x\)</span>.<br>
+Inversen blir <span class="arithmatex">\(f^{-1}(a_i)=a_{i-1}\)</span> om <span class="arithmatex">\(x=a_i\)</span>, i övriga fall <span class="arithmatex">\(f^{-1}(x)=x\)</span>.<br>
 Funktionen är alltså en bijektion.</p>
 </blockquote>
 <p>Med samma princip får vi att *alla intervall, förutom <span class="arithmatex">\([a,a]\)</span>, har samma kardinalitet som <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
@@ -921,87 +922,140 @@ Funktionen är alltså en bijektion.</p>
 </blockquote>
 <h3 id="cantors-diagonalargument">Cantors diagonalargument</h3>
 <blockquote>
-<p><strong>Sats:</strong> Om <span class="arithmatex">\(A_1,A_2,...\)</span> är ändliga eller uppräkneligt oändliga, så är <span class="arithmatex">\(A=A_1\cup A_2\cup ...\)</span> också ändlig eller uppräkneligt oändlig.
-<strong>Bevis:</strong> Vi vill hitta en bijektion <span class="arithmatex">\(f:\mathbb{Z_+}\rarr A\)</span>
-Vi kan rita upp en tabell så att elementen i <span class="arithmatex">\(A_i\)</span> hamnar på rad <span class="arithmatex">\(i\)</span>.
-Det går nu att koppla samman "samtliga" element genom att dra en pil från övre vänstra hörnet till elementet till höger, och därefter diagonalt nedåt och uppåt, om vartannat.
+<p><strong>Sats:</strong> Om <span class="arithmatex">\(A_1,A_2,...\)</span> är ändliga eller uppräkneligt oändliga, så är <span class="arithmatex">\(A=A_1\cup A_2\cup ...\)</span> också ändlig eller uppräkneligt oändlig.</p>
+<p><strong>Bevis:</strong> Vi vill hitta en bijektion <span class="arithmatex">\(f:\mathbb{Z_+}\rarr A\)</span><br>
+Vi kan rita upp en tabell så att elementen i <span class="arithmatex">\(A_i\)</span> hamnar på rad <span class="arithmatex">\(i\)</span>.<br>
+Det går nu att koppla samman "samtliga" element genom att dra en pil från övre vänstra hörnet till elementet till höger, och därefter diagonalt nedåt och uppåt, om vartannat.<br>
 <strong>Obs!</strong> Vi måste hoppa över tal som redan har räknats --- annars ej bijektion!</p>
 </blockquote>
 <p>Med hjälp av detta kan vi visa att <span class="arithmatex">\(\mathbb{Q}\)</span> är uppräkneligt oändlig, dvs. att <span class="arithmatex">\(|\mathbb{Q}|=\aleph_0\)</span>:</p>
 <blockquote>
-<p><span class="arithmatex">\(A_i=\{\frac{x}{i}|x\in\mathbb{Z}\}=\text{"alla rationella tal med nämnare \it{i}"}\)</span>
-<span class="arithmatex">\(\mathbb{Q}=A_1\cup A_2\cup ...\)</span>
+<p><span class="arithmatex">\(A_i=\{\frac{x}{i}|x\in\mathbb{Z}\}=\text{"alla rationella tal med nämnare \it{i}"}\)</span><br>
+<span class="arithmatex">\(\mathbb{Q}=A_1\cup A_2\cup ...\)</span><br>
 Enligt Cantors diagonalargument är <span class="arithmatex">\(|\mathbb{Q}|=\aleph_0\)</span>.</p>
 </blockquote>
 <h3 id="mer-om-kardinalitet">Mer om kardinalitet</h3>
 <blockquote>
-<p><strong>Schröder-Bernsteins sats</strong>
-Antag två injektioner <span class="arithmatex">\(f:X\rarr Y\)</span> och <span class="arithmatex">\(g:Y\rarr X\)</span>. Då är <span class="arithmatex">\(|X|=|Y|\)</span>.
-<strong><em>Följdsats A:</em></strong> Om <span class="arithmatex">\(A\subseteq B\subseteq C\)</span> och <span class="arithmatex">\(|A|=|C|\)</span>, så är <span class="arithmatex">\(|A|=|B|=|C|\)</span>.
+<p><strong>Schröder-Bernsteins sats</strong><br>
+Antag två injektioner <span class="arithmatex">\(f:X\rarr Y\)</span> och <span class="arithmatex">\(g:Y\rarr X\)</span>. Då är <span class="arithmatex">\(|X|=|Y|\)</span>.</p>
+<p><strong><em>Följdsats A:</em></strong> Om <span class="arithmatex">\(A\subseteq B\subseteq C\)</span> och <span class="arithmatex">\(|A|=|C|\)</span>, så är <span class="arithmatex">\(|A|=|B|=|C|\)</span>.<br>
 <strong><em>Följdsats B:</em></strong> Varje intervall (förutom <span class="arithmatex">\([a,a]\)</span>) har samma kardinalitet som <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
 </blockquote>
 <p><strong>Sats:</strong> <span class="arithmatex">\(|\mathcal{P}(\mathbb{Z_+})|=|\mathbb{R}|\)</span></p>
 <blockquote>
 <p><span class="arithmatex">\(|\mathbb{R}|\)</span> kallas för kontinuumet (<em>eng.</em> continuum)</p>
-<p><strong>Bevis:</strong>
-VL ger att <span class="arithmatex">\(\mathcal{P}(\mathbb{Z_+})=\{A|A\subseteq Z_+\}\)</span>
-Vi använder Schröder-Bernsteins sats, dvs. vi vill hitta injektioner:
-<span class="arithmatex">\(f:[0,1)\rarr\mathcal{P}(\mathbb{Z_+})\)</span> och <span class="arithmatex">\(g:\mathcal{P}(\mathbb{Z_+})\rarr[0,1)\)</span>
-Alla <span class="arithmatex">\(x\in[0,1)\)</span> kan skrivas på binär form:
+</blockquote>
+<!-- -->
+<blockquote>
+<p><strong>Bevis:</strong><br>
+VL ger att <span class="arithmatex">\(\mathcal{P}(\mathbb{Z_+})=\{A|A\subseteq Z_+\}\)</span><br>
+Vi använder Schröder-Bernsteins sats, dvs. vi vill hitta injektioner:<br>
+<span class="arithmatex">\(f:[0,1)\rarr\mathcal{P}(\mathbb{Z_+})\)</span> och <span class="arithmatex">\(g:\mathcal{P}(\mathbb{Z_+})\rarr[0,1)\)</span></p>
+<p>Alla <span class="arithmatex">\(x\in[0,1)\)</span> kan skrivas på binär form:
 <span class="arithmatex">\(x=0,a_1a_2a_3a_4...\)</span> där <span class="arithmatex">\(a_i=0\text{ eller }1\)</span>
-<em>T.ex. <span class="arithmatex">\(x=0,0010000111001...\)</span></em>
-<strong>Obs!</strong> För att få unikhet så skippar vi tal som slutar på oändlig följd av 1:or. Jämför: <span class="arithmatex">\(0,999...=1\)</span>
-<strong><em>Steg 1:</em></strong> Vi definierar <span class="arithmatex">\(f(x)=\{i|a_i=1\}\)</span>, vilket ger <span class="arithmatex">\(f(0,11010001000...)=\{1,2,4,8\}\)</span>.
-Detta är en injektion eftersom "olika går på olika".
-<strong><em>Steg 2:</em></strong> Vi definierar <span class="arithmatex">\(g(A)=0,a_1a_2a_3a_4...\)</span> där <span class="arithmatex">\(a_i=\{1\text{ om }i\in A\text{ eller }0\text{ om }i\notin A\}\)</span>
-Detta är också en injektion.
-<strong><em>V.S.B.</em></strong></p>
+<em>T.ex. <span class="arithmatex">\(x=0,0010000111001...\)</span></em></p>
+<p><strong>Obs!</strong> För att få unikhet så skippar vi tal som slutar på oändlig följd av 1:or. Jämför: <span class="arithmatex">\(0,999...=1\)</span></p>
+<p><strong><em>Steg 1:</em></strong> Vi definierar <span class="arithmatex">\(f(x)=\{i|a_i=1\}\)</span>, vilket ger <span class="arithmatex">\(f(0,11010001000...)=\{1,2,4,8\}\)</span>.<br>
+Detta är en injektion eftersom "olika går på olika".</p>
+<p><strong><em>Steg 2:</em></strong> Vi definierar <span class="arithmatex">\(g(A)=0,a_1a_2a_3a_4...\)</span> där <span class="arithmatex">\(a_i=\{1\text{ om }i\in A\text{ eller }0\text{ om }i\notin A\}\)</span><br>
+Detta är också en injektion.</p>
+<p><strong><em>V.S.B.</em></strong></p>
 </blockquote>
 <h2 id="forelasning-15">Föreläsning 15</h2>
 <h3 id="satslogik">Satslogik</h3>
 <blockquote>
 <p><strong>Definition:</strong> En sats är ett påstående som kan vara sann eller falsk.</p>
 </blockquote>
-<p>Nya satser bildas med operationer:
-- <span class="arithmatex">\(p\lor q\)</span> är sann om <em>minst en</em> av <span class="arithmatex">\(p\)</span> och <span class="arithmatex">\(q\)</span> är sanna.
-- <span class="arithmatex">\(p\land q\)</span> är sann om <em>både</em> <span class="arithmatex">\(p\)</span> och <span class="arithmatex">\(q\)</span> är sanna.
-- <span class="arithmatex">\(p\rarr q\)</span> "om <span class="arithmatex">\(p\)</span> är sann, så måste <span class="arithmatex">\(q\)</span> också vara sann".
-- <span class="arithmatex">\(p\lrarr q\)</span> är sann om <span class="arithmatex">\(p = q\)</span>.
-- <span class="arithmatex">\(\lnot p\)</span> är sann om <span class="arithmatex">\(p\)</span> är falsk.</p>
-<p>En satsoperation kan visas med en sanningstabell:
-|<span class="arithmatex">\(p\)</span>|<span class="arithmatex">\(q\)</span>|<span class="arithmatex">\(p\rarr q\)</span>|
-|-|-|-|
-|0|0|1|
-|0|1|1|
-|1|0|0|
-|1|1|1|</p>
+<p>Nya satser bildas med operationer:</p>
+<ul>
+<li><span class="arithmatex">\(p\lor q\)</span> är sann om <em>minst en</em> av <span class="arithmatex">\(p\)</span> och <span class="arithmatex">\(q\)</span> är sanna.</li>
+<li><span class="arithmatex">\(p\land q\)</span> är sann om <em>både</em> <span class="arithmatex">\(p\)</span> och <span class="arithmatex">\(q\)</span> är sanna.</li>
+<li><span class="arithmatex">\(p\rarr q\)</span> "om <span class="arithmatex">\(p\)</span> är sann, så måste <span class="arithmatex">\(q\)</span> också vara sann".</li>
+<li><span class="arithmatex">\(p\lrarr q\)</span> är sann om <span class="arithmatex">\(p = q\)</span>.</li>
+<li><span class="arithmatex">\(\lnot p\)</span> är sann om <span class="arithmatex">\(p\)</span> är falsk.</li>
+</ul>
+<p>En satsoperation kan visas med en sanningstabell:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(p\)</span></th>
+<th><span class="arithmatex">\(q\)</span></th>
+<th><span class="arithmatex">\(p\rarr q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 <p>En sats är <em>sammansatt</em> om den är uppbyggd av andra satser genom <span class="arithmatex">\(\lor\)</span>, <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\rarr\)</span>, <span class="arithmatex">\(\lrarr\)</span>, <span class="arithmatex">\(\lnot\)</span>. Icke-sammansatta satser kallas för <em>atomära satser</em>.</p>
-<p>En sammansatt sats kan ses som en funktion <span class="arithmatex">\(f: \{0,1\}^n\rarr\{0,1\}\)</span>.
+<p>En sammansatt sats kan ses som en funktion <span class="arithmatex">\(f: \{0,1\}^n\rarr\{0,1\}\)</span>.<br>
 En sammansatt sats <span class="arithmatex">\(S\)</span> kan beskrivas med hjälp av atomära satser <span class="arithmatex">\(p_1,\dots,p_n\)</span>:
 <span class="arithmatex">\(S(p_1,p_2,\dots,p_n)=0\text{ eller }1\)</span></p>
 <blockquote>
-<p><strong>Sats:</strong> Varje funktion <span class="arithmatex">\(f:\{0,1\}^n\rarr \{0,1\}\)</span> kan representeras av en sammansatt sats som endast använder <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\lor\)</span> och <span class="arithmatex">\(\lnot\)</span>.
-<strong>Bevis:</strong>
-Vi har <span class="arithmatex">\(\{0,1\}^n=\{0,1\}\times\dots\times\{0,1\}=\{(p_1,\dots,p_n)|p_i=0,1\text{ för alla }i\}\)</span>
-Detta ger t.ex.
-<span class="arithmatex">\(\{0,1\}^2=\{(0,0),(0,1),(1,0),(1,1)\}\)</span>
-<strong><em>Bevis med induktion</em></strong>
-<em>Basfall:</em> <span class="arithmatex">\(n=1\)</span>, <span class="arithmatex">\(f:\{0,1\}\rarr\{0,1\}\)</span>
-Fyra möjligheter (<span class="arithmatex">\(f_1,f_2,f_3,f_4\)</span>): Alla kan skrivas med operatorerna <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\lor\)</span> och <span class="arithmatex">\(\lnot\)</span>.
-|<span class="arithmatex">\(p_1\)</span>|<span class="arithmatex">\(f_1(p_1)\\=p_1\land(\lnot p_1)\)</span>|<span class="arithmatex">\(f_2(p_1)\\=p_1\lor p_1\)</span>|<span class="arithmatex">\(f_3(p_1)\\=\lnot p_1\)</span>|<span class="arithmatex">\(f_4(p_1)\\=p_1\lor(\lnot p_1)\)</span>
-|-|-|-|-|-|
-|0|0|0|1|1|
-|1|0|1|0|1|
-<em>Induktionsantagande:</em> Antar att påståendet är sant för <span class="arithmatex">\(n\)</span>, det vill säga att det finns en sats <span class="arithmatex">\(S(p_1,\dots,p_n)=f(p_1,\dots,p_n)\)</span>
-<em>Induktionssteg:</em> Visa att påståendet då även är sant för <span class="arithmatex">\(n+1\)</span>.
-Vi tar en godtycklig funktion <span class="arithmatex">\(f:\{0,1\}^{n+1}\rarr\{0,1\}\)</span>.
-Vi bildar sedan två funktioner <span class="arithmatex">\(g\)</span> och <span class="arithmatex">\(h\)</span>:
-<span class="arithmatex">\(g(p_1,\dots,p_n\}=f(p_1,\dots,p_n,1)\)</span> och
-<span class="arithmatex">\(h(p_1,\dots,p_n\}=f(p_1,\dots,p_n,0)\)</span>
-Enligt induktionsantagandet kan <span class="arithmatex">\(g\)</span> och <span class="arithmatex">\(h\)</span> även beskrivas av satser:
-<span class="arithmatex">\(g(p_1,\dots,p_n)=S_1(p_1,\dots,p_n)\)</span>
-<span class="arithmatex">\(h(p_1,\dots,p_n)=S_2(p_1,\dots,p_n)\)</span>
-Då är
+<p><strong>Sats:</strong> Varje funktion <span class="arithmatex">\(f:\{0,1\}^n\rarr \{0,1\}\)</span> kan representeras av en sammansatt sats som endast använder <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\lor\)</span> och <span class="arithmatex">\(\lnot\)</span>.</p>
+<p><strong>Bevis:</strong><br>
+Vi har <span class="arithmatex">\(\{0,1\}^n=\{0,1\}\times\dots\times\{0,1\}=\{(p_1,\dots,p_n)|p_i=0,1\text{ för alla }i\}\)</span><br>
+Detta ger t.ex.<br>
+<span class="arithmatex">\(\{0,1\}^2=\{(0,0),(0,1),(1,0),(1,1)\}\)</span></p>
+<p><strong><em>Bevis med induktion</em></strong><br>
+<em>Basfall:</em> <span class="arithmatex">\(n=1\)</span>, <span class="arithmatex">\(f:\{0,1\}\rarr\{0,1\}\)</span><br>
+Fyra möjligheter (<span class="arithmatex">\(f_1,f_2,f_3,f_4\)</span>): Alla kan skrivas med operatorerna <span class="arithmatex">\(\land\)</span>, <span class="arithmatex">\(\lor\)</span> och <span class="arithmatex">\(\lnot\)</span>.</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(p_1\)</span></th>
+<th><span class="arithmatex">\(f_1(p_1)\\=p_1\land(\lnot p_1)\)</span></th>
+<th><span class="arithmatex">\(f_2(p_1)\\=p_1\lor p_1\)</span></th>
+<th><span class="arithmatex">\(f_3(p_1)\\=\lnot p_1\)</span></th>
+<th><span class="arithmatex">\(f_4(p_1)\\=p_1\lor(\lnot p_1)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><em>Induktionsantagande:</em> Antar att påståendet är sant för <span class="arithmatex">\(n\)</span>, det vill säga att det finns en sats <span class="arithmatex">\(S(p_1,\dots,p_n)=f(p_1,\dots,p_n)\)</span></p>
+<p><em>Induktionssteg:</em> Visa att påståendet då även är sant för <span class="arithmatex">\(n+1\)</span>.<br>
+Vi tar en godtycklig funktion <span class="arithmatex">\(f:\{0,1\}^{n+1}\rarr\{0,1\}\)</span>.<br>
+Vi bildar sedan två funktioner <span class="arithmatex">\(g\)</span> och <span class="arithmatex">\(h\)</span>:<br>
+<span class="arithmatex">\(g(p_1,\dots,p_n\}=f(p_1,\dots,p_n,1)\)</span> och<br>
+<span class="arithmatex">\(h(p_1,\dots,p_n\}=f(p_1,\dots,p_n,0)\)</span></p>
+<p>Enligt induktionsantagandet kan <span class="arithmatex">\(g\)</span> och <span class="arithmatex">\(h\)</span> även beskrivas av satser:<br>
+<span class="arithmatex">\(g(p_1,\dots,p_n)=S_1(p_1,\dots,p_n)\)</span><br>
+<span class="arithmatex">\(h(p_1,\dots,p_n)=S_2(p_1,\dots,p_n)\)</span></p>
+<p>Då är<br>
 <span class="arithmatex">\(f(p_1,\dots,p_n,p_{n+1})=(p_{n+1}\land S_1(p_1,\dots,p_n))\cup((\lnot p_{n+1})\land S_2(p_1,\dots,p_n))\)</span></p>
 </blockquote>
 <p><strong>Tautologi:</strong> En sammansatt sats som alltid är sann.</p>
@@ -1023,16 +1077,16 @@ Då är
 </li>
 </ul>
 <h3 id="sannolikhetslara">Sannolikhetslära</h3>
-<p><span class="arithmatex">\(\Omega\)</span> är <em>utfallsrummet</em>, en ändlig mängd med alla möjliga utfall.
-<strong>Händelse:</strong> En delmängd <span class="arithmatex">\(A\)</span> till <span class="arithmatex">\(\Omega\)</span>.
+<p><span class="arithmatex">\(\Omega\)</span> är <em>utfallsrummet</em>, en ändlig mängd med alla möjliga utfall.</p>
+<p><strong>Händelse:</strong> En delmängd <span class="arithmatex">\(A\)</span> till <span class="arithmatex">\(\Omega\)</span>.<br>
 <strong>Sannolikhet:</strong> <span class="arithmatex">\(P(A)=\frac{|A|}{|\Omega|}\)</span></p>
 <p><strong>Additionsprincipen:</strong> Om två händelser <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är <em>disjunkta</em> (<span class="arithmatex">\(A\cap B=\empty\)</span>, dvs. <em>inte kan inträffa samtidigt</em>), så är <span class="arithmatex">\(P(A\text{ eller }B)=P(A\cup B)=\frac{|A\cup B|}{|\Omega|}=\frac{|A|+|B|}{|\Omega|}=P(A)+P(B)\)</span>.</p>
 <p><strong>Betingad sannolikhet:</strong> <span class="arithmatex">\(P(A\text{ givet }B)=P(A|B)=\frac{|A\cap B|}{|B|}\)</span></p>
 <blockquote>
-<p><strong>Exempel:</strong> <em>Anta att vi kastar två tärningar och ett orakel informerar att minst en tärning kommer att vara udda (händelse <span class="arithmatex">\(B\)</span>). Vad är sannolikheten att vi får två ettor (händelse <span class="arithmatex">\(A\)</span>)?</em>
-Vi vet att <span class="arithmatex">\(B\)</span> kommer att inträffa.
-<span class="arithmatex">\(|B|=|\{(a,b)|a\text{ och/eller }b\text{ är udda}\}|=6^2-|\{(a,b)|\text{båda är jämna}\}|=36-3^2=27\)</span>
-<span class="arithmatex">\(|A\cap B|=1\)</span> (<em>endast fallet <span class="arithmatex">\((1,1)\)</span></em>)
+<p><strong>Exempel:</strong> <em>Anta att vi kastar två tärningar och ett orakel informerar att minst en tärning kommer att vara udda (händelse <span class="arithmatex">\(B\)</span>). Vad är sannolikheten att vi får två ettor (händelse <span class="arithmatex">\(A\)</span>)?</em><br>
+Vi vet att <span class="arithmatex">\(B\)</span> kommer att inträffa.<br>
+<span class="arithmatex">\(|B|=|\{(a,b)|a\text{ och/eller }b\text{ är udda}\}|=6^2-|\{(a,b)|\text{båda är jämna}\}|=36-3^2=27\)</span><br>
+<span class="arithmatex">\(|A\cap B|=1\)</span> (<em>endast fallet <span class="arithmatex">\((1,1)\)</span></em>)<br>
 <span class="arithmatex">\(P(A\cap B)=\frac{|A\cap B|}{|B|}=\frac{1}{27}\)</span></p>
 </blockquote>
 <p><strong>Oberoende händelser:</strong> <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är oberoende om sannolikheten för att den ena inträffar är <em>oberoende av om den andra inträffar</em>. Dvs. <span class="arithmatex">\(P(A|B)=P(A|B^\complement)\)</span></p>
@@ -1041,222 +1095,280 @@ Vi vet att <span class="arithmatex">\(B\)</span> kommer att inträffa.
 <h3 id="kombinatorik-med-upprepning">Kombinatorik (med upprepning)</h3>
 <p>Antag att vi ska utföra två deluppgifter, <span class="arithmatex">\(X\)</span> och <span class="arithmatex">\(Y\)</span>, och att <span class="arithmatex">\(X\)</span> kan göras på <span class="arithmatex">\(x\)</span> sätt, <span class="arithmatex">\(Y\)</span> på <span class="arithmatex">\(y\)</span> sätt. Den sammansatta uppgiften kan göras på <span class="arithmatex">\(|X\times Y|=|X|\times |Y|=x\cdot y\)</span> sätt.</p>
 <blockquote>
-<p><strong>Exempel:</strong> <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är ändliga mängder. Hur många funktioner <span class="arithmatex">\(f:A\rarr B\)</span> finns det?
-För varje <span class="arithmatex">\(a\in A\)</span> finns det <span class="arithmatex">\(|B|\)</span> möjliga värden <span class="arithmatex">\(b\in B\)</span>.
-Olika <span class="arithmatex">\(a\)</span> kan ge samma <span class="arithmatex">\(b\)</span> (dock inte tvärt om).
-<span class="arithmatex">\(\therefore\)</span> Upprepning tillåts.
+<p><strong>Exempel:</strong> <span class="arithmatex">\(A\)</span> och <span class="arithmatex">\(B\)</span> är ändliga mängder. Hur många funktioner <span class="arithmatex">\(f:A\rarr B\)</span> finns det?<br>
+För varje <span class="arithmatex">\(a\in A\)</span> finns det <span class="arithmatex">\(|B|\)</span> möjliga värden <span class="arithmatex">\(b\in B\)</span>.<br>
+Olika <span class="arithmatex">\(a\)</span> kan ge samma <span class="arithmatex">\(b\)</span> (dock inte tvärt om).<br>
+<span class="arithmatex">\(\therefore\)</span> Upprepning tillåts.<br>
 <strong>Svar:</strong> Det finns <span class="arithmatex">\(|B|^{|A|}\)</span> funktioner <span class="arithmatex">\(f\)</span>.</p>
 </blockquote>
 <h3 id="utan-upprepning">Utan upprepning</h3>
 <p>En följd <span class="arithmatex">\(a_1,a_2,\dots,a_n\)</span> kallas för en <em>permutation</em> av mängden <span class="arithmatex">\(\{a_1,a_2,\dots,a_n\}\)</span>.</p>
 <blockquote>
-<p><strong>Exempel:</strong> <em>På hur många sätt kan <span class="arithmatex">\(n\)</span> personer bilda en kö?</em>
-Varje kö kan ses som en permutation <span class="arithmatex">\(a_1,\dots,n\)</span> av mängden av alla personer, <span class="arithmatex">\(\{1,2,\dots,n\}\)</span>.
-Vi kan välja <span class="arithmatex">\(a_1\)</span> på <span class="arithmatex">\(n\)</span> olika sätt.
-Vi kan välja <span class="arithmatex">\(a_2\)</span> på <span class="arithmatex">\(n-1\)</span> olika sätt (<span class="arithmatex">\(a_1\)</span> är upptagen)
-<span class="arithmatex">\(\cdots\)</span>
-Vi kan välja <span class="arithmatex">\(a_n\)</span> på <span class="arithmatex">\(1\)</span> sätt (alla andra är upptagna)
+<p><strong>Exempel:</strong> <em>På hur många sätt kan <span class="arithmatex">\(n\)</span> personer bilda en kö?</em><br>
+Varje kö kan ses som en permutation <span class="arithmatex">\(a_1,\dots,n\)</span> av mängden av alla personer, <span class="arithmatex">\(\{1,2,\dots,n\}\)</span>.<br>
+Vi kan välja <span class="arithmatex">\(a_1\)</span> på <span class="arithmatex">\(n\)</span> olika sätt.<br>
+Vi kan välja <span class="arithmatex">\(a_2\)</span> på <span class="arithmatex">\(n-1\)</span> olika sätt (<span class="arithmatex">\(a_1\)</span> är upptagen)<br>
+<span class="arithmatex">\(\cdots\)</span><br>
+Vi kan välja <span class="arithmatex">\(a_n\)</span> på <span class="arithmatex">\(1\)</span> sätt (alla andra är upptagna)<br>
 <strong>Svar:</strong> <span class="arithmatex">\(n(n-1)\cdots3\cdot2\cdot1=n!\)</span> (<em><span class="arithmatex">\(n\)</span>-fakultet</em>)</p>
 </blockquote>
-<p>Hur många köer med <span class="arithmatex">\(k\)</span> personer kan vi bilda ur totalt <span class="arithmatex">\(n\)</span> personer?
+<p>Hur många köer med <span class="arithmatex">\(k\)</span> personer kan vi bilda ur totalt <span class="arithmatex">\(n\)</span> personer?<br>
 <strong>Svar:</strong> Vi kan bilda <span class="arithmatex">\(\frac{n!}{(n-k)!}\)</span></p>
-<p>På motsvarande sätt kan vi skapa injektiva funktioner
-<span class="arithmatex">\(f:\{1,2,3,4,5\}\rarr\{1,2,3,4,5,6,7,8,9\}\)</span>
+<p>På motsvarande sätt kan vi skapa injektiva funktioner<br>
+<span class="arithmatex">\(f:\{1,2,3,4,5\}\rarr\{1,2,3,4,5,6,7,8,9\}\)</span><br>
 på <span class="arithmatex">\(\frac{9!}{(9-5)!}=9\cdot8\cdot7\cdot6\cdot5\)</span> sätt.</p>
 <blockquote>
-<p><strong>Exempel:</strong> <em>Vad är sannolikheten att jag i poker får Imperial Royal Straight Flush på given?</em>
-<span class="arithmatex">\(A=\{\text{"hjärter 10, knekt, dam, kung och ess"}\}\)</span>
-<span class="arithmatex">\(\Omega=\{\text{alla möjliga givar med 5 kort}\}=\{T|T\subseteq\{1,2,\dots,52\}\land|T|=5\}\)</span>
+<p><strong>Exempel:</strong> <em>Vad är sannolikheten att jag i poker får Imperial Royal Straight Flush på given?</em><br>
+<span class="arithmatex">\(A=\{\text{"hjärter 10, knekt, dam, kung och ess"}\}\)</span><br>
+<span class="arithmatex">\(\Omega=\{\text{alla möjliga givar med 5 kort}\}=\{T|T\subseteq\{1,2,\dots,52\}\land|T|=5\}\)</span><br>
 <span class="arithmatex">\(P=\frac1{|\Omega|}\)</span></p>
 </blockquote>
 <p>För att göra oordnade val utan upprepning använder vi <em>binomialtal</em>.</p>
 <h3 id="binomialtal">Binomialtal</h3>
-<p>Binomialtalet <span class="arithmatex">\(\binom{n}{k}\)</span> definieras som antalet delmängder av <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> av storlek <span class="arithmatex">\(k\)</span>.
-Detta gäller för <span class="arithmatex">\(0\leq k\leq n\)</span>, i andra fall <span class="arithmatex">\(\binom{n}{k}=0\)</span>.
-<span class="arithmatex">\(\binom{n}k=\frac{n!}{k!(n-k)!}\)</span></p>
+<p>Binomialtalet <span class="arithmatex">\(\binom{n}{k}\)</span> definieras som antalet delmängder av <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> av storlek <span class="arithmatex">\(k\)</span>.<br>
+Detta gäller för <span class="arithmatex">\(0\leq k\leq n\)</span>, i andra fall <span class="arithmatex">\(\binom{n}{k}=0\)</span>.</p>
+<div class="arithmatex">\[\binom{n}k=\frac{n!}{k!(n-k)!}\]</div>
 <blockquote>
-<p><strong>Bevis:</strong> En kö <span class="arithmatex">\(a_1,a_2,\dots,a_k\)</span> med element ur <span class="arithmatex">\(n\)</span> möjliga kan bildas på <span class="arithmatex">\(\frac{n!}{(n-k)!}\)</span> sätt.
-Vi kan också räkna antalet köer på följande sätt:
-(1) Vi väljer vilka som ska vara med i kön:<span class="arithmatex">\(\binom{n}{k}\)</span>
-(2) Vi bestämmer deras inbördes ordning: <span class="arithmatex">\(k!\)</span>
-<span class="arithmatex">\(\frac{n!}{(n-k)!}=\binom{n}k\cdot k!\)</span>
+<p><strong>Bevis:</strong> En kö <span class="arithmatex">\(a_1,a_2,\dots,a_k\)</span> med element ur <span class="arithmatex">\(n\)</span> möjliga kan bildas på <span class="arithmatex">\(\frac{n!}{(n-k)!}\)</span> sätt.<br>
+Vi kan också räkna antalet köer på följande sätt:<br>
+(1) Vi väljer vilka som ska vara med i kön:<span class="arithmatex">\(\binom{n}{k}\)</span><br>
+(2) Vi bestämmer deras inbördes ordning: <span class="arithmatex">\(k!\)</span></p>
+<p><span class="arithmatex">\(\frac{n!}{(n-k)!}=\binom{n}k\cdot k!\)</span><br>
 <span class="arithmatex">\(\therefore\binom{n}k=\frac{n!}{k!(n-k)!}\)</span></p>
 </blockquote>
-<p><strong>Binomialtalens symmetri:</strong>
-<span class="arithmatex">\(\binom nk=\binom n{n-k}\)</span>, där <span class="arithmatex">\(0\leq k\leq n\)</span></p>
+<p><strong>Binomialtalens symmetri:</strong></p>
+<div class="arithmatex">\[\binom nk=\binom n{n-k}$, där $0\leq k\leq n\]</div>
 <blockquote>
-<p><strong>Bevis:</strong>
-<em>Beteckningar:
-<span class="arithmatex">\([n]=\{1,2,3,\dots,n\}\)</span>
-<span class="arithmatex">\(\binom{[n]}k\)</span> är mängden av alla delmängder till <span class="arithmatex">\([n]\)</span> av storlek <span class="arithmatex">\(k\)</span></em>
-<span class="arithmatex">\(\therefore|\binom{[n]}k|=\binom nk\)</span>
-För att visa <span class="arithmatex">\(\binom nk=\binom n{n-k}\)</span> så kan vi hitta en bijektion <span class="arithmatex">\(f:\binom{[n]}k\rarr\binom{[n]}{n-k}\)</span>
-<strong>Svar:</strong> Vi finner <span class="arithmatex">\(f(S)=S^C=[n]\setminus S\)</span></p>
+<p><strong>Bevis:</strong><br>
+<em>Beteckningar:<br>
+<span class="arithmatex">\([n]=\{1,2,3,\dots,n\}\)</span><br>
+<span class="arithmatex">\(\binom{[n]}k\)</span> är mängden av alla delmängder till <span class="arithmatex">\([n]\)</span> av storlek <span class="arithmatex">\(k\)</span></em></p>
+<p><span class="arithmatex">\(\therefore|\binom{[n]}k|=\binom nk\)</span></p>
+<p>För att visa <span class="arithmatex">\(\binom nk=\binom n{n-k}\)</span> så kan vi hitta en bijektion <span class="arithmatex">\(f:\binom{[n]}k\rarr\binom{[n]}{n-k}\)</span></p>
+<p><strong>Svar:</strong> Vi finner <span class="arithmatex">\(f(S)=S^C=[n]\setminus S\)</span></p>
 </blockquote>
-<p><strong>Pascals triangel:</strong>
-|<span class="arithmatex">\(0\)</span>||||<span class="arithmatex">\(\binom00\)</span>||||
-|-|-|-|-|-|-|-|-|
-|<span class="arithmatex">\(1\)</span>|||<span class="arithmatex">\(\binom10\)</span>||<span class="arithmatex">\(\binom11\)</span>|||
-|<span class="arithmatex">\(2\)</span>||<span class="arithmatex">\(\binom20\)</span>||<span class="arithmatex">\(\binom21\)</span>||<span class="arithmatex">\(\binom22\)</span>||
-|<span class="arithmatex">\(3\)</span>|<span class="arithmatex">\(\binom30\)</span>||<span class="arithmatex">\(\binom31\)</span>||<span class="arithmatex">\(\binom32\)</span>||<span class="arithmatex">\(3\choose3\)</span>|</p>
+<p><strong>Pascals triangel:</strong></p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(0\)</span></th>
+<th></th>
+<th></th>
+<th></th>
+<th><span class="arithmatex">\(\binom00\)</span></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(1\)</span></td>
+<td></td>
+<td></td>
+<td><span class="arithmatex">\(\binom10\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(\binom11\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(2\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(\binom20\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(\binom21\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(\binom22\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3\)</span></td>
+<td><span class="arithmatex">\(\binom30\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(\binom31\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(\binom32\)</span></td>
+<td></td>
+<td><span class="arithmatex">\(3\choose3\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>För heltal <span class="arithmatex">\(0\leq k\leq n&gt;0\)</span> är <span class="arithmatex">\(\binom nk=\binom{n-1}k+\binom{n-1}{k-1}\)</span>.</p>
 <blockquote>
-<p><strong>Bevis:</strong>
-<span class="arithmatex">\(\binom{[n]}k=\binom{[n-1]}k\cup\{S\cup\{n\}|S\in\binom{[n-1]}{k-1}\}\)</span>
-Alla mängder t.h. innehåller <span class="arithmatex">\(n\)</span>, medan inga  t.h. gör det.
-<span class="arithmatex">\(\therefore\)</span> Unionen är disjunkt.
-Vi skriver om detta med kardinaliteter, enligt additionsprincipen:
+<p><strong>Bevis:</strong><br>
+<span class="arithmatex">\(\binom{[n]}k=\binom{[n-1]}k\cup\{S\cup\{n\}|S\in\binom{[n-1]}{k-1}\}\)</span><br>
+Alla mängder t.h. innehåller <span class="arithmatex">\(n\)</span>, medan inga  t.h. gör det.<br>
+<span class="arithmatex">\(\therefore\)</span> Unionen är disjunkt.</p>
+<p>Vi skriver om detta med kardinaliteter, enligt additionsprincipen:<br>
 <span class="arithmatex">\(|\binom{[n]}k|=\binom{n-1}k+\binom{n-1}{k-1}\)</span></p>
 </blockquote>
 <h3 id="binomialsatsen">Binomialsatsen</h3>
-<p>För alla heltal <span class="arithmatex">\(n\geq 0\)</span> är
-<span class="arithmatex">\(<span class="arithmatex">\((1+x)^n=\sum_{k=0}^n \binom nk x^k\)</span>\)</span></p>
+<p>För alla heltal <span class="arithmatex">\(n\geq 0\)</span> är</p>
+<div class="arithmatex">\[(1+x)^n=\sum_{k=0}^n \binom nk x^k\]</div>
 <blockquote>
-<p><strong>Bevis (induktion):</strong>
-<em>Basfall:</em> <span class="arithmatex">\(n=0\)</span>
-<span class="arithmatex">\(\text{VL}_0=(1+x)^0=1\text{, HL}_0=\binom00 x^0=1\)</span>
-<em>Induktionsantagande:</em> Anta sant för <span class="arithmatex">\(n-1\)</span>.
-<em>Induktionssteg:</em> Bevisa för <span class="arithmatex">\(n\)</span>.
-<span class="arithmatex">\(\text{VL}_n=(1+x)^n=(1+x)(1+x)^{n-1}\\=\{\text{induktionsantagandet}\}\\=(1+x)(\sum_{k=0}^{n-1}\binom{n-1}k x^k)\\=\sum_{k=0}^{n-1}\binom{n-1}k x^k+\sum_{k=0}^{n-1}\binom{n-1}k x^{k+1}\\=\{\text{variabelsubstitution }j=k+1\}\\=\sum_{j=0}^{n-1}\binom{n-1}j x^j+\sum_{j=1}^n\binom{n-1}{j-1} x^j\\=\sum_{j=0}^{n}\binom{n-1}j x^j+\sum_{j=0}^n\binom{n-1}{j-1} x^j\\=\sum_{j=0}^{n}(\binom{n-1}j+\binom{n-1}{j-1}) x^j=\{\text{Pascal}\}\\=\sum_{j=0}^{n}\binom{n}{j} x^j=\sum_{k=0}^{n}\binom{n}{k} x^k\)</span>
-<span class="arithmatex">\(\therefore\)</span> Sant enligt induktionsprincipen.</p>
+<p><strong>Bevis (induktion):</strong><br>
+<em>Basfall:</em> <span class="arithmatex">\(n=0\)</span><br>
+<span class="arithmatex">\(\text{VL}_0=(1+x)^0=1\text{, HL}_0=\binom00 x^0=1\)</span></p>
+<p><em>Induktionsantagande:</em> Anta sant för <span class="arithmatex">\(n-1\)</span>.</p>
+<p><em>Induktionssteg:</em> Bevisa för <span class="arithmatex">\(n\)</span>.<br>
+<span class="arithmatex">\(\text{VL}_n=(1+x)^n=(1+x)(1+x)^{n-1}\\=\{\text{induktionsantagandet}\}\\=(1+x)(\sum_{k=0}^{n-1}\binom{n-1}k x^k)\\=\sum_{k=0}^{n-1}\binom{n-1}k x^k+\sum_{k=0}^{n-1}\binom{n-1}k x^{k+1}\\=\{\text{variabelsubstitution }j=k+1\}\\=\sum_{j=0}^{n-1}\binom{n-1}j x^j+\sum_{j=1}^n\binom{n-1}{j-1} x^j\\=\sum_{j=0}^{n}\binom{n-1}j x^j+\sum_{j=0}^n\binom{n-1}{j-1} x^j\\=\sum_{j=0}^{n}(\binom{n-1}j+\binom{n-1}{j-1}) x^j=\{\text{Pascal}\}\\=\sum_{j=0}^{n}\binom{n}{j} x^j=\sum_{k=0}^{n}\binom{n}{k} x^k\)</span></p>
+<p><span class="arithmatex">\(\therefore\)</span> Sant enligt induktionsprincipen.</p>
 </blockquote>
 <h2 id="forelasning-17">Föreläsning 17</h2>
 <h3 id="binomialtal_1">Binomialtal</h3>
-<p>Vi sätter in <span class="arithmatex">\(x=-1\)</span> i binomialsatsen: <span class="arithmatex">\((x+1)^n=((-1)+1)^n=0^n=0\)</span>
-Vi får då <span class="arithmatex">\(0=\sum_{k=0}^n\binom nk (-1)^k=1-\binom n1+\binom n2-\binom n3+\dots=(1+\binom n2+\binom n4+\dots)-(\binom n1+\binom n3+\dots)=\text{"antal delmängder av jämn storlek"}-\text{"antal delmängder av udda storlek"}=0\)</span>
-Vi kan visa detta:
-<span class="arithmatex">\(J_n=\{S|S\subseteq\{1,2,\dots,n\}\land|S|\text{ jämn}\}\)</span>
-<span class="arithmatex">\(U_n=\{S|S\subseteq\{1,2,\dots,n\}\land|S|\text{ udda}\}\)</span>
-Hitta en bijektion <span class="arithmatex">\(f:J_n\rarr U_n\)</span>:
-<span class="arithmatex">\(f(S)=\begin{cases}S\setminus\{1\}\text{, om }1\in S\\S\cup \{1\}\text{, om }1\notin S\end{cases}\)</span>
-En bijektion eftersom <span class="arithmatex">\(f(f(S))=S\)</span> för alla S.</p>
+<p>Vi sätter in <span class="arithmatex">\(x=-1\)</span> i binomialsatsen: <span class="arithmatex">\((x+1)^n=((-1)+1)^n=0^n=0\)</span><br>
+Vi får då <span class="arithmatex">\(0=\sum_{k=0}^n\binom nk (-1)^k=1-\binom n1+\binom n2-\binom n3+\dots=(1+\binom n2+\binom n4+\dots)-(\binom n1+\binom n3+\dots)=\text{"antal delmängder av jämn storlek"}-\text{"antal delmängder av udda storlek"}=0\)</span></p>
+<blockquote>
+<p>Vi kan visa detta:<br>
+<span class="arithmatex">\(J_n=\{S|S\subseteq\{1,2,\dots,n\}\land|S|\text{ jämn}\}\)</span><br>
+<span class="arithmatex">\(U_n=\{S|S\subseteq\{1,2,\dots,n\}\land|S|\text{ udda}\}\)</span></p>
+</blockquote>
+<p>Hitta en bijektion <span class="arithmatex">\(f:J_n\rarr U_n\)</span>:<br>
+<span class="arithmatex">\(f(S)=\begin{cases}S\setminus\{1\}\text{, om }1\in S\\S\cup \{1\}\text{, om }1\notin S\end{cases}\)</span></p>
+<p>En bijektion eftersom <span class="arithmatex">\(f(f(S))=S\)</span> för alla S.</p>
 <h3 id="oordnat-utan-upprepning">Oordnat, utan upprepning</h3>
 <blockquote>
-<p><strong>Exempel:</strong> <em>186 studenter ska ha övningar i 4 olika salar med 36, 42, 45 och 63 platser vardera. På hur många olika sätt kan studenterna fördelas?</em>
-(1) Välj vilka som ska sitta i sal 1: <span class="arithmatex">\(\binom{186}{36}\)</span>
-(2) Välj vilka som ska sitta i sal 2: <span class="arithmatex">\(\binom{186-36}{42}\)</span>
-(3) Välj vilka som ska sitta i sal 3: <span class="arithmatex">\(\binom{186-36-42}{45}\)</span>
-(4) Välj vilka som ska sitta i sal 4: <span class="arithmatex">\(\binom{63}{63}=1\)</span>
-Valen är oberoende, multiplikationsprincipen gäller:
-<strong>Svar:</strong> <span class="arithmatex">\(\binom{186}{36}\binom{186-36}{42}\binom{186-36-42}{45}\binom{63}{63}\)</span>
-Vi kan förenkla detta:
+<p><strong>Exempel:</strong> <em>186 studenter ska ha övningar i 4 olika salar med 36, 42, 45 och 63 platser vardera. På hur många olika sätt kan studenterna fördelas?</em></p>
+<p>(1) Välj vilka som ska sitta i sal 1: <span class="arithmatex">\(\binom{186}{36}\)</span><br>
+(2) Välj vilka som ska sitta i sal 2: <span class="arithmatex">\(\binom{186-36}{42}\)</span><br>
+(3) Välj vilka som ska sitta i sal 3: <span class="arithmatex">\(\binom{186-36-42}{45}\)</span><br>
+(4) Välj vilka som ska sitta i sal 4: <span class="arithmatex">\(\binom{63}{63}=1\)</span></p>
+<p>Valen är oberoende, multiplikationsprincipen gäller:<br>
+<strong>Svar:</strong> <span class="arithmatex">\(\binom{186}{36}\binom{186-36}{42}\binom{186-36-42}{45}\binom{63}{63}\)</span></p>
+<p>Vi kan förenkla detta:<br>
 <span class="arithmatex">\(\frac{186!}{36!(186-36)!}\frac{(186-36)!}{42!(186-36-42)!}\frac{(186-36-42)!}{45!(186-36-42-45)!}=\frac{186!}{36!\cdot42!\cdot45!\cdot63!}\)</span></p>
 </blockquote>
 <p><strong>Multinomialtal:</strong>
 Anta <span class="arithmatex">\(k_1+k_2+\cdots+k_m=n\)</span>.</p>
 <blockquote>
-<p><em>Multinomialtalet</em> <span class="arithmatex">\(\binom{n}{k_1,k_2,\dots,k_m}\)</span> <strong>antalet sätt att fördela talen <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> i <span class="arithmatex">\(m\)</span> stycken lådor så att låda <span class="arithmatex">\(x\)</span> får <span class="arithmatex">\(k_x\)</span> element.
+<p><em>Multinomialtalet</em> <span class="arithmatex">\(\binom{n}{k_1,k_2,\dots,k_m}\)</span> <strong>antalet sätt att fördela talen <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> i <span class="arithmatex">\(m\)</span> stycken lådor så att låda <span class="arithmatex">\(x\)</span> får <span class="arithmatex">\(k_x\)</span> element.<br>
 </strong>Sats:** <span class="arithmatex">\(\binom{n}{k_1,k_2,\dots,k_m}=\frac{n!}{k_1!k_2!\cdots k_m!}\)</span></p>
-<p><strong>Exempel:</strong> <em>Hur många olika ord kan man bilda av bokstäverna <span class="arithmatex">\(\text{MISSISSIPPI}\)</span>?</em>
-Vi antar positionerna <span class="arithmatex">\(\{1,2,\dots,11\}\)</span> och väljer vilka som ska varje bokstav.
-Bokstaven <span class="arithmatex">\(\text I\)</span> finns t.ex. 4 ggr, och "rymmer" därför 4 av positionerna. Osv.
+</blockquote>
+<!-- -->
+<blockquote>
+<p><strong>Exempel:</strong> <em>Hur många olika ord kan man bilda av bokstäverna <span class="arithmatex">\(\text{MISSISSIPPI}\)</span>?</em><br>
+Vi antar positionerna <span class="arithmatex">\(\{1,2,\dots,11\}\)</span> och väljer vilka som ska varje bokstav.<br>
+Bokstaven <span class="arithmatex">\(\text I\)</span> finns t.ex. 4 ggr, och "rymmer" därför 4 av positionerna. Osv.<br>
 <strong>Svar:</strong> <span class="arithmatex">\(\binom{11}{4,1,2,4}=\frac{11!}{4!\cdot1!\cdot2!\cdot4!}\)</span></p>
 </blockquote>
 <p><strong>Ordnat val med upprepning:</strong></p>
 <blockquote>
-<p>Antalet sätt att ordna <span class="arithmatex">\(n\)</span> stycken objekt, där man har <span class="arithmatex">\(k_m\)</span> av <span class="arithmatex">\(m\)</span>:e slaget, är:
-<span class="arithmatex">\(<span class="arithmatex">\(\binom n{k_1,k_2,\dots,k_m}=\frac{n!}{k_1!\cdot k_2!\cdots k_m!}\)</span>\)</span></p>
-<p><strong>Exempel:</strong> <em>Hur många ord med 4 bokstäver kan man bilda ur <span class="arithmatex">\(\text{"STOLLE"}\)</span>?</em>
-Två fall:
-(1) Högst ett "L" förekommer. Vi väljer då 4 (utan upprepning): <span class="arithmatex">\(5\cdot4\cdot3\cdot2\)</span>
-(2) Exakt två "L" förekommer.
-(2.1) Välj plats för båda "L": <span class="arithmatex">\(\binom 42\)</span> (ordning ej viktigt här)
-(2.2) Välj 2 av <span class="arithmatex">\(\text{"STOE"}\)</span> (ordning viktigt): <span class="arithmatex">\(4\cdot3\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(5\cdot4\cdot3\cdot2+\binom 42\cdot4\cdot3\)</span></p>
+<p>Antalet sätt att ordna <span class="arithmatex">\(n\)</span> stycken objekt, där man har <span class="arithmatex">\(k_m\)</span> av <span class="arithmatex">\(m\)</span>:e slaget, är:</p>
+<div class="arithmatex">\[\binom n{k_1,k_2,\dots,k_m}=\frac{n!}{k_1!\cdot k_2!\cdots k_m!}\]</div>
+</blockquote>
+<!-- -->
+<blockquote>
+<p><strong>Exempel:</strong> <em>Hur många ord med 4 bokstäver kan man bilda ur <span class="arithmatex">\(\text{"STOLLE"}\)</span>?</em></p>
+<p>Två fall:<br>
+(1) Högst ett "L" förekommer. Vi väljer då 4 (utan upprepning): <span class="arithmatex">\(5\cdot4\cdot3\cdot2\)</span><br>
+(2) Exakt två "L" förekommer.<br>
+(2.1) Välj plats för båda "L": <span class="arithmatex">\(\binom 42\)</span> (ordning ej viktigt här)<br>
+(2.2) Välj 2 av <span class="arithmatex">\(\text{"STOE"}\)</span> (ordning viktigt): <span class="arithmatex">\(4\cdot3\)</span></p>
+<p><strong>Svar:</strong> <span class="arithmatex">\(5\cdot4\cdot3\cdot2+\binom 42\cdot4\cdot3\)</span></p>
+</blockquote>
+<!-- -->
+<blockquote>
 <p><strong>Exempel:</strong> <em>Låt <span class="arithmatex">\(\mathcal M\)</span> vara mängden av alla ord som kan bildas ur <span class="arithmatex">\(\text{"RAGGARGRANEN"}\)</span>.</em></p>
-<p><em>(a) Bestäm <span class="arithmatex">\(|\mathcal M|\)</span></em>.
-Vi har 3 st "A", 1 st "E", 3 st "G", 2 st "N" och 3 st "R".
-<strong>Svar:</strong> <span class="arithmatex">\(\binom{12}{3,1,3,2,3}=\frac{12!}{3!\cdot1!\cdot3!\cdot2!\cdot3!}\)</span>
-<em>(b)</em> Hur många ord i <span class="arithmatex">\(\mathcal M\)</span> innehåller <span class="arithmatex">\(\text{"GRENAR"}\)</span>?
-Vi har t.ex. "RAG<strong>GRENAR</strong>GAN".
-Ordet "GRENAR" kan finnas på 7 platser.
-För var och en av dessa alternativ väljer vi bokstav (AAGGNR) åt återstående 6 teckenpositioner: <span class="arithmatex">\(\binom{6}{2,2,1,1}=\frac{6!}{2\cdot2}=\frac{6!}4\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(7\cdot\frac{6!}4=\frac{7!}4\)</span> ord
-<em>(<span class="arithmatex">\({}\)</span>c) Hur många ord i <span class="arithmatex">\(\mathcal M\)</span></em> innehåller varken <span class="arithmatex">\(\text{GRENAR}\)</span> eller <span class="arithmatex">\(\text{NARRA}\)</span>?
-Vi har t.ex. "<strong>GRENARRA</strong>GGNA".
-<span class="arithmatex">\(S=\{\text{ord som innehåller "GRENAR"}\}\)</span>
-<span class="arithmatex">\(T=\{\text{ord som innehåller "NARRA"}\}\)</span>
-Vi söker:
-<span class="arithmatex">\(|\mathcal M\setminus(S\cup T)|=|\mathcal M|-|S\cup T|=|\mathcal M|-(|S|+|T|-|S\cap T|)=|\mathcal M|-|S|-|T|+|S\cap T|\)</span>
-<span class="arithmatex">\(|T|=8\binom{7}{3,1,1,1,1}=\frac{8\cdot7!}6\)</span>
-<span class="arithmatex">\(|S\cap T|\)</span> stycken innehåller "GRENARRA" (enda sättet för skapa båda orden samtidigt med givna bokstäver)
-<span class="arithmatex">\(|S\cap T|=5\binom{4}{2,1,1}=\frac{5\cdot4!}2\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(|\mathcal M|-|S|-|T|+|S\cap T|=\frac{12!}{2\cdot6^3}-\frac{7!}4-\frac{8\cdot7!}6+\frac{5\cdot4!}2\)</span> ord</p>
+<p><em>(a) Bestäm <span class="arithmatex">\(|\mathcal M|\)</span></em>.</p>
+<p>Vi har 3 st "A", 1 st "E", 3 st "G", 2 st "N" och 3 st "R".</p>
+<p><strong>Svar:</strong> <span class="arithmatex">\(\binom{12}{3,1,3,2,3}=\frac{12!}{3!\cdot1!\cdot3!\cdot2!\cdot3!}\)</span></p>
+<p><em>(b)</em> Hur många ord i <span class="arithmatex">\(\mathcal M\)</span> innehåller <span class="arithmatex">\(\text{"GRENAR"}\)</span>?</p>
+<p>Vi har t.ex. "RAG<strong>GRENAR</strong>GAN".<br>
+Ordet "GRENAR" kan finnas på 7 platser.<br>
+För var och en av dessa alternativ väljer vi bokstav (AAGGNR) åt återstående 6 teckenpositioner: <span class="arithmatex">\(\binom{6}{2,2,1,1}=\frac{6!}{2\cdot2}=\frac{6!}4\)</span></p>
+<p><strong>Svar:</strong> <span class="arithmatex">\(7\cdot\frac{6!}4=\frac{7!}4\)</span> ord</p>
+<p><em>(c) Hur många ord i <span class="arithmatex">\(\mathcal M\)</span></em> innehåller varken <span class="arithmatex">\(\text{GRENAR}\)</span> eller <span class="arithmatex">\(\text{NARRA}\)</span>?</p>
+<p>Vi har t.ex. "<strong>GRENARRA</strong>GGNA".<br>
+<span class="arithmatex">\(S=\{\text{ord som innehåller "GRENAR"}\}\)</span><br>
+<span class="arithmatex">\(T=\{\text{ord som innehåller "NARRA"}\}\)</span></p>
+<p>Vi söker:<br>
+<span class="arithmatex">\(|\mathcal M\setminus(S\cup T)|=|\mathcal M|-|S\cup T|=|\mathcal M|-(|S|+|T|-|S\cap T|)=|\mathcal M|-|S|-|T|+|S\cap T|\)</span><br>
+<span class="arithmatex">\(|T|=8\binom{7}{3,1,1,1,1}=\frac{8\cdot7!}6\)</span><br>
+<span class="arithmatex">\(|S\cap T|\)</span> stycken innehåller "GRENARRA" (enda sättet för skapa båda orden samtidigt med givna bokstäver)<br>
+<span class="arithmatex">\(|S\cap T|=5\binom{4}{2,1,1}=\frac{5\cdot4!}2\)</span></p>
+<p><strong>Svar:</strong> <span class="arithmatex">\(|\mathcal M|-|S|-|T|+|S\cap T|=\frac{12!}{2\cdot6^3}-\frac{7!}4-\frac{8\cdot7!}6+\frac{5\cdot4!}2\)</span> ord</p>
 </blockquote>
 <h3 id="multinomialsatsen">Multinomialsatsen</h3>
-<div class="arithmatex">\[(x_1+\dots+x_m)^n\\=\sum_{k_1+\dots+k_m=n}\binom n{k_1,k_2,\dots,k_m}x_1^{k_1}\cdots x_m^{k_m}$$
-T.ex.
-$$(x_1+x_2+x_3)^3\\=\binom 3{3,0,0}x_1^3+\binom 7{2,1,0}x_1^2x_2+\binom 3{1,1,1}x_1x_2x_3\\=x_1^3+\frac {3!}{2!}\cdot x_1^2x_2+3!\cdot x_1x_2x_3+\dots\\=x_1^3+3x_1^2x_2+6x_1x_2x_3+\dots\]</div>
+<div class="arithmatex">\[(x_1+\dots+x_m)^n\\=\sum_{k_1+\dots+k_m=n}\binom n{k_1,k_2,\dots,k_m}x_1^{k_1}\cdots x_m^{k_m}\]</div>
+<p>T.ex.</p>
+<div class="arithmatex">\[(x_1+x_2+x_3)^3\\=\binom 3{3,0,0}x_1^3+\binom 7{2,1,0}x_1^2x_2+\binom 3{1,1,1}x_1x_2x_3\\=x_1^3+\frac {3!}{2!}\cdot x_1^2x_2+3!\cdot x_1x_2x_3+\dots\\=x_1^3+3x_1^2x_2+6x_1x_2x_3+\dots\]</div>
 <blockquote>
-<p><strong>Exempel:</strong> <em>Vad är koefficienten framför <span class="arithmatex">\(x^3y^5z^{24}\)</span> i <span class="arithmatex">\((x+y+z^2)^{20}\)</span>?</em>
-Vi gör variabelbyte <span class="arithmatex">\(w=z^2\)</span>, vilket ger
-<span class="arithmatex">\((x+y+z^2)^{20}=(x+y+w)^{20}=\sum_{k_1,k_2,k_3}\binom{20}{k_1,k_2,k_3}x^{k_1}y^{k_2}w^{k_3}\)</span>
-Vi söker koefficienten framför <span class="arithmatex">\(x^3y^5z^{24}=x^3y^5w^{12}\)</span>.
-<span class="arithmatex">\(\therefore k_1=3,k_2=5,k_3=12\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(\binom{20}{3,5,12}=\frac{20!}{3!\cdot5!\cdot12!}\)</span></p>
+<p><strong>Exempel:</strong> <em>Vad är koefficienten framför <span class="arithmatex">\(x^3y^5z^{24}\)</span> i <span class="arithmatex">\((x+y+z^2)^{20}\)</span>?</em></p>
+<p>Vi gör variabelbyte <span class="arithmatex">\(w=z^2\)</span>, vilket ger<br>
+<span class="arithmatex">\((x+y+z^2)^{20}=(x+y+w)^{20}=\sum_{k_1,k_2,k_3}\binom{20}{k_1,k_2,k_3}x^{k_1}y^{k_2}w^{k_3}\)</span></p>
+<p>Vi söker koefficienten framför <span class="arithmatex">\(x^3y^5z^{24}=x^3y^5w^{12}\)</span>.<br>
+<span class="arithmatex">\(\therefore k_1=3,k_2=5,k_3=12\)</span></p>
+<p><strong>Svar:</strong> <span class="arithmatex">\(\binom{20}{3,5,12}=\frac{20!}{3!\cdot5!\cdot12!}\)</span></p>
 </blockquote>
 <h3 id="kompositioner">Kompositioner</h3>
 <blockquote>
-<p><strong>Exempel:</strong> <em>På hur många sätt kan man fördela <span class="arithmatex">\(n\)</span> identiska kulor i lådor <span class="arithmatex">\(1,2,\dots,k\)</span>, så att ingen låda blir tom?</em>
-Vi har <span class="arithmatex">\(n-1\)</span> möjliga "mellanrum": <span class="arithmatex">\(1|_{_1}2|_{_2}\cdots|_{_{n-1}}n\)</span>
-Vi vill ha <span class="arithmatex">\(k\)</span> lådor och väljer därför <span class="arithmatex">\(k-1\)</span> mellanrum:
-T.ex. <span class="arithmatex">\((1,2|_{_1}3,4,5|_{_2}\dots|_{_{k-1}}n)\)</span>
-Detta kallas för en <strong>komposition</strong> av <span class="arithmatex">\(n\)</span> element i <span class="arithmatex">\(k\)</span> delar.
+<p><strong>Exempel:</strong> <em>På hur många sätt kan man fördela <span class="arithmatex">\(n\)</span> identiska kulor i lådor <span class="arithmatex">\(1,2,\dots,k\)</span>, så att ingen låda blir tom?</em></p>
+<p>Vi har <span class="arithmatex">\(n-1\)</span> möjliga "mellanrum": <span class="arithmatex">\(1|_{_1}2|_{_2}\cdots|_{_{n-1}}n\)</span><br>
+Vi vill ha <span class="arithmatex">\(k\)</span> lådor och väljer därför <span class="arithmatex">\(k-1\)</span> mellanrum:<br>
+T.ex. <span class="arithmatex">\((1,2|_{_1}3,4,5|_{_2}\dots|_{_{k-1}}n)\)</span><br>
+Detta kallas för en <strong>komposition</strong> av <span class="arithmatex">\(n\)</span> element i <span class="arithmatex">\(k\)</span> delar.<br>
 <strong>Svar:</strong> Vi kan fördela kulorna på <span class="arithmatex">\(\binom{n-1}{k-1}\)</span></p>
 </blockquote>
 <p>Ekvationen <span class="arithmatex">\(x_1+x_2+\cdots+x_k=n, x_i&gt;0\text{ för alla }i\)</span> har <span class="arithmatex">\(\binom{n-1}{k-1}\)</span> lösningar.</p>
-<p><strong>Om lådor får vara tomma?</strong>
-Vi antar <span class="arithmatex">\(y_i=\text{antalet kulor i låda }i\)</span>.
-Det ger ekvationen <span class="arithmatex">\(y_1+\cdots+y_k=n,\ y_i\geq0\)</span>.
-Substitution: <span class="arithmatex">\(x_i = y_i+1\)</span>
-<span class="arithmatex">\(x_1+x_2+\dots+x_k=(y_1+1)+\dots+(y_k+1)\\=y_1+\dots+y_k+k\\=n+k\)</span>
+<p><strong>Om lådor får vara tomma?</strong><br>
+Vi antar <span class="arithmatex">\(y_i=\text{antalet kulor i låda }i\)</span>.<br>
+Det ger ekvationen <span class="arithmatex">\(y_1+\cdots+y_k=n,\ y_i\geq0\)</span>.<br>
+Substitution: <span class="arithmatex">\(x_i = y_i+1\)</span><br>
+<span class="arithmatex">\(x_1+x_2+\dots+x_k=(y_1+1)+\dots+(y_k+1)\\=y_1+\dots+y_k+k\\=n+k\)</span><br>
 <strong>Svar:</strong> <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span></p>
 <p><em>Man kan tänka att man räknar som tidigare, men att man tillför <span class="arithmatex">\(k\)</span> "tomma" element (ett för varje låda).</em></p>
 <h2 id="forelasning-18">Föreläsning 18</h2>
 <h3 id="oordnade-val-med-upprepning">Oordnade val med upprepning</h3>
 <p>En <strong>multimängd</strong> är en mängd där <em>upprepade element tillåts</em>.</p>
 <blockquote>
-<p><span class="arithmatex">\(\{2,3,3,2,4,6,4\}\neq\{2,3,4,6\}\)</span>
-<span class="arithmatex">\(\{2,3,3,2,4,6,4\}\)</span> har storleken <span class="arithmatex">\(7\)</span>.
+<p><span class="arithmatex">\(\{2,3,3,2,4,6,4\}\neq\{2,3,4,6\}\)</span><br>
+<span class="arithmatex">\(\{2,3,3,2,4,6,4\}\)</span> har storleken <span class="arithmatex">\(7\)</span>.<br>
 <em>Ordning har ingen betydelse, endast antalet är viktigt!</em></p>
 </blockquote>
-<p><em>Hur många multimängder av storlek <span class="arithmatex">\(n\)</span> med element från <span class="arithmatex">\(\{1,2,\dots,k\}\)</span> finns det?</em>
-Låt <span class="arithmatex">\(y_i\)</span> vara antalet element <span class="arithmatex">\(i\)</span> i en multimängd.
-<span class="arithmatex">\(y_1+y_2+\dots+y_k=n\)</span>
-Lösningen ges av <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span>.
+<p><em>Hur många multimängder av storlek <span class="arithmatex">\(n\)</span> med element från <span class="arithmatex">\(\{1,2,\dots,k\}\)</span> finns det?</em><br>
+Låt <span class="arithmatex">\(y_i\)</span> vara antalet element <span class="arithmatex">\(i\)</span> i en multimängd.<br>
+<span class="arithmatex">\(y_1+y_2+\dots+y_k=n\)</span></p>
+<p>Lösningen ges av <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span>.<br>
 <strong>Svar:</strong> Det finns <span class="arithmatex">\(\binom{n+k-1}{k-1}\)</span> stycken.</p>
 <blockquote>
-<p><strong>Exempel:</strong> <em>Olga ska köpa lördagsgodis. I butiken finns 7 sorters godis och hon får välja exakt 15 godisar. På hur många sätt kan hon välja innehållet i godispåsen?</em>
-Godispåsen motsvarar en multimängd av storlek 15.
-Vi räknar kompositioner: <span class="arithmatex">\(n=15,\ k=7\)</span>
-<strong>Svar:</strong> På <span class="arithmatex">\(\binom{15+7-1}{7-1}=\binom{21}6\)</span> sätt.</p>
-<p><strong>Exempel:</strong> <em>Hur många heltalslösningar finns det till
-<span class="arithmatex">\(x_1+x_2+x_3+x_4\leq14\)</span>, där <span class="arithmatex">\(\begin{cases}x_1\geq-3\\x_2\geq2\\x_3\geq-5\\x_4\geq3\end{cases}\)</span>?</em>
-Vi vill skriva om ekvationen på en form som vi känner igen. Vi sätter <span class="arithmatex">\(x_5=\text{HL}-\text{VL}\)</span>. Detta ger:
-<span class="arithmatex">\(\iff x_1+x_2+x_3+x_4+x_5=14\)</span>
-Variabelsubstitutionen så att alla termer <span class="arithmatex">\(\geq0\)</span>:
-<span class="arithmatex">\(\begin{cases}y_1=x_1+3\\y_2=x_2-2\\y_3=x_3+5\\y_4=x_4-3\\y_5=x_5\end{cases}\)</span>
-<span class="arithmatex">\(\iff y_1+y_2+y_3+y_4+y_5=(x_1+3)+(x_2-2)+(x_3+5)+(x_4-3)+x_5\\=x_1+x_2+x_3+x_4+x_5+3=14+3=17\)</span>
-<strong>Svar:</strong> Denna kan lösas på <span class="arithmatex">\(\binom{17+5-1}{5-1}=\binom{21}4\)</span> sätt!</p>
+<p><strong>Exempel:</strong> <em>Olga ska köpa lördagsgodis. I butiken finns 7 sorters godis och hon får välja exakt 15 godisar. På hur många sätt kan hon välja innehållet i godispåsen?</em></p>
+<p>Godispåsen motsvarar en multimängd av storlek 15.<br>
+Vi räknar kompositioner: <span class="arithmatex">\(n=15,\ k=7\)</span></p>
+<p><strong>Svar:</strong> På <span class="arithmatex">\(\binom{15+7-1}{7-1}=\binom{21}6\)</span> sätt.</p>
+</blockquote>
+<!-- -->
+<blockquote>
+<p><strong>Exempel:</strong> <em>Hur många heltalslösningar finns det till<br>
+<span class="arithmatex">\(x_1+x_2+x_3+x_4\leq14\)</span>, där <span class="arithmatex">\(\begin{cases}x_1\geq-3\\x_2\geq2\\x_3\geq-5\\x_4\geq3\end{cases}\)</span>?</em></p>
+<p>Vi vill skriva om ekvationen på en form som vi känner igen. Vi sätter <span class="arithmatex">\(x_5=\text{HL}-\text{VL}\)</span>. Detta ger:<br>
+<span class="arithmatex">\(\iff x_1+x_2+x_3+x_4+x_5=14\)</span></p>
+<p>Variabelsubstitutionen så att alla termer <span class="arithmatex">\(\geq0\)</span>:<br>
+<span class="arithmatex">\(\begin{cases}y_1=x_1+3\\y_2=x_2-2\\y_3=x_3+5\\y_4=x_4-3\\y_5=x_5\end{cases}\)</span><br>
+<span class="arithmatex">\(\iff y_1+y_2+y_3+y_4+y_5=(x_1+3)+(x_2-2)+(x_3+5)+(x_4-3)+x_5\\=x_1+x_2+x_3+x_4+x_5+3=14+3=17\)</span></p>
+<p><strong>Svar:</strong> Denna kan lösas på <span class="arithmatex">\(\binom{17+5-1}{5-1}=\binom{21}4\)</span> sätt!</p>
 </blockquote>
 <h3 id="postfacksprincipen-dirichlets-ladprincip">Postfacksprincipen (Dirichlets lådprincip)</h3>
 <blockquote>
-<p>Om fler än <span class="arithmatex">\(k\)</span> objekt ska objekt i <span class="arithmatex">\(k\)</span> lådor, så måste minst en låda innehålla <span class="arithmatex">\(\geq2\)</span> element.
-<em>Alt: Om <span class="arithmatex">\(X,Y\)</span> är ändliga mängder och <span class="arithmatex">\(|X|&gt;|Y|\)</span>, så finns det ingen injektion <span class="arithmatex">\(f:X\rarr Y\)</span>
+<p>Om fler än <span class="arithmatex">\(k\)</span> objekt ska objekt i <span class="arithmatex">\(k\)</span> lådor, så måste minst en låda innehålla <span class="arithmatex">\(\geq2\)</span> element.<br>
+<em>Alt: Om <span class="arithmatex">\(X,Y\)</span> är ändliga mängder och <span class="arithmatex">\(|X|&gt;|Y|\)</span>, så finns det ingen injektion <span class="arithmatex">\(f:X\rarr Y\)</span><br>
 (Injektioner måste ge unikt <span class="arithmatex">\(y\)</span> för unikt <span class="arithmatex">\(x\)</span>)</em>.</p>
 </blockquote>
 <h3 id="principen-om-inklusionexklusion">Principen om inklusion/exklusion</h3>
 <blockquote>
-<p><em>Om <span class="arithmatex">\(A-1,\dots,A_n\)</span> är ändliga mängder så är</em>
-<span class="arithmatex">\(<span class="arithmatex">\(|A_1\cup A_2\cup\cdots\cup A_n|=|A_1|+|A_2|+\cdots+|A_n|\\-|A_1\cap A_2|-|A_1\cap A_3|-\cdots-|A_{n-1}\cap A_n|\\+|A_1\cap A_2\cap A_3|+\cdots+|A_{n-2}\cap A_{n-1}\cap A_n|\\\ddots\\+(-1)^{n+1}\ddots|A_1\cap A_2\cap A_3\cap\cdot\cap A_n|\)</span>\)</span></p>
+<p><em>Om <span class="arithmatex">\(A-1,\dots,A_n\)</span> är ändliga mängder så är</em></p>
+<div class="arithmatex">\[|A_1\cup A_2\cup\cdots\cup A_n|=|A_1|+|A_2|+\cdots+|A_n|\\-|A_1\cap A_2|-|A_1\cap A_3|-\cdots-|A_{n-1}\cap A_n|\\+|A_1\cap A_2\cap A_3|+\cdots+|A_{n-2}\cap A_{n-1}\cap A_n|\\\ddots\\+(-1)^{n+1}\ddots|A_1\cap A_2\cap A_3\cap\cdot\cap A_n|\]</div>
 </blockquote>
 <p>Hur uttrycker vi <span class="arithmatex">\(|u\setminus(A_1\cup A_2\cup\cdots\cup A_n)|\)</span>?</p>
 <blockquote>
-<p><span class="arithmatex">\(u\)</span> är universum, dvs. <span class="arithmatex">\(A_i\subseteq u\text{ för alla }i\)</span>.
+<p><span class="arithmatex">\(u\)</span> är universum, dvs. <span class="arithmatex">\(A_i\subseteq u\text{ för alla }i\)</span>.<br>
 <span class="arithmatex">\(|u\setminus(A_1\cup A_2\cup\cdots\cup A_n)|\\=|u|-(A_1\cup A_2\cup\cdots\cup A_n)|\\=|u|-(|A_1|+\cdots+|A_n|)\)</span></p>
-<p><strong>Exempel:</strong> <em>Utav 200 studenter deltog <span class="arithmatex">\(|F|=172\)</span> på föreläsningar, <span class="arithmatex">\(|O|=130\)</span> på övningar och <span class="arithmatex">\(|S|=150\)</span> på seminarier. <span class="arithmatex">\(|F\cap S|=142,\ |F\cap O|=125,\ |S\cap O|=123,\ |F\cap S\cap O|=120\)</span></em>
-Hur många deltog inte i något av momenten?
-Vi söker <span class="arithmatex">\(|u\setminus(F\cup O\cup S)|\)</span>, där <span class="arithmatex">\(u=\text{studenterna}\)</span>.
+</blockquote>
+<!-- -->
+<blockquote>
+<p><strong>Exempel:</strong> <em>Utav 200 studenter deltog <span class="arithmatex">\(|F|=172\)</span> på föreläsningar, <span class="arithmatex">\(|O|=130\)</span> på övningar och <span class="arithmatex">\(|S|=150\)</span> på seminarier. <span class="arithmatex">\(|F\cap S|=142,\ |F\cap O|=125,\ |S\cap O|=123,\ |F\cap S\cap O|=120\)</span></em><br>
+Hur många deltog inte i något av momenten?</p>
+<p>Vi söker <span class="arithmatex">\(|u\setminus(F\cup O\cup S)|\)</span>, där <span class="arithmatex">\(u=\text{studenterna}\)</span>.<br>
 <span class="arithmatex">\(|u\setminus(F\cup O\cup S)|\)</span>=<span class="arithmatex">\(|u| - |F|-|O|-|S|+|F\cap S|+|F\cap O|+|S\cap O|-|F\cap S\cap O|=200-172-130-150+142+125+123-120=18\)</span>
 <strong>Svar:</strong> 18 elever.</p>
 </blockquote>

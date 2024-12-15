@@ -3012,12 +3012,12 @@ Allmänt kan <em>n</em>-ställiga relationer definieras, där varje komponent i 
 <p><strong>Exempel:</strong>
 Formeln <span class="arithmatex">\(\forall x\forall y(x+y=y+x)\)</span> är sann om vi tänker oss "addition över heltal", men <em>inte sann</em> om vi tänker oss "konkatenering av strängar".</p>
 </blockquote>
-<p>En <em>modell</em> till en predikatlogisk formel <span class="arithmatex">\(\phi\)</span> specificerar:</p>
+<p>En <em>modell</em> <span class="arithmatex">\(\mathcal M\)</span> till en predikatlogisk formel <span class="arithmatex">\(\phi\)</span> specificerar:</p>
 <ul>
 <li>ett universum <span class="arithmatex">\(A\)</span></li>
-<li>ett element i <span class="arithmatex">\(A\)</span> för varje <em>konstant</em> i <span class="arithmatex">\(\phi\)</span></li>
-<li>en funktion <span class="arithmatex">\(f:A^n\rarr A\)</span> för varje funktionssymbol i <span class="arithmatex">\(\phi\)</span></li>
-<li>en <em>n</em>-ställig relation över <span class="arithmatex">\(A\)</span> för varje predikatsymbol (t.ex. &lt;) i <span class="arithmatex">\(\phi\)</span></li>
+<li>för varje konstant i <span class="arithmatex">\(\phi\)</span>: ett element i <span class="arithmatex">\(A\)</span></li>
+<li>för varje funktionssymbol <span class="arithmatex">\(f\)</span> i <span class="arithmatex">\(\phi\)</span>: en funktion <span class="arithmatex">\(f^{\mathcal M}:A^n\rarr A\)</span></li>
+<li>för varje predikatsymbol <span class="arithmatex">\(P\)</span> (t.ex. &lt;) i <span class="arithmatex">\(\phi\)</span>: en <em>n</em>-ställig relation <span class="arithmatex">\({\mathrel P}^{\mathcal M}\in A^n\)</span></li>
 </ul>
 <p>Om <span class="arithmatex">\(\phi\)</span> är sann i modellen <span class="arithmatex">\(M\)</span>, skriver vi att <span class="arithmatex">\(M\vDash\phi\)</span>.</p>
 <h4 id="rekursiv-evaluering">Rekursiv evaluering</h4>

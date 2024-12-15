@@ -4860,15 +4860,13 @@ Ange ett villkor för om systemet</p>
 <h4 id="tva-samband-mellan-tre-variabler">Två samband mellan tre variabler</h4>
 <p>Om vi har sambanden <span class="arithmatex">\(\begin{cases}f(x,y,z)=0\\g(x,y,z)=0\end{cases}\)</span> och dessa är kontinuerligt deriverbara,
 så ges <span class="arithmatex">\(x\)</span> och <span class="arithmatex">\(y\)</span> som kontinuerligt deriverbara funktioner av <span class="arithmatex">\(z\)</span> kring någon punkt (som uppfyller sambanden) om</p>
-<div class="arithmatex">\[\det\begin{bmatrix}\frac{\partial(f,g)}{\partial(x,y)}(a,b,c)\end{bmatrix}\neq0$$
-&gt; **Härledning:**&lt;br&gt;
-&gt; Kring en punkt $(a,b,c)$ gäller enligt linjär approximation:&lt;br&gt;
-&gt; $\begin{cases}f(a,b,c)+f_x'(a,b,c)h+f_y'(a,b,c)k+f_z'(a,b,c)l+\text{fel}=0\\g(a,b,c)+g_x'(a,b,c)h+g_y'(a,b,c)k+g_z'(a,b,c)l+\text{fel}=0\end{cases}$
-&gt; 
-&gt; Enligt vad vi såg tidigare gäller att $h,k$ kan lösas ut som funktioner av $l$ om
-&gt; 
-&gt; $$\begin{vmatrix}f_x'(a,b,c)&amp;f_y'(a,b,c)\\g_x'(a,b,c)&amp;g_y'(a,b,c)\end{vmatrix}\neq0\]</div>
+<div class="arithmatex">\[\det\begin{bmatrix}\frac{\partial(f,g)}{\partial(x,y)}(a,b,c)\end{bmatrix}\neq0\]</div>
 <blockquote>
+<p><strong>Härledning:</strong><br>
+Kring en punkt <span class="arithmatex">\((a,b,c)\)</span> gäller enligt linjär approximation:<br>
+<span class="arithmatex">\(\begin{cases}f(a,b,c)+f_x'(a,b,c)h+f_y'(a,b,c)k+f_z'(a,b,c)l+\text{fel}=0\\g(a,b,c)+g_x'(a,b,c)h+g_y'(a,b,c)k+g_z'(a,b,c)l+\text{fel}=0\end{cases}\)</span></p>
+<p>Enligt vad vi såg tidigare gäller att <span class="arithmatex">\(h,k\)</span> kan lösas ut som funktioner av <span class="arithmatex">\(l\)</span> om</p>
+<div class="arithmatex">\[\begin{vmatrix}f_x'(a,b,c)&amp;f_y'(a,b,c)\\g_x'(a,b,c)&amp;g_y'(a,b,c)\end{vmatrix}\neq0\]</div>
 <p><strong>Exempel:</strong> Visa att sambanden <span class="arithmatex">\(\begin{cases}2e^x-e^y-e^z=0\\xyz-1=0\end{cases}\)</span> definierar kontinuerligt deriverbara funktioner <span class="arithmatex">\(x=x(z),y=y(z)\)</span> kring <span class="arithmatex">\((1,1,1)\)</span>.</p>
 <p>Sambanden kan skrivas som som <span class="arithmatex">\(f=0,g=0\)</span> där dessa är kontinuerligt deriverbara. Med linjär approx.:<br>
 <span class="arithmatex">\(\begin{cases}f(1,1,1)+f_x'(1,1,1)h+f_y'(1,1,1)k+f_z'(1,1,1)l+\text{fel}=0\\g(1,1,1)+g_x'(1,1,1)h+g_y'(1,1,1)k+g_z'(1,1,1)l+\text{fel}=0\end{cases}\)</span><br>
@@ -5356,8 +5354,10 @@ Inför en ny bas <span class="arithmatex">\(B=\{\bar u,\bar v\}=\{(1,0),(1,1)\}\
 Sambandet ges av <span class="arithmatex">\(x=u+v,y=v\)</span>.<br>
 Vi har nu</p>
 <div class="arithmatex">\[{\int\int}_De^{x-y}dxdy={\int\int}_De^{u+v+v}\left|\det\frac{\partial(x,y)}{\partial(u,v)}\right|dudv={\int\int}_De^{u+v+v}\begin{vmatrix}1&amp;1\\0&amp;1\end{vmatrix}dudv={\int\int}_De^{u+v+v}dudv\\=\int_0^1\int_0^1e^{u+2v}dudv\]</div>
-<p><strong>Härledning av polär substitution</strong> Härled formeln för polär substitution <span class="arithmatex">\(<span class="arithmatex">\({\int\int}_Df(x,y)dxdy={\int\int}_Df(r\cos\theta,r\sin\theta)rdrd\theta\)</span>\)</span> ur formeln för allmän substitution.<br>
-Vi har <span class="arithmatex">\(x=r\cos\theta,y=r\sin\theta\)</span>.</p>
+<p><strong>Härledning av polär substitution</strong> Härled formeln för polär substitution</p>
+<div class="arithmatex">\[{\int\int}_Df(x,y)dxdy={\int\int}_Df(r\cos\theta,r\sin\theta)rdrd\theta\]</div>
+<p>ur formeln för allmän substitution.</p>
+<p>Vi har <span class="arithmatex">\(x=r\cos\theta,y=r\sin\theta\)</span>.</p>
 <div class="arithmatex">\[{\int\int}_Df(x,y)dxdy={\int\int}_Df(r\cos\theta,r\sin\theta)\left|\det\begin{bmatrix}\cos\theta&amp;-r\sin\theta\\\sin\theta&amp;r\cos\theta\end{bmatrix}\right|drd\theta\\={\int\int}_Df(r\cos\theta,r\sin\theta)rdrd\theta\]</div>
 </blockquote>
 <h3 id="icke-linjart-variabelbyte">Icke-linjärt variabelbyte</h3>
@@ -5391,8 +5391,12 @@ Detta ger:</p>
 <li>för varje kompakt mängd <span class="arithmatex">\(G\sub D\)</span> finns ett område <span class="arithmatex">\(D_n\)</span> som innehåller <span class="arithmatex">\(G\)</span>.</li>
 </ol>
 <h3 id="definition-av-generaliserade-dubbelintegraler">Definition av generaliserade dubbelintegraler</h3>
-<p>En generaliserad dubbelintegral definieras som <span class="arithmatex">\(<span class="arithmatex">\({\int\int}_Df(x,y)dxdy=\lim_{n\to\infty}{\int\int}_{D_n}f(x,y)dxdy\)</span>\)</span> om gränsvärdet existerar och är lika för alla uttömmande följder <span class="arithmatex">\(\{D_n\}\)</span> där <span class="arithmatex">\(f(x,y)\)</span> är begränsad.</p>
-<p>För funktioner <span class="arithmatex">\(f\geq0\)</span> räcker det att visa att <span class="arithmatex">\(<span class="arithmatex">\(\lim_{n\to\infty}{\int\int}_{D_n}f(x,y)dxdy\)</span>\)</span> existerar för någon uttömmande följd <span class="arithmatex">\(\{D_n\}\)</span> för att kunna dra slutsatsen att dubbelintegralen är konvergent (dvs. existerar).</p>
+<p>En generaliserad dubbelintegral definieras som</p>
+<div class="arithmatex">\[{\int\int}_Df(x,y)dxdy=\lim_{n\to\infty}{\int\int}_{D_n}f(x,y)dxdy\]</div>
+<p>om gränsvärdet existerar och är lika för alla uttömmande följder <span class="arithmatex">\(\{D_n\}\)</span> där <span class="arithmatex">\(f(x,y)\)</span> är begränsad.</p>
+<p>För funktioner <span class="arithmatex">\(f\geq0\)</span> räcker det att visa att</p>
+<div class="arithmatex">\[\lim_{n\to\infty}{\int\int}_{D_n}f(x,y)dxdy\]</div>
+<p>existerar för någon uttömmande följd <span class="arithmatex">\(\{D_n\}\)</span> för att kunna dra slutsatsen att dubbelintegralen är konvergent (dvs. existerar).</p>
 <blockquote>
 <p><strong>Exempel:</strong> Undersök om <span class="arithmatex">\({\int\int}_{\mathbb R^2}\frac1{(1+x^2+y^2)^2}dxdy\)</span> är konvergent och beräkna i så fall integralens värde.<br>
 Vi väljer en uttömmande följd av <span class="arithmatex">\(\mathbb R^2\)</span> som cirkelskivor <span class="arithmatex">\(D_n:x^2+x^2\leq n^2\)</span>.<br>
@@ -5424,7 +5428,8 @@ Integranden är positiv<span class="arithmatex">\(\implies\)</span>Fubinis sats 
 </blockquote>
 <h2 id="forelasning-18">Föreläsning 18</h2>
 <h3 id="kryssprodukt-i-planet">Kryssprodukt i planet</h3>
-<p>Ett parallellogram som spänns upp av <span class="arithmatex">\(\vec u=(u_1,u_2),\vec v=(v_1,v_2)\)</span> har arean <span class="arithmatex">\(<span class="arithmatex">\(A=|\vec u\times\vec v|=\left|\det\begin{bmatrix}u_1&amp;u_2\\v_1&amp;v_2\end{bmatrix}\right|\)</span>\)</span></p>
+<p>Ett parallellogram som spänns upp av <span class="arithmatex">\(\vec u=(u_1,u_2),\vec v=(v_1,v_2)\)</span> har arean</p>
+<div class="arithmatex">\[A=|\vec u\times\vec v|=\left|\det\begin{bmatrix}u_1&amp;u_2\\v_1&amp;v_2\end{bmatrix}\right|\]</div>
 <h3 id="cirkulation">Cirkulation</h3>
 <p>Om en kurva <span class="arithmatex">\(\gamma\)</span> är <em>enkel</em> (inte skär sig själv) och <em>sluten</em> kurva med <em>positiv (moturs) orientering</em> så definieras cirkulationen av ett vektorfält <span class="arithmatex">\(\vec F\)</span> runt <span class="arithmatex">\(\gamma\)</span> som:</p>
 <div class="arithmatex">\[\oint_\gamma\vec F\cdot d\vec r\]</div>
@@ -5432,7 +5437,7 @@ Integranden är positiv<span class="arithmatex">\(\implies\)</span>Fubinis sats 
 <blockquote>
 <p><strong>Exempel 1:</strong> Visa att om <span class="arithmatex">\(\vec F=(a+bx+cy,e+fx+gy)\)</span> och <span class="arithmatex">\(\gamma\)</span> är den positivt orienterade randkurvan till en triangel <span class="arithmatex">\(D:(x_1,y_1),(x_2,y_2),(x_3,y_3)\)</span> så är</p>
 <div class="arithmatex">\[\boxed{\oint_\gamma\vec F\cdot d\vec r=(f-c)\cdot \text{area}(D)}\]</div>
-<p><span class="arithmatex">\(HL=(f-c)\cdot\text{area}(D)=\frac12(f-c)\begin{vmatrix}x_2-x_1&amp;y_2-y_1\\x_3-x_1&amp;y_3-y_1\end{vmatrix}\\=\frac12(f-c)\left((x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1)\right)\)</span></p>
+<div class="arithmatex">\[HL=(f-c)\cdot\text{area}(D)=\frac12(f-c)\begin{vmatrix}x_2-x_1&amp;y_2-y_1\\x_3-x_1&amp;y_3-y_1\end{vmatrix}\\=\frac12(f-c)\left((x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1)\right)\]</div>
 <p><span class="arithmatex">\(\vec F=(a+bx,e+gy)+(cy,fx)\)</span> där den vänstra termen är ett konservativt vektorfält!<br>
 Dvs. <span class="arithmatex">\(\oint_\gamma\vec F\cdot d\vec r=\oint_\gamma(cy,fx)\cdot d\vec r=\{\text{dela upp kurvan i en del/sida i triangeln}\}=I_1+I_2+I_3\)</span><br>
 <span class="arithmatex">\(I_1=\left\{\begin{matrix}\vec r=\begin{bmatrix}x_1\\y_1\end{bmatrix}+t\begin{bmatrix}x_2-x_1\\y_2-y_1\end{bmatrix}\\\text{där }t:0\to1\\d\vec r=\frac{d\vec r}{dt}dt=\begin{bmatrix}x_2-x_1\\y_2-y_1\end{bmatrix}dt\end{matrix}\right\}=\int_0^1(y_1+t(y_2-y_1))(x_2-x_1)c+(x_1+t(x_2-x_1))(y_2-y_1)fdt\\I_2=\dots\\I_3=\dots\)</span><br>
@@ -5467,7 +5472,9 @@ Vi får då att
 <strong>Slutsats:</strong> Den alternativa definitionen gäller.</p>
 </blockquote>
 <h3 id="flode-i-planet">Flöde i planet</h3>
-<p>Om <span class="arithmatex">\(\gamma\)</span> är randkurvan till ett öppet område så definieras flödet av ett vektorfält <span class="arithmatex">\(\vec F\)</span> <em>ut ur området</em> som <span class="arithmatex">\(<span class="arithmatex">\(\oint_\gamma\vec n\cdot\vec Fds\)</span>\)</span> där <span class="arithmatex">\(\vec n\)</span> är den utåtpekande enhetsnormalen.</p>
+<p>Om <span class="arithmatex">\(\gamma\)</span> är randkurvan till ett öppet område så definieras flödet av ett vektorfält <span class="arithmatex">\(\vec F\)</span> <em>ut ur området</em> som</p>
+<div class="arithmatex">\[\oint_\gamma\vec n\cdot\vec Fds\]</div>
+<p>där <span class="arithmatex">\(\vec n\)</span> är den utåtpekande enhetsnormalen.</p>
 <blockquote>
 <p><strong>Exempel 2:</strong> Visa att om <span class="arithmatex">\(\vec F=(a+bx+cy,e+fx+gy)\)</span> och <span class="arithmatex">\(\gamma\)</span> är den positivt orienterade randkurvan till en triangel <span class="arithmatex">\(D\)</span> så är</p>
 </blockquote>
@@ -5485,123 +5492,151 @@ Flödet är <span class="arithmatex">\(\oint_\gamma\vec n\cdot\vec Fds=(1+1)\cdo
 Flödet är <span class="arithmatex">\(\oint_\gamma\vec n\cdot\vec Fds=(-3+3)\cdot\text{area(triangeln)}=0\)</span></p>
 </blockquote>
 <h3 id="rotation-cirkulationsdensitet-av-vektorfalt">Rotation (<em>cirkulationsdensitet</em>) av vektorfält</h3>
-<p>Rotationen av ett vektorfält <span class="arithmatex">\(\vec F=(P,Q)\)</span> betecknas <span class="arithmatex">\(<span class="arithmatex">\(\text{rot}\ \vec F=\nabla\times\vec F=\begin{vmatrix}\frac\partial{\partial x}&amp;\frac\partial{\partial y}\\P&amp;Q\end{vmatrix}=\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\)</span>\)</span> och anger hur mycket vektorfältet virvlar i en punkt.</p>
+<p>Rotationen av ett vektorfält <span class="arithmatex">\(\vec F=(P,Q)\)</span> betecknas</p>
+<div class="arithmatex">\[\text{rot}\ \vec F=\nabla\times\vec F=\begin{vmatrix}\frac\partial{\partial x}&amp;\frac\partial{\partial y}\\P&amp;Q\end{vmatrix}=\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\]</div>
+<p>och anger hur mycket vektorfältet virvlar i en punkt.</p>
 <p>Om vi ser vektorfältet som ett hastighetsfält till en vätska, kan ovanstående definition liknas vid att placera att ett skovelhjul i en punkt, och studera hur det roterar.</p>
 <blockquote>
-<p><strong>Övning:</strong> En vätskas hastighetsfält ges av <span class="arithmatex">\(\vec v=(x^2,xy)\)</span>. Hur snurrar ett skovelhjul placerat längs a) positiva x-axeln, b) negativa x-axeln, c) positiva y-axeln, och d) negativa y-axeln?
-Vi beräknar rotationen:
-<span class="arithmatex">\(\text{rot}\ \vec v=\nabla\times\vec v=\frac\partial{\partial x}(xy)-\frac\partial{\partial y}(x^2)=y\)</span>
-a+b) <span class="arithmatex">\(\text{rot}\ \vec v=0\implies\)</span>Ingen rotation.
-c) <span class="arithmatex">\(\text{rot}\ \vec v\gt0\implies\)</span>Positiv (moturs) rotation.
+<p><strong>Övning:</strong> En vätskas hastighetsfält ges av <span class="arithmatex">\(\vec v=(x^2,xy)\)</span>. Hur snurrar ett skovelhjul placerat längs a) positiva x-axeln, b) negativa x-axeln, c) positiva y-axeln, och d) negativa y-axeln?</p>
+<p>Vi beräknar rotationen:<br>
+<span class="arithmatex">\(\text{rot}\ \vec v=\nabla\times\vec v=\frac\partial{\partial x}(xy)-\frac\partial{\partial y}(x^2)=y\)</span></p>
+<p>a+b) <span class="arithmatex">\(\text{rot}\ \vec v=0\implies\)</span>Ingen rotation.<br>
+c) <span class="arithmatex">\(\text{rot}\ \vec v\gt0\implies\)</span>Positiv (moturs) rotation.<br>
 d) <span class="arithmatex">\(\text{rot}\ \vec v\lt0\implies\)</span>Negativ (medurs) rotation.</p>
 </blockquote>
 <h4 id="rotation-som-cirkulationsdensitet">Rotation som cirkulationsdensitet</h4>
-<p>Rotationen kan ses som en cirkulationsdensitet och ges då av <span class="arithmatex">\(<span class="arithmatex">\(\text{rot}\ \vec F(a,b)=\lim_{\text{area}(D)\to0}\frac1{\text{area}(D)}\oint_{\partial D}\vec F\cdot d\vec r\)</span>\)</span> där <span class="arithmatex">\(D\)</span> är en triangel som innehåller <span class="arithmatex">\((a,b)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess positivt orienterade randkurva.</p>
+<p>Rotationen kan ses som en cirkulationsdensitet och ges då av</p>
+<div class="arithmatex">\[\text{rot}\ \vec F(a,b)=\lim_{\text{area}(D)\to0}\frac1{\text{area}(D)}\oint_{\partial D}\vec F\cdot d\vec r\]</div>
+<p>där <span class="arithmatex">\(D\)</span> är en triangel som innehåller <span class="arithmatex">\((a,b)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess positivt orienterade randkurva.</p>
 <blockquote>
 <p><strong>Härledning:</strong>
-<span class="arithmatex">\(\vec F=(P,Q)\)</span>
-Vi gör en linjär approximation av vektorfältet kring <span class="arithmatex">\((a,b)\)</span>
-<span class="arithmatex">\(\vec F(a+h,b+k)=\vec F(a,b)+\begin{pmatrix}\frac{\partial P}{\partial x}&amp;\frac{\partial P}{\partial y}\\\frac{\partial Q}{\partial x}&amp;\frac{\partial Q}{\partial y}\end{pmatrix}\begin{pmatrix}h\\k\end{pmatrix}+\text{felterm}\)</span>
-När vi närmar oss <span class="arithmatex">\((a,b)\)</span> kommer feltermen <span class="arithmatex">\(\to0\)</span> snabbare än övriga termer.
-Dvs.
-<span class="arithmatex">\(<span class="arithmatex">\(\oint_{\partial D}\vec F\cdot d\vec r=\{\text{area}(D)\to0\}=\oint_{\partial D}\text{(linjärt vektorfält)}\cdot d\vec r=\{\text{exempel 1}\}\\=\left(Q'_x(a,b)-P'_y(a,b)\right)\cdot\text{area}(D)\)</span>\)</span><span class="arithmatex">\(<span class="arithmatex">\(\frac1{\text{area}(D)}\oint_{\partial D}\vec F\cdot d\vec r=Q'_x-P'_y=\text{rot}\ \vec F(a,b)\)</span>\)</span>
-<strong>VSV</strong></p>
+<span class="arithmatex">\(\vec F=(P,Q)\)</span><br>
+Vi gör en linjär approximation av vektorfältet kring <span class="arithmatex">\((a,b)\)</span><br>
+<span class="arithmatex">\(\vec F(a+h,b+k)=\vec F(a,b)+\begin{pmatrix}\frac{\partial P}{\partial x}&amp;\frac{\partial P}{\partial y}\\\frac{\partial Q}{\partial x}&amp;\frac{\partial Q}{\partial y}\end{pmatrix}\begin{pmatrix}h\\k\end{pmatrix}+\text{felterm}\)</span></p>
+<p>När vi närmar oss <span class="arithmatex">\((a,b)\)</span> kommer feltermen <span class="arithmatex">\(\to0\)</span> snabbare än övriga termer.<br>
+Dvs.</p>
+<div class="arithmatex">\[\oint_{\partial D}\vec F\cdot d\vec r=\{\text{area}(D)\to0\}=\oint_{\partial D}\text{(linjärt vektorfält)}\cdot d\vec r=\{\text{exempel 1}\}\\=\left(Q'_x(a,b)-P'_y(a,b)\right)\cdot\text{area}(D)\]</div>
+<div class="arithmatex">\[\frac1{\text{area}(D)}\oint_{\partial D}\vec F\cdot d\vec r=Q'_x-P'_y=\text{rot}\ \vec F(a,b)\]</div>
+<p><strong>VSV</strong></p>
 </blockquote>
 <h3 id="greens-formel">Greens formel</h3>
-<p>Låt <span class="arithmatex">\(D\)</span> vara ett slutet område med en styckvis kontinuerligt deriverbar rand <span class="arithmatex">\(\partial D\)</span> som är positivt orienterad, och antag att <span class="arithmatex">\(\vec F=(P,Q)\)</span> är kontinuerligt deriverbart på <span class="arithmatex">\(D\)</span>. Då är vektorfältets cirkulation kring randen: <span class="arithmatex">\(<span class="arithmatex">\(\oint_{\partial D}\vec F\cdot d\vec r={\int\int}_D\text{rot}\ \vec Fdxdy\)</span>\)</span></p>
+<p>Låt <span class="arithmatex">\(D\)</span> vara ett slutet område med en styckvis kontinuerligt deriverbar rand <span class="arithmatex">\(\partial D\)</span> som är positivt orienterad, och antag att <span class="arithmatex">\(\vec F=(P,Q)\)</span> är kontinuerligt deriverbart på <span class="arithmatex">\(D\)</span>. Då är vektorfältets cirkulation kring randen:</p>
+<div class="arithmatex">\[\oint_{\partial D}\vec F\cdot d\vec r={\int\int}_D\text{rot}\ \vec Fdxdy\]</div>
 <blockquote>
-<p><strong>Tolkning:</strong> <span class="arithmatex">\(<span class="arithmatex">\(\text{cirkulationen av }\vec F\text{ runt }D={\int\int}_D\text{(cirkulationsdensitet)}dxdy\)</span>\)</span>
-Jämför:
-<span class="arithmatex">\(<span class="arithmatex">\(\text{massa av }D={\int\int}_D\text{(massdensitet)}dxdy\\\text{laddning av }D={\int\int}_D\text{(laddningstäthet)}dxdy\)</span>\)</span></p>
-<p><strong>Motivering:</strong>
-Vi kan dela upp området <span class="arithmatex">\(D\)</span> i små trianglar <span class="arithmatex">\(T_i\)</span> och beräkna cirkulationen kring var och en av dessa. Vi beräknar summan av dessa cirkulationer, och noterar att sidor som delas av två trianglar kommer att genomlöpas två gånger, men i motsatta riktningar. Dessa tar alltså ut varandra, och vi får alltså
-<span class="arithmatex">\(<span class="arithmatex">\(\oint_{\partial D}\vec F\cdot d\vec r\approx\sum\oint_{\partial T_i}\vec F\cdot d\vec r\)</span>\)</span>
-Om <span class="arithmatex">\(T_i\)</span> är liten gäller att <span class="arithmatex">\(\oint_{\partial T_i}\vec F\cdot d\vec r\approx\text{rot}\left(\vec F(x_i,y_i)\right)\cdot A_i\)</span>, dvs.
-<span class="arithmatex">\(<span class="arithmatex">\(\oint_{\partial D}\vec F\cdot d\vec r\approx\sum\text{rot}\left(\vec F(x_i,y_i)\right)\cdot A_i\)</span>\)</span>
-När vi delar upp området i mindre och mindre trianglar kommer denna riemannsumma att konvergera mot <span class="arithmatex">\(<span class="arithmatex">\({\int\int}_D\text{rot}\vec F(x,y)dxdy\)</span>\)</span>
-<em>Detta är Greens formel.</em></p>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(<span class="arithmatex">\(\int_\gamma(x^4-y^2)dx+(x^4+y^2)dy\)</span>\)</span> längs parabeln <span class="arithmatex">\(y=x^2\)</span> från <span class="arithmatex">\((-1,1)\)</span> till <span class="arithmatex">\((1,1)\)</span> och linjen <span class="arithmatex">\(y=1\)</span> från <span class="arithmatex">\((1,1)\)</span> till <span class="arithmatex">\((-1,1)\)</span>.
-Vi vill alltså beräkna <span class="arithmatex">\(\int_\gamma(x^4-y^2)dx+(x^4+y^2)dy\)</span>.</p>
-<p><em>Metod 1: Parametrisering</em>
-Vi delar upp kurvan i två delar:
-<span class="arithmatex">\(\gamma_1:(x,y)=(t,t^2),t:-1\to1\)</span> och <span class="arithmatex">\(\gamma_2:(x,y)=(t,1),t:1\to-1\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(\int_{\gamma_1}\vec F\cdot d\vec r=\int_{-1}^1(t^4-t^4,t^4+t^4)\cdot(1,2t)dt=\int_{-1}^14t^5dt=\frac46[t^6]_{-1}^1=0\)</span>\)</span><span class="arithmatex">\(<span class="arithmatex">\(\int_{\gamma_2}\vec F\cdot d\vec r=\int_1^{-1}(t^4-1,t^4+1)\cdot(1,0)dt=\int_1^{-1}t^4-1dt=\frac15[t^5-5t]_1^{-1}=\frac85\)</span>\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(\int_\gamma\vec F\cdot d\vec r=0+\frac85=\frac85\)</span></p>
-<p><em>Metod 2: Greens formel.</em>
-Vi ser att kurvan är sluten. Vi vill alltså beräkna en cirkulation
-<span class="arithmatex">\(<span class="arithmatex">\(\int_\gamma\vec F\cdot d\vec r={\int\int}_D\text{rot}\ \vec Fdxdy=\int_{-1}^1\int_{x^2}^1(\nabla\times\vec F)dydx=\int_{-1}^1\int_{x^2}^1(4x^3+2y)dydx\\=\left\{\begin{matrix}\text{i }x\text{-led är området}\\\text{symmetriskt \&amp; }x^3\text{ udda}\end{matrix}\right\}=\int_{-1}^1\int_{x^2}^12ydydx=\int_{-1}^1[y^2]_{x^2}^1dx=\int_{-1}^1(1-x^4)dx=\frac85\)</span>\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(\int_\gamma\vec F\cdot d\vec r=\frac85\)</span></p>
+<p><strong>Tolkning:</strong></p>
+<div class="arithmatex">\[\text{cirkulationen av }\vec F\text{ runt }D={\int\int}_D\text{(cirkulationsdensitet)}dxdy\]</div>
+<p>Jämför:</p>
+<div class="arithmatex">\[\text{massa av }D={\int\int}_D\text{(massdensitet)}dxdy\\\text{laddning av }D={\int\int}_D\text{(laddningstäthet)}dxdy\]</div>
+<p><strong>Motivering:</strong><br>
+Vi kan dela upp området <span class="arithmatex">\(D\)</span> i små trianglar <span class="arithmatex">\(T_i\)</span> och beräkna cirkulationen kring var och en av dessa. Vi beräknar summan av dessa cirkulationer, och noterar att sidor som delas av två trianglar kommer att genomlöpas två gånger, men i motsatta riktningar. Dessa tar alltså ut varandra, och vi får alltså</p>
+<div class="arithmatex">\[\oint_{\partial D}\vec F\cdot d\vec r\approx\sum\oint_{\partial T_i}\vec F\cdot d\vec r\]</div>
+<p>Om <span class="arithmatex">\(T_i\)</span> är liten gäller att <span class="arithmatex">\(\oint_{\partial T_i}\vec F\cdot d\vec r\approx\text{rot}\left(\vec F(x_i,y_i)\right)\cdot A_i\)</span>, dvs.</p>
+<div class="arithmatex">\[\oint_{\partial D}\vec F\cdot d\vec r\approx\sum\text{rot}\left(\vec F(x_i,y_i)\right)\cdot A_i\]</div>
+<p>När vi delar upp området i mindre och mindre trianglar kommer denna riemannsumma att konvergera mot</p>
+<div class="arithmatex">\[{\int\int}_D\text{rot}\vec F(x,y)dxdy\]</div>
+<p><em>Detta är Greens formel.</em></p>
+<p><strong>Exempel:</strong> Beräkna</p>
+<div class="arithmatex">\[\int_\gamma(x^4-y^2)dx+(x^4+y^2)dy\]</div>
+<p>längs parabeln <span class="arithmatex">\(y=x^2\)</span> från <span class="arithmatex">\((-1,1)\)</span> till <span class="arithmatex">\((1,1)\)</span> och linjen <span class="arithmatex">\(y=1\)</span> från <span class="arithmatex">\((1,1)\)</span> till <span class="arithmatex">\((-1,1)\)</span>.</p>
+<p>Vi vill alltså beräkna <span class="arithmatex">\(\int_\gamma(x^4-y^2)dx+(x^4+y^2)dy\)</span>.</p>
+<p><em>Metod 1: Parametrisering</em><br>
+Vi delar upp kurvan i två delar:<br>
+<span class="arithmatex">\(\gamma_1:(x,y)=(t,t^2),t:-1\to1\)</span> och <span class="arithmatex">\(\gamma_2:(x,y)=(t,1),t:1\to-1\)</span></p>
+<div class="arithmatex">\[\int_{\gamma_1}\vec F\cdot d\vec r=\int_{-1}^1(t^4-t^4,t^4+t^4)\cdot(1,2t)dt=\int_{-1}^14t^5dt=\frac46[t^6]_{-1}^1=0\]</div>
+<div class="arithmatex">\[\int_{\gamma_2}\vec F\cdot d\vec r=\int_1^{-1}(t^4-1,t^4+1)\cdot(1,0)dt=\int_1^{-1}t^4-1dt=\frac15[t^5-5t]_1^{-1}=\frac85\]</div>
+<p><strong>Svar:</strong> <span class="arithmatex">\(\int_\gamma\vec F\cdot d\vec r=0+\frac85=\frac85\)</span></p>
+<p><em>Metod 2: Greens formel.</em><br>
+Vi ser att kurvan är sluten. Vi vill alltså beräkna en cirkulation</p>
+<div class="arithmatex">\[\int_\gamma\vec F\cdot d\vec r={\int\int}_D\text{rot}\ \vec Fdxdy=\int_{-1}^1\int_{x^2}^1(\nabla\times\vec F)dydx=\int_{-1}^1\int_{x^2}^1(4x^3+2y)dydx\\=\left\{\begin{matrix}\text{i }x\text{-led är området}\\\text{symmetriskt \&amp; }x^3\text{ udda}\end{matrix}\right\}=\int_{-1}^1\int_{x^2}^12ydydx=\int_{-1}^1[y^2]_{x^2}^1dx=\int_{-1}^1(1-x^4)dx=\frac85\]</div>
+<p><strong>Svar:</strong> <span class="arithmatex">\(\int_\gamma\vec F\cdot d\vec r=\frac85\)</span></p>
 </blockquote>
 <h3 id="vektorpotential-i-planet">Vektorpotential i planet</h3>
-<p>Ett vektorfält <span class="arithmatex">\(\vec A\)</span> kallas för en <em>vektorpotential</em> till <span class="arithmatex">\(f(x,y)\)</span> om <span class="arithmatex">\(<span class="arithmatex">\(f(x,y)=\text{rot}\ \vec A=\nabla\times\vec A\)</span>\)</span> <em>Observera att vektorpotentialen inte är unik! Även <span class="arithmatex">\(\vec A+\vec F\)</span>, där <span class="arithmatex">\(\vec F\)</span> är ett konservativt vektorfält, är en vektorpotential eftersom <span class="arithmatex">\(\text{rot}(\vec A+\vec F)=\text{rot}\ \vec A+\text{rot}\ \vec F=f(x,y)+0=f(x,y)\)</span>.</em></p>
+<p>Ett vektorfält <span class="arithmatex">\(\vec A\)</span> kallas för en <em>vektorpotential</em> till <span class="arithmatex">\(f(x,y)\)</span> om</p>
+<div class="arithmatex">\[f(x,y)=\text{rot}\ \vec A=\nabla\times\vec A\]</div>
+<p><em>Observera att vektorpotentialen inte är unik! Även <span class="arithmatex">\(\vec A+\vec F\)</span>, där <span class="arithmatex">\(\vec F\)</span> är ett konservativt vektorfält, är en vektorpotential eftersom <span class="arithmatex">\(\text{rot}(\vec A+\vec F)=\text{rot}\ \vec A+\text{rot}\ \vec F=f(x,y)+0=f(x,y)\)</span>.</em></p>
 <blockquote>
-<p><strong>Exempel:</strong> Bestäm en vektorpotential till <span class="arithmatex">\(f(x,y)=xy\)</span>.
-Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=xy\)</span>.
+<p><strong>Exempel:</strong> Bestäm en vektorpotential till <span class="arithmatex">\(f(x,y)=xy\)</span>.<br>
+Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=xy\)</span>.<br>
 <strong>Svar:</strong> T.ex. <span class="arithmatex">\(\vec A=(0,\frac12x^2y)\)</span></p>
-<p><strong>Övning:</strong> Bestäm en vektorpotential till
-a) <span class="arithmatex">\(f(x,y)=1\)</span>
-Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=1\)</span>. <strong>Svar:</strong> t.ex. <span class="arithmatex">\(\vec A=(0,x)\)</span>
-b) <span class="arithmatex">\(f(x,y)=x\)</span>
-Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=x\)</span>. <strong>Svar:</strong> t.ex. <span class="arithmatex">\(\vec A=(-xy,0)\)</span>
-c) <span class="arithmatex">\(f(x,y)=y\)</span>
-Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=y\)</span>. <strong>Svar:</strong> t.ex. <span class="arithmatex">\(\vec A=(0,xy)\)</span>
-d) <span class="arithmatex">\(f(x,y)=(x+y)e^{x^2+y^2}\)</span>
-Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=\frac\partial{\partial x}Q-\frac\partial{\partial y}P=xe^{x^2+y^2}+ye^{x^2+y^2}\)</span>
+<p><strong>Övning:</strong> Bestäm en vektorpotential till<br>
+a) <span class="arithmatex">\(f(x,y)=1\)</span><br>
+Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=1\)</span>. <strong>Svar:</strong> t.ex. <span class="arithmatex">\(\vec A=(0,x)\)</span></p>
+<p>b) <span class="arithmatex">\(f(x,y)=x\)</span><br>
+Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=x\)</span>. <strong>Svar:</strong> t.ex. <span class="arithmatex">\(\vec A=(-xy,0)\)</span></p>
+<p>c) <span class="arithmatex">\(f(x,y)=y\)</span><br>
+Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=Q'_x-P'_y=y\)</span>. <strong>Svar:</strong> t.ex. <span class="arithmatex">\(\vec A=(0,xy)\)</span></p>
+<p>d) <span class="arithmatex">\(f(x,y)=(x+y)e^{x^2+y^2}\)</span><br>
+Vi söker <span class="arithmatex">\(\vec A=(P,Q)\)</span> s.a. <span class="arithmatex">\(\text{rot}\ \vec A=\frac\partial{\partial x}Q-\frac\partial{\partial y}P=xe^{x^2+y^2}+ye^{x^2+y^2}\)</span><br>
 <strong>Svar:</strong> T.ex. <span class="arithmatex">\(\vec A=(-\frac12e^{x^2+y^2},\frac12e^{x^2+y^2})\)</span></p>
 </blockquote>
 <h3 id="greens-formel-baklanges">Greens formel baklänges</h3>
-<p>Greens formel kan skrivas som <span class="arithmatex">\(<span class="arithmatex">\({\int\int}_Df(x,y)dxdy=\oint_{\partial D}\vec A\cdot d\vec r\)</span>\)</span> där <span class="arithmatex">\(\vec A\)</span> är en vektorpotential till <span class="arithmatex">\(f(x,y)\)</span>.</p>
-<p>Formeln kan ses som en motsvarighet till integralkalkylens huvudsats <span class="arithmatex">\(<span class="arithmatex">\(\int_a^bf(x)dx=F(b)-F(a)\)</span>\)</span> <em>(i båda fallen reduceras en integral över hela området till användning av en "primitiv funktion" på randen)</em></p>
+<p>Greens formel kan skrivas som</p>
+<div class="arithmatex">\[{\int\int}_Df(x,y)dxdy=\oint_{\partial D}\vec A\cdot d\vec r\]</div>
+<p>där <span class="arithmatex">\(\vec A\)</span> är en vektorpotential till <span class="arithmatex">\(f(x,y)\)</span>.</p>
+<p>Formeln kan ses som en motsvarighet till integralkalkylens huvudsats</p>
+<div class="arithmatex">\[\int_a^bf(x)dx=F(b)-F(a)\]</div>
+<p><em>(i båda fallen reduceras en integral över hela området till användning av en "primitiv funktion" på randen)</em></p>
 <blockquote>
-<p><strong>Övning:</strong> Härled en kurvintegralformel för
-a) Arean av området <span class="arithmatex">\(D\)</span>: <span class="arithmatex">\({\int\int}_Ddxdy\)</span>
-Vi söker en vektorpotential till <span class="arithmatex">\(1\)</span>. T.ex. <span class="arithmatex">\(\vec A=(0,x)\)</span>.
-<strong>Svar:</strong> <span class="arithmatex">\({\int\int}_Ddxdy=\oint_{\partial D}\vec A\cdot(0,x)d\vec r\)</span>
-b) Yttröghetsmomentet med avseende på y-axeln för en balk med tvärsnitt <span class="arithmatex">\(D\)</span>: <span class="arithmatex">\(I_y=\rho{\int\int}_Dydxdy\)</span>
-Vi söker en vektorpotential till <span class="arithmatex">\(y\)</span>. T.ex. <span class="arithmatex">\(\vec A=(0,xy)\)</span>.
+<p><strong>Övning:</strong> Härled en kurvintegralformel för<br>
+a) Arean av området <span class="arithmatex">\(D\)</span>: <span class="arithmatex">\({\int\int}_Ddxdy\)</span><br>
+Vi söker en vektorpotential till <span class="arithmatex">\(1\)</span>. T.ex. <span class="arithmatex">\(\vec A=(0,x)\)</span>.<br>
+<strong>Svar:</strong> <span class="arithmatex">\({\int\int}_Ddxdy=\oint_{\partial D}\vec A\cdot(0,x)d\vec r\)</span></p>
+<p>b) Yttröghetsmomentet med avseende på y-axeln för en balk med tvärsnitt <span class="arithmatex">\(D\)</span>: <span class="arithmatex">\(I_y=\rho{\int\int}_Dydxdy\)</span><br>
+Vi söker en vektorpotential till <span class="arithmatex">\(y\)</span>. T.ex. <span class="arithmatex">\(\vec A=(0,xy)\)</span>.<br>
 <strong>Svar:</strong> <span class="arithmatex">\(I_y=\oint_{\partial D}(0,xy)\cdot d\vec r\)</span></p>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\({\int\int}_D(x^2+y^2)dxdy\)</span> där <span class="arithmatex">\(D\)</span> är cirkelskivan <span class="arithmatex">\(x^2+y^2\leq1\)</span>.
-<em>Metod 1:</em>
-<span class="arithmatex">\(<span class="arithmatex">\({\int\int}_D(x^2+y^2)dxdy=\int_0^{2\pi}\int_0^1r^3drd\theta=\int_0^{2\pi}\frac14d\theta=\frac\pi2\)</span>\)</span>
-<em>Metod 2: Greens formel baklänges.</em>
-Vi söker en vektorpotential till <span class="arithmatex">\(x^2+y^2\)</span>. T.ex. <span class="arithmatex">\(\vec A=(-\frac13y^3,\frac13x^3)\)</span>
-Vi parametriserar enhetscirkeln: <span class="arithmatex">\((x,y)=(\cos t,\sin t)\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\({\int\int}_D(x^2+y^2)dxdy=\oint_{\partial D}(-\frac13y^3,\frac13x^3)\cdot d\vec r=\int_0^{2\pi}\left(-\frac13\sin^3t,\frac13\cos^3t\right)\cdot(-\sin t,\cos t)dt\\=\frac13\int_0^{2\pi}\sin^4t+\cos^4tdt=\{\text{lite besvärligt}\}=\frac13\left(\frac{3\pi}4+\frac{3\pi}4\right)=\frac\pi2\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\({\int\int}_D(x^2+y^2)dxdy\)</span> där <span class="arithmatex">\(D\)</span> är cirkelskivan <span class="arithmatex">\(x^2+y^2\leq1\)</span>.<br>
+<em>Metod 1:</em></p>
+<div class="arithmatex">\[{\int\int}_D(x^2+y^2)dxdy=\int_0^{2\pi}\int_0^1r^3drd\theta=\int_0^{2\pi}\frac14d\theta=\frac\pi2\]</div>
+<p><em>Metod 2: Greens formel baklänges.</em><br>
+Vi söker en vektorpotential till <span class="arithmatex">\(x^2+y^2\)</span>. T.ex. <span class="arithmatex">\(\vec A=(-\frac13y^3,\frac13x^3)\)</span><br>
+Vi parametriserar enhetscirkeln: <span class="arithmatex">\((x,y)=(\cos t,\sin t)\)</span></p>
+<div class="arithmatex">\[{\int\int}_D(x^2+y^2)dxdy=\oint_{\partial D}(-\frac13y^3,\frac13x^3)\cdot d\vec r=\int_0^{2\pi}\left(-\frac13\sin^3t,\frac13\cos^3t\right)\cdot(-\sin t,\cos t)dt\\=\frac13\int_0^{2\pi}\sin^4t+\cos^4tdt=\{\text{lite besvärligt}\}=\frac13\left(\frac{3\pi}4+\frac{3\pi}4\right)=\frac\pi2\]</div>
 </blockquote>
 <h3 id="divergens-flodesdensitet">Divergens (<em>flödesdensitet</em>)</h3>
-<p>Divergensen av ett vektorfält <span class="arithmatex">\(\vec F=(P,Q)\)</span> är <span class="arithmatex">\(<span class="arithmatex">\(\text{div}\ \vec F=\nabla\cdot\vec F=P'_x+Q'_y\)</span>\)</span> och mäter hur mycket vektorfältet sprids ut i en punkt.</p>
+<p>Divergensen av ett vektorfält <span class="arithmatex">\(\vec F=(P,Q)\)</span> är</p>
+<div class="arithmatex">\[\text{div}\ \vec F=\nabla\cdot\vec F=P'_x+Q'_y\]</div>
+<p>och mäter hur mycket vektorfältet sprids ut i en punkt.</p>
 <blockquote>
-<p><strong>Övning:</strong> En vätskas hastighetsfält ges av <span class="arithmatex">\(\vec v=(x^2,xy)\)</span>.
+<p><strong>Övning:</strong> En vätskas hastighetsfält ges av <span class="arithmatex">\(\vec v=(x^2,xy)\)</span>.<br>
 Ange om en punkter i a) 1:a, b) 2:a, c) 3:e, d) 4:e kvadranten är källor (<span class="arithmatex">\(\text{div}\gt0\)</span>) eller sänkor (<span class="arithmatex">\(\text{div}\lt0\)</span>).</p>
-<p>Vi får <span class="arithmatex">\(\text{div}\ \vec F=\nabla\cdot\vec F=2x+x=3x\)</span>
-a+d) I 1:a och 4:e kvadranterna är <span class="arithmatex">\(x\gt0\implies\text{div}=3x\gt0\)</span>. <strong>Svar:</strong> Källor.
+<p>Vi får <span class="arithmatex">\(\text{div}\ \vec F=\nabla\cdot\vec F=2x+x=3x\)</span></p>
+<p>a+d) I 1:a och 4:e kvadranterna är <span class="arithmatex">\(x\gt0\implies\text{div}=3x\gt0\)</span>. <strong>Svar:</strong> Källor.
 b+c) I 2:a och 3:e kvadranterna är <span class="arithmatex">\(x\lt0\implies\text{div}=3x\lt0\)</span>. <strong>Svar:</strong> Sänkor.</p>
 </blockquote>
 <h4 id="divergens-som-flodesdensitet">Divergens som flödesdensitet</h4>
-<p>Divergensen kan ses som en flödesdensitet och ges då av <span class="arithmatex">\(<span class="arithmatex">\(\text{div}\ \vec F(a,b)=\lim_{\text{area}(D)\to0}\frac1{\text{area}(D)}\oint_{\partial D}\vec n\cdot\vec Fds\)</span>\)</span> där <span class="arithmatex">\(D\)</span> är en triangel innehållandes <span class="arithmatex">\((a,b)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess randkurva.</p>
+<p>Divergensen kan ses som en flödesdensitet och ges då av</p>
+<div class="arithmatex">\[\text{div}\ \vec F(a,b)=\lim_{\text{area}(D)\to0}\frac1{\text{area}(D)}\oint_{\partial D}\vec n\cdot\vec Fds\]</div>
+<p>där <span class="arithmatex">\(D\)</span> är en triangel innehållandes <span class="arithmatex">\((a,b)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess randkurva.</p>
 <h3 id="gauss-sats-i-planet">Gauss sats i planet</h3>
-<p>Låt <span class="arithmatex">\(D\)</span> vara ett slutet område med en styckvis kontinuerligt deriverbar rand <span class="arithmatex">\(\partial D\)</span> med utåtpekande enhetsnormal <span class="arithmatex">\(\vec n\)</span>, och antag att <span class="arithmatex">\(\vec F=(P,Q)\)</span> är kontinuerligt deriverbar på <span class="arithmatex">\(D\)</span>. Då är <span class="arithmatex">\(<span class="arithmatex">\(\oint_{\partial D}\vec n\cdot\vec Fds={\int\int}_D\text{div}\ \vec Fdxdy\)</span>\)</span></p>
+<p>Låt <span class="arithmatex">\(D\)</span> vara ett slutet område med en styckvis kontinuerligt deriverbar rand <span class="arithmatex">\(\partial D\)</span> med utåtpekande enhetsnormal <span class="arithmatex">\(\vec n\)</span>, och antag att <span class="arithmatex">\(\vec F=(P,Q)\)</span> är kontinuerligt deriverbar på <span class="arithmatex">\(D\)</span>. Då är</p>
+<div class="arithmatex">\[\oint_{\partial D}\vec n\cdot\vec Fds={\int\int}_D\text{div}\ \vec Fdxdy\]</div>
 <blockquote>
-<p><strong>Övning:</strong> Beräkna flödesintegralerna med Gauss sats.
-a) <span class="arithmatex">\(\oint_\gamma\vec n\cdot(xy,x+y)ds={\int\int}_Dy+1dxdy\)</span>
+<p><strong>Övning:</strong> Beräkna flödesintegralerna med Gauss sats.<br>
+a) <span class="arithmatex">\(\oint_\gamma\vec n\cdot(xy,x+y)ds={\int\int}_Dy+1dxdy\)</span><br>
 b) <span class="arithmatex">\(\oint_\gamma\vec n\cdot(x^2,y)ds={\int\int}_D2x+1dxdy\)</span></p>
 </blockquote>
 <h2 id="forelasning-19">Föreläsning 19</h2>
 <h3 id="trippelintegraler">Trippelintegraler</h3>
-<p>Trippelintegralen över ett rätblock <span class="arithmatex">\(D\)</span> i rummet definieras som ett gränsvärde av Riemannsummor:
-<span class="arithmatex">\(<span class="arithmatex">\({\int\int\int}_Df(x,y,z)dxdydz=\lim_{\substack{l,m,n\to\infty\\\Delta x_i,\Delta y_i,\Delta z_k\to0}}\sum_{\substack{0\leq i\lt l\\0\leq j\lt m\\0\leq k\lt n}}f(\xi_{ijk},\eta_{ijk},\tau_{ijk})\Delta x_i\Delta y_j\Delta z_k\)</span>\)</span></p>
-<p>Om <span class="arithmatex">\(f(x,y,z)\)</span> är en kontinuerlig funktion på ett kompakt område <span class="arithmatex">\(D\)</span> med kontinuerligt deriverbara randytor, så existerar trippelintegralen <span class="arithmatex">\(<span class="arithmatex">\(\iiint_Df(x,y,z)dxdydz\)</span>\)</span> och motsvarande Riemannsumma konvergerar mot samma värde oavsett partitionering.</p>
+<p>Trippelintegralen över ett rätblock <span class="arithmatex">\(D\)</span> i rummet definieras som ett gränsvärde av Riemannsummor:</p>
+<div class="arithmatex">\[{\int\int\int}_Df(x,y,z)dxdydz=\lim_{\substack{l,m,n\to\infty\\\Delta x_i,\Delta y_i,\Delta z_k\to0}}\sum_{\substack{0\leq i\lt l\\0\leq j\lt m\\0\leq k\lt n}}f(\xi_{ijk},\eta_{ijk},\tau_{ijk})\Delta x_i\Delta y_j\Delta z_k\]</div>
+<p>Om <span class="arithmatex">\(f(x,y,z)\)</span> är en kontinuerlig funktion på ett kompakt område <span class="arithmatex">\(D\)</span> med kontinuerligt deriverbara randytor, så existerar trippelintegralen</p>
+<div class="arithmatex">\[\iiint_Df(x,y,z)dxdydz\]</div>
+<p>och motsvarande Riemannsumma konvergerar mot samma värde oavsett partitionering.</p>
 <h4 id="ratblock">Rätblock</h4>
-<p>Om <span class="arithmatex">\(f\)</span> är en kontinuerlig funktion på ett rätblock <span class="arithmatex">\(D:a\leq x\leq b,c\leq y\leq d,e\leq z\leq f\)</span> kan motsvarande trippelintegral beräknas som en upprepad enkelintegral: <span class="arithmatex">\(<span class="arithmatex">\(\iiint_Df(x,y,z)dxdydz=\int_a^b\left(\int_c^d\left(\int_e^ff(x,y,z)dz\right)dy\right)dx\)</span>\)</span></p>
+<p>Om <span class="arithmatex">\(f\)</span> är en kontinuerlig funktion på ett rätblock <span class="arithmatex">\(D:a\leq x\leq b,c\leq y\leq d,e\leq z\leq f\)</span> kan motsvarande trippelintegral beräknas som en upprepad enkelintegral:</p>
+<div class="arithmatex">\[\iiint_Df(x,y,z)dxdydz=\int_a^b\left(\int_c^d\left(\int_e^ff(x,y,z)dz\right)dy\right)dx\]</div>
 <h4 id="enkla-omraden-i-z-led">Enkla områden i z-led</h4>
-<p>Om varje uppsättning av <span class="arithmatex">\(x,y\)</span> ger ett sammanhängande intervall <span class="arithmatex">\(a(x,y)\leq z\leq b(x,y)\)</span> kallas området för <em>enkelt i z-led</em>. En trippelintegral över ett sådant område <span class="arithmatex">\(K\)</span> kan beräknas som: <span class="arithmatex">\(<span class="arithmatex">\(\iiint_Kf(x,y,z)dxdydz=\iint_D\left(\int_{a(x,y)}^{b(x,y)}f(x,y,z)dz\right)dxdy\)</span>\)</span>
-Motsvarande gäller för enkla områden i x- eller y-led.</p>
+<p>Om varje uppsättning av <span class="arithmatex">\(x,y\)</span> ger ett sammanhängande intervall <span class="arithmatex">\(a(x,y)\leq z\leq b(x,y)\)</span> kallas området för <em>enkelt i z-led</em>. En trippelintegral över ett sådant område <span class="arithmatex">\(K\)</span> kan beräknas som:</p>
+<div class="arithmatex">\[\iiint_Kf(x,y,z)dxdydz=\iint_D\left(\int_{a(x,y)}^{b(x,y)}f(x,y,z)dz\right)dxdy\]</div>
+<p>Motsvarande gäller för enkla områden i x- eller y-led.</p>
 <blockquote>
-<p>Alternativ beteckning för den upprepade integralen:
-<span class="arithmatex">\(<span class="arithmatex">\(\iint_Ddxdy\int_{a(x,y)}^{b(x,y)}f(x,y,z)dz\)</span>\)</span></p>
+<p>Alternativ beteckning för den upprepade integralen:</p>
+<div class="arithmatex">\[\iint_Ddxdy\int_{a(x,y)}^{b(x,y)}f(x,y,z)dz\]</div>
 </blockquote>
 <h4 id="snittning">Snittning</h4>
-<p>Vid snittning skivar vi upp området i snitt längs med en axel. En trippelintegral kan då beräknas som <span class="arithmatex">\(<span class="arithmatex">\(\iiint_Kf(x,y,z)dxdydz=\int_a^b\left(\iint_{D_z}f(x,y,z)dxdy\right)dz\)</span>\)</span> där <span class="arithmatex">\(D_z\)</span> är snittytan för aktuellt <span class="arithmatex">\(z\)</span>.</p>
+<p>Vid snittning skivar vi upp området i snitt längs med en axel. En trippelintegral kan då beräknas som</p>
+<div class="arithmatex">\[\iiint_Kf(x,y,z)dxdydz=\int_a^b\left(\iint_{D_z}f(x,y,z)dxdy\right)dz\]</div>
+<p>där <span class="arithmatex">\(D_z\)</span> är snittytan för aktuellt <span class="arithmatex">\(z\)</span>.</p>
 <h2 id="forelasning-20">Föreläsning 20</h2>
 <h3 id="volymformler">Volymformler</h3>
 <h4 id="cylindriskt-volymelement">Cylindriskt volymelement</h4>
@@ -5609,37 +5644,40 @@ Motsvarande gäller för enkla områden i x- eller y-led.</p>
 <h4 id="sfariskt-volymelement">Sfäriskt volymelement</h4>
 <p><span class="arithmatex">\(V_\text{s}\approx\{\text{för små }\Delta r,\Delta\phi,\Delta\theta\}\approx r^2\sin\phi\Delta r\Delta\phi\Delta\theta\)</span></p>
 <h4 id="parallellepiped">Parallellepiped</h4>
-<p>Volymen av den parallellepiped som spänns upp av <span class="arithmatex">\(\vec u,\vec v,\vec w\)</span> ges av <span class="arithmatex">\(<span class="arithmatex">\(V=\left|\det\begin{bmatrix}|&amp;|&amp;|\\\vec u&amp;\vec v&amp;\vec w\\|&amp;|&amp;|\end{bmatrix}\right|\)</span>\)</span></p>
+<p>Volymen av den parallellepiped som spänns upp av <span class="arithmatex">\(\vec u,\vec v,\vec w\)</span> ges av</p>
+<div class="arithmatex">\[V=\left|\det\begin{bmatrix}|&amp;|&amp;|\\\vec u&amp;\vec v&amp;\vec w\\|&amp;|&amp;|\end{bmatrix}\right|\]</div>
 <h3 id="variabelsubstitution">Variabelsubstitution</h3>
 <h4 id="cylindrisk-substitution">Cylindrisk substitution</h4>
 <div class="arithmatex">\[\iiint_Kf(x,y,z)dxdydz=\iiint_Kf(r\cos\theta,r\sin\theta,z)rdrd\theta dz\]</div>
 <blockquote>
-<p><strong>Övning:</strong> Skriv integralerna efter en cylindrisk substitution.
-a) <span class="arithmatex">\(\iiint_Kx^2zdxdydz\)</span> där <span class="arithmatex">\(K\)</span> är första oktantens fjärdedel av cylindern <span class="arithmatex">\(0\leq r\leq2,0\leq z\leq3\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(\iiint_Kx^2zdxdydz=\iiint_{\substack{0\leq r\leq2\\0\leq\theta\leq\frac\pi2\\0\leq z\leq3}}r^2\cos^2(\theta)zrdrd\theta dz\)</span>\)</span>
-b) <span class="arithmatex">\(\iiint_K3y^2dxdydz\)</span> där <span class="arithmatex">\(K\)</span> är första oktantens fjärdedel av konen med radie 2 och höjd 3
-<span class="arithmatex">\(<span class="arithmatex">\(\iiint_K3y^2dxdydz=\iiint_{\substack{0\leq r\leq2\\0\leq\theta\leq\frac\pi2\\0\leq z\leq3-\frac{3r}2}}3r^2\sin^2(\theta)rdrd\theta dz\)</span>\)</span></p>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iiint_K(x^2-y^2)zdxdydz\)</span> där <span class="arithmatex">\(K:1\leq x^2+y^2\leq4,0\leq z\leq2\)</span>.
-<span class="arithmatex">\(<span class="arithmatex">\(\iiint_K(x^2-y^2)zdxdydz=\iiint_{\substack{1\leq r\leq2\\0\leq\theta\leq2\pi\\0\leq z\leq2}}(r^2\cos^2(\theta)-r^2\sin^2(\theta))zrdrd\theta dz\\=\int_0^2\left(\int_0^{2\pi}\left(\int_1^2zr^3\cos(2\theta)dr\right)d\theta\right)dz=\int_0^2zdz\cdot\int_0^{2\pi}\cos(2\theta)d\theta\cdot\int_1^2r^3dr\\=2\cdot0\cdot\frac{15}4\)</span>\)</span></p>
+<p><strong>Övning:</strong> Skriv integralerna efter en cylindrisk substitution.<br>
+a) <span class="arithmatex">\(\iiint_Kx^2zdxdydz\)</span> där <span class="arithmatex">\(K\)</span> är första oktantens fjärdedel av cylindern <span class="arithmatex">\(0\leq r\leq2,0\leq z\leq3\)</span></p>
+<div class="arithmatex">\[\iiint_Kx^2zdxdydz=\iiint_{\substack{0\leq r\leq2\\0\leq\theta\leq\frac\pi2\\0\leq z\leq3}}r^2\cos^2(\theta)zrdrd\theta dz\]</div>
+<p>b) <span class="arithmatex">\(\iiint_K3y^2dxdydz\)</span> där <span class="arithmatex">\(K\)</span> är första oktantens fjärdedel av konen med radie 2 och höjd 3</p>
+<div class="arithmatex">\[\iiint_K3y^2dxdydz=\iiint_{\substack{0\leq r\leq2\\0\leq\theta\leq\frac\pi2\\0\leq z\leq3-\frac{3r}2}}3r^2\sin^2(\theta)rdrd\theta dz\]</div>
+<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iiint_K(x^2-y^2)zdxdydz\)</span> där <span class="arithmatex">\(K:1\leq x^2+y^2\leq4,0\leq z\leq2\)</span>.</p>
+<div class="arithmatex">\[\iiint_K(x^2-y^2)zdxdydz=\iiint_{\substack{1\leq r\leq2\\0\leq\theta\leq2\pi\\0\leq z\leq2}}(r^2\cos^2(\theta)-r^2\sin^2(\theta))zrdrd\theta dz\\=\int_0^2\left(\int_0^{2\pi}\left(\int_1^2zr^3\cos(2\theta)dr\right)d\theta\right)dz=\int_0^2zdz\cdot\int_0^{2\pi}\cos(2\theta)d\theta\cdot\int_1^2r^3dr\\=2\cdot0\cdot\frac{15}4\]</div>
 </blockquote>
 <h4 id="sfarisk-substitution">Sfärisk substitution</h4>
 <div class="arithmatex">\[\iiint_Kf(x,y,z)dxdydz=\iiint_Kf(r\sin\phi\cos\theta,r\sin\phi\sin\theta,r\cos\phi)r^2\sin\phi drd\phi d\theta\]</div>
 <blockquote>
-<p><strong>Övning:</strong> Skriv integralerna efter en sfärisk substitution.
-a) <span class="arithmatex">\(\iiint_K(x^2+y^2)zdxdydz\)</span> där <span class="arithmatex">\(K\)</span> är 1:a oktantens åttondel av klotet med radie 2 och medelpunkt i origo.
-<span class="arithmatex">\(<span class="arithmatex">\(\iiint_K(x^2+y^2)zdxdydz=\iiint_{\substack{0\leq r\leq2\\0\leq\phi\leq\frac\pi2\\0\leq\theta\leq\frac\pi2}}r^2\sin^2(\phi)r\cos\phi r^2\sin\phi drd\phi d\theta\\=\iiint_{\substack{0\leq r\leq2\\0\leq\phi\leq\frac\pi2\\0\leq\theta\leq\frac\pi2}}r^5\sin^3(\phi)\cos(\phi)drd\phi d\theta\)</span>\)</span>
-b) <span class="arithmatex">\(\iiint_K(x^2+y^2)zdxdydz\)</span> där <span class="arithmatex">\(K\)</span> är området <span class="arithmatex">\(0\leq r\leq2,0\leq\phi\leq\frac\pi3,0\leq\theta\leq2\pi\)</span>.
-<span class="arithmatex">\(<span class="arithmatex">\(\iiint_K\frac{xy}{1+x^2+y^2+z^2}dxdydz=\iiint_K\frac{r^2\sin^2(\phi)\cos(\theta)\sin(\theta)}{1+r^2}r^2\sin(\phi)drd\phi d\theta\\=\iiint_K\frac{r^4\sin^3(\phi)\cos(\theta)\sin(\theta)}{1+r^2}drd\phi d\theta\)</span>\)</span></p>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iiint_K(x^2+y^2)dxdydz\)</span> där <span class="arithmatex">\(K:1\leq x^2+y^2+z^2\leq4\)</span>.
-Vi gör sfärisk substitution och får <span class="arithmatex">\(<span class="arithmatex">\(\iiint_K(x^2+y^2)dxdydz=\iiint_{\substack{1\leq r\leq2\\0\leq\phi\leq\pi\\0\leq\theta\leq2\pi}}r^2\sin^2(\phi)r^2\sin(\phi)drd\phi d\theta=\iiint_{\substack{1\leq r\leq2\\0\leq\phi\leq\pi\\0\leq\theta\leq2\pi}}r^4\sin^3(\phi)drd\phi d\theta\\=2\pi\int_1^2r^4dr\cdot\int_0^\pi\sin^3(\phi)d\phi=\frac{62\pi}5\cdot\frac43=\frac{248\pi}{15}\)</span>\)</span>
-<strong>Svar:</strong> <span class="arithmatex">\(\frac{248\pi}{15}\)</span></p>
+<p><strong>Övning:</strong> Skriv integralerna efter en sfärisk substitution.<br>
+a) <span class="arithmatex">\(\iiint_K(x^2+y^2)zdxdydz\)</span> där <span class="arithmatex">\(K\)</span> är 1:a oktantens åttondel av klotet med radie 2 och medelpunkt i origo.</p>
+<div class="arithmatex">\[\iiint_K(x^2+y^2)zdxdydz=\iiint_{\substack{0\leq r\leq2\\0\leq\phi\leq\frac\pi2\\0\leq\theta\leq\frac\pi2}}r^2\sin^2(\phi)r\cos\phi r^2\sin\phi drd\phi d\theta\\=\iiint_{\substack{0\leq r\leq2\\0\leq\phi\leq\frac\pi2\\0\leq\theta\leq\frac\pi2}}r^5\sin^3(\phi)\cos(\phi)drd\phi d\theta\]</div>
+<p>b) <span class="arithmatex">\(\iiint_K(x^2+y^2)zdxdydz\)</span> där <span class="arithmatex">\(K\)</span> är området <span class="arithmatex">\(0\leq r\leq2,0\leq\phi\leq\frac\pi3,0\leq\theta\leq2\pi\)</span>.</p>
+<div class="arithmatex">\[\iiint_K\frac{xy}{1+x^2+y^2+z^2}dxdydz=\iiint_K\frac{r^2\sin^2(\phi)\cos(\theta)\sin(\theta)}{1+r^2}r^2\sin(\phi)drd\phi d\theta\\=\iiint_K\frac{r^4\sin^3(\phi)\cos(\theta)\sin(\theta)}{1+r^2}drd\phi d\theta\]</div>
+<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iiint_K(x^2+y^2)dxdydz\)</span> där <span class="arithmatex">\(K:1\leq x^2+y^2+z^2\leq4\)</span>.<br>
+Vi gör sfärisk substitution och får</p>
+<div class="arithmatex">\[\iiint_K(x^2+y^2)dxdydz=\iiint_{\substack{1\leq r\leq2\\0\leq\phi\leq\pi\\0\leq\theta\leq2\pi}}r^2\sin^2(\phi)r^2\sin(\phi)drd\phi d\theta=\iiint_{\substack{1\leq r\leq2\\0\leq\phi\leq\pi\\0\leq\theta\leq2\pi}}r^4\sin^3(\phi)drd\phi d\theta\\=2\pi\int_1^2r^4dr\cdot\int_0^\pi\sin^3(\phi)d\phi=\frac{62\pi}5\cdot\frac43=\frac{248\pi}{15}\]</div>
+<p><strong>Svar:</strong> <span class="arithmatex">\(\frac{248\pi}{15}\)</span></p>
 </blockquote>
 <h4 id="allman-substitution_1">Allmän substitution</h4>
-<p>Vid byte till allmänna koordinater <span class="arithmatex">\(u,v,w\)</span> ändras en trippelintegral enligt formeln <span class="arithmatex">\(<span class="arithmatex">\(\iiint_Df(x,y,z)dxdydz=\iiint_Df(x(u,v,w),y(u,v,w),z(u,v,w))\left|\det\frac{\partial(x,y,z)}{\partial(u,v,w)}\right|dudvdw\)</span>\)</span></p>
+<p>Vid byte till allmänna koordinater <span class="arithmatex">\(u,v,w\)</span> ändras en trippelintegral enligt formeln</p>
+<div class="arithmatex">\[\iiint_Df(x,y,z)dxdydz=\iiint_Df(x(u,v,w),y(u,v,w),z(u,v,w))\left|\det\frac{\partial(x,y,z)}{\partial(u,v,w)}\right|dudvdw\]</div>
 <blockquote>
-<p><strong>Förklaring:</strong>
-Vi partitionerar området i små rätblock. Dessa avbildas lokalt till approximativa parallellepipeder av den linjära avbildningen <span class="arithmatex">\(J=\frac{\partial(x,y,z)}{\partial(u,v,w)}\)</span>, vars volymer blir <span class="arithmatex">\(\Delta V_{ijk}=\Delta u_i\Delta v_j\Delta w_k|\det J|\)</span>.
-Bidraget från varje liten parallellepiped är <span class="arithmatex">\(f(x(u_i,v_j,w_k),y(u_i,v_j,w_k),z(u_i,v_j,w_k))|\det J|\Delta u_i\Delta v_j\Delta w_k\)</span>
+<p><strong>Förklaring:</strong><br>
+Vi partitionerar området i små rätblock. Dessa avbildas lokalt till approximativa parallellepipeder av den linjära avbildningen <span class="arithmatex">\(J=\frac{\partial(x,y,z)}{\partial(u,v,w)}\)</span>, vars volymer blir <span class="arithmatex">\(\Delta V_{ijk}=\Delta u_i\Delta v_j\Delta w_k|\det J|\)</span>.<br>
+Bidraget från varje liten parallellepiped är <span class="arithmatex">\(f(x(u_i,v_j,w_k),y(u_i,v_j,w_k),z(u_i,v_j,w_k))|\det J|\Delta u_i\Delta v_j\Delta w_k\)</span><br>
 Detta kan ställas upp som en riemannsumma som konvergerar mot trippelintegralens värde.</p>
 </blockquote>
 <h3 id="symmetrier">Symmetrier</h3>
@@ -5648,32 +5686,50 @@ Detta kan ställas upp som en riemannsumma som konvergerar mot trippelintegralen
 <h3 id="parameterytor">Parameterytor</h3>
 <p>En <em>parameteryta</em> är en yta där <span class="arithmatex">\(x,y,z\)</span>-koordinaterna styrs av två parametrar <span class="arithmatex">\(s,t\)</span>.</p>
 <blockquote>
-<p><strong>Exempel:</strong> Parametrisera ytorna och ange parameterområdet.
-a) paraboloid med spets i origo och som går genom punkten <span class="arithmatex">\((0,2,2)\)</span>, med <span class="arithmatex">\(0\leq z\leq2\)</span>
-Paraboloiden kan beskrivas av <span class="arithmatex">\(z=k(x^2+y^2)\)</span>. Den givna punkten ger <span class="arithmatex">\(k=\frac12\)</span>, och för parametrisering kan vi t.ex. anta <span class="arithmatex">\((s,t)=(x,y)\)</span>: <span class="arithmatex">\(<span class="arithmatex">\(\vec r(s,t)=(s,t,\frac12(s^2+t^2))\)</span>\)</span> där <span class="arithmatex">\(s^2+t^2\leq4\)</span>, dvs parameterområdet är en cirkelskiva med medelpunkt i origo och radie 2.</p>
-<p>b) enhetssfär (tänkt mittpunkt <span class="arithmatex">\((0,0,0)\)</span>) med begränsning <span class="arithmatex">\(0\leq z\leq1\)</span>
-Vi ser att alla punkter på ytan uppfyller <span class="arithmatex">\(\begin{cases}r=1\\0\leq\phi\leq\frac\pi2\\0\leq\theta\lt2\pi\end{cases}\)</span>, med polära koordinater, och vi kan då välja <span class="arithmatex">\((r,\theta,\phi)=(4,s,t)\)</span>. I rektangulära koordinater får vi slutligen <span class="arithmatex">\(<span class="arithmatex">\(\vec r(s,t)=(\cos s\sin t,\sin s\sin t,\cos t)\)</span>\)</span> där <span class="arithmatex">\(0\leq s\leq\frac\pi2,0\leq t\leq2\pi\)</span></p>
-<p><strong>Övning:</strong> Parametrisera ytorna och ange parameterområdet.
-a) cylindriskt skal med radie 2 med medelaxel <span class="arithmatex">\((x,y)=(0,0)\)</span>, och begränsad till <span class="arithmatex">\(0\leq z\leq2\)</span>
-I cylindriska koordinater <span class="arithmatex">\(\begin{cases}r=2\\0\leq\theta\leq2\pi\\0\leq z\leq2\end{cases}\)</span>. En parametrisering kan vara <span class="arithmatex">\(<span class="arithmatex">\(\vec r(s,t)=(2r\cos s,2r\sin s,2t)\)</span>\)</span> där <span class="arithmatex">\(0\leq s\leq2\pi,0\leq t\leq2\)</span>.
-b) koniskt skal
-I cylindriska koordinater ges ytan av <span class="arithmatex">\(0\leq z=r\leq2\)</span>. En parameterform i rektangulära koordinater ges av <span class="arithmatex">\(<span class="arithmatex">\(\vec r(s,t)=(s\cos t,s\sin t,s)\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Parametrisera ytorna och ange parameterområdet.<br>
+a) paraboloid med spets i origo och som går genom punkten <span class="arithmatex">\((0,2,2)\)</span>, med <span class="arithmatex">\(0\leq z\leq2\)</span><br>
+Paraboloiden kan beskrivas av <span class="arithmatex">\(z=k(x^2+y^2)\)</span>. Den givna punkten ger <span class="arithmatex">\(k=\frac12\)</span>, och för parametrisering kan vi t.ex. anta <span class="arithmatex">\((s,t)=(x,y)\)</span>:</p>
+<div class="arithmatex">\[\vec r(s,t)=(s,t,\frac12(s^2+t^2))\]</div>
+<p>där <span class="arithmatex">\(s^2+t^2\leq4\)</span>, dvs parameterområdet är en cirkelskiva med medelpunkt i origo och radie 2.</p>
+<p>b) enhetssfär (tänkt mittpunkt <span class="arithmatex">\((0,0,0)\)</span>) med begränsning <span class="arithmatex">\(0\leq z\leq1\)</span><br>
+Vi ser att alla punkter på ytan uppfyller <span class="arithmatex">\(\begin{cases}r=1\\0\leq\phi\leq\frac\pi2\\0\leq\theta\lt2\pi\end{cases}\)</span>, med polära koordinater, och vi kan då välja <span class="arithmatex">\((r,\theta,\phi)=(4,s,t)\)</span>. I rektangulära koordinater får vi slutligen</p>
+<div class="arithmatex">\[\vec r(s,t)=(\cos s\sin t,\sin s\sin t,\cos t)\]</div>
+<p>där <span class="arithmatex">\(0\leq s\leq\frac\pi2,0\leq t\leq2\pi\)</span></p>
+<p><strong>Övning:</strong> Parametrisera ytorna och ange parameterområdet.<br>
+a) cylindriskt skal med radie 2 med medelaxel <span class="arithmatex">\((x,y)=(0,0)\)</span>, och begränsad till <span class="arithmatex">\(0\leq z\leq2\)</span><br>
+I cylindriska koordinater <span class="arithmatex">\(\begin{cases}r=2\\0\leq\theta\leq2\pi\\0\leq z\leq2\end{cases}\)</span>. En parametrisering kan vara</p>
+<div class="arithmatex">\[\vec r(s,t)=(2r\cos s,2r\sin s,2t)\]</div>
+<p>där <span class="arithmatex">\(0\leq s\leq2\pi,0\leq t\leq2\)</span>.</p>
+<p>b) koniskt skal<br>
+I cylindriska koordinater ges ytan av <span class="arithmatex">\(0\leq z=r\leq2\)</span>. En parameterform i rektangulära koordinater ges av</p>
+<div class="arithmatex">\[\vec r(s,t)=(s\cos t,s\sin t,s)\]</div>
 </blockquote>
 <h3 id="area-av-buktiga-ytor">Area av buktiga ytor</h3>
 <h4 id="area-av-ett-parallellogram">Area av ett parallellogram</h4>
-<p>Ett parallellogram som har kantvektorer <span class="arithmatex">\(\vec u,\vec v\)</span> har arean <span class="arithmatex">\(<span class="arithmatex">\(A=||\vec u\times\vec v||\)</span>\)</span></p>
+<p>Ett parallellogram som har kantvektorer <span class="arithmatex">\(\vec u,\vec v\)</span> har arean</p>
+<div class="arithmatex">\[A=||\vec u\times\vec v||\]</div>
 <h4 id="area-av-en-parameteryta">Area av en parameteryta</h4>
-<p>En kontinuerligt deriverbar parameteryta <span class="arithmatex">\(<span class="arithmatex">\(\vec r(s,t)=(x(s,t),y(s,t),z(s,t))\)</span>\)</span> där <span class="arithmatex">\((s,t)\in D\)</span> har arean <span class="arithmatex">\(<span class="arithmatex">\(A={\int\int}_D\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|dsdt\)</span>\)</span></p>
+<p>En kontinuerligt deriverbar parameteryta</p>
+<div class="arithmatex">\[\vec r(s,t)=(x(s,t),y(s,t),z(s,t))\]</div>
+<p>där <span class="arithmatex">\((s,t)\in D\)</span> har arean</p>
+<div class="arithmatex">\[A={\int\int}_D\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|dsdt\]</div>
 <blockquote>
-<p><strong>Härledning:</strong>
-Vi delar in parameterområdet i små rektanglar. Lokalt avbildas dessa approximativt av den linjära approximationen med koefficientmatris <span class="arithmatex">\(<span class="arithmatex">\(J=\frac{\partial(x,y,z)}{\partial(s,t)}=\begin{bmatrix}\vert&amp;\vert\\\frac{\partial\vec r}{\partial s}&amp;\frac{\partial\vec r}{\partial t}\\\vert&amp;\vert\end{bmatrix}\)</span>\)</span> Varje rektangel avbildas därmed approximativt till ett parallellogram med area <span class="arithmatex">\(\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|\Delta s\Delta t\)</span>.
+<p><strong>Härledning:</strong><br>
+Vi delar in parameterområdet i små rektanglar. Lokalt avbildas dessa approximativt av den linjära approximationen med koefficientmatris</p>
+<div class="arithmatex">\[J=\frac{\partial(x,y,z)}{\partial(s,t)}=\begin{bmatrix}\vert&amp;\vert\\\frac{\partial\vec r}{\partial s}&amp;\frac{\partial\vec r}{\partial t}\\\vert&amp;\vert\end{bmatrix}\]</div>
+<p>Varje rektangel avbildas därmed approximativt till ett parallellogram med area <span class="arithmatex">\(\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|\Delta s\Delta t\)</span>.<br>
 Detta kan skrivas upp som en riemannsumma, som konvergerar mot parameterytans area.</p>
 </blockquote>
-<p>Uttrycket <span class="arithmatex">\(<span class="arithmatex">\(dS=\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|dsdt\)</span>\)</span> kallas för <em>areaelementet</em>. Arean av ytan <span class="arithmatex">\(S\)</span> ges då av <span class="arithmatex">\(<span class="arithmatex">\({\int\int}_SdS={\int\int}_D\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|dsdt\)</span>\)</span> där <span class="arithmatex">\(\vec r(s,t)\)</span> är en parametrisering av ytan <span class="arithmatex">\(S\)</span> med parameterområdet <span class="arithmatex">\(D\)</span>.</p>
+<p>Uttrycket</p>
+<div class="arithmatex">\[dS=\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|dsdt\]</div>
+<p>kallas för <em>areaelementet</em>. Arean av ytan <span class="arithmatex">\(S\)</span> ges då av</p>
+<div class="arithmatex">\[{\int\int}_SdS={\int\int}_D\left|\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right|dsdt\]</div>
+<p>där <span class="arithmatex">\(\vec r(s,t)\)</span> är en parametrisering av ytan <span class="arithmatex">\(S\)</span> med parameterområdet <span class="arithmatex">\(D\)</span>.</p>
 <blockquote>
-<p><strong>Exempel:</strong> Bestäm arean av ytan <span class="arithmatex">\(\begin{cases}x=u-v\\y=u+v\\z=u^2-2uv-v^2\end{cases}\)</span> där <span class="arithmatex">\(u^2+v^2\lt2\)</span> och <span class="arithmatex">\(u-v\gt0\)</span>.
-Arean ges av <span class="arithmatex">\(<span class="arithmatex">\(A={\int\int}_D\left|\frac{\partial\vec r}{\partial u}\times\frac{\partial\vec r}{\partial v}\right|dudv={\int\int}_D\left|\begin{pmatrix}1\\1\\2u-2v\end{pmatrix}\times\begin{pmatrix}-1\\1\\-2u-2v\end{pmatrix}\right|dudv\\={\int\int}_D\left|\begin{pmatrix}-4u\\4v\\2\end{pmatrix}\right|dudv={\int\int}_D2\sqrt{1+4(u^2+v^2)}dudv=\{\text{byt till polära koordinater}\}\\=\int_{-3\pi/4}^{\pi/4}\int_0^{\sqrt2}2\sqrt{1+4r^2}rdrd\theta=\left\{\begin{matrix}t=1+4r^2\\dr=\frac1{8r}dt\end{matrix}\right\}=\frac14\int_{-3\pi/4}^{\pi/4}\int_1^9\sqrt{t}dtd\theta=\frac\pi6[t^{1.5}]_1^9=\frac{13\pi}3\)</span>\)</span>
-<strong>Svar:</strong> Arean är <span class="arithmatex">\(13\pi/3\)</span> a.e.</p>
+<p><strong>Exempel:</strong> Bestäm arean av ytan <span class="arithmatex">\(\begin{cases}x=u-v\\y=u+v\\z=u^2-2uv-v^2\end{cases}\)</span> där <span class="arithmatex">\(u^2+v^2\lt2\)</span> och <span class="arithmatex">\(u-v\gt0\)</span>.<br>
+Arean ges av</p>
+<div class="arithmatex">\[A={\int\int}_D\left|\frac{\partial\vec r}{\partial u}\times\frac{\partial\vec r}{\partial v}\right|dudv={\int\int}_D\left|\begin{pmatrix}1\\1\\2u-2v\end{pmatrix}\times\begin{pmatrix}-1\\1\\-2u-2v\end{pmatrix}\right|dudv\\={\int\int}_D\left|\begin{pmatrix}-4u\\4v\\2\end{pmatrix}\right|dudv={\int\int}_D2\sqrt{1+4(u^2+v^2)}dudv=\{\text{byt till polära koordinater}\}\\=\int_{-3\pi/4}^{\pi/4}\int_0^{\sqrt2}2\sqrt{1+4r^2}rdrd\theta=\left\{\begin{matrix}t=1+4r^2\\dr=\frac1{8r}dt\end{matrix}\right\}=\frac14\int_{-3\pi/4}^{\pi/4}\int_1^9\sqrt{t}dtd\theta=\frac\pi6[t^{1.5}]_1^9=\frac{13\pi}3\]</div>
+<p><strong>Svar:</strong> Arean är <span class="arithmatex">\(13\pi/3\)</span> a.e.</p>
 </blockquote>
 <h4 id="areaelement-for-nagra-vanliga-ytor">Areaelement för några vanliga ytor</h4>
 <table>
@@ -5703,9 +5759,9 @@ Arean ges av <span class="arithmatex">\(<span class="arithmatex">\(A={\int\int}_
 </tbody>
 </table>
 <blockquote>
-<p><strong>Exempel:</strong> Beräkna arean av den hyperboliska paraboloiden <span class="arithmatex">\(z=xy\)</span> inuti cylindern <span class="arithmatex">\(x^2+y^2\leq1\)</span>.
-<span class="arithmatex">\(A={\int\int}_{x^2+y^2\leq1}\sqrt{1+y^2+x^2}dxdy=\int_0^{2\pi}\int_0^1\sqrt{1+r^2}rdrd\theta=\left\{\begin{matrix}t=1+r^2\\dr=\frac1{2r}dt\end{matrix}\right\}\\=\pi\int_1^2\sqrt tdt=\frac{2\pi}3[t^{1.5}]_1^2=\frac{2\pi}3(2\sqrt2-1)\)</span>
-<strong>Svar:</strong> Arean är <span class="arithmatex">\(\frac{2\pi}3(2\sqrt2-1}\)</span> a.e.</p>
+<p><strong>Exempel:</strong> Beräkna arean av den hyperboliska paraboloiden <span class="arithmatex">\(z=xy\)</span> inuti cylindern <span class="arithmatex">\(x^2+y^2\leq1\)</span>.<br>
+<span class="arithmatex">\(A={\int\int}_{x^2+y^2\leq1}\sqrt{1+y^2+x^2}dxdy=\int_0^{2\pi}\int_0^1\sqrt{1+r^2}rdrd\theta=\left\{\begin{matrix}t=1+r^2\\dr=\frac1{2r}dt\end{matrix}\right\}\\=\pi\int_1^2\sqrt tdt=\frac{2\pi}3[t^{1.5}]_1^2=\frac{2\pi}3(2\sqrt2-1)\)</span><br>
+<strong>Svar:</strong> Arean är <span class="arithmatex">\(\frac{2\pi}3(2\sqrt2-1)\)</span> a.e.</p>
 </blockquote>
 <h2 id="forelasning-22">Föreläsning 22</h2>
 <h3 id="ytbegrepp">Ytbegrepp</h3>
@@ -5716,27 +5772,32 @@ Arean ges av <span class="arithmatex">\(<span class="arithmatex">\(A={\int\int}_
 <h3 id="flodesintegral">Flödesintegral</h3>
 <p>T.ex. flödet av en vätska genom en yta.</p>
 <h4 id="konstant-flode-genom-ett-parallellogram">Konstant flöde genom ett parallellogram</h4>
-<p>En vätska flödar i rummet med hastighet <span class="arithmatex">\(\vec v\)</span>. Genom ett parallellogram med kantvektorer <span class="arithmatex">\(\vec u,\vec w\)</span> är flödet per tidsenhet <span class="arithmatex">\(<span class="arithmatex">\(\Phi=\vec v\cdot(\vec u\times\vec w)\)</span>\)</span></p>
+<p>En vätska flödar i rummet med hastighet <span class="arithmatex">\(\vec v\)</span>. Genom ett parallellogram med kantvektorer <span class="arithmatex">\(\vec u,\vec w\)</span> är flödet per tidsenhet</p>
+<div class="arithmatex">\[\Phi=\vec v\cdot(\vec u\times\vec w)\]</div>
 <h4 id="flode-genom-en-parameteryta">Flöde genom en parameteryta</h4>
-<p>Flödet genom en parameteryta ges av <span class="arithmatex">\(<span class="arithmatex">\(\iint_D\vec F\cdot\hat ndS=\iint_D\vec F\cdot d\vec S=\iint_D\vec F\cdot\left(\frac{\partial\vec r}{\partial s},\frac{\partial\vec r}{\partial t}\right)dsdt\)</span>\)</span> där <span class="arithmatex">\(d\vec S\)</span> kallas för det <em>vektoriella ytelementet</em> och <span class="arithmatex">\(\vec r(s,t)\)</span> är en parametrisering av ytan <span class="arithmatex">\(D\)</span>.</p>
+<p>Flödet genom en parameteryta ges av</p>
+<div class="arithmatex">\[\iint_D\vec F\cdot\hat ndS=\iint_D\vec F\cdot d\vec S=\iint_D\vec F\cdot\left(\frac{\partial\vec r}{\partial s},\frac{\partial\vec r}{\partial t}\right)dsdt\]</div>
+<p>där <span class="arithmatex">\(d\vec S\)</span> kallas för det <em>vektoriella ytelementet</em> och <span class="arithmatex">\(\vec r(s,t)\)</span> är en parametrisering av ytan <span class="arithmatex">\(D\)</span>.</p>
 <blockquote>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iint_S(xy,yz,xz)\cdot d\vec S\)</span> där <span class="arithmatex">\(S\)</span> är ytan som ges av <span class="arithmatex">\(\vec r(s,t)=(\cos(s),t,\sin(s))\)</span> för <span class="arithmatex">\(0\leq s\leq\frac\pi2,0\leq t\leq2\)</span>
-Det vektoriella ytelementet är: <span class="arithmatex">\(\left(\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right)dsdt=\left(\begin{bmatrix}-\sin(s)\\0\\\cos(s)\end{bmatrix}\times\begin{bmatrix}0\\1\\0\end{bmatrix}\right)dsdt=\begin{bmatrix}-\cos(s)\\0\\-\sin(s)\end{bmatrix}dsdt\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(\iint_S(xy,yz,xz)\cdot d\vec S=\iint_S\begin{pmatrix}t\cos(s)\\t\sin(s)\\\cos(s)\sin(s)\end{pmatrix}\cdot\begin{pmatrix}-\cos(s)\\0\\-\sin(s)\end{pmatrix}dsdt\\=\iint_S-t\cos^2(s)-\cos(s)\sin^2(s)dsdt=-\frac\pi2-\frac23\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iint_S(xy,yz,xz)\cdot d\vec S\)</span> där <span class="arithmatex">\(S\)</span> är ytan som ges av <span class="arithmatex">\(\vec r(s,t)=(\cos(s),t,\sin(s))\)</span> för <span class="arithmatex">\(0\leq s\leq\frac\pi2,0\leq t\leq2\)</span><br>
+Det vektoriella ytelementet är: <span class="arithmatex">\(\left(\frac{\partial\vec r}{\partial s}\times\frac{\partial\vec r}{\partial t}\right)dsdt=\left(\begin{bmatrix}-\sin(s)\\0\\\cos(s)\end{bmatrix}\times\begin{bmatrix}0\\1\\0\end{bmatrix}\right)dsdt=\begin{bmatrix}-\cos(s)\\0\\-\sin(s)\end{bmatrix}dsdt\)</span></p>
+<div class="arithmatex">\[\iint_S(xy,yz,xz)\cdot d\vec S=\iint_S\begin{pmatrix}t\cos(s)\\t\sin(s)\\\cos(s)\sin(s)\end{pmatrix}\cdot\begin{pmatrix}-\cos(s)\\0\\-\sin(s)\end{pmatrix}dsdt\\=\iint_S-t\cos^2(s)-\cos(s)\sin^2(s)dsdt=-\frac\pi2-\frac23\]</div>
 </blockquote>
-<p>I vissa situationer är det en fördel att skriva det vektoriella ytelementet som <span class="arithmatex">\(<span class="arithmatex">\(d\vec S=\hat ndS\)</span>\)</span></p>
+<p>I vissa situationer är det en fördel att skriva det vektoriella ytelementet som</p>
+<div class="arithmatex">\[d\vec S=\hat ndS\]</div>
 <blockquote>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iint_S\vec F\cdot d\vec S\)</span> där <span class="arithmatex">\(\vec F=(x,y,z)\)</span> ut genom ytan <span class="arithmatex">\(S:x^2+z^2=16,x\geq0,0\leq y\leq2\)</span>.
-Vi har enhetsnormalen <span class="arithmatex">\(\hat n=\frac14(x,0,z)\)</span> och således <span class="arithmatex">\(d\vec S=\hat ndS\)</span>
-Detta ger:
-<span class="arithmatex">\(<span class="arithmatex">\(\frac14\iint_S(x,y,z)\cdot(x,0,z)dS=\frac14\iint_Sx^2+z^2dS=4\iint_SdS=\{4\cdot\text{arean}\}=32\pi\)</span>\)</span></p>
-<p><strong>Exempel:</strong> Beräkna flödet av vektorfältet <span class="arithmatex">\(\vec F=(x,y+1,z)\)</span> upp genom halvsfären <span class="arithmatex">\(x^2+y^2+z^2=9,z\geq0\)</span>.
-Vi har enhetsnormalen <span class="arithmatex">\(\hat n=\frac13(x,y,z)\implies d\vec S=\frac13(x,y,z)dS\)</span>
-Integralen beräknas: <span class="arithmatex">\(<span class="arithmatex">\(\iint_S\vec F\cdot d\vec S=\frac13\iint_S(x^2+y^2+y+z^2)dS=\frac13\iint_S(9+y)dS=\left\{\begin{matrix}y\text{ är udda i x-led \&amp;}\\S\text{ symmetriskt i x-led}\end{matrix}\right\}\\=3\iint_SdS=3\cdot\frac{4\pi}2\cdot3^2=54\pi\)</span>\)</span></p>
-<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iint_S(2x,2y,3)\cdot d\vec S\)</span> där <span class="arithmatex">\(S\)</span> är den del av paraboloiden <span class="arithmatex">\(z=4-x^2-y^2\)</span> ovanför x,y-planet och orienterad så att den utåtriktade normalen har positiv z-koordinat.
-Vi kan parametrisera ytan som <span class="arithmatex">\(\vec r(s,t)=(s,t,4-s^2-t^2)\)</span>.
-Vektoriella ytelementet: <span class="arithmatex">\(d\vec S=\left(\begin{bmatrix}1\\0\\-2s\end{bmatrix}\times\begin{bmatrix}0\\1\\-2t\end{bmatrix}\right)dsdt=\begin{pmatrix}2s\\2t\\1\end{pmatrix}dsdt\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(\iint_S(2s,2t,3)\cdot(2s,2t,1)dsdt=\iint_{\substack{x^2+y^2\leq4}}(4(s^2+t^2)+3)dsdt\\=\iint_{\substack{0\leq r\leq2\\0\leq\theta\leq2\pi}}(4r^2+3)rdrd\theta=2\pi\int_0^2(4r^3+3r)dr=44\pi\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iint_S\vec F\cdot d\vec S\)</span> där <span class="arithmatex">\(\vec F=(x,y,z)\)</span> ut genom ytan <span class="arithmatex">\(S:x^2+z^2=16,x\geq0,0\leq y\leq2\)</span>.<br>
+Vi har enhetsnormalen <span class="arithmatex">\(\hat n=\frac14(x,0,z)\)</span> och således <span class="arithmatex">\(d\vec S=\hat ndS\)</span><br>
+Detta ger:</p>
+<div class="arithmatex">\[\frac14\iint_S(x,y,z)\cdot(x,0,z)dS=\frac14\iint_Sx^2+z^2dS=4\iint_SdS=\{4\cdot\text{arean}\}=32\pi\]</div>
+<p><strong>Exempel:</strong> Beräkna flödet av vektorfältet <span class="arithmatex">\(\vec F=(x,y+1,z)\)</span> upp genom halvsfären <span class="arithmatex">\(x^2+y^2+z^2=9,z\geq0\)</span>.<br>
+Vi har enhetsnormalen <span class="arithmatex">\(\hat n=\frac13(x,y,z)\implies d\vec S=\frac13(x,y,z)dS\)</span><br>
+Integralen beräknas:</p>
+<div class="arithmatex">\[\iint_S\vec F\cdot d\vec S=\frac13\iint_S(x^2+y^2+y+z^2)dS=\frac13\iint_S(9+y)dS=\left\{\begin{matrix}y\text{ är udda i x-led \&amp;}\\S\text{ symmetriskt i x-led}\end{matrix}\right\}\\=3\iint_SdS=3\cdot\frac{4\pi}2\cdot3^2=54\pi\]</div>
+<p><strong>Exempel:</strong> Beräkna <span class="arithmatex">\(\iint_S(2x,2y,3)\cdot d\vec S\)</span> där <span class="arithmatex">\(S\)</span> är den del av paraboloiden <span class="arithmatex">\(z=4-x^2-y^2\)</span> ovanför x,y-planet och orienterad så att den utåtriktade normalen har positiv z-koordinat.<br>
+Vi kan parametrisera ytan som <span class="arithmatex">\(\vec r(s,t)=(s,t,4-s^2-t^2)\)</span>.<br>
+Vektoriella ytelementet: <span class="arithmatex">\(d\vec S=\left(\begin{bmatrix}1\\0\\-2s\end{bmatrix}\times\begin{bmatrix}0\\1\\-2t\end{bmatrix}\right)dsdt=\begin{pmatrix}2s\\2t\\1\end{pmatrix}dsdt\)</span></p>
+<div class="arithmatex">\[\iint_S(2s,2t,3)\cdot(2s,2t,1)dsdt=\iint_{\substack{x^2+y^2\leq4}}(4(s^2+t^2)+3)dsdt\\=\iint_{\substack{0\leq r\leq2\\0\leq\theta\leq2\pi}}(4r^2+3)rdrd\theta=2\pi\int_0^2(4r^3+3r)dr=44\pi\]</div>
 </blockquote>
 <h3 id="rakneregler_2">Räkneregler</h3>
 <ul>
@@ -5746,85 +5807,107 @@ Vektoriella ytelementet: <span class="arithmatex">\(d\vec S=\left(\begin{bmatrix
 </ul>
 <h2 id="forelasning-23">Föreläsning 23</h2>
 <h3 id="flode">Flöde</h3>
-<p>Om <span class="arithmatex">\(S\)</span> är randytan till ett öppet område så definieras flödet av ett vektorfält <span class="arithmatex">\(\vec F\)</span> ut ur området som <span class="arithmatex">\(<span class="arithmatex">\({\int\int}_S\hat n\cdot \vec FdS\)</span>\)</span> där <span class="arithmatex">\(\hat n\)</span> är den utåtpekande enhetsnormalen.</p>
+<p>Om <span class="arithmatex">\(S\)</span> är randytan till ett öppet område så definieras flödet av ett vektorfält <span class="arithmatex">\(\vec F\)</span> ut ur området som</p>
+<div class="arithmatex">\[{\int\int}_S\hat n\cdot \vec FdS\]</div>
+<p>där <span class="arithmatex">\(\hat n\)</span> är den utåtpekande enhetsnormalen.</p>
 <blockquote>
-<p><strong>Exempel 1:</strong> Låt <span class="arithmatex">\(\vec F=(a+bx+cy+ez,f+gx+hy+iz,j+kx+ly+mz)\)</span> och <span class="arithmatex">\(D\)</span> vara en fyrhörning. Visa att flödet av <span class="arithmatex">\(\vec F\)</span> ut ur fyrhörningens randyta <span class="arithmatex">\(S\)</span> ges av <span class="arithmatex">\(<span class="arithmatex">\(\boxed{\oiint_S\hat n\cdot\vec FdS=(b+h+m)\cdot V}\)</span>\)</span> där <span class="arithmatex">\(V\)</span> är fyrhörningens volym.
-...</p>
+<p><strong>Exempel 1:</strong> Låt <span class="arithmatex">\(\vec F=(a+bx+cy+ez,f+gx+hy+iz,j+kx+ly+mz)\)</span> och <span class="arithmatex">\(D\)</span> vara en fyrhörning. Visa att flödet av <span class="arithmatex">\(\vec F\)</span> ut ur fyrhörningens randyta <span class="arithmatex">\(S\)</span> ges av</p>
+<div class="arithmatex">\[\boxed{\oiint_S\hat n\cdot\vec FdS=(b+h+m)\cdot V}\]</div>
+<p>där <span class="arithmatex">\(V\)</span> är fyrhörningens volym.</p>
+<p>...</p>
 <p><strong>Övning:</strong>
-Beräkna flödet av <span class="arithmatex">\(\vec F=(1-x,y-z,x+2z)\)</span> ut ur
-a) fyrhörningen <span class="arithmatex">\(P:(0,0,0),(4,0,0),(0,4,0),(0,0,2)\)</span>
-<span class="arithmatex">\(\oiint_{\partial S}\vec F\cdot\hat ndS=((-1)+1+2)\cdot V=\frac{32}3\)</span>
-<strong>Svar:</strong> 32/3
-b) femhörningen <span class="arithmatex">\(P:(0,0,0),(4,0,0),(4,4,0),(0,4,0),(0,0,2)\)</span>
-Denna kan delas upp i två fyrhörningar. Vi beräknar då summan av flödet ut ur de två delarna.
-<em>Notera att det inte spelar någon roll att vi integrerar över den gemensamma sidan "i mitten", eftersom vi gör detta två gånger, och i "motsatt riktning" - de tar då ut varandra.</em>
-<span class="arithmatex">\(\oiint_{\partial P}\vec F\cdot d\vec S=\oiint_{\partial P_1}\vec F\cdot d\vec S+\oiint_{\partial P_2}\vec F\cdot d\vec S=2\cdot V(P_1)+2\cdot V(P_2)=\frac{64}3\)</span>
+Beräkna flödet av <span class="arithmatex">\(\vec F=(1-x,y-z,x+2z)\)</span> ut ur<br>
+a) fyrhörningen <span class="arithmatex">\(P:(0,0,0),(4,0,0),(0,4,0),(0,0,2)\)</span><br>
+<span class="arithmatex">\(\oiint_{\partial S}\vec F\cdot\hat ndS=((-1)+1+2)\cdot V=\frac{32}3\)</span><br>
+<strong>Svar:</strong> 32/3</p>
+<p>b) femhörningen <span class="arithmatex">\(P:(0,0,0),(4,0,0),(4,4,0),(0,4,0),(0,0,2)\)</span><br>
+Denna kan delas upp i två fyrhörningar. Vi beräknar då summan av flödet ut ur de två delarna.<br>
+<em>Notera att det inte spelar någon roll att vi integrerar över den gemensamma sidan "i mitten", eftersom vi gör detta två gånger, och i "motsatt riktning" - de tar då ut varandra.</em><br>
+<span class="arithmatex">\(\oiint_{\partial P}\vec F\cdot d\vec S=\oiint_{\partial P_1}\vec F\cdot d\vec S+\oiint_{\partial P_2}\vec F\cdot d\vec S=2\cdot V(P_1)+2\cdot V(P_2)=\frac{64}3\)</span><br>
 <strong>Svar:</strong> 64/3</p>
 </blockquote>
 <h3 id="divergens-flodesdensitet_1">Divergens (<em>flödesdensitet</em>)</h3>
-<p>Uttrycket <span class="arithmatex">\(<span class="arithmatex">\(\text{div}\ \vec F=\nabla\cdot\vec F\)</span>\)</span> kallas för <em>divergensen</em> av <span class="arithmatex">\(\vec F\)</span> och mäter hur mycket vektorfältet flödar ut ur en punkt.</p>
+<p>Uttrycket</p>
+<div class="arithmatex">\[\text{div}\ \vec F=\nabla\cdot\vec F\]</div>
+<p>kallas för <em>divergensen</em> av <span class="arithmatex">\(\vec F\)</span> och mäter hur mycket vektorfältet flödar ut ur en punkt.</p>
 <p>Ett vektorfält kallas för <em>källfritt</em> om <span class="arithmatex">\(\text{div}\ \vec F=0\)</span> överallt.</p>
 <blockquote>
-<p><strong>Övning:</strong> Bestäm divergensen av <span class="arithmatex">\(\vec F\)</span>.
-a) <span class="arithmatex">\(\vec F=(z,x,y)\)</span>
-<strong>Svar:</strong> Källfritt.
-b) <span class="arithmatex">\(\vec F=(x^2+yz,y^2+xz,z^2+xy)\)</span>
-<span class="arithmatex">\(\text{div}\ \vec F=(\frac\partial{\partial x},\frac\partial{\partial y},\frac\partial{\partial z})\cdot(x^2+yz,y^2+xz,z^2+xy)=2x+2y+2z\)</span>
+<p><strong>Övning:</strong> Bestäm divergensen av <span class="arithmatex">\(\vec F\)</span>.<br>
+a) <span class="arithmatex">\(\vec F=(z,x,y)\)</span><br>
+<strong>Svar:</strong> Källfritt.</p>
+<p>b) <span class="arithmatex">\(\vec F=(x^2+yz,y^2+xz,z^2+xy)\)</span><br>
+<span class="arithmatex">\(\text{div}\ \vec F=(\frac\partial{\partial x},\frac\partial{\partial y},\frac\partial{\partial z})\cdot(x^2+yz,y^2+xz,z^2+xy)=2x+2y+2z\)</span><br>
 <strong>Svar:</strong> <span class="arithmatex">\(\text{div}\ \vec F=2x+2y+2yz\)</span></p>
 </blockquote>
 <h4 id="divergensen-som-flodesdensitet">Divergensen som flödesdensitet</h4>
-<p>Divergensen kan ses som en flödesdensitet och ges av <span class="arithmatex">\(<span class="arithmatex">\(\text{div}\ \vec F(a,b,c)=\lim_{\text{volym}(D)\to0}\frac1{\text{volym}(D)}\oiint_D\hat n\cdot\vec FdS\)</span>\)</span> där <span class="arithmatex">\(D\)</span> är en fyrhörning som innehåller <span class="arithmatex">\((a,b,c)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess randyta.</p>
+<p>Divergensen kan ses som en flödesdensitet och ges av</p>
+<div class="arithmatex">\[\text{div}\ \vec F(a,b,c)=\lim_{\text{volym}(D)\to0}\frac1{\text{volym}(D)}\oiint_D\hat n\cdot\vec FdS\]</div>
+<p>där <span class="arithmatex">\(D\)</span> är en fyrhörning som innehåller <span class="arithmatex">\((a,b,c)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess randyta.</p>
 <blockquote>
-<p><strong>Exempel:</strong> Härled formeln ovan.
-Låt <span class="arithmatex">\(\vec F=(P,Q,R)\)</span>
-Vi gör en linjär approximation av vektorfältet:<span class="arithmatex">\(<span class="arithmatex">\(\vec F(a+h,b+k,c+l)=\begin{pmatrix}P(a,b,c)+P'_x(a,b,c)h+P'_y(a,b,c)k+P'_z(a,b,c)l\\Q(a,b,c)+Q'_x(a,b,c)h+Q'_y(a,b,c)k+Q'_z(a,b,c)l\\R(a,b,c)+R'_x(a,b,c)h+R'_y(a,b,c)k+R'_z(a,b,c)l\end{pmatrix}+\text{felterm}\)</span>\)</span>
-Vi får då: <span class="arithmatex">\(<span class="arithmatex">\(\oiint\vec F\cdot d\vec S=\oiint(\text{linjärt vektorfält})\cdot d\vec S+\text{felterm}\\=\{\text{skriver om enligt ex. 1}\}=(P'_x(a,b,c)+Q'_y(a,b,c)+R'_z(a,b,c))\cdot\text{volym}+\text{felterm}\)</span>\)</span>
-Efter division i båda led med volymen, och då volymen gå mot 0, får vi:
-<span class="arithmatex">\(<span class="arithmatex">\(\lim_{\text{volym}\to0}\frac1{\text{volym}}\oiint\vec F\cdot d\vec S=\text{div}\ \vec F(a,b,c)\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Härled formeln ovan.<br>
+Låt <span class="arithmatex">\(\vec F=(P,Q,R)\)</span><br>
+Vi gör en linjär approximation av vektorfältet:</p>
+<div class="arithmatex">\[\vec F(a+h,b+k,c+l)=\begin{pmatrix}P(a,b,c)+P'_x(a,b,c)h+P'_y(a,b,c)k+P'_z(a,b,c)l\\Q(a,b,c)+Q'_x(a,b,c)h+Q'_y(a,b,c)k+Q'_z(a,b,c)l\\R(a,b,c)+R'_x(a,b,c)h+R'_y(a,b,c)k+R'_z(a,b,c)l\end{pmatrix}+\text{felterm}\]</div>
+<p>Vi får då:</p>
+<div class="arithmatex">\[\oiint\vec F\cdot d\vec S=\oiint(\text{linjärt vektorfält})\cdot d\vec S+\text{felterm}\\=\{\text{skriver om enligt ex. 1}\}=(P'_x(a,b,c)+Q'_y(a,b,c)+R'_z(a,b,c))\cdot\text{volym}+\text{felterm}\]</div>
+<p>Efter division i båda led med volymen, och då volymen gå mot 0, får vi:</p>
+<div class="arithmatex">\[\lim_{\text{volym}\to0}\frac1{\text{volym}}\oiint\vec F\cdot d\vec S=\text{div}\ \vec F(a,b,c)\]</div>
 </blockquote>
 <h4 id="gauss-sats">Gauss sats</h4>
-<p>Låt <span class="arithmatex">\(D\)</span> vara ett <em>kompakt område</em> med en rand som består av styckvis deriverbara ytstycken (<em>dvs. finns kontinurligt deriverbara parametriseringar av ytan</em>), och <span class="arithmatex">\(\vec F=(P,Q,R)\)</span> vara ett kontinuerligt deriverbart vektorfält. Då gäller:
-<span class="arithmatex">\(<span class="arithmatex">\(\oiint_{\partial D}\hat n\cdot\vec FdS=\iiint_D\text{div}\ \vec Fdxdydz\)</span>\)</span> där <span class="arithmatex">\(\hat n\)</span> är den utåtpekande enhetsnormalen.</p>
+<p>Låt <span class="arithmatex">\(D\)</span> vara ett <em>kompakt område</em> med en rand som består av styckvis deriverbara ytstycken (<em>dvs. finns kontinurligt deriverbara parametriseringar av ytan</em>), och <span class="arithmatex">\(\vec F=(P,Q,R)\)</span> vara ett kontinuerligt deriverbart vektorfält. Då gäller:</p>
+<div class="arithmatex">\[\oiint_{\partial D}\hat n\cdot\vec FdS=\iiint_D\text{div}\ \vec Fdxdydz\]</div>
+<p>där <span class="arithmatex">\(\hat n\)</span> är den utåtpekande enhetsnormalen.</p>
 <p>Dvs. <em>flödet ut ur <span class="arithmatex">\(D\)</span> kan beräknas genom att integrera flödesdensiteten (divergensen) över <span class="arithmatex">\(D\)</span></em>.</p>
 <blockquote>
-<p><strong>Övning:</strong> Skriv om flödesintegralerna som trippelintegraler med Gauss sats och förenkla.
-a) <span class="arithmatex">\(\oiint_{\partial K}\hat n\cdot(xy^2,y,xz^2)\)</span> där <span class="arithmatex">\(K\)</span> är halvklotet <span class="arithmatex">\(0\leq r\leq2,0\leq\phi\leq\frac\pi2\)</span>
-<span class="arithmatex">\(=\iiint_K\left(\frac\partial{\partial x}xy^2+\frac\partial{\partial y}y+\frac\partial{\partial z}xz^2\right)dxdydz\\=\iiint_K(y^2+1+2xz)dxdydz=\iiint_Ky^2dxdydz+\frac{16}3\pi+0\)</span>
-b) <span class="arithmatex">\(\oiint_{\partial K}\hat n\cdot(x^2,y^2,z^2)dS\)</span> där <span class="arithmatex">\(K\)</span> är kuben <span class="arithmatex">\(\begin{cases}-1\leq x\leq1\\-1\leq y\leq1\\0\leq z\leq2\end{cases}\)</span>
+<p><strong>Övning:</strong> Skriv om flödesintegralerna som trippelintegraler med Gauss sats och förenkla.<br>
+a) <span class="arithmatex">\(\oiint_{\partial K}\hat n\cdot(xy^2,y,xz^2)\)</span> där <span class="arithmatex">\(K\)</span> är halvklotet <span class="arithmatex">\(0\leq r\leq2,0\leq\phi\leq\frac\pi2\)</span><br>
+<span class="arithmatex">\(=\iiint_K\left(\frac\partial{\partial x}xy^2+\frac\partial{\partial y}y+\frac\partial{\partial z}xz^2\right)dxdydz\\=\iiint_K(y^2+1+2xz)dxdydz=\iiint_Ky^2dxdydz+\frac{16}3\pi+0\)</span></p>
+<p>b) <span class="arithmatex">\(\oiint_{\partial K}\hat n\cdot(x^2,y^2,z^2)dS\)</span> där <span class="arithmatex">\(K\)</span> är kuben <span class="arithmatex">\(\begin{cases}-1\leq x\leq1\\-1\leq y\leq1\\0\leq z\leq2\end{cases}\)</span><br>
 <span class="arithmatex">\(=\iiint_K\text{div}(x^2,y^2,z^2)dxdydz=\iint_K(2x+2y+2z)dxdydz\\=2\iiint_Kxdxdydz+2\iiint_Kydxdydz+2\iiint_Kzdxdydz=2\iiint_Kzdxdydz\)</span></p>
-<p><strong>Exempel:</strong> Beräkna flödet av vektorfältet <span class="arithmatex">\(\vec F=(x^3y,xz,yz^3)\)</span> ut från området <span class="arithmatex">\(x^2+z^2\leq1,0\leq y\leq1,x\geq0,z\geq0\)</span>.
-<span class="arithmatex">\(<span class="arithmatex">\(\iint_{\partial D}\vec F\cdot\hat ndS=\iiint_D\text{div}\ \vec Fdxdydz=\iiint_D3x^2y+3yz^2dxdydz\\=\{\text{typ cylindriska}\}=3\iiint_{\substack{0\leq r\leq1\\0\leq y\leq1\\0\leq\theta\leq\frac\pi2}}yr^2\left|\det\begin{bmatrix}\cos\theta&amp;-r\sin\theta&amp;0\\0&amp;0&amp;1\\\sin\theta&amp;r\cos\theta&amp;0\end{bmatrix}\right|drd\theta dy\\=3\frac\pi2\int_0^1\left(\int_0^1yr^3dr\right)dy=\frac{3\pi}2\int_0^1\frac y4dy=\frac{3\pi}{16}\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Beräkna flödet av vektorfältet <span class="arithmatex">\(\vec F=(x^3y,xz,yz^3)\)</span> ut från området <span class="arithmatex">\(x^2+z^2\leq1,0\leq y\leq1,x\geq0,z\geq0\)</span>.</p>
+<div class="arithmatex">\[\iint_{\partial D}\vec F\cdot\hat ndS=\iiint_D\text{div}\ \vec Fdxdydz=\iiint_D3x^2y+3yz^2dxdydz\\=\{\text{typ cylindriska}\}=3\iiint_{\substack{0\leq r\leq1\\0\leq y\leq1\\0\leq\theta\leq\frac\pi2}}yr^2\left|\det\begin{bmatrix}\cos\theta&amp;-r\sin\theta&amp;0\\0&amp;0&amp;1\\\sin\theta&amp;r\cos\theta&amp;0\end{bmatrix}\right|drd\theta dy\\=3\frac\pi2\int_0^1\left(\int_0^1yr^3dr\right)dy=\frac{3\pi}2\int_0^1\frac y4dy=\frac{3\pi}{16}\]</div>
 </blockquote>
 <h4 id="gauss-sats-baklanges">Gauss sats baklänges</h4>
-<p><span class="arithmatex">\(<span class="arithmatex">\(\iiint_Kf(x,y,z)dxdydz=\oiint_{\partial K}\vec F\cdot d\vec S\)</span>\)</span> där vektorfältet <span class="arithmatex">\(\vec F\)</span> uppfyller <span class="arithmatex">\(\text{div}\ \vec F=f(x,y,z)\)</span>.</p>
+<div class="arithmatex">\[\iiint_Kf(x,y,z)dxdydz=\oiint_{\partial K}\vec F\cdot d\vec S\]</div>
+<p>där vektorfältet <span class="arithmatex">\(\vec F\)</span> uppfyller <span class="arithmatex">\(\text{div}\ \vec F=f(x,y,z)\)</span>.</p>
 <p>Detta kan jämföras med integralkalkylens huvudsats för enkelintegralen. I båda fallen reduceras en integral över hela området till att undersöka en "primitiv funktion" på randen.</p>
 <h2 id="forelasning-24">Föreläsning 24</h2>
 <h3 id="orienterade-randkurvor">Orienterade randkurvor</h3>
 <p>Om en orienterad yta har en randkurva induceras en orientering av randkurvan enligt högerhandsregeln (tummen motsvarar normalen, och fingrarna randkurvans orientering).</p>
 <h3 id="cirkulation_1">Cirkulation</h3>
-<p>Om <span class="arithmatex">\(S\)</span> är en enkel sluten yta definieras cirkulationen av ett vektorfält <span class="arithmatex">\(\vec F\)</span> runt <span class="arithmatex">\(S\)</span> som <span class="arithmatex">\(<span class="arithmatex">\(\oiint_S\hat n\times\vec FdS\)</span>\)</span> där <span class="arithmatex">\(\hat n\)</span> är den utåtpekande enhetsnormalen.</p>
+<p>Om <span class="arithmatex">\(S\)</span> är en enkel sluten yta definieras cirkulationen av ett vektorfält <span class="arithmatex">\(\vec F\)</span> runt <span class="arithmatex">\(S\)</span> som</p>
+<div class="arithmatex">\[\oiint_S\hat n\times\vec FdS\]</div>
+<p>där <span class="arithmatex">\(\hat n\)</span> är den utåtpekande enhetsnormalen.</p>
 <p>Cirkulationen mäter hur mycket <span class="arithmatex">\(\vec F\)</span> flöder utmed ytan <span class="arithmatex">\(S\)</span>, dvs. hur vektorfältet roterar runt ytan. Dess riktning anger rotationsaxelns riktning enligt högerhandsregeln.</p>
 <blockquote>
-<p><strong>Exempel:</strong> Bestäm cirkulationen för <span class="arithmatex">\(\vec F=(0,z,-y)\)</span> runt randytan till området <span class="arithmatex">\(y^2+z^2\leq1,0\leq x\leq1\)</span>.
-<span class="arithmatex">\(\oiint_{S_1}(0,y,z)\times(0,z,-y)dS=\oiint_{S_1}(-y^2-z^2,0,0)dS=\oiint_{S_1}(-1,0,0)dS=(-1,0,0)\oiint_{S_1}dS\\=(-2\pi,0,0)\)</span>
-<span class="arithmatex">\(\oiint_{S_2}(1,0,0)\times(0,z,-y)dS=\oiint_{S_2}(0,y,z)dS=\left(0,\oiint_{S_2}ydS,\oiint_{S_2}zdS\right)=(0,0,0)\)</span>
-Motsvarande för den andra cirkelskivan.
-<span class="arithmatex">\(<span class="arithmatex">\(\oiint_S\hat n\times\vec FdS=(-2\pi,0,0)+\vec0+\vec0=(-2,0,0)\)</span>\)</span></p>
+<p><strong>Exempel:</strong> Bestäm cirkulationen för <span class="arithmatex">\(\vec F=(0,z,-y)\)</span> runt randytan till området <span class="arithmatex">\(y^2+z^2\leq1,0\leq x\leq1\)</span>.<br>
+<span class="arithmatex">\(\oiint_{S_1}(0,y,z)\times(0,z,-y)dS=\oiint_{S_1}(-y^2-z^2,0,0)dS=\oiint_{S_1}(-1,0,0)dS=(-1,0,0)\oiint_{S_1}dS\\=(-2\pi,0,0)\)</span><br>
+<span class="arithmatex">\(\oiint_{S_2}(1,0,0)\times(0,z,-y)dS=\oiint_{S_2}(0,y,z)dS=\left(0,\oiint_{S_2}ydS,\oiint_{S_2}zdS\right)=(0,0,0)\)</span><br>
+Motsvarande för den andra cirkelskivan.</p>
+<div class="arithmatex">\[\oiint_S\hat n\times\vec FdS=(-2\pi,0,0)+\vec0+\vec0=(-2,0,0)\]</div>
 </blockquote>
 <h3 id="rotation-cirkulationstathet">Rotation (<em>cirkulationstäthet</em>)</h3>
-<p>Rotationen av ett vektorfält <span class="arithmatex">\(\vec F\)</span> definieras som <span class="arithmatex">\(<span class="arithmatex">\(\text{rot}\ \vec F=\nabla\times\vec F\)</span>\)</span>
-Dess belopp anger hur mycket vektorfältet virvlar i en punkt och riktningen anger rotationsaxeln enligt högerhandsregeln.</p>
+<p>Rotationen av ett vektorfält <span class="arithmatex">\(\vec F\)</span> definieras som</p>
+<div class="arithmatex">\[\text{rot}\ \vec F=\nabla\times\vec F\]</div>
+<p>Dess belopp anger hur mycket vektorfältet virvlar i en punkt och riktningen anger rotationsaxeln enligt högerhandsregeln.</p>
 <p>Ett vektorfält <span class="arithmatex">\(\vec F\)</span> kallas för rotationsfritt om <span class="arithmatex">\(\text{rot}\ \vec F=\vec0\)</span> överallt.</p>
 <h4 id="rotation-som-cirkulationstathet">Rotation som cirkulationstäthet</h4>
-<p>Rotationen kan ses som en cirkulationsdensitet och ges av <span class="arithmatex">\(<span class="arithmatex">\(\text{rot}\ \vec F(a,b,c)=\lim_{\text{volym}(D)\to0}\frac1{\text{volym}(D)}\oiint_{\partial D}\hat n\times\vec FdS\)</span>\)</span> där <span class="arithmatex">\(D\)</span> är en fyrhörning som innehåller <span class="arithmatex">\((a,b,c)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess randyta.</p>
+<p>Rotationen kan ses som en cirkulationsdensitet och ges av</p>
+<div class="arithmatex">\[\text{rot}\ \vec F(a,b,c)=\lim_{\text{volym}(D)\to0}\frac1{\text{volym}(D)}\oiint_{\partial D}\hat n\times\vec FdS\]</div>
+<p>där <span class="arithmatex">\(D\)</span> är en fyrhörning som innehåller <span class="arithmatex">\((a,b,c)\)</span> och <span class="arithmatex">\(\partial D\)</span> är dess randyta.</p>
 <h3 id="stokes-sats">Stokes sats</h3>
-<p>Antag att <span class="arithmatex">\(S\)</span> är en orienterad yta med en orienterad randkurva <span class="arithmatex">\(\partial S\)</span>. Om <span class="arithmatex">\(\vec F=(P,Q,R)\)</span> är ett kontinuerligt deriverbart vektorfält, så är <span class="arithmatex">\(<span class="arithmatex">\(\int_{\partial S}\vec F\cdot d\vec r=\iint_S(\text{rot}\ \vec F)\cdot d\vec S\)</span>\)</span></p>
+<p>Antag att <span class="arithmatex">\(S\)</span> är en orienterad yta med en orienterad randkurva <span class="arithmatex">\(\partial S\)</span>. Om <span class="arithmatex">\(\vec F=(P,Q,R)\)</span> är ett kontinuerligt deriverbart vektorfält, så är</p>
+<div class="arithmatex">\[\int_{\partial S}\vec F\cdot d\vec r=\iint_S(\text{rot}\ \vec F)\cdot d\vec S\]</div>
 <h3 id="vektorpotential-i-rummet">Vektorpotential i rummet</h3>
-<p>Ett vektorfält <span class="arithmatex">\(\vec A\)</span> kallas för en vektorpotential till ett källfritt vektorfält <span class="arithmatex">\(\vec F\)</span> om <span class="arithmatex">\(<span class="arithmatex">\(\vec F=\text{rot}\ \vec A\)</span>\)</span>
-<em>Om <span class="arithmatex">\(\vec F\)</span> inte är källfritt finns ingen vektorpotential.</em></p>
-<p>Observera att vektorpotentialen inte är unik. Även <span class="arithmatex">\(\vec A+\vec G\)</span>, där <span class="arithmatex">\(\vec G\)</span> är ett konservativt vektorfält, är en vektorpotential eftersom <span class="arithmatex">\(<span class="arithmatex">\(\text{rot}(\vec A+\vec G)=\text{rot}\ \vec A+\text{rot}\ \vec G=\vec F+\vec0=\vec F\)</span>\)</span></p>
+<p>Ett vektorfält <span class="arithmatex">\(\vec A\)</span> kallas för en vektorpotential till ett källfritt vektorfält <span class="arithmatex">\(\vec F\)</span> om</p>
+<div class="arithmatex">\[\vec F=\text{rot}\ \vec A\]</div>
+<p><em>Om <span class="arithmatex">\(\vec F\)</span> inte är källfritt finns ingen vektorpotential.</em></p>
+<p>Observera att vektorpotentialen inte är unik. Även <span class="arithmatex">\(\vec A+\vec G\)</span>, där <span class="arithmatex">\(\vec G\)</span> är ett konservativt vektorfält, är en vektorpotential eftersom</p>
+<div class="arithmatex">\[\text{rot}(\vec A+\vec G)=\text{rot}\ \vec A+\text{rot}\ \vec G=\vec F+\vec0=\vec F\]</div>
 <h4 id="stokes-sats-baklanges">Stokes sats baklänges</h4>
-<p>För källfria vektorfält <span class="arithmatex">\(\vec F\)</span> kan Stokes sats formuleras som <span class="arithmatex">\(<span class="arithmatex">\(\iint_S\vec F\cdot d\vec S=\oint_{\partial S}\vec A\cdot d\vec r\)</span>\)</span> där <span class="arithmatex">\(\vec A\)</span> är en vektorpotential till <span class="arithmatex">\(\vec F\)</span>.</p>
+<p>För källfria vektorfält <span class="arithmatex">\(\vec F\)</span> kan Stokes sats formuleras som</p>
+<div class="arithmatex">\[\iint_S\vec F\cdot d\vec S=\oint_{\partial S}\vec A\cdot d\vec r\]</div>
+<p>där <span class="arithmatex">\(\vec A\)</span> är en vektorpotential till <span class="arithmatex">\(\vec F\)</span>.</p>
 
 
 
