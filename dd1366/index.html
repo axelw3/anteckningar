@@ -1,0 +1,1196 @@
+
+<!doctype html>
+<html lang="sv" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../dd1351/">
+      
+      
+        <link rel="next" href="../is1500/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>DD1366 Programmeringsparadigm 6,0 hp - Anteckningar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dd1366-programmeringsparadigm-60-hp" class="md-skip">
+          Gå till innehållet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidhuvud">
+    <a href=".." title="Anteckningar" class="md-header__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anteckningar
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DD1366 Programmeringsparadigm 6,0 hp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Sök" placeholder="Sök" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Sök">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Rensa" aria-label="Rensa" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialiserar sök
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Anteckningar" class="md-nav__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Anteckningar
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bma110/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BMA110 Grundläggande sår och sårbehandling 3,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd1351/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DD1351 Logik för dataloger 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DD1366 Programmeringsparadigm 6,0 hp
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DD1366 Programmeringsparadigm 6,0 hp
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inledningforelasning-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inledning/föreläsning 0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-1-funktionell-programmering-del-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 1: Funktionell programmering, del 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 1: Funktionell programmering, del 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rekursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rekursion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lat-evaluering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lat evaluering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listomfattningar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listomfattningar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-2-funktionell-programmering-del-2-221-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 2: Funktionell programmering, del 2 (22/1-2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 2: Funktionell programmering, del 2 (22/1-2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flyttal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flyttal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stark-och-svag-typning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stark och svag typning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stark och svag typning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typsakerhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typsäkerhet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implicita-explicita-typkonverteringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicita &amp; explicita typkonverteringar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicita & explicita typkonverteringar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#egna-typnamn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Egna typnamn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typsignaturer-haskell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typsignaturer (Haskell)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typsignaturer (Haskell)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typinferens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typinferens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typklasser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typklasser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typklasser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arv-hos-typklasser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arv hos typklasser
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algebraiska-datatyper-adt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algebraiska datatyper (ADT)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algebraiska datatyper (ADT)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#record-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Record syntax
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymorfism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymorfism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3-funktionell-programmering-del-3-241-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3: Funktionell programmering, del 3 (24/1-2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 3: Funktionell programmering, del 3 (24/1-2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hogre-ordningens-funktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Högre ordningens funktioner...
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3-funktionell-programmering-del-4-301-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3: Funktionell programmering, del 4 (30/1-2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 3: Funktionell programmering, del 4 (30/1-2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monader...
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../is1500/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IS1500 Datorteknik och komponenter 9,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1547/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1547 Numeriska metoder, grundkurs 6,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1625/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1625 Envariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1626/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1626 Flervariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1671/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1671 Matematik, baskurs, med diskret matematik 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1935/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1935 Sannolikhetsteori och statistik med tillämpning inom maskininlärning 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inledningforelasning-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inledning/föreläsning 0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-1-funktionell-programmering-del-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 1: Funktionell programmering, del 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 1: Funktionell programmering, del 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rekursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rekursion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lat-evaluering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lat evaluering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listomfattningar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listomfattningar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-2-funktionell-programmering-del-2-221-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 2: Funktionell programmering, del 2 (22/1-2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 2: Funktionell programmering, del 2 (22/1-2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flyttal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flyttal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stark-och-svag-typning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stark och svag typning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stark och svag typning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typsakerhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typsäkerhet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implicita-explicita-typkonverteringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicita &amp; explicita typkonverteringar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicita & explicita typkonverteringar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#egna-typnamn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Egna typnamn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typsignaturer-haskell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typsignaturer (Haskell)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typsignaturer (Haskell)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typinferens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typinferens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typklasser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typklasser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typklasser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arv-hos-typklasser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arv hos typklasser
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algebraiska-datatyper-adt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algebraiska datatyper (ADT)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algebraiska datatyper (ADT)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#record-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Record syntax
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymorfism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymorfism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3-funktionell-programmering-del-3-241-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3: Funktionell programmering, del 3 (24/1-2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 3: Funktionell programmering, del 3 (24/1-2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hogre-ordningens-funktioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Högre ordningens funktioner...
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3-funktionell-programmering-del-4-301-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3: Funktionell programmering, del 4 (30/1-2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 3: Funktionell programmering, del 4 (30/1-2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monader...
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="dd1366-programmeringsparadigm-60-hp">DD1366 Programmeringsparadigm 6,0 hp</h1>
+<table>
+<thead>
+<tr>
+<th>Tillfälleskod</th>
+<th>Termin(er)</th>
+<th>Period(er)</th>
+<th>Föreläsare</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52149</td>
+<td>VT2025</td>
+<td>3</td>
+<td>Marcus Dicander</td>
+</tr>
+</tbody>
+</table>
+<p>Föreläsningsanteckningar.</p>
+<h2 id="inledningforelasning-0">Inledning/föreläsning 0</h2>
+<blockquote>
+<p><strong>Programmeringsparadigm:</strong> Handlar om att lyfta fram bakomliggande modeller och idéer bakom program och programmeringsspråk och jämför dessa sida vid sida. För att göra detta kommer vi att titta på språk som skiljer sig mcket åt, t.ex. PHP och Haskell.</p>
+</blockquote>
+<p>Interpretering: översättning mellan programmeringsspråk, on the fly.<br>
+Kontrollflöde: <code>if</code>/<code>while</code></p>
+<h2 id="forelasning-1-funktionell-programmering-del-1">Föreläsning 1: Funktionell programmering, del 1</h2>
+<p><em>Funktionell programmering:</em> En programmeringsstil vars grundläggand operation är funktionsanrop. En vidareutveckling av lambdakalkylen (konstanter, variabler, funktioner och funktionsanrop/<em>tillämpningar</em> - även uttryck, vilket följer av de 4 nämnda "axiomen").</p>
+<p>I Haskell är allt <em>immutable</em> (oföräderligt). Underläggar parallellisering.</p>
+<p>Kodexempel:</p>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">main</span><span class="ow">::</span><span class="kt">IO</span><span class="nb">()</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nf">main</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="c1">-- Observera att main är en oren funktion (modifierar I/O)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">putStrLn</span><span class="w"> </span><span class="s">&quot;Hello world!&quot;</span><span class="w"> </span><span class="c1">-- funktion med bieffekt</span>
+</span></code></pre></div>
+<p>I vanliga Haskell-funktioner finns inget returvärde, utan värdet <em>representerar</em> funktionen.</p>
+<h3 id="rekursion">Rekursion</h3>
+<p><em>Svansrekursion:</em> Det rekursiva anropet returnerar direkt utan några kvarhängande operationer. Svansrekursiva anrop kan optimeras bättre av GHC, men se upp med '++'!</p>
+<p>Ett exempel:</p>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">collatzList</span><span class="ow">::</span><span class="kt">Integer</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="p">[</span><span class="kt">Integer</span><span class="p">]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nf">collatzList</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="c1">-- Basfall</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nf">collatzList</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="kt">:</span><span class="w"> </span><span class="n">collatzList</span><span class="w"> </span><span class="p">(</span><span class="n">collatzStep</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Effektivt att lägga till n i början av listan (++ långsammare)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="kr">where</span><span class="w"> </span><span class="n">collatzStep</span><span class="w"> </span><span class="n">n</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="n">odd</span><span class="w"> </span><span class="n">n</span><span class="w">     </span><span class="ow">=</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="c1">-- if odd(n) ...</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="n">otherwise</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">`</span><span class="n">div</span><span class="p">`</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="c1">-- else ...</span>
+</span></code></pre></div>
+<p><code>collatzList</code> är inte svansrekursiv, eftersom <code>:</code> blir en kvarhängande operator.</p>
+<h3 id="lat-evaluering">Lat evaluering</h3>
+<p>Haskell har lat evaluering - väntar med att beräkna saker tills de verkligen behövs. Stora beräkningsträd kan byggas upp av funktionsanrop som beror på varandra. När sedan värdet behövs, kan Haskell tillämpa sina optimeringar och köra alltsammans.</p>
+<p>T.ex. orsakar <code>let infinite = [1..]</code> inga problem, och vi kan t.o.m. köra <code>take 42 infinity</code>. Att försöka printa ut hela listan leder dock till oändlig rekursion.</p>
+<p>Kör vi <code>take 10 (collatzList 27)</code> kommer Haskell enbart att räkna ut de första 10 talen med collatzList-funktionen, eftersom det är de enda talen som behövs. Detta är väldigt användbart ur prestandasynpunkt!</p>
+<h3 id="listomfattningar">Listomfattningar</h3>
+<p>I matematiken kan vi skriva <span class="arithmatex">\([x|x\in\{1,2,3,4\},\text{odd}\ x]\)</span>, vilket i Haskell kan skrivas som <code>[x | x&lt;-[1..4], odd(x)]</code>.</p>
+<p><strong>Exempel:</strong> <code>[mod 73 d | d&lt;-[2..72]]</code> innehåller alla rester vid division av 73 med 2..72. Vi kan kolla om <code>elem 0 &lt;...&gt;</code>, vilket ger <code>False</code> (73 ej jämnt delbart med något sådant tal, dvs. 73 är ett primtal).</p>
+<p><strong>Definitionen av primtal 2-1000:</strong> <code>[x | x&lt;-[2..1000], notElem 0 [mod x y | y&lt;-[2..(x-1)]]]</code></p>
+<h2 id="forelasning-2-funktionell-programmering-del-2-221-2025">Föreläsning 2: Funktionell programmering, del 2 (22/1-2025)</h2>
+<h3 id="flyttal">Flyttal</h3>
+<p>Det finns 2<sup>52</sup> tal i varje fönster.</p>
+<h3 id="stark-och-svag-typning">Stark och svag typning</h3>
+<p>Java, Haskell, Python är <em>starkt</em> typade.<br></p>
+<ul>
+<li>Statisk typning: Sker vid kompilering. T.ex. Java, Haskell. "Nästan alla typfel upptäcks".</li>
+<li>Dynamisk typning: T.ex. Python ("duck typing")</li>
+</ul>
+<h4 id="typsakerhet">Typsäkerhet</h4>
+<p>Ett typsystem är <em>säkert</em> om det garanterar att inga uttryck kan anta värden som inte är definierade av typen.</p>
+<h3 id="implicita-explicita-typkonverteringar">Implicita &amp; explicita typkonverteringar</h3>
+<p>T.ex. Haskell:
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">i</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="mi">1</span><span class="ow">::</span><span class="kt">Int</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nf">t1</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="p">(</span><span class="n">fromIntegral</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="ow">::</span><span class="kt">Double</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">:</span><span class="n">t</span><span class="w"> </span><span class="n">fromIntegral</span><span class="w"> </span><span class="c1">-- fromIntegral :: (Integral a, Num b) =&gt; a -&gt; b</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nf">i2</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">fromIntegral</span><span class="w"> </span><span class="n">t1</span><span class="ow">::</span><span class="kt">Int</span><span class="w"> </span><span class="c1">-- error</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">(</span><span class="n">length</span><span class="w"> </span><span class="n">lista</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="c1">-- error</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">(</span><span class="n">fromIntegral</span><span class="w"> </span><span class="p">(</span><span class="n">length</span><span class="w"> </span><span class="n">lista</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="c1">-- explicit typkonvertering med fromIntegral</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">-- Typsignatur: fromIntegral :: (Integral a, Num b) =&gt; a -&gt; b</span>
+</span></code></pre></div></p>
+<h4 id="egna-typnamn">Egna typnamn</h4>
+<p>T.ex. <code>type Coord = (Float, Float)</code> definierar <code>Coord</code> som en tupel av två stycken <code>Float</code>.</p>
+<p>Fungerar även med polymorfa typer: <code>type AssocList a b = [(a, b)]</code> (<code>a</code> och <code>b</code> är typvariabler).</p>
+<h3 id="typsignaturer-haskell">Typsignaturer (Haskell)</h3>
+<p>Skrivs ovanför (funktioner) eller efter (anonyma funktioner).</p>
+<p>Exempel: <code>isEven :: Int -&gt; Bool</code></p>
+<h4 id="typinferens">Typinferens</h4>
+<p>Haskell har lat typinferens - om ingen typ avges kommer typen att bestämma senare, av kontext.</p>
+<p>Exempel:
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nf">t1</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;små&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;grisar&quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">:</span><span class="n">t</span><span class="w"> </span><span class="n">t1</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">t1</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">Num</span><span class="w"> </span><span class="ow">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kt">String</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nf">head</span><span class="w"> </span><span class="s">&quot;Maskens huvud&quot;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="sc">&#39;M&#39;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nf">tail</span><span class="w"> </span><span class="s">&quot;Maskens huvud&quot;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="s">&quot;askens huvud&quot;</span>
+</span></code></pre></div></p>
+<h4 id="typklasser">Typklasser</h4>
+<p>Förekommer ofta i typsignaturer och ställer krav på deras typvariabler. T.ex. <code>Num</code> (numeriska), <code>Ord</code> (ordnade), <code>Eq</code> (jämförbara m. likhetsoperatorn <code>==</code>), <code>Show</code>...</p>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nf">sum</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">Num</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=&gt;</span><span class="w"> </span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="c1">-- syntax: (&quot;typklass-krav&quot;) =&gt; typ x -&gt; typ y</span>
+</span></code></pre></div>
+<h5 id="arv-hos-typklasser">Arv hos typklasser</h5>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kr">class</span><span class="w"> </span><span class="kt">Eq</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=&gt;</span><span class="w"> </span><span class="kt">Ord</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="kr">where</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="p">(</span><span class="o">&lt;</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="o">&lt;=</span><span class="p">)</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="kt">Bool</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">(</span><span class="o">&gt;=</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="kt">Bool</span>
+</span></code></pre></div>
+<p><em>"Varje <code>Ord</code>-typ måste också vara <code>Eq</code>."</em></p>
+<p>Exempel:</p>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kr">import</span><span class="w"> </span><span class="nn">Data.Char</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kr">import</span><span class="w"> </span><span class="nn">Numeric</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1">-- Typklassen Incrementable</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kr">class</span><span class="w"> </span><span class="kt">Incrementable</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="kr">where</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="n">inc</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="c1">-- för att kalla dig för &quot;Incrementable&quot; måste typen implementera &quot;inc&quot;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">inc2</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="n">a</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="n">inc2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">inc</span><span class="w"> </span><span class="p">(</span><span class="n">inc</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="c1">-- default-implementation av inc2</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="kr">instance</span><span class="w"> </span><span class="kt">Incrementable</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kr">where</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="n">inc</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="kr">instance</span><span class="w"> </span><span class="kt">Incrementable</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="kr">where</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="n">inc</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="kr">instance</span><span class="w"> </span><span class="kt">Incrementable</span><span class="w"> </span><span class="kt">Char</span><span class="w"> </span><span class="kr">where</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="n">inc</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">chr</span><span class="w"> </span><span class="p">((</span><span class="n">ord</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">    </span><span class="n">inc2</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">chr</span><span class="w"> </span><span class="p">((</span><span class="n">ord</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">32</span><span class="p">)</span><span class="w"> </span><span class="c1">-- ersätter default-implementationen för &quot;inc2&quot;</span>
+</span></code></pre></div>
+<h3 id="algebraiska-datatyper-adt">Algebraiska datatyper (ADT)</h3>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kr">data</span><span class="w"> </span><span class="kt">Color</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">RGB</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="c1">-- &quot;kombinerad konstruktor/typsignatur&quot;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kr">deriving</span><span class="w"> </span><span class="p">(</span><span class="kt">Show</span><span class="p">,</span><span class="w"> </span><span class="kt">Eq</span><span class="p">)</span><span class="w"> </span><span class="c1">-- &quot;Show&quot; (stringify-bar), och &quot;Eq&quot; (jämförelse av likhet)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1">-- Getters/accessors</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nf">red</span><span class="w"> </span><span class="p">(</span><span class="kt">RGB</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">r</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nf">green</span><span class="w"> </span><span class="p">(</span><span class="kt">RGB</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">g</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nf">blue</span><span class="w"> </span><span class="p">(</span><span class="kt">RGB</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">b</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nf">brightness</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">Color</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="c1">-- typsignatur</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nf">brightness</span><span class="w"> </span><span class="p">(</span><span class="kt">RGB</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="n">sqrt</span><span class="p">((</span><span class="n">r</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="n">g</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="n">b</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nf">black</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">RGB</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nf">white</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">RGB</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="mf">1.0</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nf">makeColorRGB</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">RGB</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="c1">-- funktion som skapar en RGB</span>
+</span></code></pre></div>
+<p>En algebraisk datatyp är statisk (inga <em>setters</em>), och allt är publikt.</p>
+<h4 id="record-syntax">Record syntax</h4>
+<p>Record syntax -- en alternativ syntax för att skapa en ADT. "Getters" skapas automatiskt.</p>
+<p>Nackdel: "Äter upp" namnen -- går ej att återanvända fältnamn (inom samma modul).</p>
+<p>Exempel:</p>
+<div class="language-hs highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kr">data</span><span class="w"> </span><span class="kt">Record</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">Record</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="n">achievement</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="n">measurement</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">deriving</span><span class="p">(</span><span class="kt">Show</span><span class="p">,</span><span class="w"> </span><span class="kt">Eq</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="polymorfism">Polymorfism</h3>
+<ul>
+<li>Ad hoc-polymorfism: T.ex. operator-/funktionsöverlagring. Sker i compile time.</li>
+<li>Parametrisk polymorfism: T.ex. templates i C++ och generics i Java.<ul>
+<li>Samma kod kan köras på många olika typer, eftersom typen har abstrakteras bort.</li>
+<li>T.ex. typsignaturen <code>length :: [a] -&gt; Int</code> där <code>a</code> är en <em>typvariabel</em>.</li>
+</ul>
+</li>
+<li>Subtyping polymorfism (dynamisk bindning): T.ex. arvshierarkier för klasser i C++/Java. Sker i runtime.<ul>
+<li>En ny form av polymorfism (1980-tal).</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Obs! För ALLA labbar i kursen räcker det att använda immutable (dessutom <em>REKOMMENDERAT</em> att göra så).
+Förändringsbarhet behövs inte för någon labb, inte ens de betygshöjande.</p>
+</blockquote>
+<h2 id="forelasning-3-funktionell-programmering-del-3-241-2025">Föreläsning 3: Funktionell programmering, del 3 (24/1-2025)</h2>
+<h3 id="hogre-ordningens-funktioner">Högre ordningens funktioner...</h3>
+<h2 id="forelasning-3-funktionell-programmering-del-4-301-2025">Föreläsning 3: Funktionell programmering, del 4 (30/1-2025)</h2>
+<h3 id="monader">Monader...</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Kopierat till urklipp", "clipboard.copy": "Kopiera till urklipp", "search.result.more.one": "1 till p\u00e5 denna sida", "search.result.more.other": "# till p\u00e5 denna sida", "search.result.none": "Inga s\u00f6kresultat", "search.result.one": "1 s\u00f6kresultat", "search.result.other": "# s\u00f6kresultat", "search.result.placeholder": "Skriv s\u00f6kord", "search.result.term.missing": "Saknas", "select.version": "V\u00e4lj version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
