@@ -255,6 +255,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../dd1366-syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dd1366 syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../dd1366/" class="md-nav__link">
         
   
@@ -809,6 +829,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glitchar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glitchar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1285,6 +1320,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#flertradning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flertrådning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#flertradade-processorer" class="md-nav__link">
     <span class="md-ellipsis">
       Flertrådade processorer
@@ -1354,10 +1398,43 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Programmering med trådar och delade variabler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semafor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semafor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mutex
+    </span>
+  </a>
+  
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ovrigt-fran-kursboken" class="md-nav__link">
+    <span class="md-ellipsis">
+      Övrigt (från kursboken)
+    </span>
+  </a>
   
 </li>
       
@@ -1984,6 +2061,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glitchar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glitchar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -2460,6 +2552,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#flertradning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flertrådning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#flertradade-processorer" class="md-nav__link">
     <span class="md-ellipsis">
       Flertrådade processorer
@@ -2529,10 +2630,43 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Programmering med trådar och delade variabler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semafor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semafor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mutex
+    </span>
+  </a>
+  
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ovrigt-fran-kursboken" class="md-nav__link">
+    <span class="md-ellipsis">
+      Övrigt (från kursboken)
+    </span>
+  </a>
   
 </li>
       
@@ -2727,9 +2861,11 @@
 </span></code></pre></div></p>
 <h2 id="forelasning-3-maskinkod">Föreläsning 3: Maskinkod</h2>
 <h3 id="bytes-nibbles-och-ord">Bytes, nibbles och ord</h3>
-<p>En <em>byte</em> = 8 bitar
-En <em>nibble</em> = 1/2 ord
-Ett <em>ord</em> = beror på processor (normalt 32/64 bitar)</p>
+<ul>
+<li>En <em>byte</em> = 8 bitar</li>
+<li>En <em>nibble</em> = 1/2 ord</li>
+<li>Ett <em>ord</em> = beror på processor (normalt 32/64 bitar)</li>
+</ul>
 <h3 id="twos-complement">Two's complement</h3>
 <ul>
 <li>Första biten anger tecken (+/-).</li>
@@ -2737,6 +2873,11 @@ Ett <em>ord</em> = beror på processor (normalt 32/64 bitar)</p>
 <li>Binär addition och subtraktion fungerar som vanligt.</li>
 <li>För ett positivt tal <code>X</code>: <code>negativt(X) = ~X + 1</code></li>
 </ul>
+<blockquote>
+<p><strong>Teckenförlängning:</strong></p>
+<p>För att teckenförlänga ett binärt tal, kopiera teckenbiten (msb) åt vänster tills talet är av önskat antal bitar.</p>
+<p>Exempel: 6 = <code>1010</code> (4 bitar) = <code>1111 1010</code> (8 bitar)</p>
+</blockquote>
 <h3 id="risc-v-typer-av-instruktioner">RISC-V: Typer av instruktioner</h3>
 <h4 id="register-instruktioner-r">Register-instruktioner (R)</h4>
 <p>Har tre registeroperander: två källor och ett mål.</p>
@@ -2820,7 +2961,7 @@ Ett <em>ord</em> = beror på processor (normalt 32/64 bitar)</p>
 </table>
 <ul>
 <li><strong>imm<sub>11:5</sub></strong> avgör shift-beteende (aritmetiskt eller logiskt) - funct3 är identiskt för båda typerna av right-shift.</li>
-<li><strong>shamt</strong> anger hur antalet shift-steg.</li>
+<li><strong>shamt</strong> anger antalet shift-steg.</li>
 </ul>
 <h4 id="store-instruktioner-s">Store-instruktioner (S)</h4>
 <p>Instruktioner som arbetar med två register och en immediateoperand, t.ex. <code>sw</code> (<em>store word</em>).</p>
@@ -3029,12 +3170,14 @@ undantag - t.ex. ett knapptryck) eller mjukvaruavbrott (t.ex. systemanrop).</p>
 <p><strong>De Morgans lagar:</strong></p>
 <div class="arithmatex">\[\overline{AB}=\overline{A}+\overline{B}\quad\text{och}\quad\overline{A+B}=\overline{A}\cdot\overline{B}\]</div>
 </blockquote>
+<p><em>Sum-of-products-form:</em> t.ex. <span class="arithmatex">\(Y=\bar A\bar R\)</span></p>
+<p><em>Product-of-sums-form:</em> t.ex. <span class="arithmatex">\(Y=(A+\bar R)(\bar A+R)(\bar A+\bar R)\)</span></p>
 <h3 id="kombinationskretsar">Kombinationskretsar</h3>
 <p>Kombinationskretsar <em>påverkas enbart av aktuell inmatning</em>.</p>
 <blockquote>
 <p><strong>Problem:</strong></p>
 <ul>
-<li>Instabila kretsar: T.ex. ringoscillatorer.</li>
+<li>Instabila kretsar: T.ex. ringoscillatorer (Obs: sekventiella, inte kombinatoriska!).</li>
 <li>Otillåtna värden ("X"): T.ex. en ledning mottar 0 och 1 samtidigt (contention).</li>
 </ul>
 </blockquote>
@@ -3064,8 +3207,13 @@ En <em>heladderare</em> tar dessutom in en <em>carry in</em>-signal.</p>
 Subtraktion utförs enkelt med en CPA genom att invertera signal B och låta C<sub>in</sub> = 1.</p>
 </blockquote>
 <h4 id="timing">Timing</h4>
+<blockquote>
+<p><em>Fördröjningar mäts alltid mellan in- och utdatasignalernas respektive 50%-punkter.</em></p>
+</blockquote>
 <p><em>Fortplantningstid (<span class="arithmatex">\(t_\text{pd}\)</span>):</em> Den maximala tiden från att <em>någon</em> input ändras, tills att ändringen nått <em>alla</em> outputs (oavsett om de behöver ändras eller ej).</p>
 <p><em>Kontamineringstid (<span class="arithmatex">\(t_\text{cd}\)</span>):</em> Den <em>minsta</em> tiden från att <em>någon</em> input ändras, tills att någon output ändras.</p>
+<h5 id="glitchar">Glitchar</h5>
+<p>En <em>glitch</em> inträffar när en indataförändring orsakar flera förändringar i utdata, t.ex. att utdata förändras från <span class="arithmatex">\(1\rarr0\rarr1\)</span>.</p>
 <h2 id="forelasning-8-sekventiell-logik">Föreläsning 8: Sekventiell logik</h2>
 <p>Sekventiella kretsar påverkas av <em>både aktuella och tidigare indata</em>.</p>
 <p><em>En mikroprocessor består av klockade state elements (uppdateras vid rising edge) och kombinatorisk logik, och är</em>
@@ -3084,12 +3232,12 @@ Om <span class="arithmatex">\(S=1\)</span> eller <span class="arithmatex">\(R=1\
 <li>Blandar <em>vad</em> som uppdateras och <em>när</em> - en utmaning i större kretsar.</li>
 </ul>
 <h3 id="d-latch">D latch</h3>
-<p>Två ingångar: <span class="arithmatex">\(D\)</span> och <span class="arithmatex">\(CLK\)</span></p>
-<p>Tillståndet ändras för att matcha <span class="arithmatex">\(D\)</span> när vippan är transparent (<span class="arithmatex">\(CLK=1\)</span>):</p>
+<p>Två ingångar: <span class="arithmatex">\(D\)</span> och <span class="arithmatex">\(\text{CLK}\)</span></p>
+<p>Tillståndet ändras för att matcha <span class="arithmatex">\(D\)</span> när vippan är transparent (<span class="arithmatex">\(\text{CLK}=1\)</span>):</p>
 <table>
 <thead>
 <tr>
-<th><span class="arithmatex">\(CLK\)</span></th>
+<th><span class="arithmatex">\(\text{CLK}\)</span></th>
 <th><span class="arithmatex">\(D\)</span></th>
 <th><span class="arithmatex">\(Q\)</span></th>
 <th><span class="arithmatex">\(\overline Q\)</span></th>
@@ -3121,32 +3269,33 @@ Om <span class="arithmatex">\(S=1\)</span> eller <span class="arithmatex">\(R=1\
 <h4 id="d-vippa-d-flip-flop">D-vippa (D flip-flop)</h4>
 <p>Består av två sammankopplade D-latches (<em>"ledare"</em> och <em>"följare"</em>).</p>
 <ol>
-<li><span class="arithmatex">\(\overline{CLK}\)</span>: <span class="arithmatex">\(D_\text{in}\)</span> släpps igenom av ledaren.</li>
-<li><span class="arithmatex">\(CLK\)</span>: Ledaren låses och följaren släpper igenom den nu låsta signalen.</li>
+<li><span class="arithmatex">\(\overline{\text{CLK}}\)</span>: <span class="arithmatex">\(D_\text{in}\)</span> släpps igenom av ledaren.</li>
+<li><span class="arithmatex">\(\text{CLK}\)</span>: Ledaren låses och följaren släpper igenom den nu låsta signalen.</li>
 </ol>
-<p>Beteende: När <span class="arithmatex">\(CLK\)</span> går från <em>LOW</em> till <em>HIGH</em> kopieras <span class="arithmatex">\(D\)</span> till <span class="arithmatex">\(Q\)</span>.</p>
+<p>Beteende: När <span class="arithmatex">\(\text{CLK}\)</span> går från <em>LOW</em> till <em>HIGH</em> kopieras <span class="arithmatex">\(D\)</span> till <span class="arithmatex">\(Q\)</span>.</p>
 <h4 id="resettableenabled-flip-flops">Resettable/enabled flip-flops</h4>
-<p>En <em>nollställbar flip-flop</em> sätts till 0 när <span class="arithmatex">\(RESET\)</span>-signalen är aktiv.</p>
+<p>En <em>nollställbar flip-flop</em> sätts till 0 när <span class="arithmatex">\(\text{RESET}\)</span>-signalen är aktiv.</p>
 <blockquote>
 <p>En <em>synkront nollställbar</em> flip-flop kan endast nollställas i samband med en stigande klocksignal.<br>
 En <em>asynkront nollställbar</em> flip-flop kan nollställas obereonde av klockan.</p>
 </blockquote>
-<p>En <em>aktiverad flip-flop</em> tillåts endast skifta läge om (utöver <span class="arithmatex">\(CLK\)</span>) även <span class="arithmatex">\(EN\)</span>-signalen är aktiv.</p>
+<p>En <em>aktiverad flip-flop</em> tillåts endast skifta läge om (utöver <span class="arithmatex">\(\text{CLK}\)</span>) även <span class="arithmatex">\(\text{EN}\)</span>-signalen är aktiv.</p>
 <h3 id="register">Register</h3>
-<p>Ett N-bitars <em>register</em> består av N stycken flip-flops med gemensam klocka. Register kan, likt enskilda flip-flops, ha <span class="arithmatex">\(EN\)</span>- och <span class="arithmatex">\(RESET\)</span>-signaler.</p>
+<p>Ett <span class="arithmatex">\(N\)</span>-bitars <em>register</em> består av <span class="arithmatex">\(N\)</span> stycken flip-flops med gemensam klocka. Register kan, likt enskilda flip-flops, ha <span class="arithmatex">\(\text{EN}\)</span>- och <span class="arithmatex">\(\text{RESET}\)</span>-signaler.</p>
 <blockquote>
 <p><strong>Output enable (OE)- register:</strong><br>
-Består av ett register med en tristate-buffer på utgången. Om <span class="arithmatex">\(OE=0\)</span> är <span class="arithmatex">\(Q=Z\)</span> (flytande), annars är <span class="arithmatex">\(Q=Q_\text{register}\)</span>.</p>
+Består av ett register med en tristate-buffer på utgången. Om <span class="arithmatex">\(\text{OE}=0\)</span> är <span class="arithmatex">\(Q=\text Z\)</span> (flytande), annars är <span class="arithmatex">\(Q=Q_\text{register}\)</span>.</p>
 </blockquote>
 <h4 id="registerfil">Registerfil</h4>
 <p>Tillåter adressering av data genom att kombinera flera register:</p>
-<p>En avkodare väljer (beroende på adressen <span class="arithmatex">\(A3\)</span>) vilket register som, om även <span class="arithmatex">\(WE3\)</span>, data på <span class="arithmatex">\(WD3\)</span> skall skrivas till.<br>
-En multiplexer väljer (beroende på adresserna <span class="arithmatex">\(RD1,RD2\)</span>) från vilka två register som data skall läsas till <span class="arithmatex">\(RD1,RD2\)</span>.<br>
+<p>En avkodare väljer (beroende på adressen <span class="arithmatex">\(\text{A3}\)</span>) vilket register som, om även <span class="arithmatex">\(\text{WE3}\)</span>, data på <span class="arithmatex">\(\text{WD3}\)</span> skall skrivas till.<br>
+En multiplexer väljer (beroende på adresserna <span class="arithmatex">\(\text{RD1},\text{RD2}\)</span>) från vilka två register som data skall läsas till <span class="arithmatex">\(\text{RD1},\text{RD2}\)</span>.<br>
 De ingående registren har alla en gemensam klocka.</p>
 <h3 id="synkrona-sekventiella-kretsar">Synkrona sekventiella kretsar</h3>
 <ul>
-<li>Kombinationslogik kombineras med register</li>
-<li>Kretsens <em>tillstånd</em> ändras endast vid clock edge</li>
+<li>Kombinationslogik kombineras med minst ett register.</li>
+<li>Kretsens <em>tillstånd</em> ändras enligt en klocka, som är gemensam för alla ingående komponenter.</li>
+<li>Varje cyklisk väg innehåller minst ett register.</li>
 <li>En synkron sekventiell krets kan definieras som en FSM (finit tillståndsmaskin):<ul>
 <li><em>Mealy-maskin:</em> Utdata kan vara direkt beroende av indata (Mealy-maskin).</li>
 <li><em>Moore-maskin:</em> Utdata beror endast på tillståndet (dvs. ej direkt på indata).</li>
@@ -3175,11 +3324,12 @@ De ingående registren har alla en gemensam klocka.</p>
 </ul>
 </li>
 <li>Instruktions- och dataminne</li>
+<li>Register, ALU och multiplexrar</li>
 </ul>
 <p>Läsning från registerfilen, instruktionsminnet och dataminnet sker kombinationellt - oberoende av klockcykel.
-När adressen ändras, gör även data på läsporten det direkt efter kretsens fortplantningstid.</p>
+När adressen ändras, gör även data på läsporten det direkt efter kretsens fortplantningstid. Skrivning av register/dataminne sker dock vid stigande klocksignal.</p>
 <h3 id="kontrollenhet-i-encykelprocessor">Kontrollenhet (i encykelprocessor)</h3>
-<p>Läser nuvarande instruktion från datapath, och talar, utgåendes från denna information, om för datapath hur en instruktion utförs.<br>
+<p>Läser nuvarande instruktion från datapath, och talar, utgåendes från denna information, om för datapath hur en instruktion utförs, det vill säga väljer t.ex. multiplexer-port och om skrivning skall aktiveras i minnet (<code>sw</code>-instruktioner).<br>
 En kontrollenhet kan t.ex. delas upp i en huvuddel och en ALU-avkodare.</p>
 <p>Styr följande <em>kontrollsignaler</em>:</p>
 <ul>
@@ -3206,12 +3356,17 @@ I och med synkron logik kommer klockhastigheten att begränsas av detta.</p>
 <p>Exempel: En fabrik med två maskiner, som sköter två olika processer.</p>
 <ul>
 <li><strong>Sekventiell hantering:</strong> En token i taget, sekventiellt. Någon maskin "vilar" alltid.</li>
-<li><strong>Parallell hantering (spatial parallellism):</strong> Fler maskiner hanterar flera tokens. 50% av maskinerna "vilar".</li>
+<li><strong>Parallell hantering (spatial parallellism):</strong> Lägg till ytterligare par maskiner för att öka produktionstakten. 50% av maskinerna nyttjas i taget.</li>
 <li><strong>Pipelining (temporal parallellism):</strong> Endast två maskiner - men processerna schemaläggs så att den långsammaste processen pågår konstant, och går direkt från en token till nästa. Den andra maskinen påbörjar sitt arbete när den första är färdig.<ul>
+<li>Särskilda "pipeline-register" placeras mellan olika "block" av kombinationslogik. Registren förhindrar att tokens från olika pipeline-steg påverkar varandra.</li>
 <li>Minimerar väntetid.</li>
 <li>Throughput avgörs av den maskinen som tar längst tid.</li>
 <li>Instruktioner/cykel förbättras inte (minskar t.o.m. lite) - men den kritiska vägen (och därmed cykelperioden) blir kortare.</li>
-<li>Datapath kan delas in i steg: hämta, avkoda, beräkna, läsa/skriva minne och spara i register.</li>
+<li>Datapath kan delas in i steg: hämta (F), avkoda (D), beräkna (E), läsa/skriva minne (M) och spara i register (W).<ul>
+<li>Obs! För att beräkningsresultatetet skall sparas i det register som angavs i den aktuella instruktionen (och inte i något angivet av efterföljande instruktioner) måste registernumret (adressen) <em>vidarebefordras</em> till detta steg.</li>
+<li>Ytterligare problem: Programräknaren (PC) förändras oförutsägbart av branch-instruktioner.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -3219,17 +3374,21 @@ I och med synkron logik kommer klockhastigheten att begränsas av detta.</p>
 <p>Om det finns inbördes beroenden mellan instruktioner i en sekvens uppstår en datafara (om pipeline då fylls kan resultat bli oväntat).</p>
 <ul>
 <li>
-<p><strong>Read after write (RAW):</strong> En instruktion försöker läsa ett register som ännu inte skrivits till.</p>
+<p><strong>DATA: Read after write (RAW):</strong> En instruktion försöker läsa ett register som ännu inte skrivits till.</p>
 <ul>
-<li>Möjlig lösning: Forwarning. Beräkningsresultatet vidarebefordras direkt till exekveringssteget för nästa instruktion.<ul>
-<li>Fungerar ej om nödvändig data inte är tillgänglig ännu. Data hämtad med <code>lw</code> t.ex. inte tillgänglig förrän steg 4 (minne).</li>
+<li>Möjlig lösning: Forwarning. Beräkningsresultatet vidarebefordras direkt till beräkningssteget (E) för nästa instruktion.<ul>
+<li>Det beräknade värdet vidarebefordras av en <em>hazard unit</em>.</li>
+<li>Fungerar ej om nödvändig data inte är tillgänglig ännu. Data hämtad med <code>lw</code> t.ex. inte tillgänglig förrän steg 4 (M).</li>
 </ul>
 </li>
-<li>Alternativt: Stalling tills forwarding är möjligt. Leder till &lt;1 instruktioner/cykel.</li>
+<li>Alternativt: Stalling tills forwarding är möjligt. Leder till &lt;1 instruktioner/cykel.<ul>
+<li>Exekveringen pausas tills resultatet från den tidigare instruktionen är tillgängligt.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>Anta branch ej tagen:</strong> Om en branch tas upptäcks detta först i minnes-steget - pipeline måste då spolas.</p>
+<p><strong>KONTROLL: Anta branch ej tagen:</strong> Om en branch tas upptäcks detta först i minnes-steget - pipeline måste då spolas.</p>
 <ul>
 <li>Möjlig lösning: Flytta branch-adressberäkning till avkodningssteget och hantera <code>beq</code> redan där.<ul>
 <li>Kan leda till nya datafaror (om operander inte är tillgängliga i avkodningssteget) - löses med forwarding eller stalling.</li>
@@ -3244,18 +3403,30 @@ I och med synkron logik kommer klockhastigheten att begränsas av detta.</p>
 <li>Problem: Högre strömförbrukning, mer hårdvara (register) och dyrare branch mispredictions.</li>
 </ul>
 <h4 id="hur-minimera-branch-mispredictions">Hur minimera branch mispredictions?</h4>
-<p><em>Statiska branch predictors</em> förutspår vid kompilering om en branch kommer att tas.<br>
-<em>Dynamiska branch predictors</em> använder en <em>branch target buffer</em> (information om hur tidigare branch-instruktioner fallit ut).</p>
+<ul>
+<li><em>Statiska branch predictors</em> förutspår vid kompilering om en branch kommer att tas.<br></li>
+<li><em>Dynamiska branch predictors</em> använder en <em>branch target buffer</em> (information om hur tidigare branch-instruktioner fallit ut).<ul>
+<li>1-bit: Antar att utfallet är lika nästa gång. För loopar ger detta fel i första och sista iterationen.</li>
+<li>2-bit: 4 tillstånd (starkt tagen, tagen, ej tagen, starkt ej tagen). Fel endast i slutet av en loop.</li>
+</ul>
+</li>
+</ul>
 <h2 id="forelasning-11-minneshierarki">Föreläsning 11: Minneshierarki</h2>
 <h3 id="instruktions-och-dataminne">Instruktions- och dataminne</h3>
 <p>Vi antog tidigare att varje minnesåtkomst tar 1 cykel - detta är sant endast för små minnen eller långsamma processorer.
 Normalt kommer tidsåtgången motsvara mer än 1 klockcykel.</p>
+<ul>
+<li>RAM (<em>Random Access Memory</em>): Volatilt (strömavbrott = dataförlust) och konstant läs/skrivtid.</li>
+<li>ROM (<em>Read-Only Memory</em>): Icke-volatilt. Obs: Idag ofta skrivbart.</li>
+</ul>
 <p>Minnesteknologi:</p>
 <ul>
-<li>SRAM: Enkel integrerad krets. Snabbt men dyrt.</li>
-<li>DRAM: Kondensatorer. En transistor per bit - billigare, men långsammare, än SRAM.<ul>
-<li>T.ex. SDRAM (synkront DRAM): Data överförs i bursts (följer en klocka).</li>
-<li>DDR (<em>double data rate</em>) - SDRAM med dataöverföring både på stigande och fallande klocksignal</li>
+<li>SRAM (statiskt RAM): Enkel integrerad krets. Snabbt men dyrt.</li>
+<li>DRAM (dynamiskt RAM): Kondensatorer. Laddning tappas snabbt &amp; måste därför ständigt "uppdateras". En transistor per bit - billigare, men långsammare, än SRAM.<ul>
+<li>SDRAM (synkront DRAM): Data överförs i bursts (följer en klocka).<ul>
+<li>DDR (<em>double data rate</em>) - Dataöverföring både vid stigande och fallande klocksignal.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Flashminne (EEPROM, SSD) &amp; magnetiska diskar (HDD).</li>
@@ -3266,22 +3437,26 @@ Normalt kommer tidsåtgången motsvara mer än 1 klockcykel.</p>
 <li>Temporal närhet: Minne som tidigare använts tenderar att användas igen.</li>
 <li>Spatial närhet: Minne på närliggande adresser tenderar att användas.</li>
 </ul>
+<div class="arithmatex">\[\text{AMAT}=t_\text{cache}+\text{MR}_\text{cache}\left(t_\text{MM}+\text{MR}_\text{MM}\cdot t_\text{VM}\right)\]</div>
 <h3 id="caching">Caching</h3>
 <p>Två sorters cacheminnen: instruktions- resp. datacache (kombineras ibland).</p>
-<p><em>Cache hit:</em> Efterfrågad data finns i cache.<br>
-<em>Cache miss:</em> Finns ej i cache - data hämtas från huvudminnet.</p>
-<p>För att nå en hög cache hit rate utnyttjar vi temporal och spatial närhet.</p>
+<p><em>Cacheträff:</em> Efterfrågad data finns i cache.<br>
+<em>Cachemiss:</em> Finns ej i cache - data hämtas från huvudminnet.</p>
+<p>För att nå en hög träffrekvens utnyttjar vi temporal och spatial närhet.</p>
 <ul>
-<li>Kapacitet (C): Mängden data som ryms i cachen.</li>
-<li>Antal set (S): Varje set (eller <em>rad</em>) innehåller en eller flera datablock.</li>
-<li>Blockstorlek (b): Storlek på data i ett block.</li>
-<li>Antal block (B): Totalt antal block. Minst lika med antalet set (dvs. <span class="arithmatex">\(B\geq S\)</span>).</li>
-<li>Associativitetsgrad (N): <span class="arithmatex">\(N=\frac BS\)</span></li>
+<li>Kapacitet (C): Totala mängd data som ryms i cachen.</li>
+<li>Antal set (S): Hur många set cachen har. Varje sådant består av ett eller flera block.</li>
+<li>Blockstorlek (b): Kapacitet hos ett datablock.</li>
+<li>Antal block (B): Totalt antal block. Minst lika med antalet set (<span class="arithmatex">\(B=N\cdot S\)</span>).<ul>
+<li>När data hämtas från minnet, hämtas ett helt block (cacherad) åt gången.</li>
 </ul>
+</li>
+<li>Associativitetsgrad (N): <span class="arithmatex">\(N=\frac BS\)</span>. Antal block per set.</li>
+</ul>
+<p>Varje adress är bunden till ett set, och data kan sparas i vilket helst av dess <span class="arithmatex">\(N\)</span> block.</p>
 <h4 id="direct-mapped-cache">Direct-mapped cache</h4>
-<p>I en <em>direct-mapped cache</em> är <span class="arithmatex">\(S=B\)</span>, dvs. associativitetsgraden <span class="arithmatex">\(N=1\)</span>.
-Varje minnesadress länkas till exakt ett <em>set</em>.</p>
-<p>En minnesadress kan då delas in i olika fält:</p>
+<p>I en <em>direct-mapped cache</em> är <span class="arithmatex">\(S=B\)</span>, dvs. ett block per set (<span class="arithmatex">\(N=1\)</span>).</p>
+<p>En minnesadress kan då delas in i olika fält, t.ex.:</p>
 <table>
 <thead>
 <tr>
@@ -3310,6 +3485,23 @@ kan missfrekvensen nå 100%.</p>
 <p>Reducerar antalet kollisioner genom att låta varje <em>set</em> bestå av <span class="arithmatex">\(N\)</span> st block.</p>
 <p>Nackdel: Långsammare och kräver mer hårdvara. Adressens <em>tagg</em> behöver jämföras med alla taggar (<span class="arithmatex">\(N\)</span> stycken) som sparats i dess motsvarande <em>set</em>.</p>
 <p>Lägst missfrekvens fås med ett <em>fully associative cache</em> (<span class="arithmatex">\(N=B,S=1\)</span>).</p>
+<p>Varje block ser ut som följer:</p>
+<table>
+<thead>
+<tr>
+<th>Giltig?</th>
+<th>Tagg</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;1 bit&gt;</td>
+<td>&lt;28 bitar&gt;</td>
+<td>&lt;32 bitar&gt;</td>
+</tr>
+</tbody>
+</table>
 <h4 id="ersattningspolicy">Ersättningspolicy</h4>
 <ul>
 <li><em>Direct mapped cache:</em> Om ett set är upptaget måste data bytas ut.</li>
@@ -3331,15 +3523,21 @@ kan missfrekvensen nå 100%.</p>
 <h3 id="virtuellt-minne">Virtuellt minne</h3>
 <p>Långsamt (använder hårddisken), men stort och tillåter bättre minnessäkerhet (varje process har ett eget minnesutrymme).</p>
 <p>Det virtuella minnet är indelat i virtuella <em>pages</em> (vanligtvis 4 KiB stora). Dessa kan finnas i det fysiska minnet (DRAM) eller
-på hårddisken. När ett program använder virtuellt minne, översätts den virtuella adressen till en fysisk adress. Om processorn försöker
+på hårddisken (i <em>swap-utrymmet</em>). När ett program använder virtuellt minne, översätts den virtuella adressen till en fysisk adress. Om processorn försöker
 komma åt virtuellt minne som inte finns i det fysiska minnet inträffar en <em>page fault</em>, och operativsystemet hämtar data från hårddisken.</p>
-<p>Det fysiska minnet fungerar som ett fully-associative cache (<span class="arithmatex">\(N=B\)</span>) för det virtuella minnet.</p>
+<p>Det fysiska minnet fungerar som en fullständigt associativ cache (<span class="arithmatex">\(N=B\)</span>) för det virtuella minnet.</p>
 <ul>
-<li>Översättningen görs av en memory management unit (MMU).</li>
-<li>Som hjälp finns ett <em>page table</em>, som mappar VPN (virtuellt page number) till PPN (physical PN). Page offset behöver inte översättas.</li>
+<li>Översättningen görs av en memory management unit (MMU):</li>
+<li>Till hjälp finns ett <em>page-tabell</em>, som översätter VPN (virtuellt page number) till PPN (fysiskt PN). Page offset behöver inte översättas.<ul>
+<li>Varje rad i page-tabellen består av en <code>valid</code>-bit, ett PPN och ett VPN.</li>
+<li>Page-tabellen lagras i det fysiska (RAM-) minnet.</li>
 <li>Operativsystemet ansvarar för att uppdatera page-tabellen, samt för att flytta data mellan minne och disk.</li>
+</ul>
+</li>
 <li>I hårdvara finns även en <em>translation lookaside buffer</em> (TLB), som cachar nyligen använda pages.</li>
 </ul>
+<p>Minnessäkerhet: Varje process tilldelas en egen virtuell adressrymd.</p>
+<p>Som skriv-policy används write-back. Att ersätta en fysisk page i minnet kallas för <em>paging</em>. Virtuellt minne använder en LRU-liknance policy där <code>använd</code>-bitarna regelbundet nollställs.</p>
 <h2 id="forelasning-12-parallellism-samtidighet-uppsnabbning-och-ilp">Föreläsning 12: Parallellism, samtidighet, uppsnabbning och ILP</h2>
 <ul>
 <li><em>Multiprocessor:</em> Ett datorsystem med två eller fler processorer.<ul>
@@ -3368,6 +3566,9 @@ komma åt virtuellt minne som inte finns i det fysiska minnet inträffar en <em>
 </ul>
 <p>Fara: <em>Relativ speedup</em> mäter bara <em>samma</em> program. <em>Verklig speedup</em> jämför istället med det bästa kända sekventiella programmet.</p>
 <h4 id="amdahls-lag">Amdahls lag</h4>
+<blockquote>
+<p><em>Att förbättra prestandan hos ett subsystem är mödan värd endast om subsystemet påverkar en stor del av den totala prestandan.</em></p>
+</blockquote>
 <p>Exekveringstiden <span class="arithmatex">\(T_\text{före}\)</span> kan delas upp i två delar, beroende på vilka delar som förbättras av parallellisering:</p>
 <div class="arithmatex">\[T_\text{före}=T_\text{förbättringsbar}+T_\text{konstant}\]</div>
 <p>Speedup kan då beräknas enligt <em>Amdahls lag</em>:</p>
@@ -3377,7 +3578,7 @@ komma åt virtuellt minne som inte finns i det fysiska minnet inträffar en <em>
 <div class="arithmatex">\[\text{Speedup}=\frac1{\frac pN+(1-p)}\]</div>
 <blockquote>
 <p><strong>Stark skalning:</strong> Mät speedup utan att förändra problemstorlek.<br>
-<strong>Svag skalning:</strong> Mät speedup när problemstorleken växer proportionerligt mot antalet processorer (Gustafsons lag).</p>
+<strong>Svag skalning:</strong> Mät speedup när problemstorleken växer proportionellt med antalet processorer (Gustafsons lag).</p>
 </blockquote>
 <h3 id="parallellism">Parallellism</h3>
 <ul>
@@ -3392,7 +3593,7 @@ komma åt virtuellt minne som inte finns i det fysiska minnet inträffar en <em>
 <tr><td>Flera</td><td headers="ptone ptd">MISD<br>(t.ex. redundans i flygdator)</td><td headers="ptmul ptd">MIMD<br>(t.ex. flerkäriga processorer)</td></tr>
 </table>
 
-<p>Grafikprocessorer är både SIMD och MIMD</p>
+<p>Grafikprocessorer är både SIMD och MIMD.</p>
 <h3 id="instruktionsniva-parallellism-ilp">Instruktionsnivå-parallellism (ILP)</h3>
 <p>Kan förbättra prestanda utan att involvera programmeraren.</p>
 <p>Två vägar: pipelines och <em>multiple issue</em>.</p>
@@ -3407,7 +3608,7 @@ komma åt virtuellt minne som inte finns i det fysiska minnet inträffar en <em>
 </li>
 </ul>
 </li>
-<li><em>Dynamiskt:</em> (<em>superskalär processor</em>) Processorn utfärdar instruktioner dynamiskt.
+<li><em>Dynamiskt:</em> S.k. <em>superskalära processorer</em> utfärdar instruktioner dynamiskt. En superskalär processor består av flera uppsättningar av datapath-hårdvara.
         1. En batch instruktioner hämtas och avkodas <em>i ordning</em>.
         2. <strong>Reserveringsstationer (RS)</strong> buffrar operander till de funktionella enheterna. Databeroenden hanteras dynamiskt.
         3. <strong>Funktionella enheter (FU)</strong> (t.ex. heltalsenhet, load/store-enhet) exekverar instruktionerna.
@@ -3418,16 +3619,23 @@ komma åt virtuellt minne som inte finns i det fysiska minnet inträffar en <em>
 <p>Vissa superskalära processorar kan ändra exekveringsordningen (s.k. <em>out-of-order-processorer</em>).</p>
 <blockquote>
 <p><strong>WAR-beroenden:</strong><br>
-Om ett WAR (write after read)-beroende finns mellan två instruktioner, uppstår en fara om vi utan vidare ändrar ordningen.</p>
+Om ett WAR (write after read)-beroende finns mellan två instruktioner, uppstår en fara om vi utan vidare ändrar ordningen (skrivning måste ske <em>efter</em> läsning!).</p>
 <p><em>Lösning: Register renaming</em><br>
 Processorn skriver till ett <em>renaming register</em> istället - faran undviks. Processorn håller koll på det omdöpta registret.</p>
 </blockquote>
 <p>VLIW-processorer är ofta <em>mer energieffektiva</em> än superskalära out-of-order-processorer (mindre hårdvara + kompilatorn gör jobbet).</p>
 <h2 id="forelasning-13-simd-mimd-och-parallellprogrammering">Föreläsning 13: SIMD, MIMD och parallellprogrammering</h2>
 <h3 id="subword-parallellism-multimediatillagg">Subword-parallellism &amp; multimediatillägg</h3>
-<p><em>Subword-parallellism:</em><em> (ingår i SIMD) </em>En instruktion<em> opererar </em>parallellt* på flera ord - t.ex. vektorinstruktioner i SSE.</p>
+<p><em>Subword-parallellism:</em> (SIMD) <em>En instruktion</em> opererar <em>parallellt</em> på flera ord - t.ex. vektorinstruktioner i SSE.</p>
+<h3 id="flertradning">Flertrådning</h3>
+<p>En process består av en eller flera trådar som körs samtidigt/parallellt.</p>
 <h3 id="flertradade-processorer">Flertrådade processorer</h3>
-<p>I en flertrådad processor delar flera hårdvarutrådar på de funktionella enheterna.</p>
+<p>I en flertrådad processor delar flera hårdvarutrådar på de funktionella enheterna.
+Processorn innehåller hårdvara för flera parallella funktionella tillstånd, vilket tillåter en annan tråd att utfärda instruktioner när en första hamnar i en stall.</p>
+<blockquote>
+<p>Flertrådning förbättrar inte prestandan hos de enskilda trådarna, då ILP inte förbättras.
+Däremot förbättras processorns totala throughput, eftersom processortid kan nyttjas mer effektivt genom flera trådar.</p>
+</blockquote>
 <p><em>Syftet med flertrådning är att göra latens mindre märkbar samt undvika stalls till följd av cache-missar.</em></p>
 <ul>
 <li><em>Coarse-grained flertrådning:</em> Byter tråd endast vid kostsamma stalls, t.ex. L3-cachemissar.</li>
@@ -3438,7 +3646,7 @@ Processorn skriver till ett <em>renaming register</em> istället - faran undviks
 Kan täcka de luckor som multiple-issue inte kan fylla, genom att lägga till instruktioner från andra hårdvarutrådar.</p>
 <p><strong>Exempel:</strong> Intels Hyper-Threading.</p>
 <h3 id="mimd-flerkarnighet-och-kluster">MIMD, flerkärnighet och kluster</h3>
-<p>En <em>shared memory multiprocessor (SMP)</em> har ett gemensamt adressutrymme för samtliga processorer.
+<p>En <em>shared memory multiprocessor (SMP)</em> har en gemensam adressrymd för samtliga processorer. Processorerna kommunikcerar via delat minne.
 <em>En SMP är nästan alltid detsamma som en flerkärning processor</em>.</p>
 <ul>
 <li>Uniform memory access (UMA)-multiprocessor: Samma latens vid minnesåtkomst från samtliga processorer.</li>
@@ -3456,7 +3664,61 @@ De enskilda kärnornas <em>lokala</em> cacheminnen kan innehålla olika värden 
 <h5 id="false-sharing">False sharing</h5>
 <p>Om två kärnor har motsvarande cache lines, och de samtidigt modifierar olika delar av den, kommer cache coherence-protokollet att ogiltig-markera båda cache-linjerna, trots att kärnorna egentligen inte är intresserade av samma data.</p>
 <h3 id="programmering-med-tradar-och-delade-variabler">Programmering med trådar och delade variabler</h3>
-<p><code>pthreads</code>...</p>
+<h4 id="semafor">Semafor</h4>
+<p>En <em>semafor</em> är en icke-negativ global heltalsvariabel som enbart kan förändras genom två operationer:</p>
+<ul>
+<li><span class="arithmatex">\(P(s)\)</span> dekrementerar <span class="arithmatex">\(s\)</span> så snart som det är möjligt och returnerar därefter.</li>
+<li><span class="arithmatex">\(V(s)\)</span> inkrementerar <span class="arithmatex">\(s\)</span>.</li>
+</ul>
+<h4 id="mutex">Mutex</h4>
+<p>En <em>mutex</em> är en sorts binär semafor med det initala värdet 1, som används för att säkerställa att en delad resurs används av högst en tråd åt gången. <span class="arithmatex">\(P\)</span> = "lås", <span class="arithmatex">\(V\)</span> = "lås upp".</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pthread.h&gt;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;semaphore.h&gt;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">volatile</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">sem_t</span><span class="w"> </span><span class="o">*</span><span class="n">mutex</span><span class="p">;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="nf">count</span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">){</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="p">((</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">data</span><span class="p">);</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">max</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">        </span><span class="n">sem_wait</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span><span class="w"> </span><span class="c1">// P</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">        </span><span class="n">counter</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">        </span><span class="n">sem_post</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span><span class="w"> </span><span class="c1">// V</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">    </span><span class="n">pthread_exit</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="p">}</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">    </span><span class="n">pthread_t</span><span class="w"> </span><span class="n">tid1</span><span class="p">,</span><span class="w"> </span><span class="n">tid2</span><span class="p">;</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">max1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">400000</span><span class="p">;</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">max2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">600000</span><span class="p">;</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">    </span><span class="n">mutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sem_open</span><span class="p">(</span><span class="s">&quot;/semaphore&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">O_CREAT</span><span class="p">,</span><span class="w"> </span><span class="mo">0777</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// skapa en semafor</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">    </span><span class="c1">// Semaforen tas bort när alla trådar som öppnat den anropar `sem_close`.</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">    </span><span class="n">sem_unlink</span><span class="p">(</span><span class="s">&quot;/sempahore&quot;</span><span class="p">);</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">    </span><span class="c1">// Starta två trådar</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">    </span><span class="n">phtread_create</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tid1</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">max1</span><span class="p">);</span>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="w">    </span><span class="n">pthread_create</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tid2</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">max2</span><span class="p">);</span>
+</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>
+</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="w">    </span><span class="c1">// Vänta på att båda avslutas</span>
+</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a><span class="w">    </span><span class="n">pthread_join</span><span class="p">(</span><span class="n">tid1</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="w">    </span><span class="n">pthread_join</span><span class="p">(</span><span class="n">tid2</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+</span><span id="__span-6-36"><a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a>
+</span><span id="__span-6-37"><a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;counter = %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">counter</span><span class="p">);</span>
+</span><span id="__span-6-38"><a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>
+</span><span id="__span-6-39"><a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a><span class="w">    </span><span class="c1">// Stäng semaforen</span>
+</span><span id="__span-6-40"><a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a><span class="w">    </span><span class="n">sem_close</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+</span><span id="__span-6-41"><a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a>
+</span><span id="__span-6-42"><a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a><span class="w">    </span><span class="c1">// Semaforen tas nu bort eftersom ingen tråd längre håller den öppen</span>
+</span><span id="__span-6-43"><a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a>
+</span><span id="__span-6-44"><a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a><span class="w">    </span><span class="n">pthread_exit</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span><span class="w"> </span><span class="c1">// Låt andra trådar fortsätta?</span>
+</span><span id="__span-6-45"><a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="ovrigt-fran-kursboken">Övrigt (från kursboken)</h2>
 
 
 
