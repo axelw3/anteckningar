@@ -1,0 +1,3138 @@
+
+<!doctype html>
+<html lang="sv" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../sf1671/">
+      
+      
+        <link rel="next" href="../sf1935/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>SF1688 Diskret matematik 6,0 hp - Anteckningar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sf1688-diskret-matematik-60-hp" class="md-skip">
+          Gå till innehållet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidhuvud">
+    <a href=".." title="Anteckningar" class="md-header__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anteckningar
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SF1688 Diskret matematik 6,0 hp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Sök" placeholder="Sök" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Sök">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Rensa" aria-label="Rensa" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialiserar sök
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Anteckningar" class="md-nav__button md-logo" aria-label="Anteckningar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Anteckningar
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bma110/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BMA110 Grundläggande sår och sårbehandling 3,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd1351/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DD1351 Logik för dataloger 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd1366-syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dd1366 syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd1366/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DD1366 Programmeringsparadigm 6,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dd2350/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DD2350 Algoritmer, datastrukturer och komplexitet 9,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../id1200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ID1200 Operativsystem 6,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../is1500/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IS1500 Datorteknik och komponenter 9,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1547/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1547 Numeriska metoder, grundkurs 6,0 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1625/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1625 Envariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1626/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1626 Flervariabelanalys 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1671/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1671 Matematik, baskurs, med diskret matematik 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SF1688 Diskret matematik 6,0 hp
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SF1688 Diskret matematik 6,0 hp
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grafer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isomorfi-for-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Isomorfi för grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speciella-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speciella grafer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#delgrafer-och-vandringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delgrafer och vandringar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sammanhangande-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sammanhängande grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antal-vandringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antal vandringar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eulerska-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eulerska grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hamilton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hamilton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Träd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Träd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodfargning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodfärgning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nodfärgning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-girig-algoritm" class="md-nav__link">
+    <span class="md-ellipsis">
+      En girig algoritm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#det-kromatiska-polynomet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Det kromatiska polynomet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planara-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planära grafer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planära grafer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regioner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wagners-sats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wagners sats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fyrfargssatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fyrfärgssatsen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fyrfärgssatsen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sexfargssatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sexfärgssatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duala-grafen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duala grafen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regelbundna-polyedrar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regelbundna polyedrar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repetition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bipartita-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bipartita grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kantfargningar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kantfärgningar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latinska-kvadrater" class="md-nav__link">
+    <span class="md-ellipsis">
+      Latinska kvadrater
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permutationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permutationer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permutationer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sammansattning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sammansättning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permutationsmatriser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permutationsmatriser
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partitioner-av-heltal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partitioner av heltal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partitioner av heltal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cykeltyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cykeltyp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konjugerade-permutationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konjugerade permutationer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uddajamna-permutationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Udda/jämna permutationer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 9
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grupper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grupper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordning_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gruppisomorfi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppisomorfi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cykliska-grupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cykliska grupper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direkt-produkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direkt produkt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverterbara-element-i-mathbb-z_m" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverterbara element i \(\mathbb Z_m\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delgrupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delgrupper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cayleygrafer-orientering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cayleygrafer, orientering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sidoklasser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sidoklasser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sidoklasser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lagranges-sats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lagranges sats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foljder-av-lagranges-sats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Följder av Lagranges sats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternerande-gruppen-a_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternerande gruppen \(A_n\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-delgrupp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal delgrupp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 12
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automorfier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automorfier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gruppverkan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppverkan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stabilisatorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stabilisatorn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 13
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modular-aritmetik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modulär aritmetik
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modulär aritmetik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inverterbarhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverterbarhet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinesiska-restsatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kinesiska restsatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 14
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eulers-phi-funktion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eulers \(\phi\)-funktion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobiusfunktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Möbiusfunktionen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobius-inversformel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Möbius inversformel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 15
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kroppar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kroppar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ringar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ringar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomringar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 16
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomdivision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomdivision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Polynomdivision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storsta-gemensamma-delare-sgd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Största gemensamma delare (SGD)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irreducibla-polynom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Irreducibla polynom
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#andliga-kroppar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ändliga kroppar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 18
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sf1935/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SF1935 Sannolikhetsteori och statistik med tillämpning inom maskininlärning 7,5 hp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grafer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isomorfi-for-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Isomorfi för grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speciella-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speciella grafer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#delgrafer-och-vandringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delgrafer och vandringar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sammanhangande-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sammanhängande grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antal-vandringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antal vandringar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eulerska-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eulerska grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hamilton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hamilton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Träd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Träd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodfargning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodfärgning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nodfärgning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-girig-algoritm" class="md-nav__link">
+    <span class="md-ellipsis">
+      En girig algoritm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#det-kromatiska-polynomet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Det kromatiska polynomet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planara-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planära grafer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planära grafer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regioner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regioner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wagners-sats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wagners sats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fyrfargssatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fyrfärgssatsen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fyrfärgssatsen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sexfargssatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sexfärgssatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duala-grafen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duala grafen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regelbundna-polyedrar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regelbundna polyedrar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repetition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bipartita-grafer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bipartita grafer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kantfargningar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kantfärgningar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latinska-kvadrater" class="md-nav__link">
+    <span class="md-ellipsis">
+      Latinska kvadrater
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permutationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permutationer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permutationer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sammansattning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sammansättning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permutationsmatriser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permutationsmatriser
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partitioner-av-heltal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partitioner av heltal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partitioner av heltal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cykeltyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cykeltyp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konjugerade-permutationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konjugerade permutationer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uddajamna-permutationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Udda/jämna permutationer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 9
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grupper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grupper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordning_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gruppisomorfi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppisomorfi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cykliska-grupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cykliska grupper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direkt-produkt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direkt produkt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverterbara-element-i-mathbb-z_m" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverterbara element i \(\mathbb Z_m\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delgrupper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delgrupper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cayleygrafer-orientering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cayleygrafer, orientering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sidoklasser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sidoklasser
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sidoklasser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lagranges-sats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lagranges sats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foljder-av-lagranges-sats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Följder av Lagranges sats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternerande-gruppen-a_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternerande gruppen \(A_n\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-delgrupp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal delgrupp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 12
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automorfier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automorfier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gruppverkan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppverkan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stabilisatorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stabilisatorn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 13
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modular-aritmetik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modulär aritmetik
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modulär aritmetik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inverterbarhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverterbarhet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kinesiska-restsatsen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kinesiska restsatsen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 14
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eulers-phi-funktion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eulers \(\phi\)-funktion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobiusfunktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Möbiusfunktionen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobius-inversformel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Möbius inversformel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 15
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kroppar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kroppar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ringar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ringar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomringar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomringar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 16
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomdivision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomdivision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Polynomdivision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storsta-gemensamma-delare-sgd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Största gemensamma delare (SGD)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irreducibla-polynom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Irreducibla polynom
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Föreläsning 17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#andliga-kroppar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ändliga kroppar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forelasning-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      Föreläsning 18
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sf1688-diskret-matematik-60-hp">SF1688 Diskret matematik 6,0 hp</h1>
+<table>
+<thead>
+<tr>
+<th>Tillfälleskod</th>
+<th>Termin(er)</th>
+<th>Period(er)</th>
+<th>Föreläsare</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>51094</td>
+<td>HT2025</td>
+<td>1</td>
+<td>Svante Linusson</td>
+</tr>
+</tbody>
+</table>
+<p>Anteckningar med utgångspunkt i föreläsningsslides.</p>
+<h2 id="forelasning-1">Föreläsning 1</h2>
+<p><em>I schemat: den 25 augusti 2025</em></p>
+<h3 id="grafer">Grafer</h3>
+<p><strong>Graf:</strong> Betecknas <span class="arithmatex">\(G=(V,E)\)</span>, där mängden <span class="arithmatex">\(V\)</span> består av <em>noder</em> (hörn) och <span class="arithmatex">\(E\)</span> består av <em>kanter</em> (oordnade par av noder).</p>
+<ul>
+<li>Två noder <span class="arithmatex">\(x,y\in V\)</span> är <em>grannar</em> omm <span class="arithmatex">\(xy\in E\)</span>.</li>
+<li>Grannmängden för en nod <span class="arithmatex">\(x\)</span>: <span class="arithmatex">\(N(x)=\{y\ |\ xy\in E\}\)</span></li>
+<li>Antalet grannar (<em>valens</em> eller <em>grad</em>): <span class="arithmatex">\(\delta(x)=|N(x)|\)</span></li>
+<li>Grannlista: <table><tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th><th>f</th><th>g</th></tr><tr><td>b</td><td>a</td><td>a</td><td>a</td><td>f</td><td>e</td><td></td></tr><tr><td>c</td><td>c</td><td>b</td><td>b</td><td></td><td></td><td></td></tr><tr><td>d</td><td>d</td><td></td><td></td><td></td><td></td><td></td></tr></table></li>
+<li>Grannmatris <span class="arithmatex">\(M=\{m_{ij}\}\)</span>, där <span class="arithmatex">\(m_{ij}=\begin{cases}1,\quad ij\in E\\0,\quad\text{annars}\end{cases}\)</span>.</li>
+</ul>
+<h4 id="isomorfi-for-grafer">Isomorfi för grafer</h4>
+<p>Likhet för två grafer kan (informellt) sägas uppfyllas <em>"när de kan ritas likadant så när som på nodernas namn"</em>.</p>
+<blockquote>
+<p><strong>Formellt:</strong></p>
+<p>Låt <span class="arithmatex">\(G_1=(V_1,E_1),G_2=(V_2,E_2)\)</span>. Funktionen <span class="arithmatex">\(f:V_1\to V_2\)</span> är en <em>grafisomorfi</em> om</p>
+<ol>
+<li><span class="arithmatex">\(f\)</span> är en bijektion, samt</li>
+<li>det gäller <span class="arithmatex">\(\forall x,y\in V_1\)</span> att <span class="arithmatex">\(\{x,y\}\in E_1\iff\{f(x),f(y)\}\in E_2\)</span></li>
+</ol>
+<p><span class="arithmatex">\(G_1,G_2\)</span> sägs då vara <em>isomorfa</em> ("lika").</p>
+</blockquote>
+<h4 id="speciella-grafer">Speciella grafer</h4>
+<ul>
+<li><strong>Kompletta grafen:</strong> Alla noder är sammanlänkade.</li>
+<li><strong>Cykelgrafen:</strong> Graf med noder <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> och kanter <span class="arithmatex">\(\left\{\{1,2\},\{2,3\},\dots,\{n-1,n\},\{n,1\}\right\}\)</span>.</li>
+<li><strong>Kompletta bipartita grafen:</strong> Varje nod ur den ena nodmängden är ansluten till samtliga noder ur den andra. Mellan noder ur samma nodmängd saknas kanter.</li>
+</ul>
+<p><strong>Reguljära grafer:</strong> Grafer vars noder alla har samma valens.</p>
+<p><strong>Satsen om valensernas summa:</strong> <span class="arithmatex">\(\sum_{x\in V}\delta(x)=2\cdot|E|\)</span></p>
+<p><strong>Udda/jämna noder:</strong> En nod är udda resp. jämn om den har udda resp. jämn valens.</p>
+<blockquote>
+<p><strong>Handskakningslemmat:</strong></p>
+<div class="arithmatex">\[\red{2\cdot|E|}=\sum_{x\in V}\delta(x)=\green{\sum_{x\in V_\text{jämna}}\delta(x)}+\blue{\sum_{x\in V_\text{udda}}\delta(x)}\]</div>
+<p>där <span class="arithmatex">\(V_\text{jämna},V_\text{udda}\)</span> består av grafens jämna resp. udda noder.</p>
+<p>Eftersom <font color="red">VL</font> är jämnt, och <font color="green">första summaformeln i HL</font> är jämn, måste även <span class="arithmatex">\(\blue{\sum_{x\in V_\text{udda}}\delta(x)}\)</span> vara det. Slutligen, eftersom varje <span class="arithmatex">\(\delta(x)\)</span> i denna summering är udda, måste antalet termer (och således <span class="arithmatex">\(|V_\text{udda}|\)</span>) vara udda.</p>
+</blockquote>
+<h2 id="forelasning-2">Föreläsning 2</h2>
+<p><em>I schemat: den 26 augusti 2025</em></p>
+<h3 id="delgrafer-och-vandringar">Delgrafer och vandringar</h3>
+<p>Givet en graf <span class="arithmatex">\(G=(V,E)\)</span> säger vi att en annan graf <span class="arithmatex">\(G_1=(V_1,E_1)\)</span> är en <strong>delgraf</strong> till <span class="arithmatex">\(G\)</span> om <span class="arithmatex">\(V_1\subseteq V\)</span> och <span class="arithmatex">\(E_1\subseteq E\)</span>.</p>
+<p>En <strong>vandring</strong> (eller <em>promenad</em>) är en sekvens noder <span class="arithmatex">\(v_1v_2\dots v_k\)</span> där <span class="arithmatex">\(v_iv_{i+1}\in E\)</span> för <span class="arithmatex">\(i=1\dots k-1\)</span>.</p>
+<p>Några specialfall:</p>
+<ul>
+<li>En <em>väg</em> är en vandring där alla passerade kanter är olika (men noder får upprepas).</li>
+<li>En <em>stig</em> är en väg där inga noder upprepas.</li>
+<li>En <em>krets</em> är en <em>sluten väg</em>, dvs. en väg <span class="arithmatex">\(v_1v_2\dots v_{k+1}\)</span> med <span class="arithmatex">\(v_1=v_{k+1}\)</span>.</li>
+<li>En <em>cykel</em> ("sluten stig") är en krets <span class="arithmatex">\(v_1v_2\dots v_{k+1}\)</span> varav <span class="arithmatex">\(v_1v_2\dots v_k\)</span> är en stig, <span class="arithmatex">\(k\geq 3\)</span>.<ul>
+<li>En cykel är därmed en delgraf <em>isomorf med</em> cykelgrafen <span class="arithmatex">\(C_k\)</span>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="sammanhangande-grafer">Sammanhängande grafer</h3>
+<p>En graf <span class="arithmatex">\(G\)</span> är <strong>sammanhängande</strong> om det, för varje par av noder <span class="arithmatex">\(x,y\in V\)</span>, finns en stig från <span class="arithmatex">\(x\)</span> till <span class="arithmatex">\(y\)</span>.</p>
+<p>En <em>komponent</em> i <span class="arithmatex">\(G\)</span> är en maximal sammanhängande delgraf.</p>
+<h3 id="antal-vandringar">Antal vandringar</h3>
+<blockquote>
+<p><strong>Sats:</strong> (bevis ingår ej)</p>
+<p>Antalet vandringar av längd <span class="arithmatex">\(r\)</span> mellan noderna <span class="arithmatex">\(i\)</span> och <span class="arithmatex">\(j\)</span> i grafen <span class="arithmatex">\(G\)</span> är <span class="arithmatex">\(ij\)</span>-elementet i matrisen <span class="arithmatex">\(A^r\)</span>, där <span class="arithmatex">\(A\)</span> är grafens grannmatris.</p>
+<p>T.ex. <span class="arithmatex">\(\left(\begin{matrix}0&amp;1&amp;1&amp;1\\1&amp;0&amp;1&amp;0\\1&amp;1&amp;0&amp;1\\1&amp;0&amp;1&amp;0\end{matrix}\right)\cdot\left(\begin{matrix}0&amp;1&amp;1&amp;1\\1&amp;0&amp;1&amp;0\\1&amp;1&amp;0&amp;1\\1&amp;0&amp;1&amp;0\end{matrix}\right)=\left(\begin{matrix}3&amp;1&amp;2&amp;1\\1&amp;2&amp;1&amp;2\\2&amp;1&amp;3&amp;1\\1&amp;2&amp;1&amp;2\end{matrix}\right)\)</span></p>
+</blockquote>
+<h3 id="eulerska-grafer">Eulerska grafer</h3>
+<p>En <em>eulersk graf</em> är en graf som har en krets (sluten väg) som passerar varje kant i grafen exakt en gång. En sådan väg kallas för en <em>eulerväg</em>.</p>
+<blockquote>
+<p><strong>Sats:</strong> En sammanhängande graf <span class="arithmatex">\(G\)</span> är eulersk <span class="arithmatex">\(\iff\)</span> varje nod har jämn valens.</p>
+<p><strong>Bevis:</strong></p>
+<p><span class="arithmatex">\(\implies)\)</span> Om <span class="arithmatex">\(G\)</span> är eulersk kan vi följa kretsen som besöker varje kant exakt en gång. För varje nod som besöks finns två kanter (en "inkommande" och en "utgående"). Eftersom startnoden är densamma som slutnoden gäller det även för denna nod.</p>
+<p><span class="arithmatex">\(\impliedby)\)</span> Antag att alla noder har jämn valens. Låt <span class="arithmatex">\(W\)</span> vara den längsta vägen (varje kant högst en gång, men varje nod kan förekomma flera gånger). Eftersom vi inte kan förlänga <span class="arithmatex">\(W\)</span> så används alla kanter redan. Eftersom antalet kanter är jämnt måste start- och slutnoden vara densamma -- dvs. <span class="arithmatex">\(W\)</span> är en krets.</p>
+<p>Antag nu att <span class="arithmatex">\(W\)</span> <em>inte</em> är en eulersk krets. Då finns det någon kant som inte används i <span class="arithmatex">\(W\)</span>. Eftersom <span class="arithmatex">\(G\)</span> är sammanhängande finns det en sådan kant där (minst) den ena noden, förekommer i <span class="arithmatex">\(W\)</span>. Vi kallar noden för <span class="arithmatex">\(v_i\)</span> och kanten <span class="arithmatex">\(v_iu\)</span>. Vi kan då konstruera vägen <span class="arithmatex">\(v_iv_{i+1}\dots v_lv_1v_2\dots v_iu\)</span> som är en kant längre än <span class="arithmatex">\(W\)</span>. Detta är en motsägelse (dvs. antagandet måste vara felaktigt). <span class="arithmatex">\(W\)</span> måste således trots allt vara eulersk.</p>
+</blockquote>
+<p>Som en följdsats av ovanstående sats fås att</p>
+<blockquote>
+<p><strong>Sats:</strong> En sammanhängande graf <span class="arithmatex">\(G=(V,E)\)</span> har en euler<em>väg</em> omm antalet udda noder är <span class="arithmatex">\(0\)</span> eller <span class="arithmatex">\(2\)</span>.</p>
+<p><strong>Bevis:</strong></p>
+<p><span class="arithmatex">\(\implies)\)</span> som ovan</p>
+<p><span class="arithmatex">\(\impliedby)\)</span> Om <span class="arithmatex">\(G\)</span> har <span class="arithmatex">\(0\)</span> udda noder är vi klara. Om <span class="arithmatex">\(G\)</span> har exakt två udda noder <span class="arithmatex">\(x,y\)</span> så vet vi att grafen <span class="arithmatex">\(G'=(V\cup\{z\},\ E\cup\{xz,yz\})\)</span> bara har jämna noder och alltså också har en eulerkrets. Bryter vi upp den eulerkretsen där den passerar <span class="arithmatex">\(z\)</span> (och tar bort <span class="arithmatex">\(z\)</span>) får vi en eulerväg för <span class="arithmatex">\(G\)</span>.</p>
+</blockquote>
+<h3 id="hamilton">Hamilton</h3>
+<p>En <em>hamiltoncykel</em> är en <span class="arithmatex">\(|V|\)</span>-cykel (dvs. en cykel genom alla noder).</p>
+<p>En <em>hamiltonstig</em> är en stig genom alla noder.</p>
+<p>Det är i allmänhet svårt att avgöra om en graf är hamiltonsk (dvs. har en hamiltoncykel). Det finns dock en del satser.</p>
+<blockquote>
+<p><strong>Sats:</strong> (Dirac 1952)</p>
+<p>Varje graf <span class="arithmatex">\(G=(V,E)\)</span> med minst 3 noder, sådan att <span class="arithmatex">\(\forall X\in V,\ \delta(x)\geq\frac{|V|}2\)</span> har en hamiltoncykel.</p>
+<p><strong>Bevis:</strong> (se pdf)</p>
+</blockquote>
+<h2 id="forelasning-3">Föreläsning 3</h2>
+<h3 id="trad">Träd</h3>
+<p>En graf är ett <em>träd</em> <span class="arithmatex">\(T=(V,E)\)</span> är <strong>sammanhängande</strong> och <strong>saknar cykler</strong>.</p>
+<blockquote>
+<p><strong>Sats 15.5:</strong> För ett träd <span class="arithmatex">\(T=V(V,E)\)</span> gäller det att <span class="arithmatex">\(\forall x,y\in V\)</span> finns <u>en</u> <em>unik stig</em> från <span class="arithmatex">\(x\)</span> till <span class="arithmatex">\(y\)</span>.</p>
+<p>Det gäller dessutom att, om en kant tas bort, återstår två träd.</p>
+<p>För alla träd gäller dessutom att <span class="arithmatex">\(|E|=|V|-1\)</span>.</p>
+</blockquote>
+<h4 id="skog">Skog</h4>
+<p>En <em>skog</em> är en graf som <strong>saknar cykler</strong>. En sådan graf består av komponenter som är träd.</p>
+<p>Ett träd <span class="arithmatex">\(T=(V',E')\)</span> är ett (upp)spännande träd till en graf <span class="arithmatex">\(G=(V,E)\)</span> om <span class="arithmatex">\(V'=V\)</span> och <span class="arithmatex">\(E'\subseteq E\)</span>.</p>
+<p>Dvs. <span class="arithmatex">\(T\)</span> är ett träd som är en delgraf till <span class="arithmatex">\(G\)</span> som omfattar samtliga noder. <em>Varje sammanhändande graf har ett spännande träd.</em></p>
+<h3 id="nodfargning">Nodfärgning</h3>
+<p>En godkänd färgning av noder skall ge grannar olika färg.</p>
+<blockquote>
+<p>Formellt är en (godkänd) nodfärgning av <span class="arithmatex">\(G=(V,E)\)</span> en funktion <span class="arithmatex">\(c:V\to\mathbb Z_+\)</span> så att <span class="arithmatex">\(xy\in E\implies c(x)\neq c(y)\)</span>.</p>
+</blockquote>
+<p>Det <em>kromatiska talet</em> <span class="arithmatex">\(\chi(G)\)</span> är det minsta antalet unika färger som <span class="arithmatex">\(G\)</span> kan nodfärgas med.</p>
+<h4 id="en-girig-algoritm">En girig algoritm</h4>
+<blockquote>
+<p>Det kromatiska talet <span class="arithmatex">\(\chi(G)\)</span> är inte alltid lätt att beräkna. En övre gräns kan fås genom en explicit färgning, men inte säkert att denna är optimal.</p>
+</blockquote>
+<p>En girig algoritm för att approximera <span class="arithmatex">\(\chi(G)\)</span>:</p>
+<ol>
+<li>Ordna noderna i någon ordning <span class="arithmatex">\(v_1,v_2,\dots,v_n\)</span>.</li>
+<li>Välj, i tur och ordning, <span class="arithmatex">\(c(v_1),c(v_2),\dots,c(v_n)\)</span> som minsta möjliga positiva heltal, givet vilka tal som redan tilldelats grannarna.</li>
+</ol>
+<blockquote>
+<p><strong>Sats 15.7.1:</strong> För varje graf <span class="arithmatex">\(G\)</span> gäller att</p>
+<ol>
+<li><span class="arithmatex">\(\chi(G)\leq\Delta(G)+1\)</span>, samt att</li>
+<li>(om <span class="arithmatex">\(G\)</span> är sammanhängande och inte reguljär) <span class="arithmatex">\(\chi(G)\leq\Delta(G)\)</span>.</li>
+</ol>
+<p><span class="arithmatex">\(\Delta(G)\)</span> betecknar maxvalensen i <span class="arithmatex">\(G\)</span>.</p>
+<p><strong>Bevis:</strong> Den giriga algoritmen ovan kan i värsta fall tilldela <span class="arithmatex">\(c(v_i)=\delta(v_i)+1\)</span>. Eftersom maxvalensen är <span class="arithmatex">\(\Delta(G)\)</span> kan det kromatiska talet inte överstiga <span class="arithmatex">\(\Delta(G)+1\)</span>.</p>
+<p>För att motivera (2) konstrurerar vi en ordning på noderna så att den giriga färgningen använder högst <span class="arithmatex">\(\Delta(G)\)</span> färger. Mer precist skapar vi en ordning så att ingen nod har mer än <span class="arithmatex">\(\Delta(G)-1\)</span> grannar före sig i ordningen.</p>
+<p>Då <span class="arithmatex">\(G\)</span> inte är reguljär så finns en nod <span class="arithmatex">\(x\)</span> med <span class="arithmatex">\(\delta(x)\lt\Delta(G)\)</span>. Låt <span class="arithmatex">\(x\)</span> bli sista noden <span class="arithmatex">\(v_n\)</span>.</p>
+<p>Före <span class="arithmatex">\(x\)</span> placerar vi nu alla grannar <span class="arithmatex">\(N(x)\)</span> till <span class="arithmatex">\(x\)</span> som <span class="arithmatex">\(v_{n-\delta(x)},\dots,v_{n-1}\)</span>. Dessa kommer att ha <span class="arithmatex">\(x\)</span> efter sig och därför högsta <span class="arithmatex">\(\Delta(G)-1\)</span> grannar framför sig.</p>
+<p>Vi fortsätter rekursivt och placerar alla grannar till dessa noder.</p>
+<p>Eftersom grafen är sammanhängande kommer det alltid finnas en ännu icke utplacerad nod som har en utplacerad granne. Den giriga algoritmen kommer då att använda högst <span class="arithmatex">\(\Delta(G)-1+1\)</span> färger. <span class="arithmatex">\(\square\)</span></p>
+</blockquote>
+<h4 id="det-kromatiska-polynomet">Det kromatiska polynomet</h4>
+<p>Det kromatiska polynomet <span class="arithmatex">\(\chi_G(k)\)</span> ger <strong>antalet sätt</strong> att nodfärga grafen <span class="arithmatex">\(G=(V,E)\)</span> med (högst) <span class="arithmatex">\(k\)</span> färger.</p>
+<p>Vi vill kunna beräkna det kromatiska polynomet för alla grafer och skall ge en rekursion för detta.</p>
+<p>Vi definierar först</p>
+<ul>
+<li><span class="arithmatex">\(G-e\)</span> som grafen <span class="arithmatex">\(G\)</span> med kanten <span class="arithmatex">\(e\)</span> <em>borttagen</em>.</li>
+<li><span class="arithmatex">\(G/e\)</span> som grafen <span class="arithmatex">\(G\)</span> med kanten <span class="arithmatex">\(e\)</span> <em>kontraherad</em> (de båda noderna slås samman).</li>
+</ul>
+<blockquote>
+<p><strong>Sats:</strong> (thm 5.3.6 i extramaterialet)</p>
+<p>För varje graf <span class="arithmatex">\(G=(V,E),\ e\in E\)</span> gäller att</p>
+<div class="arithmatex">\[\chi_G(k)=\chi_{G-e}(k)-\chi_{G/e}(k)\]</div>
+<p><strong>Bevisskiss:</strong> Eftersom graferna i högerledet har strikt färre kanter än <span class="arithmatex">\(G\)</span> bestämmer detta, tillsammans med basen <span class="arithmatex">\(\chi_{(V,\empty)}(k)=k^{|V|}\)</span>, funktionen för alla (ändliga) grafer <span class="arithmatex">\(G\)</span>. Induktion över <span class="arithmatex">\(|E|\)</span>.</p>
+</blockquote>
+<p><em>Det kromatiska talet <span class="arithmatex">\(\chi(G)=\min_{\chi_G(k)\neq0,\ k\in\mathbb N_0}k\)</span></em></p>
+<h2 id="forelasning-4">Föreläsning 4</h2>
+<h3 id="planara-grafer">Planära grafer</h3>
+<p>En <em>plan graf</em> är en "konkret graf" i ett plan, där noder motsvaras av punkter i planet och vars kanter är kurvor (i planet) som har gemensamma punkter <em>endast i sina noder</em>.</p>
+<p>En <em>planär graf</em> är en graf som är isomorf med en plan graf.</p>
+<h4 id="regioner">Regioner</h4>
+<p>Kanterna i en plan graf delar in planet i sammanhängande <em>regioner</em> (eller <em>delytor</em>, <em>områden</em>, <em>fasetter</em>).</p>
+<p>För en plan graf betecknar vi</p>
+<ul>
+<li>antalet noder -- <span class="arithmatex">\(n\)</span></li>
+<li>antalet kanter -- <span class="arithmatex">\(k\)</span></li>
+<li>antalet regioner -- <span class="arithmatex">\(r\)</span></li>
+<li>antalet komponenter -- <span class="arithmatex">\(c\)</span></li>
+</ul>
+<blockquote>
+<p><strong>Sats:</strong> För varje plan graf gäller att</p>
+<div class="arithmatex">\[n-k+r-c=1\]</div>
+<p><strong>Bevis:</strong> Induktion över antal kanter.</p>
+<p><em>Basfall:</em> <span class="arithmatex">\(k=0\)</span>, vilket ger <span class="arithmatex">\(n=c\)</span> och <span class="arithmatex">\(r=1\)</span>, dvs. sant.</p>
+<p><em>Antagande:</em> Antag sant för alla grafer med <span class="arithmatex">\(k\leq m\)</span> kanter.</p>
+<p><em>Steg:</em> Tag en graf <span class="arithmatex">\(G\)</span> med <span class="arithmatex">\(k=m+1\)</span> kanter och låt <span class="arithmatex">\(e\)</span> vara en godtycklig kant i denna graf. Vi tar nu bort denna kant och får en ny graf <span class="arithmatex">\(G'=G-e\)</span>. Observera att antal noder är oförändrat, dvs. <span class="arithmatex">\(n_{G'}=n_G\)</span>.</p>
+<ul>
+<li>Fall 1) Båda sidor av <span class="arithmatex">\(e\)</span> tillhör samma region. Tar vi bort <span class="arithmatex">\(e\)</span> kommer den aktuella <em>komponenten</em> alltså delas i två. Antalet regioner förändras ej.</li>
+</ul>
+<p>Vi har</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\begin{aligned}n_G&amp;-k_G&amp;+r_G&amp;-c_G\\=n_{G'}&amp;-(k_{G'}+1)&amp;+r_{G'}&amp;-(c_{G'}-1)\\=n_{G'}&amp;-k_{G'}{\color{#f00}-1}&amp;+r_{G'}&amp;-c_{G'}{\color{#f00}+1}\\=n_{G'}&amp;-k_{G'}&amp;+r_{G'}&amp;-c_{G'}&amp;=\{\text{ind.ant.}\}=1\end{aligned}\)</span>\)</span></p>
+<ul>
+<li>Fall 2) Olika regioner på olika sidor av <span class="arithmatex">\(e\)</span>. Dessa regioner kommer alltså att sammanslås när <span class="arithmatex">\(e\)</span> tas bort. Samtidigt måste det finnas en annan väg mellan <span class="arithmatex">\(e\)</span>:s noder -- antalet komponenter är alltså oförändrat.</li>
+</ul>
+<p>Vi har</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\begin{aligned}n_G&amp;-k_G&amp;+r_G&amp;-c_G\\=n_{G'}&amp;-(k_{G'}+1)&amp;+(r_{G'}+1)&amp;-c_{G'}\\=n_{G'}&amp;-k_{G'}{\color{#f00}-1}&amp;+r_{G'}{\color{#f00}+1}&amp;-c_{G'}\\=n_{G'}&amp;-k_{G'}&amp;+r_{G'}&amp;-c_{G'}&amp;=\{\text{ind.ant.}\}=1\end{aligned}\)</span>\)</span></p>
+<div class="arithmatex">\[\begin{align*}\tag*{\large\char"25A1}\end{align*}\]</div>
+<p>Om grafen är <em>sammanhängande</em> (<span class="arithmatex">\(c=1\)</span>) gäller speciellt (Eulers polyederformel) att</p>
+<div class="arithmatex">\[n-k+r=2\]</div>
+</blockquote>
+<p>Följder av polyederformeln:</p>
+<ul>
+<li>Följdsats 0: Antalet regioner <span class="arithmatex">\(r\)</span> är lika för alla inbäddningar av en planär graf.</li>
+<li>Följdsats 1: För en planär graf gäller, om <span class="arithmatex">\(k\geq 2\)</span>, att <span class="arithmatex">\(3n\geq k+3(c+1)\)</span>.<ul>
+<li>Om grafen är sammanhängande (<span class="arithmatex">\(c=1\)</span>): <span class="arithmatex">\(3n\geq k+6\)</span></li>
+<li>Likhet gäller precis om alla regioner (även den obegränsade) har <em>exakt tre kanter</em> (för en, och därmed alla, plana versioner av grafen).</li>
+</ul>
+</li>
+<li>Följdsats 2: Om <span class="arithmatex">\(G\)</span> är planär, bipartit och <span class="arithmatex">\(k\geq 2\)</span> gäller att <span class="arithmatex">\(2n\geq k+2(c+1)\)</span>.<ul>
+<li>Om grafen är sammanhängande: <span class="arithmatex">\(2n\geq k+4\)</span></li>
+</ul>
+</li>
+<li>Följdsats 3: ...?</li>
+</ul>
+<h4 id="wagners-sats">Wagners sats</h4>
+<blockquote>
+<p><strong>Wagners sats:</strong></p>
+<p>Grafen <span class="arithmatex">\(G\)</span> är icke-planär <span class="arithmatex">\(\iff\)</span> en graf, isomorf med <span class="arithmatex">\(K_5\)</span> eller <span class="arithmatex">\(K_{3,3}\)</span>, kan fås genom att utföra någon kombination av</p>
+<ul>
+<li>ta bort en nod</li>
+<li>ta bort en kant</li>
+<li>kontrahera en kant</li>
+</ul>
+<p>En graf som fås på detta vis kallas för en <em>minor</em>.</p>
+</blockquote>
+<h4 id="fyrfargssatsen">Fyrfärgssatsen</h4>
+<blockquote>
+<p><strong>Fyrfärgssatsen:</strong> (manuellt räknat bevis ej känt)</p>
+<p>För alla planära grafer gäller att <span class="arithmatex">\(\chi(G)\leq 4\)</span>.</p>
+</blockquote>
+<h5 id="sexfargssatsen">Sexfärgssatsen</h5>
+<p><span class="arithmatex">\(G\ \text{planär}\implies\chi(G)\leq 6\)</span>. Mycket lättare att bevisa.</p>
+<h4 id="duala-grafen">Duala grafen</h4>
+<p>Givet en plan graf <span class="arithmatex">\(G\)</span> kan vi finnas dess <em>duala graf</em> <span class="arithmatex">\(G^\perp\)</span> s.a.</p>
+<ul>
+<li>lägg till en <span class="arithmatex">\(G^\perp\)</span>-nod i var och en av regionerna i <span class="arithmatex">\(G\)</span>, samt</li>
+<li>för varje kant i <span class="arithmatex">\(G\)</span>, lägg till en <span class="arithmatex">\(G^\perp\)</span>-kant (genom endast den aktuella <span class="arithmatex">\(G\)</span>-kanten) mellan <span class="arithmatex">\(G^\perp\)</span>-noderna i de angränsande <span class="arithmatex">\(G\)</span>-regionerna (även om det är samma <span class="arithmatex">\(G^\perp\)</span>-nod).</li>
+</ul>
+<p><span class="arithmatex">\(G^\perp\)</span> är alltid en plan graf, men den kan ha öglor och/eller multipla kanter (dvs. den är ej säkert en enkel graf). <span class="arithmatex">\(G\)</span> behöver inte heller vara en enkel graf.</p>
+<p>För varje plan graf <span class="arithmatex">\(G\)</span> är dess duala graf <span class="arithmatex">\(G^\perp\)</span> sammanhängande.</p>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p>För varje plan graf <span class="arithmatex">\(G\)</span> gäller att</p>
+<div class="arithmatex">\[G\ \text{sammanhängande}\iff G\cong(G^\perp)^\perp\]</div>
+</blockquote>
+<h3 id="regelbundna-polyedrar">Regelbundna polyedrar</h3>
+<p>En <em>regelbunden polyeder</em> är en konvex polyeder vars sidytor är regelbundna <span class="arithmatex">\(b\)</span>-hörningar och alla hörn är kongruenta &amp; av grad <span class="arithmatex">\(a\)</span>.</p>
+<p>Vi skall nu visa att det finns exakt fem stycken: tetraedern, kuben, oktaedern, dodekaedern och ikosaedern -- de s.k. <em>platonska kropparna</em>.</p>
+<p>Plana grafen för en regelbunden polyeder är dubbelt reguljär:</p>
+<div class="arithmatex">\[n-k+r=2\text{ samt }2k=an=br\]</div>
+<p>Detta ger</p>
+<div class="arithmatex">\[2=\frac{2k}a-k+\frac{2k}b=(2a-ab+2b)\frac k{ab}\]</div>
+<p>och därför måste <span class="arithmatex">\(2a-ab+2b\gt 0\)</span>, dvs.</p>
+<div class="arithmatex">\[(a-2)(b-2)\lt 4\]</div>
+<p><span class="arithmatex">\(\therefore\)</span> visar det sig att det bara finns dessa fem möjligheter.</p>
+<h2 id="forelasning-5">Föreläsning 5</h2>
+<h3 id="repetition">Repetition</h3>
+<ul>
+<li>Plana grafer - graf ritad i planet</li>
+<li>Planära grafer - graf som kan ritas i planet (eller på sfären)</li>
+<li>Eulers polyederformel: <span class="arithmatex">\(n-k+r-c=1\)</span></li>
+<li>Vi visade att vissa grafer inte är planära, särskilt <span class="arithmatex">\(K_5\)</span> och <span class="arithmatex">\(K_{3,3}\)</span>.</li>
+<li>Wagners sats (bevis ingår ej): G planär <span class="arithmatex">\(\iff\)</span> G inte har <span class="arithmatex">\(K_5\)</span> eller <span class="arithmatex">\(K_{3,3}\)</span> som minor</li>
+<li>Fyrfärgssatsen: G planär <span class="arithmatex">\(\implies\chi(G)\leq 4\)</span> (bevis ingår/finns ej)</li>
+</ul>
+<p>...</p>
+<h3 id="bipartita-grafer">Bipartita grafer</h3>
+<p>En graf som kan färgas med två färger. I denna kurs räknas varje graf <span class="arithmatex">\(G\)</span> s.a. <span class="arithmatex">\(\chi(G)\leq 2\)</span> som bipartit.</p>
+<p>En bipartit graf <span class="arithmatex">\(G=(X\cup Y,\ E)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(X\cap Y=\empty\)</span>, alla kanter mellan <span class="arithmatex">\(X\)</span> och <span class="arithmatex">\(Y\)</span> <span class="arithmatex">\(\iff\)</span> G är 2-(nod)färgbar</li>
+</ul>
+<blockquote>
+<p><strong>Sats 17.1:</strong> Valensernas summa för bipartita grafer</p>
+<p><span class="arithmatex">\(G\)</span> bipartit <span class="arithmatex">\(\implies\sum_{x\in X}\delta(x)=\sum_{y\in Y}\delta(y)=|E|\)</span></p>
+<p><strong>Sats 15.7.2:</strong> <span class="arithmatex">\(G\)</span> är bipartit <span class="arithmatex">\(\iff\)</span> det finns ingen udda cykel i <span class="arithmatex">\(G\)</span>.</p>
+<p><strong>Bevis:</strong></p>
+<p><span class="arithmatex">\(\implies)\)</span> I en cykel måste varannan nod tillhöra <span class="arithmatex">\(X\)</span> och varannan <span class="arithmatex">\(Y\)</span>. Således måste antalet noder vara jämnt.</p>
+<p><span class="arithmatex">\(\impliedby)\)</span> Vi kan anta att <span class="arithmatex">\(G\)</span> är sammanhängande, eftersom vi kan färga varje komponent för sig. Antag att <span class="arithmatex">\(G=(V,\ E)\)</span> saknar udda cykler.</p>
+<p>Vi väljer något <span class="arithmatex">\(x\in V\)</span>. Definiera nu</p>
+<div class="arithmatex">\[V_j=\left\{v\in V\ |\ \text{kortaste stigen från }v\text{ till }x\text{ har längd }j\right\},\ j\geq 0\]</div>
+<p>Observera: <span class="arithmatex">\(V_0=\{x\}\)</span>, det vill säga avstånd 0 till <span class="arithmatex">\(x\)</span> har endast <span class="arithmatex">\(x\)</span> självt.</p>
+<blockquote>
+<p><em>Påstående: Alla kanter i $G</em> går mellan <span class="arithmatex">\(V_{j-1}\)</span> och <span class="arithmatex">\(V_j\)</span> (för alla <span class="arithmatex">\(j\)</span>).</p>
+<p>Bevis:</p>
+<ol>
+<li>Inga kanter finns mellan <span class="arithmatex">\(V_i\)</span> och <span class="arithmatex">\(V_j\)</span>, <span class="arithmatex">\(|i-j|\geq 2\)</span>, ty detta skulle innebära en motsägelse.</li>
+<li>Det finns inga kanter inom <span class="arithmatex">\(V_j\forall j\)</span>, ty anta att <span class="arithmatex">\(yz\in E\)</span> och <span class="arithmatex">\(y,z\in V_j\)</span>. Båda har stigar till <span class="arithmatex">\(x\)</span> av längd <span class="arithmatex">\(j\)</span>. Låt <span class="arithmatex">\(w\)</span> vara första (från <span class="arithmatex">\(V_j\)</span> räknat) noden som är gemensam på stigarna. Dvs. <span class="arithmatex">\(w\in V_i\)</span> för något <span class="arithmatex">\(i\)</span>. Det finns då en udda cykel av längd <span class="arithmatex">\(2(j-i)+1\)</span> med noderna <span class="arithmatex">\(w,y,z\)</span>.</li>
+</ol>
+</blockquote>
+<p>Nu kan vi färga noderna i <span class="arithmatex">\(V_j\)</span> med en färg för udda <span class="arithmatex">\(j\)</span> och en annan färg för jämna <span class="arithmatex">\(j\)</span>. Tack vare påståendet är detta en godkänd färgning och <span class="arithmatex">\(\chi(G)\leq 2\)</span>. <span class="arithmatex">\(\square\)</span></p>
+</blockquote>
+<h3 id="kantfargningar">Kantfärgningar</h3>
+<p>En <em>kantfärgning</em> av grafen <span class="arithmatex">\(G=(V,\ E)\)</span> är en funktion <span class="arithmatex">\(f:\ E\to\mathbb Z_+\)</span> sådan att <span class="arithmatex">\(|e_1\cap e_2|=1\implies f(e_1)\neq f(e_2)\)</span>, det vill säga kanter till samma nod har olika färg.</p>
+<p><em>Kromatiskt index</em> (namnet nämns inte i boken) <span class="arithmatex">\(\chi'(G)\)</span> för <span class="arithmatex">\(G\)</span> är det <em>minsta antalet färger som <span class="arithmatex">\(G\)</span> kan kantfärgas med</em>.</p>
+<blockquote>
+<p><strong>Lemma:</strong> Givet en graf <span class="arithmatex">\(G=(V,\ E)\)</span> gäller <span class="arithmatex">\(\chi'(G)\geq\Delta(G)\)</span></p>
+<p><strong>Bevis:</strong></p>
+<p><span class="arithmatex">\(\forall x\in V,\ \chi'(G)=\delta(x)\implies\chi(G)\geq\Delta(G)\)</span></p>
+<p><strong>Sats:</strong> För bipartita grafer gäller alltid att <span class="arithmatex">\(\chi'(G)=\Delta(G)\)</span></p>
+<p><strong>Bevis:</strong> Induktion över <span class="arithmatex">\(|E|\)</span>.</p>
+<ul>
+<li>Basfall: <span class="arithmatex">\(|E|=1\implies\Delta(G)=1\implies\chi'(G)=1\)</span></li>
+<li>Antagande: Antag att påståendet är sant för alla bipartita grafer med högst <span class="arithmatex">\(m\)</span> kanter.</li>
+<li>Steg: Låt <span class="arithmatex">\(G=(X\cup Y,\ E),\ |E|=m+1\)</span>.<ul>
+<li>Ta bort en kant <span class="arithmatex">\(e=xy\)</span> och låt denna graf <span class="arithmatex">\(H=G-xy\)</span>.</li>
+<li>Enligt antagandet gäller <span class="arithmatex">\(\chi'(H)=\Delta(H)\)</span>.</li>
+<li><span class="arithmatex">\(\Delta(H)=\Delta(G)\)</span> eller <span class="arithmatex">\(\Delta(G)-1\)</span></li>
+<li>Dvs. kanterna i <span class="arithmatex">\(H\)</span> kan färgas med <span class="arithmatex">\(\Delta(G)\)</span> färger.</li>
+<li><span class="arithmatex">\(\delta_H(x)\lt\Delta(G)\)</span>, dvs. någon färg är ledig - säg <span class="arithmatex">\(\alpha\)</span>.</li>
+<li><span class="arithmatex">\(\delta_H(y)\lt\Delta(G)\)</span>, ........ - säg <span class="arithmatex">\(\beta\)</span>.</li>
+<li>Vi vill nu hitta en färg till <span class="arithmatex">\(e=xy\)</span>.<ul>
+<li>Fall 1: Om <span class="arithmatex">\(\alpha,\beta\)</span> kan väljas lika så tar vi den färgen.</li>
+<li>Fall 2: <span class="arithmatex">\(\alpha\neq\beta\)</span>.<ul>
+<li>Definiera en alternerande stig <span class="arithmatex">\(S:x,y_1,x_1,y_2,x_2,\dots\)</span></li>
+<li><span class="arithmatex">\(y_1\)</span> är noden så att <span class="arithmatex">\(xy_1\)</span> har färgen <span class="arithmatex">\(\beta\)</span></li>
+<li>Om någon kant vid <span class="arithmatex">\(y_j\)</span> är färgad med <span class="arithmatex">\(\alpha\)</span>, så låter vi <span class="arithmatex">\(x_j\)</span> vara den noden sådan att <span class="arithmatex">\(y_jx_j\)</span> är färgad <span class="arithmatex">\(\alpha\)</span>.</li>
+<li>Om någon kant vid <span class="arithmatex">\(x_j\)</span> har färg <span class="arithmatex">\(\beta\)</span>, så låter vi <span class="arithmatex">\(y_{j+1}\)</span> vara noden sådan att <span class="arithmatex">\(x_jy_{j+1}\)</span> har färg <span class="arithmatex">\(\beta\)</span>.</li>
+<li>De två tidigare punkterna upprepas så länge det går.</li>
+<li>Slutligen byter vi färg på alla kanter i <span class="arithmatex">\(S\)</span>.</li>
+<li>Kanten <span class="arithmatex">\(xy\)</span> kan då ges färgen <span class="arithmatex">\(\beta\)</span>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Sats:</strong> (inte med i boken)</p>
+<p>För alla grafer <span class="arithmatex">\(G\)</span> gäller att <span class="arithmatex">\(\Delta(G)\leq\chi'(G)\leq\Delta(G)+1\)</span></p>
+</blockquote>
+<h3 id="latinska-kvadrater">Latinska kvadrater</h3>
+<p>En <em>latinsk kvadrat</em> är en <span class="arithmatex">\(n\ \times\ n\)</span>-matris där talen <span class="arithmatex">\(1,\dots,n\)</span> finns exakt en gång i varje rad och i varje kolumn.</p>
+<p>T.ex. <span class="arithmatex">\(\begin{matrix}1&amp;2&amp;4&amp;3\\2&amp;4&amp;3&amp;1\\4&amp;3&amp;1&amp;2\\3&amp;1&amp;2&amp;4\end{matrix}\)</span></p>
+<p>En möjlig bijektion mellan <span class="arithmatex">\(n\ \times\ n\)</span>-latinska vadrater och kantfärgningar av <span class="arithmatex">\(K_{n,n}\)</span>. Kanten mellan <span class="arithmatex">\(r_i\)</span> och <span class="arithmatex">\(k_j\)</span> färgas med siffran <span class="arithmatex">\(s\)</span> som står på position <span class="arithmatex">\((i,j)\)</span>.</p>
+<p>Vi skall dock studera en annan bijektion, där kanten mellan <span class="arithmatex">\(s\)</span> och <span class="arithmatex">\(k_j\)</span> färgas med raden <span class="arithmatex">\(r_i\)</span> om <span class="arithmatex">\(s\)</span> står på position <span class="arithmatex">\((i,j)\)</span> i matrisen.</p>
+<p>Specifikt skall vi studera frågan om huruvida man kan fullfölja en delvis ifylld matris till en latinsk kvadrat. Låt en <span class="arithmatex">\(m\ \times\ n\)</span>-latinsk rektangel vara en <span class="arithmatex">\(m\ \times\ n\)</span>-matris där <span class="arithmatex">\(1,\dots,n\)</span> förekommer exakt en gång i varje rad och högst en gång i varje kolumn. Denna matris skall nu utvidgas till en kvadratisk matris.</p>
+<blockquote>
+<p><strong>Exempel:</strong></p>
+<p><span class="arithmatex">\(\begin{matrix}1&amp;2&amp;3&amp;4&amp;5\\5&amp;1&amp;4&amp;2&amp;3\\2&amp;3&amp;5&amp;1&amp;4\end{matrix}\)</span></p>
+<p>...</p>
+<p><strong>Sats:</strong> (thm 17.3.1)</p>
+<p>En latinsk <span class="arithmatex">\(m\ \times\ n\)</span>-rektangel (<span class="arithmatex">\(m\lt n\)</span>) kan utvidgas till en latinsk <span class="arithmatex">\(n\ \times\ n\)</span>-kvadrat.</p>
+<p>Bevis: gicks ej igenom. ingår det?</p>
+</blockquote>
+<h2 id="forelasning-6">Föreläsning 6</h2>
+<p>TODO</p>
+<h2 id="forelasning-7">Föreläsning 7</h2>
+<p><em>I schemat: den 9 september 2025</em></p>
+<h3 id="permutationer">Permutationer</h3>
+<p>En <em>permutation</em> är en bijektion <span class="arithmatex">\(\pi:X\to X\)</span>, där vi ofta antar <span class="arithmatex">\(X=\{1,2,\dots,n\}\)</span> för något <span class="arithmatex">\(n\in\mathbb Z_+\)</span>.</p>
+<p>Låt <span class="arithmatex">\(\pi(1)=4,\pi(2)=5,\pi(3)=2,\pi(4)=1,\pi(5)=3,\pi(6)=6\)</span>.</p>
+<ul>
+<li>Tvåradersnotation: <span class="arithmatex">\(\begin{bmatrix}1&amp;2&amp;3&amp;4&amp;5&amp;6\\4&amp;5&amp;2&amp;1&amp;3&amp;6\end{bmatrix}\)</span></li>
+<li>Enradersnotation: <span class="arithmatex">\(4\ 5\ 2\ 1\ 3\ 6\)</span></li>
+<li>Cykelnotation: <span class="arithmatex">\((1\ 4)(2\ 5\ 3)(6)\)</span> -- motsvarar en riktad graf med cykler</li>
+</ul>
+<p>Mängden med alla permutationer av <span class="arithmatex">\(\{1,2,\dots,n\}\)</span> betecknas <span class="arithmatex">\(S_n\)</span>.</p>
+<p>Observera att det naturligt gäller att <span class="arithmatex">\(|S_n|=n!\)</span>.</p>
+<h4 id="sammansattning">Sammansättning</h4>
+<p>Låt <span class="arithmatex">\(\pi=\begin{bmatrix}1&amp;2&amp;3&amp;4&amp;5&amp;6\\4&amp;5&amp;2&amp;1&amp;3&amp;6\end{bmatrix},\ \sigma=\begin{bmatrix}1&amp;2&amp;3&amp;4&amp;5&amp;6\\3&amp;6&amp;5&amp;1&amp;4&amp;2\end{bmatrix}\)</span></p>
+<div class="arithmatex">\[\pi\sigma=\pi(\sigma)=\begin{bmatrix}1&amp;2&amp;3&amp;4&amp;5&amp;6\\2&amp;6&amp;3&amp;4&amp;1&amp;5\end{bmatrix}\]</div>
+<p>Fyra viktiga egenskaper för permutationer (<span class="arithmatex">\(\pi,\sigma,\tau\in S_n\)</span>):</p>
+<ol>
+<li><span class="arithmatex">\(\pi\sigma\in S_n\)</span></li>
+<li><span class="arithmatex">\(\pi(\sigma\tau)=(\pi\sigma)\tau\)</span></li>
+<li>Det existerar någon permutation <span class="arithmatex">\(\text{id}\in S_n\)</span> s.a. <span class="arithmatex">\(\pi\ \text{id}=\text{id}\ \pi=\pi\)</span> för alla <span class="arithmatex">\(\pi\)</span>.</li>
+<li>Det finns något <span class="arithmatex">\(\pi^{-1}\in S_n\)</span> s.a. <span class="arithmatex">\(\pi\pi^{-1}=\pi^{-1}\pi=\text{id}\)</span></li>
+</ol>
+<h4 id="ordning">Ordning</h4>
+<p><em>Ordningen</em>, <span class="arithmatex">\(o(\pi)=k\)</span>, av en permutation <span class="arithmatex">\(\pi\)</span> är det minsta <span class="arithmatex">\(k\geq1\)</span> så att <span class="arithmatex">\(\pi^k=\text{id}\)</span>.</p>
+<p>Kan enkelt utläsas från cykelformen som MGM av cykellängderna.</p>
+<h4 id="permutationsmatriser">Permutationsmatriser</h4>
+<p><em>Permutationsmatrisen</em> för <span class="arithmatex">\(\pi\in S_n\)</span> är en <span class="arithmatex">\(n\times n\)</span>-matris <span class="arithmatex">\(M_\pi\)</span> med element</p>
+<div class="arithmatex">\[m_{ij}=\begin{cases}1&amp;\text{om }\pi(j)=i\\0&amp;\text{annars}\end{cases}\]</div>
+<p>Det gäller att <span class="arithmatex">\(M_{\pi\sigma}=M_\pi M_\sigma\)</span>, dvs. sammansättning motsvaras av matrismultiplikation.</p>
+<h3 id="partitioner-av-heltal">Partitioner av heltal</h3>
+<p>En partition av <span class="arithmatex">\(n\in N\)</span> ges som</p>
+<div class="arithmatex">\[n=n_1+n_2+\cdots+n_k,\qquad n_1\geq n_2\geq\cdots\geq n_k\geq 1\]</div>
+<p>Antalet partitioner betecknas <span class="arithmatex">\(p(n)\)</span>, <em>varav antalet i exakt <span class="arithmatex">\(k\)</span> delar</em> ges av <span class="arithmatex">\(p_k(n)\)</span>.</p>
+<blockquote>
+<p><strong>Exempel:</strong></p>
+<p>Låt <span class="arithmatex">\(f_m(n)\)</span> vara antalet partitioner med <em>högst <span class="arithmatex">\(m\)</span> termer</em> och
+<span class="arithmatex">\(g_m(n)\)</span> vara antalet partitioner med termer alla <span class="arithmatex">\(\leq m\)</span>.</p>
+<p>Det visar sig att <span class="arithmatex">\(f_m(n)=g_m(n)\)</span>.</p>
+</blockquote>
+<h4 id="cykeltyp">Cykeltyp</h4>
+<p>En permutations <em>cykeltyp</em> är den partition som ges av cykellängderna.</p>
+<p>Permutationen <span class="arithmatex">\(\pi=(1\ 2\ 7)(3\ 5)(4\ 11\ 8\ 6)(9\ 10)\)</span> har cykeltyp</p>
+<div class="arithmatex">\[[2^2\ 3\ 4]\]</div>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p>Antalet permutationer av typ <span class="arithmatex">\([1^{c_1}\ 2^{c_2}\ \dots\ k^{c_k}]\)</span> är</p>
+<div class="arithmatex">\[\frac{n!}{(1
+^{c_1}\cdot 2^{c_2}\cdots k^{c_k})\cdot (c_1!\cdots c_k!)}\]</div>
+</blockquote>
+<h2 id="forelasning-8">Föreläsning 8</h2>
+<h3 id="konjugerade-permutationer">Konjugerade permutationer</h3>
+<p>Två permutationer <span class="arithmatex">\(\alpha,\beta\in S_n\)</span> är <em>konjugerade</em> om det finns en permutation <span class="arithmatex">\(\sigma\in S_n\)</span> sådan att <span class="arithmatex">\(\beta=\sigma\alpha\sigma^{-1}\)</span>.</p>
+<p>Detta definierar en <em>ekvivalensrelation</em> på <span class="arithmatex">\(S_n\)</span>.</p>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p><span class="arithmatex">\(\alpha,\beta\in S_n\)</span> är <em>konjugerade</em> omm de har <em>samma cykeltyp</em>.</p>
+</blockquote>
+<h3 id="uddajamna-permutationer">Udda/jämna permutationer</h3>
+<p>En <em>transposition</em> är en permutation av typ <span class="arithmatex">\([1^{n-2}2]\)</span>, dvs.</p>
+<div class="arithmatex">\[\tau=(a\ b)\in S_n,\quad a\neq b\]</div>
+<p>Varje permutation kan skrivas som en sammansättning av transpositioner. För en given permutation är antalet sammansatta transpositioner alltid jämnt eller alltid udda.</p>
+<p><strong>Definition:</strong> <span class="arithmatex">\(\pi=\tau_r\cdots\tau_2\tau_1\)</span> är en <em>jämn permutation</em> omm <span class="arithmatex">\(r\)</span> är jämnt -- annars en udda permutation.</p>
+<blockquote>
+<p><strong>Definition:</strong> Signum-funktionen för permutationer definieras</p>
+<div class="arithmatex">\[\text{sgn}(\pi)=\left(-1\right)^r=\begin{cases}1&amp;\pi\text{ jämn}\\-1&amp;\pi\text{ udda}\end{cases}\]</div>
+</blockquote>
+<p>För en cykel av längd <span class="arithmatex">\(j\)</span> gäller</p>
+<div class="arithmatex">\[(x_1\ x_2\ \cdots\ x_j)=(x_1\ x_j)(x_1\ x_{j-1})\cdots(x_1\ x_3)(x_1\ x_2)\]</div>
+<blockquote>
+<p>Dvs.
+<strong>en cykel är en <em>jämn</em> permutation omm den har <em>udda</em> längd.</strong></p>
+</blockquote>
+<p>Alla permutationer i en konjugatklass har samma tecken. Om <span class="arithmatex">\(\pi\)</span> är av typ <span class="arithmatex">\([1^{c_1}\ 2^{c_2}\ \cdots\ k^{c_k}]\)</span> är</p>
+<div class="arithmatex">\[\text{sgn}(\pi)=\left(-1\right)^{n-c(\pi)}\]</div>
+<p><strong>En jämn permutation har jämnt antal cykler av jämn längd.</strong></p>
+<blockquote>
+<p><strong>Sats 12.6.2:</strong></p>
+<p>I <span class="arithmatex">\(S_n,\ n\geq 2\)</span> är hälften av permutationerna jämna och hälften udda.</p>
+</blockquote>
+<p>En permutations tecken är lika med permutationsmatrisens determinant:</p>
+<div class="arithmatex">\[\text{sgn}(\pi)=\det M_\pi\]</div>
+<h2 id="forelasning-9">Föreläsning 9</h2>
+<p><em>I schemat: den 12 september 2025</em></p>
+<h3 id="grupper">Grupper</h3>
+<p>En <em>grupp</em> <span class="arithmatex">\((G,\ *)\)</span> är en mängd <span class="arithmatex">\(G\)</span> tillsammans med en binär operation <span class="arithmatex">\(*\)</span> med</p>
+<ul>
+<li>(slutenhet) <span class="arithmatex">\(\forall x,y\in G\)</span> gäller att <span class="arithmatex">\(x*y\in G\)</span>,</li>
+<li>(associativitet) <span class="arithmatex">\(\forall x,y,z\in G\)</span> gäller <span class="arithmatex">\((x*y)*z=x*(y*z)\)</span>,</li>
+<li>(identitet) <span class="arithmatex">\(\exists e\in G\)</span> sådan att <span class="arithmatex">\(e*x=x*e=x\)</span>, samt</li>
+<li>(invers) <span class="arithmatex">\(\forall x\in G\)</span> finns <span class="arithmatex">\(x'\in G\)</span> sådan att <span class="arithmatex">\(x'*x=x*x'=e\)</span>.</li>
+</ul>
+<p><strong>OBS!</strong> Vi kräver <em>inte</em> att <span class="arithmatex">\(x*y=y*x\)</span> för alla <span class="arithmatex">\(x,y\in G\)</span>. En sådan grupp kallas för <em>kommutativ</em> eller <em>abelsk</em>.</p>
+<blockquote>
+<p><strong>Förenklad notation:</strong> <span class="arithmatex">\((\text a)\ x*y\to xy,\quad(\text b)\ e\to 1,\quad(\text c)\ x'\to x^{-1}\)</span></p>
+<p><strong>Sats 20.3.1:</strong> Givet <span class="arithmatex">\(x,y,z\in G\)</span> gäller att</p>
+<ol>
+<li><span class="arithmatex">\(x*y=x*z\implies y=z\)</span></li>
+<li><span class="arithmatex">\(y*x=z*x\implies y=z\)</span></li>
+</ol>
+<p><strong>Sats 20.3.2:</strong> Givet <span class="arithmatex">\(a,b\in G\)</span> har ekvationen <span class="arithmatex">\(a*x=b\)</span> en unik lösning i <span class="arithmatex">\(G\)</span>.</p>
+<p><em>Följdsats:</em></p>
+<ol>
+<li><span class="arithmatex">\(\forall a\in G,\ a*x=a\)</span> har unik lösning <span class="arithmatex">\(\implies\)</span> identiteten <span class="arithmatex">\(1\)</span> är unik.</li>
+<li><span class="arithmatex">\(\forall a\in G,\ a*x=1\)</span> har unik lösning <span class="arithmatex">\(\implies\)</span> inversen <span class="arithmatex">\(a'\)</span> är unik.</li>
+<li>Grupptabellen är en latinsk kvadrat (om gruppen är ändlig)</li>
+</ol>
+</blockquote>
+<h4 id="ordning_1">Ordning</h4>
+<p>Vi kan definiera heltalspotenser av gruppelement med rekursion</p>
+<div class="arithmatex">\[x^r:=\begin{cases}x&amp;r=1\\x*x^{-1}&amp;r\geq 2\end{cases},\qquad x^{-s}:=\begin{cases}x^{-1}&amp;s=1\\x^{-1}x^{1-s}&amp;s\geq 2\end{cases}\]</div>
+<p><strong>Ordningen</strong>, <span class="arithmatex">\(o(g)\)</span>, för ett element <span class="arithmatex">\(g\in G\)</span> ges av</p>
+<div class="arithmatex">\[o(g)=\min\left[\left\{n\in\mathbb Z_+\ |\ g^n=1\right\}\cup\left\{\infty\right\}\right]\]</div>
+<blockquote>
+<p><strong>Sats 20.4:</strong> <span class="arithmatex">\(g^s=1\iff o(g)\ |\ s\)</span></p>
+</blockquote>
+<p><strong>Obs!</strong> <span class="arithmatex">\(o(g)\)</span> betecknar ordningen för ett <em>element</em> och skall ej förväxlas med <span class="arithmatex">\(|G|\)</span> som betecknar <em>hela gruppens ordning</em>.</p>
+<blockquote>
+<p><strong>Exempel:</strong> För gruppen <span class="arithmatex">\((\mathbb Z\setminus\left\{0\right\},\ \cdot)\)</span>, där <span class="arithmatex">\(\cdot\)</span> betecknar multiplikation (mod 7), är</p>
+<div class="arithmatex">\[o(5)=6\]</div>
+<p>eftersom <span class="arithmatex">\(5^6=(5*5)*(5*5)*(5*5)=(4*4)*4=2*4=1\)</span>.</p>
+</blockquote>
+<h4 id="gruppisomorfi">Gruppisomorfi</h4>
+<p>Låt <span class="arithmatex">\((G_1,\ *),\ (G_2,\ \circ)\)</span> vara två grupper, och <span class="arithmatex">\(\beta:G_1\to G_2\)</span> vara en bijektion.</p>
+<p><span class="arithmatex">\(\beta\)</span> är en <em>isomorfi</em> om det <span class="arithmatex">\(\forall g,g'\in G_1\)</span> gäller att</p>
+<div class="arithmatex">\[\beta(g*g')=\beta(g)\circ\beta(g')\]</div>
+<p>Vi säger då att <span class="arithmatex">\(G_1\)</span> och <span class="arithmatex">\(G_2\)</span> är <em>isomorfa</em>, vilket betecknas <span class="arithmatex">\((G_1,\ *)\approx(G_2,\ \circ)\)</span> eller <span class="arithmatex">\(G_1\approx G_2\)</span>.</p>
+<p><em>Isomorfi är en ekvivalensrelation på mängden av alla grupper.</em></p>
+<h2 id="forelasning-10">Föreläsning 10</h2>
+<p><em>I schemat: den 16 september 2025</em></p>
+<h3 id="cykliska-grupper">Cykliska grupper</h3>
+<p>En grupp <span class="arithmatex">\(G\)</span> är <em>cyklisk</em> om det, för något <span class="arithmatex">\(x\in G\)</span>, gäller att varje <span class="arithmatex">\(g\in G\)</span> är <span class="arithmatex">\(x^n\)</span> för något <span class="arithmatex">\(n\in\mathbb Z\)</span>.</p>
+<p>Man säger då att <span class="arithmatex">\(x\)</span> <em>genererar</em> <span class="arithmatex">\(G\)</span>, vilket betecknas <span class="arithmatex">\(G=\langle x\rangle\)</span>.</p>
+<h3 id="direkt-produkt">Direkt produkt</h3>
+<p>Den <em>direkta produkten</em> av två grupper <span class="arithmatex">\(A,B\)</span> definieras som <span class="arithmatex">\((A\times B,\ *)\)</span>, där <span class="arithmatex">\((a_1,\ b_1)*(a_2,\ b_2)=(a_1a_2,\ b_1b_2)\)</span>.</p>
+<blockquote>
+<p><strong>Sats 20.6:</strong></p>
+<p>Om <span class="arithmatex">\(m\)</span> och <span class="arithmatex">\(n\)</span> är relativt prima, gäller att <span class="arithmatex">\(C_{mn}\approx C_m\times C_n\)</span></p>
+<p><em>Bevis: se boken...</em></p>
+</blockquote>
+<p>Enligt <em>kinesiska restsatsen</em> (nästa vecka) gäller, om <span class="arithmatex">\(\text{sgd}(m_i,\ m_j)=1\)</span> då <span class="arithmatex">\(i\neq j\)</span>, att</p>
+<div class="arithmatex">\[C_{m_1\cdots m_k}\approx C_{m_1}\times\cdots\times C_{m_k}\]</div>
+<p><span class="arithmatex">\(G_1\)</span> och <span class="arithmatex">\(G_2\)</span> abelska <span class="arithmatex">\(\implies G_1\times G_2\)</span> abelsk</p>
+<h3 id="inverterbara-element-i-mathbb-z_m">Inverterbara element i <span class="arithmatex">\(\mathbb Z_m\)</span></h3>
+<p>Kom ihåg (SF1671): Ett element <span class="arithmatex">\(k\in\mathbb Z_m\)</span> är <em>inverterbart</em> (har multiplikativ invers) <span class="arithmatex">\(\iff\text{sgd}(k,m)=1\)</span>.</p>
+<p>Låt <span class="arithmatex">\(U(\mathbb Z_m)\)</span> vara mängden av inverterbara element i <span class="arithmatex">\(\mathbb Z_m\)</span>. Det gäller att <span class="arithmatex">\((U(\mathbb Z_m),\ \cdot)\)</span> är en grupp för alla <span class="arithmatex">\(m\geq 2\)</span>.</p>
+<blockquote>
+<p><strong>Exempel:</strong></p>
+<p>Låt elementen i <span class="arithmatex">\(G_\square\)</span> vara symmetriavbildningar för en kvadrat.</p>
+<p>Grupp <em>genereras</em> av <span class="arithmatex">\(\{x,\ r\}\)</span>, dvs. varje element kan skrivas som <span class="arithmatex">\(x^ir^j\)</span> där <span class="arithmatex">\(i\in\{0,1\},\ j\in\{0,1,2,3\}\)</span>. Vi låter här <span class="arithmatex">\(x\)</span> beteckna en spegling och <span class="arithmatex">\(r\)</span> en 90-graders (moturs) rotation.</p>
+</blockquote>
+<h3 id="delgrupper">Delgrupper</h3>
+<p><span class="arithmatex">\(H\)</span> är en <em>delgrupp</em> till <span class="arithmatex">\((G,\ *)\)</span> om <span class="arithmatex">\(H\subseteq G\)</span> och <span class="arithmatex">\((H,\ *)\)</span> är en grupp.</p>
+<p>Ex 1. <span class="arithmatex">\(\{i,r,r^2,r^3\}\)</span> är en delgrupp till <span class="arithmatex">\(G_\square\)</span>.<br>
+Ex 2. De jämna heltalen är en delgrupp till <span class="arithmatex">\((\mathbb Z,\ +)\)</span></p>
+<blockquote>
+<p><strong>Sats 20.7:</strong></p>
+<p>Om <span class="arithmatex">\(G\)</span> är en grupp och <span class="arithmatex">\(H\subseteq G\)</span> icke-tom, gäller följande ekvivalens:</p>
+<p><span class="arithmatex">\(H\)</span> är en delgrupp till <span class="arithmatex">\(G\iff\begin{cases}S1&amp;x,y\in H\implies xy\in H\text{, och}\\S2&amp;x\in H\implies x^{-1}\in H\end{cases}\)</span></p>
+<p>Om <span class="arithmatex">\(H\)</span> är ändlig räcker <span class="arithmatex">\(S1\)</span>.</p>
+</blockquote>
+<p>Om <span class="arithmatex">\(G\)</span> är en grupp är</p>
+<div class="arithmatex">\[\mathcal Z(G)=\{z\in G\ |\ zg=gz\text{ för alla }g\in G\}\]</div>
+<p>en delgrupp till <span class="arithmatex">\(G\)</span>. Denna delgrupp kallas för <span class="arithmatex">\(G\)</span>:s <em>centrum</em>.</p>
+<p>Varje <span class="arithmatex">\(x\in G\)</span> genererar en cyklisk delgrupp, <span class="arithmatex">\(\langle x\rangle=\{x^i\ |\ i\in\mathbb Z\}\)</span>. Då är <span class="arithmatex">\(o(x)=|\langle x\rangle|\)</span>.</p>
+<h3 id="cayleygrafer-orientering">Cayleygrafer, orientering</h3>
+<p>En <em>cayleygraf</em> för en grupp (egentligen för en framställning av gruppen med generatorer) beskriver gruppen fullständigt.</p>
+<p>Grafen har ett hörn för varje element i gruppen och om gruppen genereras av <span class="arithmatex">\(a,b,\dots\)</span> <em>(dvs. om varje <span class="arithmatex">\(g\in G\)</span> kan skrivas som en produkt av sådana och deras inverser)</em> har den riktade kanter med olika mörkningar (färger), svarande mot <span class="arithmatex">\(a,b,\dots\)</span>. En <span class="arithmatex">\(a\)</span>-kant från hörn <span class="arithmatex">\(g\)</span> slutar i hörn <span class="arithmatex">\(ag\)</span> osv.</p>
+<p>En grupp kan ha olika (icke-isomorfa) cayleygrafer med olika generatorer.</p>
+<h2 id="forelasning-11">Föreläsning 11</h2>
+<h3 id="sidoklasser">Sidoklasser</h3>
+<blockquote>
+<p><strong>Definition:</strong></p>
+<p>Om <span class="arithmatex">\(H\)</span> är en delgrupp till <span class="arithmatex">\(G\)</span> och <span class="arithmatex">\(g\in G\)</span>, säger vi att</p>
+<p><span class="arithmatex">\(gH=\{gh\ |\ h\in H\}\)</span> är en <em>vänstersidoklass</em> till <span class="arithmatex">\(H\)</span> i <span class="arithmatex">\(G\)</span>, och att
+<span class="arithmatex">\(Hg=\{hg\ |\ h\in H\}\)</span> är en <em>högersidoklass</em>.</p>
+<div class="arithmatex">\[|H|=|gH|=|Hg|\]</div>
+<p>Observera att även både höger- och vänstersidoklasser <span class="arithmatex">\(gH,Hg\leq G\)</span>.</p>
+<p><strong>Sats 20.8.1:</strong></p>
+<p><span class="arithmatex">\(H\)</span> är en delgrupp till <span class="arithmatex">\(G\)</span>. Vänstersidoklasserna till <span class="arithmatex">\(H\)</span> formar en mängdpartition av <span class="arithmatex">\(G\)</span>. D.v.s. för <span class="arithmatex">\(g_1\neq g_2\in G\)</span> gäller att</p>
+<div class="arithmatex">\[g_1H=g_2H\quad\text{eller}\quad g_1H\cap g_2H=\empty\]</div>
+<p>Bevis: se boken.</p>
+<p>Samma gäller högersidoklasserna.</p>
+</blockquote>
+<h4 id="lagranges-sats">Lagranges sats</h4>
+<blockquote>
+<p><strong>Sats 20.8.2:</strong></p>
+<p>Låt <span class="arithmatex">\(G\)</span> vara en ändlig grupp och <span class="arithmatex">\(H\)</span> en delgrupp till denna. Då gäller att</p>
+<div class="arithmatex">\[|H|\text{ delar }|G|\]</div>
+<p><strong>Bevis:</strong></p>
+<p>...</p>
+</blockquote>
+<p>Antalet olika sidoklasser till <span class="arithmatex">\(H\)</span> i <span class="arithmatex">\(G\)</span> betecknas <span class="arithmatex">\(|G:H|=\frac{|G|}{|H|}\)</span> och kallas <span class="arithmatex">\(H\)</span>:s <em>index</em> i <span class="arithmatex">\(G\)</span>.</p>
+<h4 id="foljder-av-lagranges-sats">Följder av Lagranges sats</h4>
+<blockquote>
+<p><strong>Sats 20.8.3:</strong></p>
+<p>Om <span class="arithmatex">\(G\)</span> är en ändlig grupp, <span class="arithmatex">\(g\in G\)</span> och <span class="arithmatex">\(|G|=n\)</span>, gäller att</p>
+<ol>
+<li><span class="arithmatex">\(o(g)\ |\ n\)</span>, och</li>
+<li><span class="arithmatex">\(g^n=1\)</span></li>
+</ol>
+<p><strong>Sats 20.8.4:</strong></p>
+<p>Låt <span class="arithmatex">\(G\)</span> vara en grupp och <span class="arithmatex">\(|G|=p\)</span> för något primtal <span class="arithmatex">\(p\)</span>. Då gäller att <span class="arithmatex">\(G\approx C_p\)</span>.</p>
+</blockquote>
+<h4 id="alternerande-gruppen-a_n">Alternerande gruppen <span class="arithmatex">\(A_n\)</span></h4>
+<p>Se bokens genomgång av delgrupper till <span class="arithmatex">\(A_4\)</span>.</p>
+<h4 id="normal-delgrupp">Normal delgrupp</h4>
+<p>"Avancerat ämne" -- kan förekomma endast i svårare tentauppgifter.</p>
+<h2 id="forelasning-12">Föreläsning 12</h2>
+<h3 id="automorfier">Automorfier</h3>
+<p>Låt <span class="arithmatex">\(\Gamma=(V,\ E)\)</span> vara en graf med <span class="arithmatex">\(V=\{1,2,\dots,n\}\)</span>.</p>
+<p>En <em>automorfi</em> är en bijektion <span class="arithmatex">\(\pi:V\to V\)</span> s.a. <span class="arithmatex">\(xy\in E\iff\pi(x)\pi(y)\in E\)</span>, det vill säga en isomorfi från grafen till sig själv.</p>
+<p>Mängden av alla automorfier betecknas <span class="arithmatex">\(\text{Aut}(\Gamma)\)</span> och bildar en grupp med sammansättning av bijektioner som operation (se axiomen!).</p>
+<h3 id="gruppverkan">Gruppverkan</h3>
+<p>För en grupp <span class="arithmatex">\((G,\ *)\)</span> säger vi att <span class="arithmatex">\(G\)</span> <em>verkar</em> på en mängd <span class="arithmatex">\(X\)</span> om det </p>
+<ul>
+<li><span class="arithmatex">\(\forall g\in G\)</span> gäller att <span class="arithmatex">\(g:X\to X\)</span> är en bijektion,</li>
+<li><span class="arithmatex">\(\forall g_1,g_2\in G,\ x\in X\)</span> gäller att <span class="arithmatex">\((g_1*g_2)(x)=g_1(g_2(x))\)</span>, samt</li>
+<li><span class="arithmatex">\(\forall x\in X\)</span> gäller att <span class="arithmatex">\(1_G(x)=x\)</span></li>
+</ul>
+<h3 id="bana">Bana</h3>
+<p>Om <span class="arithmatex">\(G\)</span> verkar på <span class="arithmatex">\(X\)</span> och <span class="arithmatex">\(x\in X\)</span> kallas</p>
+<div class="arithmatex">\[G_X=\{g(x)\ |\ g\in G\}\]</div>
+<p>för <em>banan</em> och är en delmängd av <span class="arithmatex">\(X\)</span>.</p>
+<p>Banorna bildar en mängdpartition av <span class="arithmatex">\(X\)</span> ty relationen <span class="arithmatex">\(x\sim y\)</span> om <span class="arithmatex">\(g(x)=y\)</span> för något <span class="arithmatex">\(g\in G\)</span> är en ekvivalensrelation.</p>
+<h3 id="stabilisatorn">Stabilisatorn</h3>
+<p><em>Stabilisatorn</em> för något <span class="arithmatex">\(x\in X\)</span> definieras som</p>
+<div class="arithmatex">\[G_x=\{g\in G\ |\ g(x)=x\}\]</div>
+<p>och är en delgrupp till <span class="arithmatex">\(G\)</span>.</p>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<div class="arithmatex">\[|G|=|G_X|\cdot|G_x|\]</div>
+</blockquote>
+<p>För <span class="arithmatex">\(g\in G\)</span> definieras <span class="arithmatex">\(g\)</span>:s <em>fixpunktsmängd</em> som</p>
+<div class="arithmatex">\[F(g)=\{x\in X\ |\ g(x)=x\}\]</div>
+<p>(alternativ beteckning: <span class="arithmatex">\(X_g\)</span>)</p>
+<blockquote>
+<p><strong>Sats:</strong> (Burnsides lemma)</p>
+<p>Antalet banor <span class="arithmatex">\(N\)</span> då <span class="arithmatex">\(G\)</span> verkar på <span class="arithmatex">\(X\)</span> kan beräknas med</p>
+<div class="arithmatex">\[N=\frac1{|G|}\sum_{g\in G}\left|F(g)\right|\]</div>
+</blockquote>
+<h2 id="forelasning-13">Föreläsning 13</h2>
+<h3 id="modular-aritmetik">Modulär aritmetik</h3>
+<p>Kongruens modulo <span class="arithmatex">\(m\)</span> betecknas <span class="arithmatex">\(x\equiv y\ (\text{mod }m)\)</span> eller <span class="arithmatex">\(x\equiv_my\)</span></p>
+<p>Heltalen <span class="arithmatex">\(\mathbb Z\)</span> kan delas in i <span class="arithmatex">\(m\)</span> st klasser kongruenta tal:</p>
+<div class="arithmatex">\[\begin{aligned}&amp;{\left\lbrack 0\right\rbrack}_m&amp;&amp;=\{\dots,\ &amp;-2m+0,\ &amp;&amp;-m+0,\ &amp;&amp;0,\ &amp;&amp;m+0,\ &amp;&amp;2m+0,\ &amp;\dots\}\\&amp;{\left\lbrack 1\right\rbrack}_m&amp;&amp;=\{\dots,\ &amp;-2m+1,\ &amp;&amp;-m+1,\ &amp;&amp;1,\ &amp;&amp;m+1,\ &amp;&amp;2m+1,\ &amp;\dots\}\\&amp;&amp;&amp;&amp;&amp;&amp;\vdots\\&amp;{\left\lbrack m-1\right\rbrack}_m&amp;&amp;=\{\dots,\ &amp;-m-1,\ &amp;&amp;-1,\ &amp;&amp;m-1,\ &amp;&amp;2m+1,\ &amp;&amp;2m+1,\ &amp;\dots\}\end{aligned}\]</div>
+<p>För något <span class="arithmatex">\(m\in\mathbb Z_+\)</span> ges <em>heltalen modulo <span class="arithmatex">\(m\)</span></em> av</p>
+<div class="arithmatex">\[\mathbb Z_m=\{{\left\lbrack 0\right\rbrack}_m,\ {\left\lbrack 1\right\rbrack}_m,\ \dots,\ {\left\lbrack m-1\right\rbrack}_m\}\]</div>
+<h4 id="inverterbarhet">Inverterbarhet</h4>
+<p>I modulär aritmetik innebär <em>inverterbarhet</em> för något <span class="arithmatex">\(r\in\mathbb Z_m\)</span>, att det <span class="arithmatex">\(\exists x\in\mathbb Z_m\)</span> (s.k. <em>invers</em>) så att <span class="arithmatex">\(rx=1\)</span> i <span class="arithmatex">\(\mathbb Z_m\)</span>.</p>
+<h4 id="kinesiska-restsatsen">Kinesiska restsatsen</h4>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p>Låt <span class="arithmatex">\(m_1,\ m_2,\ \dots,\ m_k\)</span> vara positiva, inbördes relativt prima tal. Då har systemet av kongruenser (där alla <span class="arithmatex">\(a_i\in\mathbb Z\)</span>)</p>
+<div class="arithmatex">\[\begin{cases}x&amp;\equiv&amp;a_1&amp;(\text{mod }m_1)\\x&amp;\equiv&amp;a_2&amp;(\text{mod }m_2)\\&amp;&amp;\vdots\\x&amp;\equiv&amp;a_k&amp;(\text{mod }m_k)\end{cases}\]</div>
+<p>exakt en lösning, och denna är unik modulo <span class="arithmatex">\(m=m_1\cdots m_k\)</span>.</p>
+</blockquote>
+<h2 id="forelasning-14">Föreläsning 14</h2>
+<h3 id="eulers-phi-funktion">Eulers <span class="arithmatex">\(\phi\)</span>-funktion</h3>
+<div class="arithmatex">\[\phi(n)=\left|\left\{x\in\{1,2,\dots,n\}\ |\ \text{sgd}(x,n)=1\right\}\right|\]</div>
+<blockquote>
+<p><strong>Sats 11.5.1:</strong></p>
+<p>Om <span class="arithmatex">\(n\geq 2,\ n=p_1^{e_1}\cdots p_r^{e_r}\)</span>, där <span class="arithmatex">\(p_1,\dots,p_r\)</span> är olika primtal och alla <span class="arithmatex">\(e_i\geq 1\)</span>, gäller att</p>
+<div class="arithmatex">\[\phi(n)=n\left(1-\frac1{p_1}\right)\cdots\left(1-\frac1{p_r}\right)\]</div>
+</blockquote>
+<p>Av satsen ovan följer att <span class="arithmatex">\(\phi\)</span> är <em>multiplikativ</em>, dvs. att</p>
+<div class="arithmatex">\[\text{sgd}(m,n)=1\implies\phi(mn)=\phi(m)\phi(n)\]</div>
+<blockquote>
+<p><strong>Sats 13.3.2 (Eulers sats):</strong></p>
+<p><span class="arithmatex">\(a^{\phi(n)}\equiv 1\ \left(\text{mod }n\right)\)</span> om <span class="arithmatex">\(a,n\)</span> relativt prima dvs. <span class="arithmatex">\(\text{gcd}(a,n)=1\)</span>.</p>
+<p><strong>Bevis:</strong> (<a href="https://www.youtube.com/watch?v=5pswKNgVZSg">video</a>)</p>
+<p>Låt <span class="arithmatex">\(S=\{x\in\{1,2,\dots,n\}\ |\ \text{sgd}(x,n)=1\}\)</span> och låt <span class="arithmatex">\(T=\{ax\ |\ x\in S\}\)</span>.</p>
+<p>Eftersom varjt <span class="arithmatex">\(s\in S\)</span> är relativt prim <span class="arithmatex">\(n\)</span>, och sedan talet <span class="arithmatex">\(a\)</span> också är relativt prim <span class="arithmatex">\(n\)</span>, gäller att även varje <span class="arithmatex">\(as\in T\)</span> är relativt prim <span class="arithmatex">\(n\)</span>.</p>
+<p>Vi reducerar nu <span class="arithmatex">\(T\)</span> modulo <span class="arithmatex">\(n\)</span>. Detta ger mängden <span class="arithmatex">\(T'=\{ax\mod n\ |\ x\in S\}\)</span>.</p>
+<p>Notera att inget <span class="arithmatex">\(0\notin T'\)</span>, eftersom det skulle innebära att något <span class="arithmatex">\(x\in S\)</span> kongruent med <span class="arithmatex">\(0\)</span> (modulo <span class="arithmatex">\(n\)</span>).</p>
+<p>Vi har alltså för varje element <span class="arithmatex">\(t'\in T'\)</span>:</p>
+<ul>
+<li>Alla element är inkongruenta, modulo <span class="arithmatex">\(n\)</span></li>
+<li>Alla är relativt prima <span class="arithmatex">\(n\)</span></li>
+<li><span class="arithmatex">\(1\leq t'\leq n\)</span></li>
+</ul>
+<p>För varje element <span class="arithmatex">\(t\in T\)</span> är kongruent med exakt ett element <span class="arithmatex">\(x\in S\)</span>.</p>
+<p>Vi kan skriva detta som</p>
+<div class="arithmatex">\[\prod_{x\in S} x\equiv\prod_{x_in S}ax\ \left(\text{mod }n\right)\]</div>
+<p>Eftersom alla <span class="arithmatex">\(x\in S\)</span> är relativt prima <span class="arithmatex">\(n\)</span>, är också deras produkt det. Vi kan därför stryka dessa ur båda led och får slutligen</p>
+<div class="arithmatex">\[1\equiv a^{\phi(n)}\ \left(\text{mod }n\right)\]</div>
+<p><strong>Sats 10.3:</strong></p>
+<p>För alla positiva heltal <span class="arithmatex">\(n\)</span> gäller att <span class="arithmatex">\(\sum_{d|n}\phi(d)=n\)</span>.</p>
+<p><strong>Bevis:</strong></p>
+<p>Observera att <span class="arithmatex">\(\phi(d)\)</span> är lika med antalet generatorer av den cykliska gruppen <span class="arithmatex">\(C_d\)</span>.</p>
+<p>Observera också att varje delgrupp till en (finit) cyklisk grupp <span class="arithmatex">\(C_n\)</span> har någon ordning <span class="arithmatex">\(d\ |\ n\)</span> (den s.k. <em>fundamentala satsen för cykliska grupper</em>).</p>
+<p>Varje element i <span class="arithmatex">\(C_n\)</span> är generator åt precis en cyklisk delgrupp. Varje sådan delgrupp <span class="arithmatex">\(C_d\subseteq C_n\)</span> genereras av precis <span class="arithmatex">\(\phi(d)\)</span> element i <span class="arithmatex">\(C_n\)</span>. Summan av antalet generatorer för varje cyklisk delgrupp är naturligen lika med totala antalet element (ordningen) <span class="arithmatex">\(n\)</span>. <span class="arithmatex">\(\square\)</span></p>
+</blockquote>
+<h3 id="mobiusfunktionen">Möbiusfunktionen</h3>
+<div class="arithmatex">\[\mu(d)=\begin{cases}1&amp;d=1\\0&amp;k^2\ |\ d,\ \text{något heltal }k\geq 2\\(-1)^r&amp;d=p_1p_2\cdots p_r,\ \text{unika primtal}\end{cases}\]</div>
+<blockquote>
+<p><strong>Sats:</strong> <span class="arithmatex">\(\phi(n)=\sum_{d|n}\left\lbrack\mu(d)\frac nd\right\rbrack\)</span></p>
+<p><strong>Sats:</strong> <span class="arithmatex">\(\sum_{d|n}\mu(d)=\delta(n)=\begin{cases}1&amp;n=1\\0&amp;n\geq 2,\ n\ \text{ett heltal}\end{cases}\)</span></p>
+<p><strong>Bevis:</strong> (<a href="https://www.youtube.com/watch?v=dfcF1csYEnE&amp;t=586s">video</a>)</p>
+<p>Låt <span class="arithmatex">\(n=p_1^{r_1}p_2^{r_2}\cdots p_m^{r_m}\)</span> och varje delare <span class="arithmatex">\(d=q_1^{s_1}q_2^{s_2}\cdots q_k^{s_k}\)</span>, där <span class="arithmatex">\(p_i,q_j\)</span> är primtal.</p>
+<p>Observera att det, för de delare där något <span class="arithmatex">\(s_i\gt 1\)</span>, gäller att <span class="arithmatex">\(q_i^2\ |\ d\)</span>, dvs. <span class="arithmatex">\(\mu(d)=0\)</span> och vi är i dessa fall färdiga.</p>
+<p>Vi antar nu istället att alla <span class="arithmatex">\(s_i=1\)</span> och får då</p>
+<div class="arithmatex">\[\begin{array}{rcccl}\sum_{d\ |\ n}\mu(d)&amp;=&amp;\mu(1)&amp;+&amp;\left\lbrack\mu(p_1)+\mu(p_2)+\cdots+\mu(p_k)\right\rbrack\\&amp;&amp;&amp;+&amp;\left\lbrack\mu(p_1p_2)+\mu(p_1p_3)+\cdots+\mu(p_{m-1}p_m)\right\rbrack\\&amp;&amp;&amp;\vdots&amp;\\&amp;&amp;&amp;+&amp;\mu(n)\\&amp;&amp;&amp;=&amp;{m\choose 0}-{m\choose 1}\ +\ {m\choose 2}\ -\ {m\choose 3}\ +\ \cdots\ +\left(-1\right)^m{m\choose}\\&amp;&amp;&amp;=&amp;\left(1+(-1)\right)^m\ =\ 0\end{array}\]</div>
+</blockquote>
+<h3 id="mobius-inversformel">Möbius inversformel</h3>
+<p>Givet två funktioner <span class="arithmatex">\(f,g:\mathbb N\to\mathbb C\)</span> gäller att</p>
+<div class="arithmatex">\[{\color{#f44}f(n)=\sum_{d\ |\ n}g(d)}\iff{\color{#5d4}g(n)=\sum_{d\ |\ n}\left\lbrack\mu(d)\cdot f\left(\frac nd\right)\right\rbrack}\]</div>
+<blockquote>
+<p><strong>Bevis:</strong> (<a href="https://www.youtube.com/watch?v=zBCOXTFzX_A&amp;t=647s">video</a>)</p>
+<p><span class="arithmatex">\(\implies)\)</span> Antag <span class="arithmatex">\(\forall n\in\mathbb N\)</span> att <span class="arithmatex">\(f(n)=\sum_{d\ |\ n}g(d)\)</span></p>
+<div class="arithmatex">\[{\color{#5d4}\sum_{d\ |\ n}\mu(d)f\left(\frac nd\right)}=\sum_{dk=n}\mu(d)f(k)\\=\sum_{dk=n}\mu(d)\sum_{e\ |\ k}g(e)=\left\{\begin{matrix}\frac ke=l\iff k=el\\\iff del=n\end{matrix}\right\}\\=\sum_{del=n}\mu(d)g(e)=\sum_{em=n}g(e)\sum_{d\ |\ m}\mu(d)\\=\left\{\begin{matrix}\text{enl. sats ovan blir den inre}\\\text{summan }1\text{ när }m=1\text{, annars }0\end{matrix}\right\}=\sum_{e=n}g(e)={\color{#5d4}g(n)}\]</div>
+<p><span class="arithmatex">\(\impliedby)\)</span> Antag <span class="arithmatex">\(\forall n\in\mathbb N\)</span> att <span class="arithmatex">\(g(n)=\sum_{d\ |\ n}\left\lbrack\mu(d)\cdot f\left(\frac nd\right)\right\rbrack\)</span></p>
+<div class="arithmatex">\[{\color{#f44}\sum_{d\ |\ n}g(d)}=\sum_{d\ |\ n}\sum_{d'\ |\ d}\left\lbrack\mu(d')\cdot f\left(\frac d{d'}\right)\right\rbrack\\=\left\{\begin{matrix}\frac d{d'}=e\iff d=ed'\\\frac nd=k\iff n=ed'k\end{matrix}\right\}=\sum_{d'ek=n}\left\lbrack\mu(d')\cdot f(e)\right\rbrack\\=\sum_{ek'=n}\left\lbrack f(e)\sum_{d'\ |\ k'}\mu(d')\right\rbrack={\color{#f44}f(n)}\]</div>
+</blockquote>
+<h2 id="forelasning-15">Föreläsning 15</h2>
+<h3 id="kroppar">Kroppar</h3>
+<p>En <em>kropp</em> <span class="arithmatex">\((F,\ +,\ \cdot)\)</span> (eng. <em>field</em>) är en mängd <span class="arithmatex">\(F\)</span> och två operationer <span class="arithmatex">\(+,\ \cdot\)</span> s.a.</p>
+<ul>
+<li><span class="arithmatex">\((F,\ +)\)</span> är en kommutativ (abelsk) grupp med <span class="arithmatex">\(0\)</span> som identitet,</li>
+<li><span class="arithmatex">\((F\setminus\{0\},\ \cdot)\)</span> är en kommutativ grupp, samt</li>
+<li><span class="arithmatex">\(\cdot\)</span> är <em>distributiv</em> m.a.p. <span class="arithmatex">\(+\)</span>, det vill säga <span class="arithmatex">\(a\cdot(b+c)=a\cdot b+a\cdot c\)</span> för alla <span class="arithmatex">\(a,b,c\in F\)</span>.</li>
+</ul>
+<p>Exempel: <span class="arithmatex">\((\mathbb R,\ +,\ \cdot)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\left(F,\ +\right)\)</span> kallas för den <em>additiva gruppen</em> i F.</li>
+<li><span class="arithmatex">\(\left(F\setminus\{0\},\ \cdot\right)\)</span> kallas för den <em>multiplikativa gruppen</em> i <span class="arithmatex">\(F\)</span>.</li>
+</ul>
+<h3 id="ringar">Ringar</h3>
+<p>En <em>ring</em> <span class="arithmatex">\((R,\ +,\ \cdot)\)</span> är en struktur för vilken</p>
+<ul>
+<li><span class="arithmatex">\((R,\ +)\)</span> är en kommutativ (abelsk) grupp med <span class="arithmatex">\(0\)</span> som identitet,</li>
+<li><span class="arithmatex">\((R,\ \cdot)\)</span> är sluten och associativ, med identitet 1, samt</li>
+<li><span class="arithmatex">\(\cdot\)</span> är <em>distributiv</em> m.a.p. <span class="arithmatex">\(+\)</span>.</li>
+</ul>
+<p>Exempel: <span class="arithmatex">\((\mathbb Z,\ +,\ \cdot)\)</span></p>
+<p>För en ring <span class="arithmatex">\(R\)</span> säger vi att <span class="arithmatex">\(a\in R\)</span> är <em>inverterbar</em> om det finns en multiplikativ invers <span class="arithmatex">\(a^{-1}\in R\)</span>. De inverterbara elementen i <span class="arithmatex">\(R\)</span> betecknas <span class="arithmatex">\(U(R)\)</span>.</p>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p>För en ring <span class="arithmatex">\((R,\ +,\ \cdot)\)</span> är <span class="arithmatex">\((U(R),\ \cdot)\)</span> en grupp.</p>
+</blockquote>
+<h4 id="polynomringar">Polynomringar</h4>
+<p><span class="arithmatex">\(\mathbb Z\lbrack x\rbrack\)</span> betecknar mängden av polynom med heltalskoefficienter</p>
+<div class="arithmatex">\[a(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n,\quad a_i\in\mathbb Z\]</div>
+<p><span class="arithmatex">\(\mathbb Z\lbrack x\rbrack\)</span> är en ring med addition och multiplikation. Den additiva identiteten är <span class="arithmatex">\(0\)</span> och den multiplikativa <span class="arithmatex">\(1\)</span>.</p>
+<p>På samma sätt kan är <span class="arithmatex">\(R\lbrack x\rbrack\)</span>, där <span class="arithmatex">\(R\)</span> är en ring, mängden av alla polynom med koefficienter <span class="arithmatex">\(a_i\in R\)</span>.</p>
+<p><span class="arithmatex">\(R\lbrack x\rbrack\)</span> är en ring med addition &amp; multiplikation av polynom. Gradtalet, <span class="arithmatex">\(\deg a(x)\)</span> definieras som det största <span class="arithmatex">\(n\)</span> s.a. <span class="arithmatex">\(a_n\neq 0\)</span>, alternativt <span class="arithmatex">\(-\infty\)</span>.</p>
+<p>Om <span class="arithmatex">\(a(x),b(x)\in F\lbrack x\rbrack\)</span>, <em>där <span class="arithmatex">\(F\)</span> är en kropp</em>, gäller att</p>
+<div class="arithmatex">\[\deg(a(x)b(x))=\deg a(x)+\deg b(x)\]</div>
+<p>Observera att <span class="arithmatex">\(F\lbrack x\rbrack\)</span> också är en ring.</p>
+<h2 id="forelasning-16">Föreläsning 16</h2>
+<h3 id="polynomdivision">Polynomdivision</h3>
+<blockquote>
+<p><strong>Sats 22.5:</strong> Om <span class="arithmatex">\(a(x),b(x)\in F\lbrack x\rbrack,\ b(x)\neq 0\)</span> finns entydigt bestämda <span class="arithmatex">\(q(x),r(x)\in F\lbrack x\rbrack,\ \deg r(x)\lt\deg b(x)\)</span> sådana att</p>
+<div class="arithmatex">\[a(x)=b(x)q(x)+r(x)\]</div>
+<p><strong>Bevis:</strong> TODO</p>
+</blockquote>
+<h4 id="storsta-gemensamma-delare-sgd">Största gemensamma delare (SGD)</h4>
+<blockquote>
+<p><strong>Definition:</strong></p>
+<p>Om det för <span class="arithmatex">\(a(x),b(x)\in F\lbrack x\rbrack\)</span> gäller att</p>
+<ul>
+<li><span class="arithmatex">\(d(x)\ |\ a(x),\ d(x)\ |\ b(x)\)</span>, samt</li>
+<li><span class="arithmatex">\(c(x)\ |\ a(x),\ c(x)\ |\ b(x)\implies c(x)\ |\ d(x)\)</span></li>
+</ul>
+<p>så kallas <span class="arithmatex">\(d(x)\)</span> en största gemensam delare.</p>
+<p>Om dessutom polynomet <span class="arithmatex">\(d(x)\)</span> är <em>moniskt</em> (dvs. högstagradskoefficienten är <span class="arithmatex">\(1\)</span>), kallas <span class="arithmatex">\(d(x)\)</span> för den (moniska) SGD till <span class="arithmatex">\(a(x)\)</span> och <span class="arithmatex">\(b(x)\)</span> och är entydig.</p>
+<p><strong>Sats 22.6:</strong> För <span class="arithmatex">\(a(x),b(x)\in F\lbrack x\rbrack\)</span>, där <span class="arithmatex">\(F\)</span> är en kropp, existerar ett entydigt <span class="arithmatex">\(d(x)=\text{sgd}(a(x),\ b(x))\)</span>, och</p>
+<div class="arithmatex">\[d(x)=\lambda(x)a(x)+\mu(x)b(x)\]</div>
+<p>för några <span class="arithmatex">\(\lambda(x),\mu(x)\in F\lbrack x\rbrack\)</span>.</p>
+<p><span class="arithmatex">\(d(x)\)</span> fås med Euklides algoritm:</p>
+<div class="arithmatex">\[\begin{aligned}a(x)=b(x)q_1(x)+r_1(x)\qquad&amp;\deg r_1\lt\deg b\\b(x)=r_1(x)q_2(x)+r_2(x)\qquad&amp;\deg r_2\lt\deg r_1\\\vdots\quad&amp;\\r_{k-3}(x)=r_{k-2}(x)q_{k-1}(x)+r_{k-1}(x)\qquad&amp;\deg r_{k-1}\lt\deg r_{k-2}\\ r_{k-2}(x)=r_{k-1}(x)q_k(x)\qquad&amp;\end{aligned}\]</div>
+<p>Då är <span class="arithmatex">\(\text{sgd}(a(x),\ b(x))=u\cdot r_{k-1}(x)\)</span>, för något <span class="arithmatex">\(u\in F\setminus\{0\}\)</span>.</p>
+</blockquote>
+<h4 id="irreducibla-polynom">Irreducibla polynom</h4>
+<p>För en kropp <span class="arithmatex">\(F\)</span> och ett polynom <span class="arithmatex">\(f(x)\in F\lbrack x\rbrack\)</span> säger vi att <span class="arithmatex">\(f(x)\)</span> är <em>irreducibelt</em> om <span class="arithmatex">\(\deg f(x)\geq 1\)</span> och polynomet <em>inte</em> kan skrivas på formen <span class="arithmatex">\(f(x)=g(x)h(x)\)</span> för två andra polynom <span class="arithmatex">\(g,h\in F\lbrack x\rbrack\)</span> och <span class="arithmatex">\(\deg g,\deg h\geq 1\)</span>.</p>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p>Låt <span class="arithmatex">\(F\)</span> vara en kropp. Om ett polynom <span class="arithmatex">\(r(x)\in F\lbrack x\rbrack\)</span> är irreducibelt och <span class="arithmatex">\(r(x)\ |\ s_1(x)\cdots s_k(x)\)</span> så gäller att <span class="arithmatex">\(r(x)\ |\ s_i(x)\)</span> för något <span class="arithmatex">\(i\)</span>.</p>
+<p><strong>Sats 22.7:</strong></p>
+<p>Låt <span class="arithmatex">\(F\)</span> vara en kropp. Om</p>
+<div class="arithmatex">\[F\lbrack x\rbrack\ni f(x)=g_1(x)\cdots g_r(x)=h_1(x)\cdots h_s(x)\]</div>
+<p>där <span class="arithmatex">\(g_i(x),h_j(x)\)</span> irreducibla, gäller det att (1) <span class="arithmatex">\(r=s\)</span> samt att (2) <span class="arithmatex">\(g_i(x)=u_ih_{\pi(i)}(x)\)</span>, för alla <span class="arithmatex">\(i\)</span> och där <span class="arithmatex">\(u_i\in F\setminus\{0\}\)</span>, <span class="arithmatex">\(\pi\in S_r\)</span>.</p>
+<p><strong>Sats 22.8.1 (faktorsatsen):</strong></p>
+<p>Låt <span class="arithmatex">\(F\)</span> vara en kropp, <span class="arithmatex">\(f(x)\in F\lbrack x\rbrack\)</span> och <span class="arithmatex">\(\alpha\in F\)</span>. Då gäller ekvivalensen</p>
+<div class="arithmatex">\[(x-\alpha)\ |\ f(x)\quad\iff\quad f(\alpha)=0\ \text{i}\ F\]</div>
+<p><strong>Sats 22.8.2:</strong></p>
+<p>Låt <span class="arithmatex">\(F\)</span> vara en kropp, <span class="arithmatex">\(f(x)\in F\lbrack x\rbrack\)</span> och <span class="arithmatex">\(\deg f(x)=n\geq 1\)</span>.</p>
+<p>Då gäller att <span class="arithmatex">\(f(x)=0\)</span> har högst <span class="arithmatex">\(n\)</span> rötter i <span class="arithmatex">\(F\)</span>.</p>
+</blockquote>
+<h2 id="forelasning-17">Föreläsning 17</h2>
+<h3 id="andliga-kroppar">Ändliga kroppar</h3>
+<p>Om <span class="arithmatex">\(F\)</span> är en <em>ändlig kropp</em> är <span class="arithmatex">\(F\)</span>:s <em>karakteristik</em>, ordningen för multiplikativ identitet under addition, <span class="arithmatex">\(o_+(1)\)</span>. Karakteristiken är det minsta positiva heltalet <span class="arithmatex">\(n\)</span> s.a. <span class="arithmatex">\(\sum_{i=1}^n1=0\)</span> i <span class="arithmatex">\(F\)</span>.</p>
+<blockquote>
+<p><strong>Sats 23.2:</strong></p>
+<p>Låt <span class="arithmatex">\(F\)</span> vara en ändlig kropp med karakteristik <span class="arithmatex">\(p\)</span>. Då är den edditiva gruppen <span class="arithmatex">\((F,\ +)\approx C_p\times\cdots\times C_p=\left(C_p\right)^r\)</span> för något heltal <span class="arithmatex">\(r\geq 1\)</span>. Speciellt är <span class="arithmatex">\(|F|=p^r\)</span>.</p>
+</blockquote>
+<p><strong>Exempel:</strong> En kropp med 9 element. Ta <span class="arithmatex">\(x^2+x+2\in\mathbb Z_3\lbrack x\rbrack\)</span>, vi "räknar <span class="arithmatex">\(\left(\text{mod }{x^2+x+2}\right)\)</span>".</p>
+<p>Formellt definieras detta som en ekvivalensrelation <span class="arithmatex">\(\sim\)</span> i <span class="arithmatex">\(\mathbb Z_3\lbrack x\rbrack\)</span>:</p>
+<div class="arithmatex">\[a(x)\sim b(x)\iff\left(x^2+x+2\right)\ |\ \left(a(x)-b(x)\right)\]</div>
+<p>Betecknas <span class="arithmatex">\(\mathbb Z_3\lbrack x\rbrack/(x^2+x+2)\)</span> och har element <span class="arithmatex">\(\{\lbrack 0\rbrack,\ \lbrack 1\rbrack,\ \lbrack 2\rbrack,\ \lbrack x\rbrack,\ \lbrack x+1\rbrack,\ \lbrack x+2\rbrack,\ \lbrack 2x\rbrack,\ \lbrack 2x+1\rbrack,\ \lbrack 2x+2\rbrack\}\)</span>.</p>
+<p><strong>Antiexempel:</strong> <span class="arithmatex">\(\mathbb Z_3\lbrack x\rbrack/(x^2+2)\)</span> är inte en kropp, ty <span class="arithmatex">\(\lbrack x+1\rbrack\lbrack x+2\rbrack=\lbrack x^2+2\rbrack=\lbrack 0\rbrack\)</span> ger att <span class="arithmatex">\(\lbrack x+1\rbrack\)</span> saknar invers.</p>
+<p>Förklaringen ligger i att <span class="arithmatex">\(x^2+2\)</span> är reducibelt i <span class="arithmatex">\(\mathbb Z_3\lbrack x\rbrack\)</span>.</p>
+<blockquote>
+<p><strong>Sats:</strong></p>
+<p>Låt <span class="arithmatex">\(p\)</span> vara ett primtal och <span class="arithmatex">\(k(x)\)</span> ett irreducibelt polynom i <span class="arithmatex">\(\mathbb Z_p\lbrack x\rbrack\)</span> med <span class="arithmatex">\(\deg k=r\geq 1\)</span>.</p>
+<p>Då är <span class="arithmatex">\(\mathbb Z_p\lbrack x\rbrack/k(x)\)</span> en kropp med <span class="arithmatex">\(p^r\)</span> element.</p>
+</blockquote>
+<h2 id="forelasning-18">Föreläsning 18</h2>
+<p>TOOO...</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Kopierat till urklipp", "clipboard.copy": "Kopiera till urklipp", "search.result.more.one": "1 till p\u00e5 denna sida", "search.result.more.other": "# till p\u00e5 denna sida", "search.result.none": "Inga s\u00f6kresultat", "search.result.one": "1 s\u00f6kresultat", "search.result.other": "# s\u00f6kresultat", "search.result.placeholder": "Skriv s\u00f6kord", "search.result.term.missing": "Saknas", "select.version": "V\u00e4lj version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
